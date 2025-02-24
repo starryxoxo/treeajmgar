@@ -14,5 +14,5 @@ Elia, an undercover spy otherwise known as "Elen" or "Shadow" from a mafia, has 
 
 ##### Chapters
 ┌ The Mafia's Princess
-├ [[You Had Me at Hello/Prologue\|Prologue]]
+├ [[wait-p\|Prologue]]
 └ Chapter 1...
