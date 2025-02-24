@@ -18,25 +18,29 @@ The time I raised the gun *only meters apart*, my eyes felt like I was swimming 
 《 [[You Had Me at Hello/Chapter 1\|Chapter 1]] 》
 《 [[home\|Home]]
 
- <script>
-        function delayLink(link, delay) {
-            const countdownElement = document.getElementById('countdown');
-            countdownElement.style.display = 'block';
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        // Delay in milliseconds
+        const delay = 30000; // 30 seconds
 
-            let remainingTime = delay / 10000; // Convert milliseconds to seconds
+        // Create a countdown element
+        const countdownElement = document.createElement('div');
+        countdownElement.id = 'countdown';
+        countdownElement.style.fontSize = '20px';
+        countdownElement.style.marginTop = '10px';
+        document.body.appendChild(countdownElement);
+
+        // Set the countdown timer
+        let remainingTime = delay / 1000; // Convert milliseconds to seconds
+        countdownElement.textContent = 'Redirecting in ' + remainingTime + ' seconds...';
+
+        const interval = setInterval(() => {
+            remainingTime--;
             countdownElement.textContent = 'Redirecting in ' + remainingTime + ' seconds...';
-
-            const interval = setInterval(function() {
-                remainingTime--;
-                countdownElement.textContent = 'Redirecting in ' + remainingTime + ' seconds...';
-                if (remainingTime <= 0) {
-                    clearInterval(interval);
-                    window.location.href = link;
-                }
-            }, 10000); // Update every second
-        }
-
-        function handleLinkClick(event, link, delay) {
-            event.preventDefault(); // Prevent the default link behavior
-            delayLink(link, delay);
-        }
+            if (remainingTime <= 0) {
+                clearInterval(interval);
+                window.location.href = 'https://ymhah.vercel.app/you-had-me-at-hello/prologue/'; // Change to your desired URL
+            }
+        }, 1000); // Update every second
+    });
+</script>
