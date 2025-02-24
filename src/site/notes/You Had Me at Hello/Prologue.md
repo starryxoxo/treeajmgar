@@ -33,7 +33,7 @@ The time I raised the gun *only meters apart*, my eyes felt like I was swimming 
                     clearInterval(interval);
                     window.location.href = link;
                 }
-            }, 1000); // Update every second
+            }, 10000); // Update every second
         }
 
         function handleLinkClick(event, link, delay) {
