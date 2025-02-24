@@ -35,8 +35,6 @@ Listen to good music with ENHYPEN. Stream on Spotify.
     });
 </script>
 
-This story is not affiliated nor sponsored with ENHYPEN.
-It is all fun in here—we don't want no issues. Just enjoy the content you'll have:)!
+This story is not affiliated with ENHYPEN. All events are fictional.
 
-![c472233e54fb7b744cb5ec581db90662.jpg](/img/user/c472233e54fb7b744cb5ec581db90662.jpg)
 ![1ccb72d12a9042a171d481ee54dcf85e.jpg](/img/user/1ccb72d12a9042a171d481ee54dcf85e.jpg)
