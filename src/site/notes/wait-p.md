@@ -26,7 +26,7 @@ Waiting for the link helps us keep this free!
             countdownElement.textContent = 'Redirecting in ' + remainingTime + ' seconds...';
             if (remainingTime <= 0) {
                 clearInterval(interval);
-                window.location.href = 'https://ymhah.vercel.app/prologue/; // Change to your desired URL
+                window.location.href = 'https://ymhah.vercel.app/prologue/'; // Change to your desired URL
             }
         }, 1000); // Update every second
     });
