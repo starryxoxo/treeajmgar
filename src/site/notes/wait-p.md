@@ -5,7 +5,9 @@
 
 ADVERTISEMENT
 
-Listen to good music with ENHYPEN. Stream on Spotify.
+Listen to good music with ENHYPEN. Stream on [Spotify](https://open.spotify.com/artist/5t5FqBwTcgKTaWmfEbwQY9?si=Z5WvcRiRRyGSlPOpt6hgJg)
+Listen & watch on [YouTube](https://youtube.com/@enhypenofficial?si=2biUjp3NN3Gsmktz)
+
 ![8e89d07b6a3a940e055a33fdc84d46ea.jpg](/img/user/8e89d07b6a3a940e055a33fdc84d46ea.jpg)
 
 <script>
