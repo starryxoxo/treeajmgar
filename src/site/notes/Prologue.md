@@ -9,11 +9,11 @@ Time is a strange thing, isn't it? People claim time heals everything. So why am
 
 I've become fragile, like glass. Something felt very wrong inside. It felt broken.
 
-Like a river lost in time, I can't tell what's real. I can no longer separate our realities from my dreams. I've dreamt of fictional stories every night. I wished you wouldn't regret knowing me. But in the end, you do. It's me you resent.
+Like a river lost in time, I can't tell what's real. I can no longer separate our realities from my dreams every night. I wished you wouldn't regret knowing me. But in the end, you do. It's me you resent.
 
 Father always gave in to greed. He only cared about himself.
 
-I raised the gun *just meters away*. My eyes felt like I was swimming in the Atlantic Ocean. I was freezing and drowning, unable to get any air.
+I raised the gun *just meters away*. My eyes felt like I was in Atlantic Ocean. I was freezing and drowning, unable to get any air.
 
 《 [[Chapter 1\|Chapter 1]] 》
-《 [[home\|Home]]
+《 [[You Had Me at Hello/YHMAH\|Home]]
