@@ -3,9 +3,10 @@
 ---
 
 
-ADVERTISEMENT
+Loading...
 
-Listen to good music with ENHYPEN. Stream on [Spotify](https://open.spotify.com/artist/5t5FqBwTcgKTaWmfEbwQY9?si=Z5WvcRiRRyGSlPOpt6hgJg)
+ENHYPEN is a K-pop group in which leads this story. Check them out:
+Stream on [Spotify](https://open.spotify.com/artist/5t5FqBwTcgKTaWmfEbwQY9?si=Z5WvcRiRRyGSlPOpt6hgJg)
 Listen & watch on [YouTube](https://youtube.com/@enhypenofficial?si=2biUjp3NN3Gsmktz)
 
 ![8e89d07b6a3a940e055a33fdc84d46ea.jpg](/img/user/8e89d07b6a3a940e055a33fdc84d46ea.jpg)
@@ -36,7 +37,5 @@ Listen & watch on [YouTube](https://youtube.com/@enhypenofficial?si=2biUjp3NN3Gs
         }, 1000); // Update every second
     });
 </script>
-
-This story is not affiliated with ENHYPEN. All events are fictional.
 
 ![1ccb72d12a9042a171d481ee54dcf85e.jpg](/img/user/1ccb72d12a9042a171d481ee54dcf85e.jpg)
