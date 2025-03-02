@@ -3,7 +3,7 @@
 ---
 
 Welcome to the sworn library!
-Where vast imaginations come true.
+The library where vast imaginations and ideas come true.
 
 > New to sworn library?
 Click the blue text to enter a link or a [[You Had Me at Hello/YHMAH\|book]].
