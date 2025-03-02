@@ -16,7 +16,7 @@ Elia, the daughter of the Roccini's family head, is set to spy on Solon, the roy
 **Date**: 
 ##### Chapters
 ┌ The Mafia's Princess
-├ [[wait-p\|Prologue]]
+├ [[tmp/wait-p\|Prologue]]
 └ Chapter 1...
 
 ***
