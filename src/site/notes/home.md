@@ -10,4 +10,4 @@ Click the blue text to enter a link or a [[You Had Me at Hello/YHMAH\|book]].
 
 # Top Reads
 ![The_20250302_183759_0000 1.jpg](/img/user/Untitled/The_20250302_183759_0000%201.jpg)
-> [[You Had Me at Hello/YHMAH\|The Mafia's Princess]] • Long Read • Novel
+> ￫ [[You Had Me at Hello/YHMAH\|The Mafia's Princess]] • Long Read • Novel
