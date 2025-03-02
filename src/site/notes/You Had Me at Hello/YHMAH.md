@@ -2,9 +2,10 @@
 {"dg-publish":true,"permalink":"/you-had-me-at-hello/yhmah/"}
 ---
 
-
-![The_20250302_183759_0000.jpg](/img/user/The_20250302_183759_0000.jpg)
+Sworn Library ORIGINALS
+![The_20250302_183759_0000.jpg](/img/user/Untitled/The_20250302_183759_0000.jpg)
 # The Mafia's Princess
+<small>sworn Originals © All Rights Reserved </small>
 
 **Description**
 Set in Lichtenstein, year 2025, the royal family, Monteguirre, are disguised as ordinary people after being overthrown by the government in power now in the present.
@@ -18,3 +19,7 @@ Elia, the daughter of the Roccini's family head, is set to spy on Solon. In part
 ┌ The Mafia's Princess
 ├ [[wait-p\|Prologue]]
 └ Chapter 1...
+
+***
+© All Rights Reserved
+the sworn library

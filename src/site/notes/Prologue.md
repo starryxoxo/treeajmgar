@@ -16,4 +16,4 @@ Father always gave in to greed. He only cared about himself.
 I raised the gun *just meters away*. My eyes felt like I was in Atlantic Ocean. I was freezing and drowning, unable to get any air.
 
 《 [[Chapter 1\|Chapter 1]] 》
-《 [[You Had Me at Hello/YHMAH\|Home]]
+《 [[home\|Home]]
