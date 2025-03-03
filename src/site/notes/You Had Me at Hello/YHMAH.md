@@ -21,6 +21,6 @@ Elia, the daughter of the Roccini's family head, is set to spy on Solon, the roy
 └ Chapter 1...
 
 ***
-© All Rights Reserved
-the sworn library
+© 2025 the sworn library
+All Rights Reserved.
 The Mafia's Princess is part of the [[Sworn ORIGINALS\|Sworn ORIGINALS]] series.
