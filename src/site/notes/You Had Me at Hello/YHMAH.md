@@ -2,8 +2,7 @@
 {"dg-publish":true,"permalink":"/you-had-me-at-hello/yhmah/"}
 ---
 
-
-![The_20250302_183759_0000.jpg](/img/user/Untitled/The_20250302_183759_0000.jpg)
+![Copy of The (eBook)_20250303_172645_0000.jpg](/img/user/Untitled/Copy%20of%20The%20(eBook)_20250303_172645_0000.jpg)
 ###### ENHYPEN AU
 # The Mafia's Princess
 
