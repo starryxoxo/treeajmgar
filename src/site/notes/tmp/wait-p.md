@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // Delay in milliseconds
     const delay = 30000; // 30 seconds
 
-// Create a progress bar container
+    // Create a progress bar container
     const progressBarContainer = document.createElement('div');
     progressBarContainer.style.width = '100%';
     progressBarContainer.style.height = '20px';
@@ -33,19 +33,27 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.body.appendChild(progressBarContainer);
     
     // Set the progress interval
-    const interval = 1000; // Update every second
     let elapsedTime = 0;
     
-    const progressInterval = setInterval(() => {
-        elapsedTime += interval;
-        const progressPercentage = (elapsedTime / delay) * 100;
+    function updateProgress() {
+        if (elapsedTime >= delay) {
+            window.location.href = 'https://yhmah.vercel.app/prologue'; // Change to your desired URL
+            return;
+        }
+        
+        // Generate a random delay between 200ms and 1500ms
+        let randomDelay = Math.random() * 1300 + 200;
+        
+        // Simulate random progress increments
+        let progressBoost = Math.random() * 10 + 2; // Between 2% and 12%
+        elapsedTime += randomDelay;
+        let progressPercentage = Math.min((elapsedTime / delay) * 100, 100);
         progressBar.style.width = progressPercentage + '%';
         
-        if (elapsedTime >= delay) {
-            clearInterval(progressInterval);
-            window.location.href = 'https://yhmah.vercel.app/tmp/prologue'; // Change to your desired URL
-        }
-    }, interval);
+        setTimeout(updateProgress, randomDelay);
+    }
+    
+    updateProgress();
 });
 </script>
 
