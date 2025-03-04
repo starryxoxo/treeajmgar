@@ -13,7 +13,7 @@ Check them out:
 <script>
 document.addEventListener('DOMContentLoaded', (event) => {
     // Delay in milliseconds
-    const delay = 30000; // 30 seconds
+    const delay = 25000; // 30 seconds
 
     // Create a progress bar container
     const progressBarContainer = document.createElement('div');
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     
     function updateProgress() {
         if (elapsedTime >= delay) {
-            window.location.href = 'https://yhmah.vercel.app/prologue'; // Change to your desired URL
+            window.location.href = 'https://yhmah.vercel.app/tmp/prologue'; // Change to your desired URL
             return;
         }
         
