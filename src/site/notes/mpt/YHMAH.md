@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/mpt/yhmah/"}
 ---
 
-![Copy of The (eBook)_20250303_172645_0000.jpg](/img/user/a%20storage/Copy%20of%20The%20(eBook)_20250303_172645_0000.jpg)
+![Copy of The (eBook)_20250303_172645_0000.jpg](/img/user/Copy%20of%20The%20(eBook)_20250303_172645_0000.jpg)
 ###### ENHYPEN AU
 # The Mafia's Princess
 
