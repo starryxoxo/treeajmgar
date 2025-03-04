@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         
         if (elapsedTime >= delay) {
             clearInterval(progressInterval);
-            window.location.href = 'https://yhmah.vercel.app/prologue'; // Change to your desired URL
+            window.location.href = 'https://yhmah.vercel.app/tmp/prologue'; // Change to your desired URL
         }
     }, interval);
 });
