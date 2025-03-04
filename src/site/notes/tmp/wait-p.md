@@ -42,10 +42,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
         
         // Generate a random delay between 200ms and 1500ms
-        let randomDelay = Math.random() * 1300 + 200;
+        let randomDelay = Math.random() * 1800 + 200;
         
         // Simulate random progress increments
-        let progressBoost = Math.random() * 10 + 2; // Between 2% and 12%
+        let progressBoost = Math.random() * 10 + 5; // Between 2% and 12%
         elapsedTime += randomDelay;
         let progressPercentage = Math.min((elapsedTime / delay) * 100, 100);
         progressBar.style.width = progressPercentage + '%';
