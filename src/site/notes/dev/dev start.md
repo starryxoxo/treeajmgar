@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/dev/dev-start/","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/dev/dev-start/"}
 ---
 
 # the sworn library
