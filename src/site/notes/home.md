@@ -13,4 +13,4 @@ Click the [[dark blue text\|dark blue text]] to enter a link or a [[mpt/YHMAH\|b
 ![The_20250302_183759_0000.jpg](/img/user/a%20storage/The_20250302_183759_0000.jpg)
 >  ➔ [[mpt/YHMAH\|The Mafia's Princess]] • Long Read • Novel
 
-[[dev/dev home\|Go DEV]]
+[[dev/dev start\|Go DEV]]
