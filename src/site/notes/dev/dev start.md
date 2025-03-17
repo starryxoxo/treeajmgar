@@ -15,8 +15,4 @@ Click the [[dark blue text\|dark blue text]] to enter a link or a [[mpt/YHMAH\|b
 
 # Sworn Librarian's Choice
 
-| ![Copy of The (eBook)_20250303_172645_0000.jpg](/img/user/a%20storage/Copy%20of%20The%20(eBook)_20250303_172645_0000.jpg) | ![Copy of The (eBook)_20250303_172645_0000.jpg](/img/user/a%20storage/Copy%20of%20The%20(eBook)_20250303_172645_0000.jpg) | ![Copy of The (eBook)_20250303_172645_0000.jpg](/img/user/a%20storage/Copy%20of%20The%20(eBook)_20250303_172645_0000.jpg) | ![Copy of The (eBook)_20250303_172645_0000.jpg](/img/user/a%20storage/Copy%20of%20The%20(eBook)_20250303_172645_0000.jpg) | ![Copy of The (eBook)_20250303_172645_0000.jpg](/img/user/a%20storage/Copy%20of%20The%20(eBook)_20250303_172645_0000.jpg) |
-| ------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- |
-| [[mpt/YHMAH\|The Mafia's Princess]]                   | [[mpt/YHMAH\|The Mafia's Princess]]                   | [[mpt/YHMAH\|The Mafia's Princess]]                   | [[YHMAH \|The Mafia's Princess]]                  | [[mpt/YHMAH\|The Mafia's Princess]]                   |
-
 # New Reads

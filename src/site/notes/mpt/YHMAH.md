@@ -8,7 +8,7 @@
 
 **Description**
 Set in Lichtenstein, year 2025, the royal family, Monteguirre, are disguised as ordinary people after being overthrown by the government now in power.
-Elia, the daughter of the Roccini's family head, is set to spy on Solon, the royal prince. In partner with the government, the Roccini had been given the order to assassinate the prince, as risks of the royal family taking over arises. Will Elia be able to successfully do her job as a spy?
+Elia, the daughter of the Roccini's family head, is set to spy on Solon, the royal prince. In partner with the government, the Roccini had been given the order to assassinate the prince, as risks of the royal family taking over arises. Will Elia successfully finish her job as a spy on the royal prince?
 
 **Author**: the sworn library
 **Language**: English
@@ -17,7 +17,7 @@ Elia, the daughter of the Roccini's family head, is set to spy on Solon, the roy
 **Date**: 
 ##### Chapters
 ┌ The Mafia's Princess
-├ [[tmp/wait-p\|Prologue]]
+├ [[mpt/tmp/wait-p\|Prologue]]
 └ Chapter 1...
 
 
@@ -25,3 +25,4 @@ Elia, the daughter of the Roccini's family head, is set to spy on Solon, the roy
 © 2025 the sworn library
 All Rights Reserved.
 The Mafia's Princess is part of the [[Sworn ORIGINALS\|Sworn ORIGINALS]] series.
+Character names derived from ENHYPEN's DARK MOON: THE BLOOD ALTAR available to read in Webtoon.

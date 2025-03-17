@@ -70,15 +70,22 @@ Noa's the youngest in our circle.
 ![15tmp.jpg](/img/user/a%20storage/15tmp.jpg)
 ![a storage/16tmp.jpg](/img/user/a%20storage/16tmp.jpg)
 
-Jino turned to me and asked me if I wanna go home.
+Jino turned to me and asked if I want to go home.
 
 ![17tmp.jpg](/img/user/a%20storage/17tmp.jpg)
 
 I slurped that ramyeon. I feel a wee bit sorry, but hey, I feel refreshed.
 
+We both went home after eating. As I was walking down Flagell Street near our mansion, someone I don't know messaged me on the phone.
+
 ***
 
-[[Elia's Journal Entry 1\|Elia's Journal Entry 1]]
+[[mpt/tmp/Elia's Journal Entry 1\|Elia's Journal Entry 1]]
 [[mpt/tmp/Chapter1-1\|Next]]
 [[home\|Home]] • [[mpt/YHMAH\|Book Info]]
 
+***
+Copyright © 2025 the sworn library
+All Rights Reserved.
+
+<div id="lockscreen"> <div id="popup"> <p>Enter Passcode to Continue</p> <input type="password" id="passcode" maxlength="6" /> <button onclick="submitPasscode()">Submit</button> </div> </div> <div id="content" style="display: none;"> <h1>Welcome!</h1> <p>This is the protected content.</p> </div> <script> const correctPasscode = "123859"; // Change this as needed function submitPasscode() { const enteredPasscode = document.getElementById("passcode").value; if (enteredPasscode === correctPasscode) { document.getElementById("lockscreen").style.display = "none"; document.getElementById("content").style.display = "block"; } else { alert("Incorrect Passcode"); document.getElementById("passcode").value = ""; } } </script> <style> #lockscreen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); display: flex; align-items: center; justify-content: center; } #popup { background: white; padding: 20px; text-align: center; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); } #passcode { width: 80%; padding: 10px; font-size: 18px; margin: 10px 0; text-align: center; } button { padding: 10px 20px; font-size: 16px; cursor: pointer; } </style> 
