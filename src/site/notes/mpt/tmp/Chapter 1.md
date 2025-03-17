@@ -3,7 +3,96 @@
 ---
 
 
-<div id="lockscreen"> <div id="overlay"></div> <div id="popup"> <h2>Enter Passcode to Continue</h2> <input type="password" id="passcode" maxlength="6" /> <button onclick="submitPasscode()">Submit</button> </div> </div> <script> const correctPasscode = "123456"; // Change this as needed function lockPage() { document.body.classList.add("locked"); document.getElementById("lockscreen").style.display = "block"; } function unlockPage() { document.body.classList.remove("locked"); document.getElementById("lockscreen").style.display = "none"; } function submitPasscode() { const enteredPasscode = document.getElementById("passcode").value; if (enteredPasscode === correctPasscode) { unlockPage(); } else { alert("Incorrect Passcode"); document.getElementById("passcode").value = ""; } } document.addEventListener("DOMContentLoaded", lockPage); </script> <style> body.locked { overflow: hidden; } #lockscreen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: block; z-index: 9999; } #overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); } #popup { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; text-align: center; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); z-index: 10000; } #passcode { width: 80%; padding: 10px; font-size: 18px; margin: 10px 0; text-align: center; } button { padding: 10px 20px; font-size: 16px; cursor: pointer; } </style> 
+<div id="lockscreen">
+  <div id="overlay"></div>
+  <div id="popup">
+    <h2>Enter Passcode to Continue</h2>
+    <input type="password" id="passcode" maxlength="6" />
+    <button onclick="submitPasscode()">Submit</button>
+    <p id="error-msg"></p>
+  </div>
+</div>
+
+<script>
+  const correctPasscode = "123455"; // Change this as needed
+
+  document.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("locked");
+    document.getElementById("lockscreen").style.display = "flex";
+  });
+
+  function submitPasscode() {
+    const enteredPasscode = document.getElementById("passcode").value;
+    const errorMsg = document.getElementById("error-msg");
+
+    if (enteredPasscode === correctPasscode) {
+      document.body.classList.remove("locked");
+      document.getElementById("lockscreen").style.display = "none";
+    } else {
+      errorMsg.textContent = "Incorrect Passcode. Try Again.";
+      document.getElementById("passcode").value = "";
+    }
+  }
+</script>
+
+<style>
+  body.locked {
+    overflow: hidden;
+  }
+
+  #lockscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+
+  #overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 9998;
+  }
+
+  #popup {
+    position: relative;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 10000;
+  }
+
+  #passcode {
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  #error-msg {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+</style>
 
 [[home\|Home]] • [[mpt/YHMAH\|Book Info]]
 ***
