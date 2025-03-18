@@ -14,25 +14,7 @@
 </div>
 
 <script>
-  const correctPasscode = "123455"; // Change this as needed
-
-  document.addEventListener("DOMContentLoaded", () => {
-    document.body.classList.add("locked");
-    document.getElementById("lockscreen").style.display = "flex";
-  });
-
-  function submitPasscode() {
-    const enteredPasscode = document.getElementById("passcode").value;
-    const errorMsg = document.getElementById("error-msg");
-
-    if (enteredPasscode === correctPasscode) {
-      document.body.classList.remove("locked");
-      document.getElementById("lockscreen").style.display = "none";
-    } else {
-      errorMsg.textContent = "Incorrect Passcode. Try Again.";
-      document.getElementById("passcode").value = "";
-    }
-  }
+  function _0x3e9e(){const _0x280915=['getElementById','style','flex','body','classList','remove','none','error-msg','locked','passcode','value','DOMContentLoaded','display','addEventListener','textContent','lockscreen','Incorrect\x20Passcode.\x20Try\x20Again.'];_0x3e9e=function(){return _0x280915;};return _0x3e9e();}const _0x6dc6c5=_0xd53b,correctPasscode='225671';document[_0x6dc6c5(0x179)](_0x6dc6c5(0x177),()=>{const _0x59224d=_0x6dc6c5;document[_0x59224d(0x16f)][_0x59224d(0x170)]['add'](_0x59224d(0x174)),document[_0x59224d(0x16c)](_0x59224d(0x17b))['style'][_0x59224d(0x178)]=_0x59224d(0x16e);});function _0xd53b(_0x1d1373,_0x3e9e90){const _0xd53b1a=_0x3e9e();return _0xd53b=function(_0x377c80,_0x347b66){_0x377c80=_0x377c80-0x16c;let _0x514534=_0xd53b1a[_0x377c80];return _0x514534;},_0xd53b(_0x1d1373,_0x3e9e90);}function submitPasscode(){const _0x295999=_0x6dc6c5,_0x3d8645=document[_0x295999(0x16c)]('passcode')[_0x295999(0x176)],_0x4bfda0=document[_0x295999(0x16c)](_0x295999(0x173));_0x3d8645===correctPasscode?(document[_0x295999(0x16f)][_0x295999(0x170)][_0x295999(0x171)](_0x295999(0x174)),document['getElementById'](_0x295999(0x17b))[_0x295999(0x16d)][_0x295999(0x178)]=_0x295999(0x172)):(_0x4bfda0[_0x295999(0x17a)]=_0x295999(0x17c),document['getElementById'](_0x295999(0x175))[_0x295999(0x176)]='');}
 </script>
 
 <style>
@@ -121,7 +103,7 @@ Although, my mother hated my gender, saying I'd be weak and unfit for the job of
 This is Jino, one of my best friends. We've known each other long enough to act like siblings.
 ***
 
-I took a brief moment to chill... and yes, I *did* arrive. Jake stared at me going in through the back entrance with the professor taking his sweet time telling his love story.
+I took a brief moment to chill... and yes, I *did* arrive. While going through the back, Jino stared at me going in while the professor was taking his sweet time telling his love story.
 
 I sat down next to Jino, breathing like a dinosaur that ended the run in that browser game.
 
@@ -168,7 +150,7 @@ Jino turned to me and asked if I want to go home.
 
 I slurped that ramyeon. I feel a wee bit sorry, but hey, I feel refreshed.
 
-We both went home after eating. As I was walking down Flagell Street near our mansion, someone I don't know messaged me on the phone.
+We both went home after eating. As I was walking down Flagell Street near our quarters, someone I don't know messaged me on the phone.
 
 ***
 
