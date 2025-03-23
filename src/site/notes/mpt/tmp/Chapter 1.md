@@ -173,5 +173,4 @@ We're the best of friends since we have known each other since birth. Can you gu
 [[home\|Home]] • [[mpt/YHMAH\|Book Info]]
 ***
 Copyright © 2025 the sworn library
-All Rights Reserved.
-
+All Rights Reserved
