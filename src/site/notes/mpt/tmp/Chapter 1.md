@@ -88,7 +88,7 @@ Just like anyone else in this world, I was born by my father and mother.
 ![1tmp.jpg](/img/user/a%20storage/1tmp.jpg)
 ![2tmp.jpg](/img/user/a%20storage/2tmp.jpg)
 
-Although, my mother hated my gender, saying I'd be weak and unfit for the job of a spy.
+Although, my mother hated my gender. She's always saying I'd be weak and unfit for the job of a spy.
 
 ![3tmp.jpg](/img/user/a%20storage/3tmp.jpg)
 ![4tmp.jpg](/img/user/a%20storage/4tmp.jpg)
@@ -110,16 +110,18 @@ I sat down next to Jino, breathing like a dinosaur that ended the run in that br
 ![7tmp.jpg](/img/user/a%20storage/7tmp.jpg)
 ![8tmp.jpg](/img/user/a%20storage/8tmp.jpg)
 
-Jino just laughed the joke off, but I stared at him with the disappointed emoji. The professor then started taking attendance and *voila*, I learned *nothing* after the lecture was dismissed.
+Jino laughed the joke off, but I stared at him with disappointment. The professor then started taking attendance the moment I sat down and *voila*, I learned *nothing* after the lecture was dismissed.
 
 Oh well, psychology. Roccini in its finest.
 
 "Why take psychology?" you might ask.
-You're in for a ride now aren't 'ya?
 
-Not me—but I have no choice. Both in Roccini quarters where I live and here in college takes be back to taking psychology. They're engrained to me forever. Since dad has never quit on me, I try my best at it.
+Not me—but I have no choice. Both in Roccini quarters where I live and here in college takes me back to taking psychology. They're being engrained to me to be more of a spy.
 
-I'm great at *it* though, but I have a love-hate relationship with it.
+Since dad has never quit on me, I try my best.
+
+I'm great at being a psycho though, but it's simultaneously a love-hate relationship. *Psycho*, got it?
+(laugh, reader.)
 
 Worse, I have Calculus for *some* reason. I think I'm gonna fail this semester...
 
@@ -144,20 +146,31 @@ Noa's the youngest in our circle.
 ![15tmp.jpg](/img/user/a%20storage/15tmp.jpg)
 ![a storage/16tmp.jpg](/img/user/a%20storage/16tmp.jpg)
 
-Jino turned to me and asked if I want to go home.
+Jino turned to me and asked if I wanted to go home.
 
 ![17tmp.jpg](/img/user/a%20storage/17tmp.jpg)
 
-I slurped that ramyeon. I feel a wee bit sorry, but hey, I feel refreshed.
+I straight up ate that ramyeon with no hesitation. I feel a wee bit sorry, but... I feel refreshed.
 
-We both went home after eating. As I was walking down Flagell Street near our quarters, someone I don't know messaged me on the phone.
+Jino and I went home after.
+Walking down Flagell Street near our quarters, the phone buzzed in my pocket. Good thing I didn't forget my phone.
+
+![18tmp.jpg](/img/user/a%20storage/18tmp.jpg)
+
+"Maggiordoma" is a title given to a butler, but for us Roccini, they are the helpers of, well, Roccini. I am not sure why the title, but I am sure it's Italian. The actual history of the title may be far more complex than I imagine.
+
+Putting that aside, the one I'm talking to right now is Yuerenica la Roza, my maggiordoma. Basically, we are partners in crime, literally.
+
+We're the best of friends since we have known each other since birth. Can you guess who's older of the two of us?
+
+![19tmp.jpg](/img/user/a%20storage/19tmp.jpg)
+![20tmp.jpg](/img/user/a%20storage/20tmp.jpg)
 
 ***
 
 [[mpt/tmp/Elia's Journal Entry 1\|Elia's Journal Entry 1]]
 [[mpt/tmp/Chapter1-1\|Next]]
 [[home\|Home]] • [[mpt/YHMAH\|Book Info]]
-
 ***
 Copyright © 2025 the sworn library
 All Rights Reserved.
