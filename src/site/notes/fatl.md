@@ -11,6 +11,8 @@ N. BOX: Kaya nga ako ang naging tungo ng salita ng mga tao.
 N. BOX: Nabatid ang aking pangalan sa aking bayan.
 N. BOX: Dito ko rin nalaman na pakitang-tao lamang ang aking kababayan.
 
+***
+
 PAGE 2
 S. 223–227
 
@@ -54,6 +56,8 @@ panel 3, bottom
 MENANDRO (action)
 iniwasan ni menandro ung sword, napahiga sa sahig.
 
+***
+
 PAGE 4
 CONTEXT
 • Nakafocus kay Florante ang mga saknong 232–256
@@ -86,6 +90,8 @@ Nakayuko si FLORANTE sa isang tabi (corner).
 ref: 🙇
 Umiiyak, if colored, dark ung place and yellow-ish ung ilaw.
 
+***
+
 PAGE 5
 PANEL 1, top
 236 • IMPORTANTE
@@ -94,6 +100,8 @@ BOX • "Walang buhay kong pinulot ang sulat mo sa akin, ama, mula sa aking pagb
 237 • IMPORTANTE
 BOX • "Dalawang oras akong hindi nakamalay ng pagkatao sa inyong ginawa, ama."
 BOX • "Hindi mo na ako makakausap..."
+
+***
 
 PAGE 6
 p.578, Jacob
