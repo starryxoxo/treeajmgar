@@ -15,4 +15,9 @@ Click the [[dark blue text\|dark blue text]] to enter a link or a [[mpt/YHMAH\|b
 
 # Sworn Librarian's Choice
 
+| ![[Copy of The (eBook)_20250303_172645_0000.jpg\|160]] |     |     |
+| ------------------------------------------------------ | --- | --- |
+| [[mpt/YHMAH\|The Mafia's Princess]]                        |     |     |
+
+
 # New Reads
