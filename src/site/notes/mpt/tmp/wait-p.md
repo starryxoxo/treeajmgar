@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     
     function updateProgress() {
         if (elapsedTime >= delay) {
-            window.location.href = 'https://yhmah.vercel.app/tmp/prologue'; // Change to your desired URL
+            window.location.href = 'https://yhmah.vercel.app/mpt/tmp/prologue'; // Change to your desired URL
             return;
         }
         

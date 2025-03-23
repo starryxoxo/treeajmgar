@@ -171,6 +171,7 @@ We're the best of friends since we have known each other since birth. Can you gu
 [[mpt/tmp/Elia's Journal Entry 1\|Elia's Journal Entry 1]]
 [[mpt/tmp/Chapter1-1\|Next]]
 [[home\|Home]] • [[mpt/YHMAH\|Book Info]]
+
 ***
 Copyright © 2025 the sworn library
-All Rights Reserved
+All Rights Reserved.
