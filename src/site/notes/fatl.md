@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/fatl/"}
 ---
 
+Last Update 7:39 MAR252025
 
 FLORANTE AT LAURA SCRIPT
 
@@ -97,6 +98,9 @@ BOX • "Walang buhay kong pinulot ang sulat mo sa akin, ama, mula sa aking pagb
 BOX • "Dalawang oras akong hindi nakamalay ng pagkatao sa inyong ginawa, ama."
 BOX • "Hindi mo na ako makakausap..."
 
+Drawing
+Kinukuha ni FLORANTE ang sulat mula sa sahig ng kanyang kwarto, ang tanging ilaw lamang ay ang kandila.
+
 ***
 
 **PAGE 6**
@@ -147,5 +151,15 @@ BOX (magkadikit ^) • "sasabog na ang puso, hindi ko kayang mawala ka, ina."
 BOX (hiwalay) • "Hindi niya alam kung ano ang pakiramdam nang walang ina."
 (Akilah)
 
+PANEL 4
+244
+BOX • "Sa liham na pinadala ng aking ama ay nagsasabing umuwi ako sa bayan ng Albanya."
+(Akilah)
+
+Drawing:
+Nag-uusap si FLORANTE at ang kanyang MAESTRO, sa paligid ay puno ng mga box para sa kanyang mga gamit.
+
+FLORANTE 💬
+"Paalam, Maestro. Ako ay uuwi na muna sa bayan ng Albanya."
 
 

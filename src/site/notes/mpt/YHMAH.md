@@ -4,6 +4,8 @@
 
 [[home\|Home]] 
 
+***
+
 ![Copy of The (eBook)_20250303_172645_0000.jpg](/img/user/a%20storage/Copy%20of%20The%20(eBook)_20250303_172645_0000.jpg)
 ###### ENHYPEN AU
 # The Mafia's Princess
@@ -21,10 +23,6 @@ Elia, the daughter of the Roccini's family head, is set to spy on Solon, the roy
 ┌ The Mafia's Princess
 ├ [[mpt/tmp/wait-p\|Prologue]]
 └ Chapter 1...
-
-***
-
-[[home\|Home]]
 
 ***
 © 2025 the sworn library
