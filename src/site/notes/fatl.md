@@ -122,7 +122,7 @@ FLORANTE 💬
 239
 BOX
 "Sa panahong iyon ay namatay ang mundo ko... nag-iisa ay kinakalaban ko ang sarili kong buhay."
-(by Akilah)
+(Akilah)
 
 PANEL 2, middle
 241
@@ -131,7 +131,21 @@ Drawing: Heart ❤ na may nakabaon na kutsilyo 🔪
 Yung buong drawing nasa right, then ung box sa left.
 
 BOX • "Sa pag-alala ko kay ina ay nagkakaroon ako ng sensibilidad at iniisip kung bakit ito nangyayari ngayon"
-(by Akilah)
+(Akilah)
+
+***
+
+still **PAGE 6** (part 2)
+TBDB: Jacob
+
+PANEL 3, middle (right)
+Drawing: Nakahawak ang kamay ni FLORANTE sa kanyang dibdib na para bang malapit na siyang magcollapse
+
+BOX • "Sa bigat ng aking nararamdaman ay para ba akong..."
+BOX (magkadikit ^) • "sasabog na ang aking puso, hindi ko kayang mawala ka, ina."
+
+BOX (hiwalay) • "Hindi niya alam kung ano ang pakiramdam nang walang ina."
+(Akilah)
 
 
 
