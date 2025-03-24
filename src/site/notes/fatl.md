@@ -5,7 +5,7 @@
 
 FLORANTE AT LAURA SCRIPT
 
-PAGE 1
+**PAGE 1**
 S. 219–222
 N. BOX: Kaya nga ako ang naging tungo ng salita ng mga tao. 
 N. BOX: Nabatid ang aking pangalan sa aking bayan.
@@ -13,9 +13,8 @@ N. BOX: Dito ko rin nalaman na pakitang-tao lamang ang aking kababayan.
 
 ***
 
-PAGE 2
+**PAGE 2**
 S. 223–227
-
 
 PANEL 1
 N. BOX: Mula ang galing sa pagsasayawan ayon sa musika't awit.
@@ -28,14 +27,14 @@ Puno (tree), may nakasabit na sanggol, may isang taong nagdaan at nakita na umii
 PANEL 3
 Next Drawing: Kinuha niya ung sanggol.
 
-(man) Message/Dialogue Box/Circle 
-(💬): "Kaawa-awang sanggol! Bakit naman may sanggol na iniwan dito sa gubatan?!"
+MAN 💬
+"Kaawa-awang sanggol! Bakit naman may sanggol na iniwan dito sa gubatan?!"
 
 (additional context: itinuring nina Haring Polivio at Reyna Menope bilang isang tunay na anak ung sanggol)
 
 ***
 
-PAGE 3
+**PAGE 3**
 CONTEXT
 • Naglalaban si Menandro at Adolfo
 
@@ -58,12 +57,10 @@ iniwasan ni menandro ung sword, napahiga sa sahig.
 
 ***
 
-PAGE 4
+**PAGE 4**
+p.577 (book)
 CONTEXT
 • Nakafocus kay Florante ang mga saknong 232–256
-
-PAGE 4
-p. 577 (book)
 
 PANEL 1, top
 232:
@@ -85,14 +82,13 @@ You'll get to know why below and how:
 BOX:
 "Namatay ang aking ina..."
 
-Drawing Info
-Nakayuko si FLORANTE sa isang tabi (corner).
+Drawing: Nakayuko si FLORANTE sa isang tabi (corner).
 ref: 🙇
 Umiiyak, if colored, dark ung place and yellow-ish ung ilaw.
 
 ***
 
-PAGE 5
+**PAGE 5**
 PANEL 1, top
 236 • IMPORTANTE
 BOX • "Walang buhay kong pinulot ang sulat mo sa akin, ama, mula sa aking pagbasa."
@@ -103,8 +99,9 @@ BOX • "Hindi mo na ako makakausap..."
 
 ***
 
-PAGE 6
-p.578, Jacob
+**PAGE 6**
+p.578
+drawing by Jacob
 
 ⎈ CONTEXT
 Past ni FLORANTE (Trahedya)
@@ -125,7 +122,7 @@ FLORANTE 💬
 239
 BOX
 "Sa panahong iyon ay namatay ang mundo ko... nag-iisa ay kinakalaban ko ang sarili kong buhay."
-(Akilah)
+(by Akilah)
 
 PANEL 2, middle
 241
