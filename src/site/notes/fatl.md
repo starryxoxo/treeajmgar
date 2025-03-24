@@ -142,7 +142,7 @@ PANEL 3, middle (right)
 Drawing: Nakahawak ang kamay ni FLORANTE sa kanyang dibdib na para bang malapit na siyang magcollapse
 
 BOX • "Sa bigat ng aking nararamdaman ay para ba akong..."
-BOX (magkadikit ^) • "sasabog na ang aking puso, hindi ko kayang mawala ka, ina."
+BOX (magkadikit ^) • "sasabog na ang puso, hindi ko kayang mawala ka, ina."
 
 BOX (hiwalay) • "Hindi niya alam kung ano ang pakiramdam nang walang ina."
 (Akilah)
