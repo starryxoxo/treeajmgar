@@ -105,8 +105,8 @@ drawing by Jacob
 
 ⎈ CONTEXT
 Past ni FLORANTE (Trahedya)
- - Namatay ina ni FLORANTE
- - Nakatanggap si FLORANTE ng sulat na may lason (although, baka simile to)
+ • Namatay ina ni FLORANTE
+ • Nakatanggap si FLORANTE ng sulat na may lason (although, baka simile to)
 
 PANEL 1, top
 238
@@ -131,7 +131,7 @@ Drawing: Heart ❤ na may nakabaon na kutsilyo 🔪
 Yung buong drawing nasa right, then ung box sa left.
 
 BOX • "Sa pag-alala ko kay ina ay nagkakaroon ako ng sensibilidad at iniisip kung bakit ito nangyayari ngayon"
-(Akilah)
+(by Akilah)
 
 
 
