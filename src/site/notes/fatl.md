@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/fatl/"}
 ---
 
-Last Update 6:31 MAR262025
+Last Update 7:43 MAR262025
 
 FLORANTE AT LAURA SCRIPT
 
@@ -205,5 +205,24 @@ PANEL 1, top
 BOX 
 "At ito na ang kahuli-huling payo ng maestro sa akin, ang lumaban sa mundong mandadaraya."
 (Akilah)
+
+PANEL 2, middle
+251–253
+Drawing:
+Ginabayan ni MAESTRO si Florante sa loob ng kalesa.
+(Akilah)
+
+FLORANTE 💬 
+"Maraming salamat, Maestro."
+(Akilah)
+
+PANEL 3, bottom
+254
+BOX
+"Di nagtagal ay nakatapak na ako sa dalampasigan ng Albanya."
+(Akilah)
+
+Drawing:
+Beach, nakatayo malapit sa dagat si Florante.
 
 
