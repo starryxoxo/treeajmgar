@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/fatl/"}
 ---
 
-Last Update 7:39 MAR252025
+Last Update 6:31 MAR262025
 
 FLORANTE AT LAURA SCRIPT
 
@@ -161,5 +161,49 @@ Nag-uusap si FLORANTE at ang kanyang MAESTRO, sa paligid ay puno ng mga box para
 
 FLORANTE 💬
 "Paalam, Maestro. Ako ay uuwi na muna sa bayan ng Albanya."
+
+***
+
+**PAGE 7**
+Jacob
+
+PANEL 1, top
+245
+MAESTRO ni Florante 💬
+"Mag-ingat ka, Florante. Alam kong may masamang binabalak sa iyo si Konde Adolfo."
+(Akilah)
+
+Drawing:
+Nag-uusap pa rin ang maestro nya at sya.
+
+PANEL 2, middle
+246
+MAESTRO ni Florante 💬
+"Pagkarating mo sa Albanya ay mag-ingat ka, mas lalo na't kapag sila'y nasisiyahan sa iyong pagbalik."
+"Paraan niya ito para makuha ang iyong loob at handaang papatayin ka."
+(Akilah)
+
+Drawing:
+Usapan pa rin ni Florante at ng Maestro.
+
+PANEL 3, bottom
+247
+MAESTRO 💬
+"Kaunting tiis na lamang, Florante."
+(Akilah)
+
+Drawing:
+Magkayakap silang dalawa, handang umalis si Florante para pumuntang Albanya.
+
+***
+
+**PAGE 8**
+Jacob
+
+PANEL 1, top
+249–250
+BOX 
+"At ito na ang kahuli-huling payo ng maestro sa akin, ang lumaban sa mundong mandadaraya."
+(Akilah)
 
 
