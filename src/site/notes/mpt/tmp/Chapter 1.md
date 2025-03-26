@@ -76,6 +76,8 @@
   }
 </style>
 
+***
+
 [[home\|Home]] • [[mpt/YHMAH\|Book Info]]
 ***
 ![The_20250302_183759_0001.jpg](/img/user/a%20storage/The_20250302_183759_0001.jpg)
@@ -110,7 +112,7 @@ I sat down next to Jino, breathing like a dinosaur that ended the run in that br
 ![7tmp.jpg](/img/user/a%20storage/7tmp.jpg)
 ![8tmp.jpg](/img/user/a%20storage/8tmp.jpg)
 
-Jino laughed the joke off, but I stared at him with disappointment. The professor then started taking attendance the moment I sat down and *voila*, I learned *nothing* after the lecture was dismissed.
+Jino laughed the joke off, and I looked at him in the eyes with disappointment. The professor then started taking attendance the moment I sat down and *voila*, I learned *nothing* after the lecture was dismissed.
 
 Oh well, psychology. Roccini in its finest.
 

@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/fatl/"}
 ---
 
-Last Update 7:43 MAR262025
+Last Update 11:33 MAR262025
 
 FLORANTE AT LAURA SCRIPT
 
@@ -225,4 +225,33 @@ BOX
 Drawing:
 Beach, nakatayo malapit sa dagat si Florante.
 
+***
+
+PAGE 9 (last page)
+by: Dani
+Written by: Akilah (rewritten)
+
+PANEL 1, top
+255–256
+AMA ni Florante 💬
+"O, anak!"
+
+FLORANTE 💬 
+"Ama!"
+
+Drawing:
+Patakbo si Florante papunta sa kanyang ama habang sinasabi ang nakadayalogo (^)
+
+Setting: Dalampasigan (Beach)
+
+PANEL 2, bottom
+257-262
+BOX
+"Nakarating na kami sa palasyo at sinabi na sa hari ang aking sadya."
+
+BOX
+"At doon nakilala ang maestro kong si Aladin na ngayo'y kinatatakutan ng daigdig."
+
+Drawing:
+Nakangiti si Flerida sa right.
 
