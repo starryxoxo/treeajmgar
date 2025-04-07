@@ -10,8 +10,11 @@ The library where vast imaginations and ideas come true.
 Click the [[dark blue text\|dark blue text]] to enter a link or a [[mpt/YHMAH\|book]].
 
 # Top Reads
-![The_20250302_183759_0000.jpg](/img/user/a%20storage/The_20250302_183759_0000.jpg)
->  ➔ [[mpt/YHMAH\|The Mafia's Princess]] • Long Read • Novel
+![tmpbanner.jpg](/img/user/a%20storage/tmpbanner.jpg)
+>  ➔ [[mpt/YHMAH\|The Mafia's Princess]] 
+
+![sitnbanner.jpg](/img/user/a%20storage/sitnbanner.jpg)
+> ➔ [[sitn/sitn\|Strangers by Midnight]]
 
 [[dev/dev start\|Go DEV]]
 

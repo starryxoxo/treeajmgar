@@ -80,7 +80,7 @@
 
 [[home\|Home]] • [[mpt/YHMAH\|Book Info]]
 ***
-![The_20250302_183759_0001.jpg](/img/user/a%20storage/The_20250302_183759_0001.jpg)
+![tmpc1banner.jpg](/img/user/a%20storage/tmpc1banner.jpg)
 ***
 # Chapter 1 — Petals by the Flower
 
@@ -105,18 +105,18 @@ Although, my mother hated my gender. She's always saying I'd be weak and unfit f
 This is Jino, one of my best friends. We've known each other long enough to act like siblings.
 ***
 
-I took a brief moment to chill... and yes, I *did* arrive. While going through the back, Jino stared at me going in while the professor was taking his sweet time telling his love story.
+I took a brief moment to chill... and yes, I *did* arrive. While going through the back, Jino watched me while the professor was taking his sweet time telling his love story.
 
 I sat down next to Jino, breathing like a dinosaur that ended the run in that browser game.
 
 ![7tmp.jpg](/img/user/a%20storage/7tmp.jpg)
 ![8tmp.jpg](/img/user/a%20storage/8tmp.jpg)
 
-Jino laughed the joke off, and I looked at him in the eyes with disappointment. The professor then started taking attendance the moment I sat down and *voila*, I learned *nothing* after the lecture was dismissed.
+Jino laughed the joke off, but I looked at him in the eyes with disappointment. *Was it even a joke?*  The professor then started taking attendance the moment I sat down and *voila*, I learned *nothing* after the lecture was dismissed.
 
 Oh well, psychology. Roccini in its finest.
 
-"Why take psychology?" you might ask.
+From here on, you should be able to tell why I take psychology. 
 
 Not me—but I have no choice. Both in Roccini quarters where I live and here in college takes me back to taking psychology. They're being engrained to me to be more of a spy.
 
