@@ -27,5 +27,5 @@ Elia, the daughter of the Roccini's family head, is set to spy on Solon, the roy
 ***
 © 2025 the sworn library
 All Rights Reserved.
-The Mafia's Princess is part of the [[Sworn ORIGINALS\|Sworn ORIGINALS]] series.
+The Mafia's Princess is part of the [[dev/Sworn ORIGINALS\|Sworn ORIGINALS]] series.
 Character names derived from ENHYPEN's DARK MOON: THE BLOOD ALTAR available to read in Webtoon.

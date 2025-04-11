@@ -9,14 +9,13 @@ The library where vast imaginations and ideas come true.
 > New to sworn library?
 Click the [[dark blue text\|dark blue text]] to enter a link or a [[mpt/YHMAH\|book]].
 
-# Top Reads
-![tmpbanner.jpg](/img/user/a%20storage/tmpbanner.jpg)
->  ➔ [[mpt/YHMAH\|The Mafia's Princess]] 
 
+# Top Reads
 ![sitnbanner.jpg](/img/user/a%20storage/sitnbanner.jpg)
 > ➔ [[sitn/sitn\|Strangers by Midnight]]
-
-[[dev/dev start\|Go DEV]]
+# Soon
+![tmpbanner.jpg](/img/user/a%20storage/tmpbanner.jpg)
+>  ➔ [[mpt/YHMAH\|The Mafia's Princess]] 
 
 ***
 In this tiny place we own, we hope you'll find your solace and your home in the stories that we'll make and tell with love and passion.
