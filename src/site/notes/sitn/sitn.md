@@ -10,6 +10,8 @@
 ![sitncover.jpg](/img/user/a%20storage/sitncover.jpg)
 ###### ENHYPEN ONESHOT AU
 # Strangers by Midnight
+#mixed #enhypen #oneshot
+
 
 **Description**
 "If love isn't forever, why waste your time on it?"
@@ -18,7 +20,7 @@ That's what they always say. But with you, there's certainly more than love that
 **Author**: the sworn library
 **Languages**: Tagalog, English
 **Genre**: Romance
-**Status**: Not Yet Available
+**Status**: Mark your calendars.
 **Date**:
 
 **Before Reading**
