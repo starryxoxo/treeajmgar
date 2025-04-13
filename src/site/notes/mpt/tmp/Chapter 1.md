@@ -78,7 +78,7 @@
 
 ***
 
-[[home\|Home]] • [[mpt/YHMAH\|Book Info]]
+[[Home\|Home]] • [[mpt/YHMAH\|Book Info]]
 ***
 ![tmpc1banner.jpg](/img/user/a%20storage/tmpc1banner.jpg)
 ***
@@ -172,7 +172,7 @@ We're the best of friends since we have known each other since birth. Can you gu
 
 [[mpt/tmp/Elia's Journal Entry 1\|Elia's Journal Entry 1]]
 [[mpt/tmp/Chapter1-1\|Next]]
-[[home\|Home]] • [[mpt/YHMAH\|Book Info]]
+[[Home\|Home]] • [[mpt/YHMAH\|Book Info]]
 
 ***
 Copyright © 2025 the sworn library

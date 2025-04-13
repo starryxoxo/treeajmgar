@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/mpt/yhmah/"}
 ---
 
-[[home\|Home]] 
+[[Home\|Home]] 
 
 ***
 
