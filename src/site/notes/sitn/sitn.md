@@ -10,7 +10,7 @@
 ![sitncover.jpg](/img/user/a%20storage/sitncover.jpg)
 ###### ENHYPEN ONESHOT AU
 # Strangers by Midnight
-#mixed #enhypen #oneshot
+#enhypen #oneshot
 
 
 **Description**
