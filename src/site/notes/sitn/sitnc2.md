@@ -86,11 +86,11 @@ I closed my eyes for a few seconds. I could hear him preparing for something.
 
 *"Okay, open your eyes."* said Jay.
 
-The moment I opened my eyes, Jay was kneeling on his knee and was holding a box with his hands.
+The moment I opened my eyes, Jay was kneeling on his knee, holding a box with his hands.
 
 *"Will you be my girlfriend, Althea?"* asked Jay as he opened the box, embarrassed, but with a tinge of confidence.
 
-*"It's already this late, but I won't mind being with your for longer."* I looked at Jay.
+*"It's already this late, but I won't mind being with you for longer."* I looked at Jay.
 *"Of course, I want to be your one and only, Jay."*  I answered.
 
 He was excited but couldn't let out a scream as we were at school. Jay held my hand and let the ring go by my finger.
