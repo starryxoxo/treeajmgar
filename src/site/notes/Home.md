@@ -8,7 +8,7 @@ Welcome to the sworn library!
 > New to sworn library?
 Click the [[light blue text\|light blue text]] to enter a link or a [[mpt/YHMAH\|book]].
 
-# Top Reads
+# Later
 ![sitnbanner.jpg](/img/user/a%20storage/sitnbanner.jpg)
 > ➔ [[sitn/sitn\|Strangers by Midnight]]
 
@@ -16,5 +16,6 @@ Click the [[light blue text\|light blue text]] to enter a link or a [[mpt/YHMAH\
 ![tmpbanner.jpg](/img/user/a%20storage/tmpbanner.jpg)
 >  ➔ [[mpt/YHMAH\|The Mafia's Princess]] 
 
+---
 Copyright © 2025 the sworn library
 All Rights Reserved.
