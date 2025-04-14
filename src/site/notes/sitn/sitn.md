@@ -20,8 +20,8 @@ That's what they always say. But with you, there's certainly more than love that
 **Author**: the sworn library
 **Languages**: Tagalog, English
 **Genre**: Romance
-**Status**: Not Yet Available
-**Date**:
+**Status**: Completed
+**Date**: April 14, 2025
 
 **Before Reading**
 [[dev/slowload\|Read Notice: Slowload]]
