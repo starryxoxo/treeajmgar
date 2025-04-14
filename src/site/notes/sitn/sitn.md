@@ -26,15 +26,11 @@ That's what they always say. But with you, there's certainly more than love that
 **Before Reading**
 [[dev/slowload\|Read Notice: Slowload]]
 This book is rated PG.
-Contains 12+ content:
-Blood and suggestive content.
-
-Jay[^1]
+Contains 13+ content:
+Blood and detailed content.
 
 2 pages • [[sitn/sitnc\|Read]]
 
 ***
 Copyright © 2025 the sworn library
 All Rights Reserved.
-
-[^1] -  Jay is color yellow.
