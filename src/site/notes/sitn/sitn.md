@@ -37,4 +37,4 @@ Jay[^1]
 Copyright © 2025 the sworn library
 All Rights Reserved.
 
-[^1] Jay is color yellow.
+[^1] -  Jay is color yellow.
