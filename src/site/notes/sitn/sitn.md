@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/sitn/sitn/"}
+{"dg-publish":true,"permalink":"/sitn/sitn/","title":"Strangers by Midnight"}
 ---
 
 
