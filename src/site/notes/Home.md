@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/home/","title":"the sworn library","tags":["gardenEntry"]}
 ---
 
 # the sworn library
@@ -8,7 +8,7 @@ Welcome to the sworn library!
 > New to sworn library?
 Click the [[light blue text\|light blue text]] to enter a link or a [[mpt/YHMAH\|book]].
 
-# New Publish
+# Published Books
 ![sitnbanner.jpg](/img/user/a%20storage/sitnbanner.jpg)
 > ➔ [[sitn/sitn\|Strangers by Midnight]] • Oneshot • Romance
 # Soon

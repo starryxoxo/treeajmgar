@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/sitn/sitnc/","title":"Strangers by Midnight Page 1"}
+{"dg-publish":true,"permalink":"/sitn/sitnc/","title":"Strangers by Midnight"}
 ---
 
 [[Home\|Home]] • [[sitn/sitn\|Book Info]]
