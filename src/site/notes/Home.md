@@ -18,3 +18,4 @@ Click the [[light blue text\|light blue text]] to enter a link or a [[mpt/YHMAH\
 ---
 Copyright © 2025 the sworn library
 All Rights Reserved.
+Bookmark this website and visit it every once in a while. Accompany us while we grow our collection! <3
