@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/mpt/yhmah/"}
+{"dg-publish":true,"permalink":"/mpt/yhmah/","title":"The Mafia's Princess"}
 ---
 
 [[Home\|Home]] 

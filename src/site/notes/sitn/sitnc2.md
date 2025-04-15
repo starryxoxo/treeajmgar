@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/sitn/sitnc2/"}
+{"dg-publish":true,"permalink":"/sitn/sitnc2/","title":"Strangers by Midnight Page 2"}
 ---
 
 [[Home\|Home]] • [[sitn/sitn\|Book Info]] • [[sitn/sitnc\|Back]]
@@ -180,7 +180,7 @@ Malungkot na tumingin sa'kin si mama.
 ###### The End
 Jay never woke up the next day. I suppose he is resting now.
 
-Looking at his deathbed surrounded by flowers, thinking of what we could have been together, I came to see Ethan looking at me weirdly, as if satisfied of something. That, I didn't bother, until...
+Looking at his deathbed surrounded by flowers, thinking of what we could have been together, I came to see Ethan looking at me weirdly, as if satisfied of something. That, I didn't bother with, until...
 
 ---
 
@@ -191,6 +191,11 @@ Hi reader! Thank you so much for reading this oneshot I made. It really means al
 **Again, thank you for reading Strangers by Midnight.** I hope you liked it!
 
 *the sworn library*.
+
+***
+
+[[sitn/sitnc\|Back]]
+[[Home\|Home]] • [[sitn/sitn\|Book Info]]
 
 ***
 

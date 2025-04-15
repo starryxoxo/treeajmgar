@@ -1,6 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/sitn/sitnc/"}
+{"dg-publish":true,"permalink":"/sitn/sitnc/","title":"Strangers by Midnight Page 1"}
 ---
+
+[[Home\|Home]] • [[sitn/sitn\|Book Info]]
+
+***
 
 **Note**
 This book is a work of fiction. Most of the names, characters, ages, events and places are either author's imagination or fictious manner.
@@ -9,8 +13,6 @@ Any resemblances to actual persons, living or dead, or actual events are purely 
 
 **The idol's persona displayed in this story does not portray their true personality and/or characteristics in real-life.**
 
-***
-[[Home\|Home]] • [[sitn/sitn\|Book Info]]
 ***
 
 ![sitnbanner.jpg](/img/user/a%20storage/sitnbanner.jpg)
@@ -113,7 +115,7 @@ Matatapos na ang recess at pumasok si Sunoo sa room. Sunoo looked rushed and the
 ![sitn36.jpg](/img/user/a%20storage/sitn36.jpg)
 
 [[sitn/sitnc2\|Continue]]
-[[Home\|Home]]
+[[Home\|Home]] • [[sitn/sitn\|Book Info]]
 
 ***
 Copyright © 2025 the sworn library
