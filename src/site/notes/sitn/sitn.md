@@ -28,7 +28,7 @@ This book is rated PG.
 Contains 13+ content:
 Blood and detailed content.
 
-2 pages • [[sitnc|Read
+2 pages • [[sitn/sitnc\|Read]]
 ***
 Copyright © 2025 the sworn library
 All Rights Reserved.
