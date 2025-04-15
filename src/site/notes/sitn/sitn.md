@@ -13,6 +13,7 @@
 #enhypen #oneshot
 
 
+]]
 **Description**
 "If love isn't forever, why waste your time on it?"
 That's what they always say. But with you, there's certainly more than love that I feel. Just as I began to realize my feelings deeper for you, nahanap ako ng tadhana. Why now...
@@ -29,8 +30,7 @@ This book is rated PG.
 Contains 13+ content:
 Blood and detailed content.
 
-2 pages • [[sitn/sitnc\|Read]]
-
+2 pages • [[sitnc|Read
 ***
 Copyright © 2025 the sworn library
 All Rights Reserved.
