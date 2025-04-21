@@ -5,10 +5,11 @@
 [[Home\|Home]] 
 
 ***
-
-![tmpcover.jpg](/img/user/a%20storage/tmpcover.jpg)
+ 
+![tmpcover.webp](/img/user/b%20storage/a%20storage/tmpcover.webp)
 ###### ENHYPEN AU
 # The Mafia's Princess
+#enhypen #mafia #romance 
 
 **Description**
 Set in Lichtenstein, year 2025, the royal family, Monteguirre, are disguised as ordinary people after being overthrown by the government now in power.
@@ -16,9 +17,13 @@ Elia, the daughter of the Roccini's family head, is set to spy on Solon, the roy
 
 **Author**: the sworn library
 **Language**: English
-**Genres**: Romance, Fantasy
 **Status**: Not Yet Available
 **Date**: 
+
+**Before Reading**
+This book is rated **PG**.
+Contains **12+** content:
+Mild violence
 ##### Chapters
 ┌ The Mafia's Princess
 ├ [[mpt/tmp/wait-p\|Prologue]]

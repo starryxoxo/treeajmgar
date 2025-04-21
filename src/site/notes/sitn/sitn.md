@@ -7,10 +7,10 @@
 
 ***
 
-![sitncover.jpg](/img/user/a%20storage/sitncover.jpg)
+![sitncover.webp](/img/user/sitn/sitncover.webp)
 ###### ENHYPEN ONESHOT AU
 # Strangers by Midnight
-#enhypen #oneshot
+#enhypen #oneshot #lightau #romance
 
 **Description**
 "If love isn't forever, why waste your time on it?"
@@ -18,17 +18,23 @@ That's what they always say. But with you, there's certainly more than love that
 
 **Author**: the sworn library
 **Languages**: Tagalog, English
-**Genre**: Romance
 **Status**: Completed
 **Date**: April 14, 2025
 
 **Before Reading**
 [[dev/slowload\|Read Notice: Slowload]]
-This book is rated PG.
-Contains 13+ content:
+This book is rated **PG**.
+Contains **13+** content:
 Blood and detailed content.
 
 2 pages • [[sitn/sitnc\|Read]]
+
+###### Other Stories
+
+| ![[yeocover.webp\|160]] | [[yeo/yeo\|Your Eyes Only]] <br> <br>#enhypen #romance |
+| ----------------------- | -------------------------------------------------- |
+
+
 ***
 Copyright © 2025 the sworn library
 All Rights Reserved.

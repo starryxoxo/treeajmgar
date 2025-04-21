@@ -9,10 +9,13 @@ Welcome to the sworn library!
 Click the [[light blue text\|light blue text]] to enter a link or a [[mpt/YHMAH\|book]].
 
 # Published Books
-![sitnbanner.jpg](/img/user/a%20storage/sitnbanner.jpg)
+![sitnbanner.webp](/img/user/sitn/sitnbanner.webp)
 > ➔ [[sitn/sitn\|Strangers by Midnight]] • Romance • Light AU
 # Soon
-![tmpbanner.jpg](/img/user/a%20storage/tmpbanner.jpg)
+![yeobanner.webp](/img/user/yeo/yeostorage/yeobanner.webp)
+> ➔ [[yeo/yeo\|Your Eyes Only]] • Romance • Series
+
+![tmpbanner.webp](/img/user/b%20storage/a%20storage/tmpbanner.webp)
 >  ➔ [[mpt/YHMAH\|The Mafia's Princess]] 
 
 ---
