@@ -6,10 +6,8 @@
 [[Home\|Home]]
 
 ***
+![bookimg\|360](/img/user/sitn/sitncover.webp)
 
-
-| ![bookimg\|330](/img/user/sitn/sitncover.webp) |
-| :-----------------------------: |
 ###### ENHYPEN ONESHOT AU
 # Strangers by Midnight
 #enhypen #oneshot #lightau #romance

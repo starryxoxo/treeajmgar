@@ -6,8 +6,7 @@
 
 ***
 
-| ![bookimg\|330](/img/user/yeo/yeostorage/yeocover.webp) |
-| :----------------------------: |
+![bookimg\|360](/img/user/yeo/yeostorage/yeocover.webp)
 
 ***
 ###### ENHYPEN AU
