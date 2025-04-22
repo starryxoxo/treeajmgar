@@ -29,10 +29,12 @@ Blood and detailed content.
 
 2 pages • [[sitn/sitnc\|Read]]
 
+***
+
 ###### Other Stories
 
-| ![yeocover.webp](/img/user/yeo/yeostorage/yeocover.webp) | [[yeo/yeo\|Your Eyes Only]] <br> <br>#enhypen #romance |
-| ------------------ | -------------------------------------------------- |
+| ![[yeocover.webp\|160]] | [[yeo/yeo\|Your Eyes Only]] <br> <br>#enhypen #romance |
+| ----------------------- | -------------------------------------------------- |
 
 
 ***
