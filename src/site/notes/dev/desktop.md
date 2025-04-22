@@ -6,10 +6,12 @@
 
 ***
 
-# Notice: Optimization for Desktop Devices
+# Notice: Using Desktop Devices
 
-The sworn library is currently undergoing updates. Desktop devices are expected to be affected by the updates due to issues that affects image rendering. Images in desktop may not be displayed correctly.
+The sworn library is currently undergoing updates and is **under development**. At this phase, expect the website to be cluttered, as we are continuously experimenting different features to deliver you the best experience.
 
-We'll be continuously updating this site. This notice will stay published until the issues are fixed.
+For now, desktop devices are the most affected with image rendering issues.
+
+This notice will stay published until the issues are fixed.
 
 Thank you.
