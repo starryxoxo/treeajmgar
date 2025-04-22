@@ -33,7 +33,7 @@ Blood and detailed content.
 
 ###### Other Stories
 
-| ![bookimg\|160](/img/user/yeo/yeostorage/yeocover.webp) | [[yeo/yeo\|Your Eyes Only]] <br> <br> #romance #enhypen |
+| ![bookimg\|185](/img/user/yeo/yeostorage/yeocover.webp) | [[yeo/yeo\|Your Eyes Only]] <br> <br> #romance #enhypen |
 | :----------------------------: | :-------------------------------------------------: |
 
 ***

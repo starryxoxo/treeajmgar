@@ -31,7 +31,7 @@ This book is rated **PG**.
 
 ###### Other Stories
 
-| ![coverimg\|160](/img/user/sitn/sitncover.webp) | [[sitn/sitn\|Strangers by Midnight]]<br> <br>#enhypen <br>#romance #oneshot |
+| ![coverimg\|185](/img/user/sitn/sitncover.webp) | [[sitn/sitn\|Strangers by Midnight]]<br> <br>#enhypen <br>#romance #oneshot |
 | :------------------------------: | :--------------------------------------------------------------------: |
 
 ***
