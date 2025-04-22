@@ -8,9 +8,16 @@ Welcome to the sworn library!
 > New to sworn library?
 Click the [[light blue text\|light blue text]] to enter a link or a [[mpt/YHMAH\|book]].
 
+
+***
+
 # Published Books
 ![sitnbanner.webp](/img/user/sitn/sitnbanner.webp)
 > ➔ [[sitn/sitn\|Strangers by Midnight]] • Romance • Light AU
+
+
+***
+
 # Soon
 ![yeobanner.webp](/img/user/yeo/yeostorage/yeobanner.webp)
 > ➔ [[yeo/yeo\|Your Eyes Only]] • Romance • Series
