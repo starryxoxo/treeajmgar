@@ -6,7 +6,8 @@
 
 ***
 
-![yeocover.webp](/img/user/yeo/yeostorage/yeocover.webp)
+| ![bookimg\|330](/img/user/yeo/yeostorage/yeocover.webp) |
+| :----------------------------: |
 
 ***
 ###### ENHYPEN AU
@@ -31,11 +32,8 @@ This book is rated **PG**.
 
 ###### Other Stories
 
-![[sitncover.webp\|160]] 
-[[sitn/sitn\|Strangers by Midnight]]
-
-| ![[sitncover.webp\|160]] | [[sitn/sitn\|Strangers by Midnight]] <br> <br> #enhypen #oneshot #romance |
-| :----------------------: | -------------------------------------------------------------------- |
+| ![coverimg\|160](/img/user/sitn/sitncover.webp) | [[sitn/sitn\|Strangers by Midnight]]<br> <br>#enhypen <br>#romance #oneshot |
+| :------------------------------: | :--------------------------------------------------------------------: |
 
 ***
 

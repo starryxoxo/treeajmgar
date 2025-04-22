@@ -7,7 +7,9 @@
 
 ***
 
-![sitncover.webp](/img/user/sitn/sitncover.webp)
+
+| ![bookimg\|330](/img/user/sitn/sitncover.webp) |
+| :-----------------------------: |
 ###### ENHYPEN ONESHOT AU
 # Strangers by Midnight
 #enhypen #oneshot #lightau #romance
@@ -33,11 +35,8 @@ Blood and detailed content.
 
 ###### Other Stories
 
-![[yeocover.webp\|160]] 
-[[yeo/yeo\|Your Eyes Only]]
-
-| ![[yeocover.webp\|160]] | [[yeo/yeo\|Your Eyes Only]] <br> <br> #romance #enhypen |
-| :---------------------: | --------------------------------------------------- |
+| ![bookimg\|160](/img/user/yeo/yeostorage/yeocover.webp) | [[yeo/yeo\|Your Eyes Only]] <br> <br> #romance #enhypen |
+| :----------------------------: | --------------------------------------------------- |
 
 ***
 Copyright © 2025 the sworn library
