@@ -8,6 +8,8 @@ Welcome to the sworn library!
 > New to sworn library?
 Click the [[light blue text\|light blue text]] to enter a link or a [[mpt/YHMAH\|book]].
 
+> [!Warning]- Notice
+>  This website is currently not optimized for desktop devices. Use a mobile device to ensure complete functionality. [[dev/desktop\|Learn more]]
 
 ***
 
