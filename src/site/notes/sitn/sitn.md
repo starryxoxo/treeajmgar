@@ -33,9 +33,9 @@ Blood and detailed content.
 
 ###### Other Stories
 
-| ![[yeocover.webp\|160]] | [[yeo/yeo\|Your Eyes Only]] <br> <br>#enhypen #romance |
-| ----------------------- | -------------------------------------------------- |
-
+| ![[yeocover.webp\|160]] |
+| :---------------------: |
+| [[yeo/yeo\|Your Eyes Only]] |
 
 ***
 Copyright © 2025 the sworn library
