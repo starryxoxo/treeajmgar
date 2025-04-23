@@ -17,9 +17,10 @@ This website is under active development. Bugs may occur.
 ![sitnbanner.webp](/img/user/sitn/sitnbanner.webp)
 > ➔ [[sitn/sitn\|Strangers by Midnight]] • Romance • Light AU
 
-| [[yeo/yeo\|Your Eyes Only]]         | [[sitn/sitn\|Strangers by Midnight]]  |
-| ------------------------------- | -------------------------------- |
-| ![coverimg\|160](/img/user/yeo/yeostorage/yeocover.webp) | ![coverimg\|160](/img/user/sitn/sitncover.webp) |
+| Discover                                |                                  |
+| --------------------------------------- | -------------------------------- |
+| ![coverimg\|160](/img/user/yeo/yeostorage/yeocover.webp)         | ![coverimg\|160](/img/user/sitn/sitncover.webp) |
+| [[yeo/yeo\|Your Eyes Only]] • Arriving soon | [[sitn/sitn\|Strangers by Midnight]]  |
 
 # Soon
 
