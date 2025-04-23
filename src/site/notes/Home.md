@@ -21,19 +21,14 @@ This website is under development.
 ***
 
 <style>
-.markdown-preview-view table {
-  display: block;
-  overflow-x: auto;
-  max-width: 200%;
+.markdown-source-view, .markdown-preview-view {
+max-width: 900px;
+margin: auto;
 }
-
-.markdown-preview-view th,
-.markdown-preview-view td {
-  white-space: nowrap;
 }
 </style>
 
-<div class="markdown-preview-view table">
+<div class="markdown-preview-view">
 
 | [[yeo/yeo\|Your Eyes Only]]         | [[sitn/sitn\|Strangers by Midnight]]  |
 | ------------------------------- | -------------------------------- |
