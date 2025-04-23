@@ -11,3 +11,14 @@ body {
     //   color: black;
     //  }
 }
+
+.markdown-preview-view table { 
+display: block; width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; border-collapse: collapse; 
+white-space: nowrap; 
+} 
+
+.markdown-preview-view th, 
+.markdown-preview-view td { 
+padding: 0.5em; 
+min-width: 150px; 
+} 
