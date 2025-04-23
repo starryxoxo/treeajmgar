@@ -21,7 +21,7 @@ This website is currently not optimized for desktop devices. Use a mobile device
 ***
 
 | ![coverimg\|185](/img/user/yeo/yeostorage/yeocover.webp) <br> [[yeo/yeo\|Your Eyes Only]] • Arriving soon | ![coverimg\|185](/img/user/sitn/sitncover.webp) <br> [[sitn/sitn\|Strangers by Midnight]] |
-| ---------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| :--------------------------------------------------------------------------: | :-------------------------------------------------------------------: |
 
 
 ![tmpbanner.webp](/img/user/b%20storage/a%20storage/tmpbanner.webp)
