@@ -24,7 +24,7 @@ This website is under development.
 .markdown-preview-view table {
   display: block;
   overflow-x: auto;
-  max-width: 100%;
+  max-width: 200%;
 }
 
 .markdown-preview-view th,
