@@ -9,7 +9,7 @@ Welcome to the sworn library!
 Click the [[light blue text\|light blue text]] to enter a link or a [[mpt/YHMAH\|book]].
 
 <span style="color:#FFA500">Notice</span>
-This website is currently not optimized for desktop devices. Use a mobile device to ensure complete functionality. [[dev/desktop\|Learn more]]
+This website is under development.
 
 ***
 
@@ -20,9 +20,9 @@ This website is currently not optimized for desktop devices. Use a mobile device
 
 ***
 
-| ![coverimg\|165](/img/user/yeo/yeostorage/yeocover.webp) <br> | ![coverimg\|165](/img/user/sitn/sitncover.webp) <br> |
-| :----------------------------------: | :-----------------------------------: |
-|       [[yeo/yeo\|Your Eyes Only]]        |    [[sitn/sitn\|Strangers by Midnight]]    |
+| ![coverimg\|160](/img/user/yeo/yeostorage/yeocover.webp)<br> | ![coverimg\|160](/img/user/sitn/sitncover.webp)<br> |
+| :---------------------------------- | :----------------------------------- |
+| [[yeo/yeo\|Your Eyes Only]]             | [[sitn/sitn\|Strangers by Midnight]]      |
 
 # Soon
 
