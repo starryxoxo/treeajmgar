@@ -24,6 +24,7 @@ This website is currently not optimized for desktop devices. Use a mobile device
 | :----------------------------------------------------------: | :-------------------------------------------------------------------: | :------------------------------------------------------------------: |
 |                                                              |                                                                       |                                                                      |
 
+# Soon
 
 ![tmpbanner.webp](/img/user/b%20storage/a%20storage/tmpbanner.webp)
 >  ➔ [[mpt/YHMAH\|The Mafia's Princess]] 
