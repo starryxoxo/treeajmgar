@@ -20,9 +20,9 @@ This website is currently not optimized for desktop devices. Use a mobile device
 
 ***
 
-| ![coverimg\|180](/img/user/yeo/yeostorage/yeocover.webp) <br> [[yeo/yeo\|Your Eyes Only]] | ![coverimg\|180](/img/user/sitn/sitncover.webp) <br> [[sitn/sitn\|Strangers by Midnight]] | ![coverimg\|180](/img/user/b storage/a storage/tmpcover.webp) <br> [[mpt/YHMAH\|The Mafia's Princess]] |
-| :----------------------------------------------------------: | :-------------------------------------------------------------------: | :------------------------------------------------------------------: |
-|                                                              |                                                                       |                                                                      |
+| ![coverimg\|165](/img/user/yeo/yeostorage/yeocover.webp) <br> | ![coverimg\|165](/img/user/sitn/sitncover.webp) <br> |
+| :----------------------------------: | :-----------------------------------: |
+|       [[yeo/yeo\|Your Eyes Only]]        |    [[sitn/sitn\|Strangers by Midnight]]    |
 
 # Soon
 
