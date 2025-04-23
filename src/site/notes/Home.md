@@ -33,9 +33,12 @@ This website is under development.
 }
 </style>
 
+<div style="markdown-preview-view table">
+
 | [[yeo/yeo\|Your Eyes Only]]         | [[sitn/sitn\|Strangers by Midnight]]  |
 | ------------------------------- | -------------------------------- |
 | ![coverimg\|160](/img/user/yeo/yeostorage/yeocover.webp) | ![coverimg\|160](/img/user/sitn/sitncover.webp) |
+</div>
 
 # Soon
 
