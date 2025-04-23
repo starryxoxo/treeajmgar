@@ -9,7 +9,7 @@ Welcome to the sworn library!
 Click the [[light blue text\|light blue text]] to enter a link or a [[mpt/YHMAH\|book]].
 
 <span style="color:#FFA500">Notice</span>
-This website is under development.
+This website is under active development. Bugs may occur.
 
 ***
 
@@ -20,20 +20,9 @@ This website is under development.
 
 ***
 
-<style>
-.markdown-source-view, .markdown-preview-view {
-max-width: 900px;
-margin: auto;
-}
-}
-</style>
-
-<div class="markdown-preview-view">
-
 | [[yeo/yeo\|Your Eyes Only]]         | [[sitn/sitn\|Strangers by Midnight]]  |
 | ------------------------------- | -------------------------------- |
 | ![coverimg\|160](/img/user/yeo/yeostorage/yeocover.webp) | ![coverimg\|160](/img/user/sitn/sitncover.webp) |
-</div>
 
 # Soon
 
