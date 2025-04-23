@@ -20,7 +20,7 @@ This website is currently not optimized for desktop devices. Use a mobile device
 
 ***
 
-| ![coverimg\|185](/img/user/sitn/sitncover.webp)           |
+| ![coverimg\|185](/img/user/yeo/yeostorage/yeocover.webp)         | ![coverimg\|185](/img/user/sitn/sitncover.webp)           |
 | --------------------------------------- | ------------------------------------------ |
 | [[yeo/yeo\|Your Eyes Only]] • Arriving Soon | [[sitn/sitn\|Strangers by Midnight]] • Complete |
 
