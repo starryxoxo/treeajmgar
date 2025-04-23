@@ -22,7 +22,7 @@ This website is under development.
 
 |                                     |                                      |
 | :---------------------------------- | :----------------------------------- |
-| ![coverimg\|160](/img/user/yeo/yeostorage/yeocover.webp)<br> | ![coverimg\|160](/img/user/sitn/sitncover.webp)<br> |
+| ![coverimg\|200](/img/user/yeo/yeostorage/yeocover.webp)<br> | ![coverimg\|200](/img/user/sitn/sitncover.webp)<br> |
 | [[yeo/yeo\|Your Eyes Only]]             | [[sitn/sitn\|Strangers by Midnight]]      |
 
 # Soon
