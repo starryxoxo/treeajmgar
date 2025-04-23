@@ -33,7 +33,7 @@ This website is under development.
 }
 </style>
 
-<div style="markdown-preview-view table">
+<div class="markdown-preview-view table">
 
 | [[yeo/yeo\|Your Eyes Only]]         | [[sitn/sitn\|Strangers by Midnight]]  |
 | ------------------------------- | -------------------------------- |
