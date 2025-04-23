@@ -14,7 +14,8 @@
 #romance #enhypen 
 
 **Description**
-I always catch you looking at me... it's not the same as anyone else's gaze. Something about **you** feels *different* and *soothing* at the same time.
+I always catch you looking at me and it isn't the same as anyone else's gaze. There's something about you that feels **different** and **soothing** at the same time. 
+*Ano ka ba sa'kin?* 
 
 **Author**: the sworn library
 **Languages**: Tagalog, English
@@ -31,8 +32,9 @@ This book is rated **PG**.
 
 ###### Other Stories
 
-| ![coverimg\|185](/img/user/sitn/sitncover.webp) | [[sitn/sitn\|Strangers by Midnight]]<br> <br>#enhypen <br>#romance #oneshot |
-| :------------------------------: | :--------------------------------------------------------------------: |
+| ![coverimg\|185](/img/user/sitn/sitncover.webp) |
+| :------------------------------- |
+| [[sitn/sitn\|Strangers by Midnight]]  |
 
 ***
 
