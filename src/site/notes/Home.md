@@ -19,7 +19,7 @@ This website is under active development. Bugs may occur.
 
 | Discover                                |                                  |                                                     |
 | --------------------------------------- | -------------------------------- | --------------------------------------------------- |
-| ![coverimg\|160](/img/user/yeo/yeostorage/yeocover.webp)         | ![coverimg\|160](/img/user/sitn/sitncover.webp) | ![book\|160](/img/user/b storage/a storage/tmpcover.webp)                         |
+| ![coverimg\|160](/img/user/yeo/yeostorage/yeocover.webp)         | ![coverimg\|160](/img/user/sitn/sitncover.webp) | ![book\|160](/img/user/b storage/a storage/tmpcover2.webp)                        |
 | [[yeo/yeo\|Your Eyes Only]] • Arriving soon | [[sitn/sitn\|Strangers by Midnight]]  | [[mpt/YHMAH\|The Mafia's Princess]] • Not yet available |
 
 # Soon

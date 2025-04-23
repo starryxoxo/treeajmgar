@@ -6,8 +6,7 @@
 
 ***
  
-![bookimg\|360](/img/user/b storage/a storage/tmpcover.webp)
-
+![book|360](/img/user/b storage/a storage/tmpcover2.webp)
 ###### ENHYPEN AU
 # The Mafia's Princess
 #enhypen #mafia #romance 
@@ -25,10 +24,8 @@ Elia, the daughter of the Roccini's family head, is set to spy on Solon, the roy
 This book is rated **PG**.
 Contains **12+** content:
 Mild violence
-##### Chapters
-┌ The Mafia's Princess
-├ [[mpt/tmp/wait-p\|Prologue]]
-└ Chapter 1...
+
+[[mpt/tmp/wait-p\|Read]]
 
 ***
 © 2025 the sworn library
