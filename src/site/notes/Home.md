@@ -20,10 +20,10 @@ This website is under development.
 
 ***
 
-|                                     |                                      |
-| :---------------------------------- | :----------------------------------- |
-| ![coverimg\|200](/img/user/yeo/yeostorage/yeocover.webp)| ![coverimg\|200](/img/user/sitn/sitncover.webp)|
-| [[yeo/yeo\|Your Eyes Only]]             | [[sitn/sitn\|Strangers by Midnight]]      |
+
+| [[yeo/yeo\|Your Eyes Only]]         | [[sitn/sitn\|Strangers by Midnight]]  |
+| ------------------------------- | -------------------------------- |
+| ![coverimg\|160](/img/user/yeo/yeostorage/yeocover.webp) | ![coverimg\|160](/img/user/sitn/sitncover.webp) |
 
 # Soon
 
