@@ -17,18 +17,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const btn = document.getElementById('library-toggle');
     const h1 = [...document.querySelectorAll('h1')].find(h => h.compareDocumentPosition(btn) & 2);
     const img = document.querySelector('img[alt^="bookimg"]');
-    if (!h1 || !img) return null;
 
-    const alt = img.alt;
-    const src = img.src.split('/').pop(); // Just the filename
-    const size = alt.split('|')[1] || '360';
-    const imgMD = `![[${src}|${size}]]`;
-    const fullURL = location.href;
+    if (!h1 || !img) {
+      alert('Missing title or image.');
+      return null;
+    }
+
+    const altText = img.alt.split('|')[0] || 'cover';
+    const imgMD = `![${altText}](${img.src})`;  // Standard Markdown format
 
     return {
       title: h1.textContent.trim(),
-      link: fullURL,
-      imgMD
+      link: window.location.href,               // Full page URL
+      imgMD: imgMD
     };
   }
 
@@ -42,28 +43,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function updateBtn(link) {
     const btn = document.getElementById('library-toggle');
-    if (!btn) return;
     const exists = getLibrary().some(b => b.link === link);
     btn.textContent = exists ? 'Remove from Library' : 'Add to Library';
   }
 
   function toggleLibrary() {
     const book = getBook();
-    if (!book) return alert('Book info not found.');
+    if (!book) return;
 
     let lib = getLibrary();
-    const idx = lib.findIndex(b => b.link === book.link);
-    idx > -1 ? lib.splice(idx, 1) : lib.unshift(book);
+    const index = lib.findIndex(b => b.link === book.link);
+    if (index !== -1) {
+      lib.splice(index, 1);
+      alert('Removed from library');
+    } else {
+      lib.unshift(book);
+      alert('Added to library');
+    }
+
     saveLibrary(lib);
     updateBtn(book.link);
-    alert(idx > -1 ? 'Removed from library' : 'Added to library');
   }
 
-  // Initial load
   const book = getBook();
   if (book) updateBtn(book.link);
-
-  // Expose function globally for onclick
   window.toggleLibrary = toggleLibrary;
 });
 </script>
