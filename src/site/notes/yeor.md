@@ -16,16 +16,16 @@ function getCurrentBookInfo() {
     const button = document.getElementById('library-toggle');
     const allH1s = Array.from(document.querySelectorAll('h1'));
 
-    // Find the first <h1> that comes *after* the button in the DOM
+    // Get the first h1 after the button
     const titleEl = allH1s.find(h1 => h1.compareDocumentPosition(button) & Node.DOCUMENT_POSITION_PRECEDING);
-    const imgEl = document.querySelector('img[alt^="bookimg"]'); // Grabs image with alt="bookimg"
+    const imgEl = document.querySelector('img[alt^="bookimg"]');
 
     if (!titleEl || !imgEl) return null;
 
     return {
         title: titleEl.textContent.trim(),
-        link: window.location.pathname.replace(/^\/+/, ''), // e.g., "yeo/yeo"
-        imgMD: imgEl.outerHTML.match(/!.*[^)]+/)?.[0] || imgEl.outerHTML, // Markdown image syntax
+        link: decodeURIComponent(window.location.pathname.replace(/^\/+/, '')), // real path (e.g. yeo/yeo)
+        imgMD: imgEl.outerHTML.match(/!.*[^)]+/)?.[0] || imgEl.outerHTML,
     };
 }
 
@@ -54,6 +54,7 @@ function toggleLibrary() {
 
     localStorage.setItem('bookLibrary', JSON.stringify(library));
     updateLibraryButton(book.link);
+    renderVerticalLibrary();
 }
 
 function updateLibraryButton(link) {
@@ -63,8 +64,31 @@ function updateLibraryButton(link) {
     btn.textContent = saved ? 'Remove from Library' : 'Add to Library';
 }
 
+function renderVerticalLibrary() {
+    const library = JSON.parse(localStorage.getItem('bookLibrary')) || [];
+    const container = document.getElementById('library-md');
+
+    if (!container) return;
+
+    if (library.length === 0) {
+        container.innerText = 'No books in your library.';
+        return;
+    }
+
+    const rows = library.slice().reverse().map((book, index) => {
+        const num = index + 1;
+        const img = book.imgMD;
+        const wikiLink = `[[${book.link}|${book.title}]]`;
+
+        return `${num}<br>---<br>${img}<br>---<br>${wikiLink}`;
+    });
+
+    container.innerHTML = rows.join('<br><br>');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const book = getCurrentBookInfo();
     if (book) updateLibraryButton(book.link);
+    renderVerticalLibrary();
 });
 </script>
