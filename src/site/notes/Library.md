@@ -4,26 +4,28 @@
 
 ## Library
 
-<pre id="library-md"></pre>
+<div id="library-md"></div>
 
 <script>
 function renderVerticalLibrary() {
     const library = JSON.parse(localStorage.getItem('bookLibrary')) || [];
+    const container = document.getElementById('library-md');
 
     if (library.length === 0) {
-        document.getElementById('library-md').textContent = 'No books in your library.';
+        container.innerText = 'No books in your library.';
         return;
     }
 
+    // Newest books first
     const rows = library.slice().reverse().map((book, index) => {
         const num = index + 1;
-        const cover = book.imgMD;
-        const link = `[[${book.link}|${book.title}]]`;
+        const img = book.imgMD;
+        const wikiLink = `[[${book.link}|${book.title}]]`;
 
-        return `${num}\n---\n${cover}\n---\n${link}`;
+        return `${num}<br>---<br>${img}<br>---<br>${wikiLink}`;
     });
 
-    document.getElementById('library-md').textContent = rows.join('\n\n');
+    container.innerHTML = rows.join('<br><br>');
 }
 
 renderVerticalLibrary();
