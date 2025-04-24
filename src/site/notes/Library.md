@@ -16,7 +16,6 @@ function renderVerticalLibrary() {
         return;
     }
 
-    // Newest books first
     const rows = library.slice().reverse().map((book, index) => {
         const num = index + 1;
         const img = book.imgMD;

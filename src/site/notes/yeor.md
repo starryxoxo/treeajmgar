@@ -6,15 +6,14 @@ This is a testing page.
 
 ![bookimg|360](/img/user/yeo/yeostorage/yeocover.webp)
 
-###### ENHYPEN AU
-<h1> Your Eyes Only </h1>
-
-
 <button id="library-toggle" onclick="toggleLibrary()">Add to Library</button>
+
+###### ENHYPEN AU
+# Your Eyes Only
 
 <script>
 function getCurrentBookInfo() {
-    const titleEl = document.querySelector('h1, h1#user-content');
+    const titleEl = document.querySelector('h1'); // Grabs the first h1 on the page
     const imgEl = document.querySelector('img[alt^="bookimg"]');
 
     if (!titleEl || !imgEl) return null;
