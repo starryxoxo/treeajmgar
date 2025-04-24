@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/yeor/"}
+{"dg-publish":true,"permalink":"/yeor/","title":"Your Eyes Only"}
 ---
 
 This is a testing page.
@@ -13,13 +13,19 @@ This is a testing page.
 
 <script>
 function getCurrentBookInfo() {
-    const titleEl = document.querySelector('h1'); // Grabs the first h1 on the page
+    // Grab the title from the frontmatter (search for 'title' in the page)
+    const titleEl = document.querySelector('meta[name="title"]')?.getAttribute('content');
+    
+    // If there's no title, return null
+    if (!titleEl) return null;
+
+    // Grab the book's image
     const imgEl = document.querySelector('img[alt^="bookimg"]');
 
-    if (!titleEl || !imgEl) return null;
+    if (!imgEl) return null;
 
     return {
-        title: titleEl.textContent.trim(),
+        title: titleEl.trim(),
         link: window.location.pathname.replace(/^\/+/, ''), // e.g. "yeo/yeo"
         imgMD: imgEl.outerHTML.match(/!.*[^)]+/)?.[0] || imgEl.outerHTML,
     };
