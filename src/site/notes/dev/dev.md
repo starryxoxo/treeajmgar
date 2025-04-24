@@ -57,5 +57,5 @@ This is a testing page.
 
 |            Featured             |          Just Arrived          |            Workshop            |
 | :-----------------------------: | :----------------------------: | :----------------------------: |
-| ![banner\|330](/img/user/sitn/sitnbanner.webp) | ![banner\|330](/img/user/yeo/yeostorage/yeobanner.webp) | ![banner\|330](/img/user/yeo/yeostorage/yeobanner.webp) |
+| ![banner\|500](/img/user/sitn/sitnbanner.webp) | ![banner\|500](/img/user/yeo/yeostorage/yeobanner.webp) | ![banner\|500](/img/user/yeo/yeostorage/yeobanner.webp) |
 | [[sitn/sitn\|Strangers by Midnight]] |    [[yeo/yeo\|Your Eyes Only]]     |    [[yeo/yeo\|Your Eyes Only]]     |
