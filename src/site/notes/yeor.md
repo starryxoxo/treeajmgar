@@ -13,21 +13,19 @@ This is a testing page.
 
 <script>
 function getCurrentBookInfo() {
-    // Grab the title from the frontmatter (search for 'title' in the page)
-    const titleEl = document.querySelector('meta[name="title"]')?.getAttribute('content');
-    
-    // If there's no title, return null
-    if (!titleEl) return null;
+    const button = document.getElementById('library-toggle');
+    const allH1s = Array.from(document.querySelectorAll('h1'));
 
-    // Grab the book's image
-    const imgEl = document.querySelector('img[alt^="bookimg"]');
+    // Find the first <h1> that comes *after* the button in the DOM
+    const titleEl = allH1s.find(h1 => h1.compareDocumentPosition(button) & Node.DOCUMENT_POSITION_PRECEDING);
+    const imgEl = document.querySelector('img[alt^="bookimg"]'); // Grabs image with alt="bookimg"
 
-    if (!imgEl) return null;
+    if (!titleEl || !imgEl) return null;
 
     return {
-        title: titleEl.trim(),
-        link: window.location.pathname.replace(/^\/+/, ''), // e.g. "yeo/yeo"
-        imgMD: imgEl.outerHTML.match(/!.*[^)]+/)?.[0] || imgEl.outerHTML,
+        title: titleEl.textContent.trim(),
+        link: window.location.pathname.replace(/^\/+/, ''), // e.g., "yeo/yeo"
+        imgMD: imgEl.outerHTML.match(/!.*[^)]+/)?.[0] || imgEl.outerHTML, // Markdown image syntax
     };
 }
 
