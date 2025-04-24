@@ -16,7 +16,6 @@ function getCurrentBookInfo() {
     const button = document.getElementById('library-toggle');
     const allH1s = Array.from(document.querySelectorAll('h1'));
 
-    // Get the first h1 after the button
     const titleEl = allH1s.find(h1 => h1.compareDocumentPosition(button) & Node.DOCUMENT_POSITION_PRECEDING);
     const imgEl = document.querySelector('img[alt^="bookimg"]');
 
@@ -24,8 +23,9 @@ function getCurrentBookInfo() {
 
     return {
         title: titleEl.textContent.trim(),
-        link: decodeURIComponent(window.location.pathname.replace(/^\/+/, '')), // real path (e.g. yeo/yeo)
-        imgMD: imgEl.outerHTML.match(/!.*[^)]+/)?.[0] || imgEl.outerHTML,
+        fullUrl: window.location.href,
+        link: decodeURIComponent(window.location.pathname.replace(/^\/+/, '')),
+        imgHTML: imgEl.outerHTML,
     };
 }
 
@@ -67,23 +67,31 @@ function updateLibraryButton(link) {
 function renderVerticalLibrary() {
     const library = JSON.parse(localStorage.getItem('bookLibrary')) || [];
     const container = document.getElementById('library-md');
-
     if (!container) return;
 
     if (library.length === 0) {
-        container.innerText = 'No books in your library.';
+        container.innerHTML = '<p>No books in your library.</p>';
         return;
     }
 
-    const rows = library.slice().reverse().map((book, index) => {
-        const num = index + 1;
-        const img = book.imgMD;
-        const wikiLink = `[[${book.link}|${book.title}]]`;
+    let html = `<table>
+        <thead><tr><th>#</th><th>Cover</th><th>Title</th></tr></thead>
+        <tbody>`;
 
-        return `${num}<br>---<br>${img}<br>---<br>${wikiLink}`;
+    library.slice().reverse().forEach((book, index) => {
+        const num = index + 1;
+        const img = book.imgHTML;
+        const link = `[[${book.link}|${book.title}]]`; // still looks like a wikilink
+
+        html += `<tr>
+            <td>${num}</td>
+            <td>${img}</td>
+            <td>${link}</td>
+        </tr>`;
     });
 
-    container.innerHTML = rows.join('<br><br>');
+    html += '</tbody></table>';
+    container.innerHTML = html;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
