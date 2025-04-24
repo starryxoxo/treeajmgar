@@ -9,18 +9,17 @@ Welcome to the sworn library!
 Click the [[blue text\|blue text]] to enter a link or a [[mpt/YHMAH\|book]].
 
 ***
+# New Arrivals
 
-|           New Arrival           |
+|            Featured             |
 | :-----------------------------: |
-|        Romance • Oneshot        |
 |      ![sitnbanner.webp](/img/user/sitn/sitnbanner.webp)       |
 | [[sitn/sitn\|Strangers by Midnight]] |
-***
 
-| Discover                                |                                  | Placeholder                      |
-| --------------------------------------- | -------------------------------- | -------------------------------- |
-| ![coverimg\|165](/img/user/yeo/yeostorage/yeocover.webp)         | ![coverimg\|165](/img/user/sitn/sitncover.webp) | ![coverimg\|165](/img/user/sitn/sitncover.webp) |
-| [[yeo/yeo\|Your Eyes Only]] • Arriving soon | [[sitn/sitn\|Strangers by Midnight]]  | [[sitn/sitn\|Strangers by Midnight]]  |
+| Discover                        |                                  | Placeholder                      |
+| ------------------------------- | -------------------------------- | -------------------------------- |
+| ![coverimg\|165](/img/user/yeo/yeostorage/yeocover.webp) | ![coverimg\|165](/img/user/sitn/sitncover.webp) | ![coverimg\|165](/img/user/sitn/sitncover.webp) |
+| [[yeo/yeo\|Your Eyes Only]]         | [[sitn/sitn\|Strangers by Midnight]]  | [[sitn/sitn\|Strangers by Midnight]]  |
 
 ***
 

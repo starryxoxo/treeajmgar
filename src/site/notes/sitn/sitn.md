@@ -31,10 +31,10 @@ Blood and detailed content.
 
 ***
 
-| You May Like                   |
-| :----------------------------- |
-| ![bookimg\|185](/img/user/yeo/yeostorage/yeocover.webp) |
-| [[yeo/yeo\|Your Eyes Only]]        |
+| You May Like                   |                      |
+| :----------------------------- | -------------------- |
+| ![bookimg\|185](/img/user/yeo/yeostorage/yeocover.webp) | More stories soon... |
+| [[yeo/yeo\|Your Eyes Only]]        |                      |
 
 ***
 

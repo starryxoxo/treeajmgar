@@ -30,10 +30,10 @@ This book is rated **PG**.
 
 ***
 
-| Other Stories                    |
-| :------------------------------- |
-| ![coverimg\|185](/img/user/sitn/sitncover.webp) |
-| [[sitn/sitn\|Strangers by Midnight]]  |
+| Other Stories                    |                      |
+| :------------------------------- | -------------------- |
+| ![coverimg\|185](/img/user/sitn/sitncover.webp) | More stories soon... |
+| [[sitn/sitn\|Strangers by Midnight]]  |                      |
 
 ***
 
