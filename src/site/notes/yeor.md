@@ -16,21 +16,22 @@ document.addEventListener('DOMContentLoaded', () => {
   function getBook() {
     const btn = document.getElementById('library-toggle');
     const h1 = [...document.querySelectorAll('h1')].find(h => h.compareDocumentPosition(btn) & 2);
-    const img = document.querySelector('img[alt^="bookimg"]');
+    
+    // Match literal image markdown from innerText
+    const mdSource = document.body.innerText;
+    const imgMatch = mdSource.match(/!bookimg\|?\d*[^)]+/); // e.g. ![bookimg|360](file.webp)
 
-    if (!h1 || !img) {
-      alert('Missing title or image.');
+    if (!h1 || !imgMatch) {
+      alert('Missing title or image markdown.');
       return null;
     }
 
-    const altText = img.alt.split('|')[0] || 'cover';
-    const imgMD = `![${altText}](${img.src})`;  // Standard Markdown format
+    const title = h1.textContent.trim();
+    const fullLink = window.location.href;
+    const imgMD = imgMatch[0];
+    const wikilink = `[[${fullLink}|${title}]]`;
 
-    return {
-      title: h1.textContent.trim(),
-      link: window.location.href,               // Full page URL
-      imgMD: imgMD
-    };
+    return { title, link: fullLink, imgMD, wikilink };
   }
 
   function getLibrary() {
