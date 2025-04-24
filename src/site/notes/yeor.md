@@ -4,7 +4,7 @@
 
 This is a testing page.
 
-![alt=bookimg|360](/img/user/yeo/yeostorage/yeocover.webp)
+![bookimg|360](/img/user/yeo/yeostorage/yeocover.webp)
 
 ###### ENHYPEN AU
 <h1> Your Eyes Only </h1>
