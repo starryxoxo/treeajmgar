@@ -10,28 +10,58 @@ This is a testing page.
 <h1> Your Eyes Only </h1>
 
 
-<button onclick="addBookToLibrary()">Add to Library</button>
+<button id="library-toggle" onclick="toggleLibrary()">Add to Library</button>
+
 <script>
-function addBookToLibrary() {
+function getCurrentBookInfo() {
     const titleEl = document.querySelector('h1, h1#user-content');
     const imgEl = document.querySelector('img[alt^="bookimg"]');
 
-    if (!titleEl || !imgEl) {
-        alert('Could not find title or book image.');
+    if (!titleEl || !imgEl) return null;
+
+    return {
+        title: titleEl.textContent.trim(),
+        link: window.location.pathname.replace(/^\/+/, ''), // e.g. "yeo/yeo"
+        imgMD: imgEl.outerHTML.match(/!.*[^)]+/)?.[0] || imgEl.outerHTML,
+    };
+}
+
+function isBookInLibrary(link) {
+    const library = JSON.parse(localStorage.getItem('bookLibrary')) || [];
+    return library.some(book => book.link === link);
+}
+
+function toggleLibrary() {
+    const book = getCurrentBookInfo();
+    if (!book) {
+        alert('Book info not found.');
         return;
     }
 
-    const title = titleEl.textContent.trim();
-    const link = window.location.pathname.replace(/^\/+/, ''); // e.g., "yeo/yeo"
-    const imgMD = imgEl.outerHTML.match(/!.*[^)]+/)?.[0] || imgEl.outerHTML;
-
-    const book = { title, link, imgMD };
-
     let library = JSON.parse(localStorage.getItem('bookLibrary')) || [];
-    library = library.filter(b => b.link !== book.link); // Remove if exists
-    library.push(book); // Save latest last
-    localStorage.setItem('bookLibrary', JSON.stringify(library));
+    const exists = library.some(b => b.link === book.link);
 
-    alert('Book added to your library!');
+    if (exists) {
+        library = library.filter(b => b.link !== book.link);
+        alert('Removed from your library.');
+    } else {
+        library.push(book);
+        alert('Book added to your library!');
+    }
+
+    localStorage.setItem('bookLibrary', JSON.stringify(library));
+    updateLibraryButton(book.link);
 }
+
+function updateLibraryButton(link) {
+    const btn = document.getElementById('library-toggle');
+    if (!btn) return;
+    const saved = isBookInLibrary(link);
+    btn.textContent = saved ? 'Remove from Library' : 'Add to Library';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const book = getCurrentBookInfo();
+    if (book) updateLibraryButton(book.link);
+});
 </script>
