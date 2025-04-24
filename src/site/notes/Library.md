@@ -4,22 +4,27 @@
 
 ## Library
 
-<script>
-function renderLibraryMarkdown() {
-    const library = JSON.parse(localStorage.getItem('bookLibrary')) || [];
-    const container = document.getElementById('library-md');
 
+<table id="lib-table"></table>
+
+<script>
+function renderLibraryTable() {
+    const library = JSON.parse(localStorage.getItem('bookLibrary')) || [];
     if (library.length === 0) {
-        container.textContent = 'Your library is empty.';
+        document.getElementById('lib-table').innerHTML = '<tr><td>No books in your library.</td></tr>';
         return;
     }
 
-    const md = library.map(book => {
-        return `![${book.imgAlt}](${book.imgSrc})\n\n[${book.title}](${book.link})\n`;
-    }).join('\n---\n\n');
+    const lastBook = library[library.length - 1];
 
-    container.textContent = md;
+    const tableHTML = `
+        <tr><th>Library</th></tr>
+        <tr><td>${lastBook.imgMD}</td></tr>
+        <tr><td>[[${lastBook.link}\|${lastBook.title}]]</td></tr>
+    `;
+
+    document.getElementById('lib-table').innerHTML = tableHTML;
 }
 
-renderLibraryMarkdown();
+renderLibraryTable();
 </script>

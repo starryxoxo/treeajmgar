@@ -10,33 +10,28 @@ This is a testing page.
 <h1> Your Eyes Only </h1>
 
 
-<button onclick="addCurrentBookToLibrary()">Add to Library</button>
-
+<button onclick="addBookToLibrary()">Add to Library</button>
 <script>
-function addCurrentBookToLibrary() {
-    const titleEl = document.querySelector('h1');
-    const imgEl = document.querySelector('img[alt="bookimg"]');
+function addBookToLibrary() {
+    const titleEl = document.querySelector('h1, h1#user-content');
+    const imgEl = document.querySelector('img[alt^="bookimg"]');
 
     if (!titleEl || !imgEl) {
-        alert('Book title or image not found.');
+        alert('Could not find title or book image.');
         return;
     }
 
-    const book = {
-        title: titleEl.textContent.trim(),
-        link: window.location.href,
-        imgSrc: imgEl.src,
-        imgAlt: imgEl.alt || 'Book Cover'
-    };
+    const title = titleEl.textContent.trim();
+    const link = window.location.pathname.replace(/^\/+/, ''); // e.g., "yeo/yeo"
+    const imgMD = imgEl.outerHTML.match(/!.*[^)]+/)?.[0] || imgEl.outerHTML;
+
+    const book = { title, link, imgMD };
 
     let library = JSON.parse(localStorage.getItem('bookLibrary')) || [];
+    library = library.filter(b => b.link !== book.link); // Remove if exists
+    library.push(book); // Save latest last
+    localStorage.setItem('bookLibrary', JSON.stringify(library));
 
-    if (!library.some(b => b.link === book.link)) {
-        library.push(book);
-        localStorage.setItem('bookLibrary', JSON.stringify(library));
-        alert('Book added to your library!');
-    } else {
-        alert('This book is already in your library.');
-    }
+    alert('Book added to your library!');
 }
 </script>
