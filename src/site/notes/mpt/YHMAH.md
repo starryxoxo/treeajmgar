@@ -6,7 +6,7 @@
 
 ***
  
-![book|360](/img/user/b storage/a storage/tmpcover2.webp)
+![book|360](/img/user/b storage/a storage/tmpcover.webp)
 ###### ENHYPEN AU
 # The Mafia's Princess
 #enhypen #mafia #romance 

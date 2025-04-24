@@ -23,6 +23,7 @@ Click the [[blue text\|blue text]] to enter a link or a [[mpt/YHMAH\|book]].
 
 ***
 
+
 |           Coming Soon           |
 | :-----------------------------: |
 |       ![tmpbanner.webp](/img/user/b%20storage/a%20storage/tmpbanner.webp)       |
