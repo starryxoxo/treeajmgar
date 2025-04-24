@@ -6,25 +6,23 @@
 Welcome to the sworn library!
 
 > New to sworn library?
-Click the [[light blue text\|light blue text]] to enter a link or a [[mpt/YHMAH\|book]].
-
-<span style="color:#FFA500">Notice</span>
-This website is under active development. Bugs may occur occasionally.
+Click the [[blue text\|blue text]] to enter a link or a [[mpt/YHMAH\|book]].
 
 ***
 
-# New Arrivals
-
-|        Romance • Oneshot        |
+|           New Arrival           |
 | :-----------------------------: |
+|        Romance • Oneshot        |
 |      ![sitnbanner.webp](/img/user/sitn/sitnbanner.webp)       |
 | [[sitn/sitn\|Strangers by Midnight]] |
-
+***
 
 | Discover                                |                                  | Placeholder                      |
 | --------------------------------------- | -------------------------------- | -------------------------------- |
 | ![coverimg\|165](/img/user/yeo/yeostorage/yeocover.webp)         | ![coverimg\|165](/img/user/sitn/sitncover.webp) | ![coverimg\|165](/img/user/sitn/sitncover.webp) |
 | [[yeo/yeo\|Your Eyes Only]] • Arriving soon | [[sitn/sitn\|Strangers by Midnight]]  | [[sitn/sitn\|Strangers by Midnight]]  |
+
+***
 
 |           Coming Soon           |
 | :-----------------------------: |
@@ -37,4 +35,4 @@ All Rights Reserved.
 
 ***
 
-Bookmark this website and visit it every once in a while. Accompany us while we grow our collection! <3
+Bookmark this website and visit it every once in a while. Accompany us while we grow our collection!

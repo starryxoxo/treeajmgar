@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/yeo/yeo/"}
 ---
 
-[[Home\|Home]] • [[yeo/yeo#Other Stories\|Other Stories]]
+[[Home\|Home]]
 
 ***
 
@@ -30,11 +30,14 @@ This book is rated **PG**.
 
 ***
 
-###### Other Stories
-
-| ![coverimg\|185](/img/user/sitn/sitncover.webp) |
+| Other Stories                    |
 | :------------------------------- |
+| ![coverimg\|185](/img/user/sitn/sitncover.webp) |
 | [[sitn/sitn\|Strangers by Midnight]]  |
+
+***
+
+[[Home\|Home]]
 
 ***
 
