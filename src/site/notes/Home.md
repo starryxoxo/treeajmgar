@@ -14,18 +14,22 @@ This website is under active development. Bugs may occur occasionally.
 ***
 
 # New Arrivals
-![sitnbanner.webp](/img/user/sitn/sitnbanner.webp)
-> ➔ [[sitn/sitn\|Strangers by Midnight]] • Romance • Light AU
+
+|        Romance • Oneshot        |
+| :-----------------------------: |
+|      ![sitnbanner.webp](/img/user/sitn/sitnbanner.webp)       |
+| [[sitn/sitn\|Strangers by Midnight]] |
+
 
 | Discover                                |                                  | Placeholder                      |
 | --------------------------------------- | -------------------------------- | -------------------------------- |
 | ![coverimg\|165](/img/user/yeo/yeostorage/yeocover.webp)         | ![coverimg\|165](/img/user/sitn/sitncover.webp) | ![coverimg\|165](/img/user/sitn/sitncover.webp) |
 | [[yeo/yeo\|Your Eyes Only]] • Arriving soon | [[sitn/sitn\|Strangers by Midnight]]  | [[sitn/sitn\|Strangers by Midnight]]  |
 
-# Not Available
-
-![tmpbanner.webp](/img/user/b%20storage/a%20storage/tmpbanner.webp)
->  ➔ [[mpt/YHMAH\|The Mafia's Princess]] 
+|           Coming Soon           |
+| :-----------------------------: |
+|       ![tmpbanner.webp](/img/user/b%20storage/a%20storage/tmpbanner.webp)       |
+| [[mpt/YHMAH\|The Mafia's Princess]] |
 
 ---
 Copyright © 2025 the sworn library
