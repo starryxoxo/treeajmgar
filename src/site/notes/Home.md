@@ -9,20 +9,20 @@ Welcome to the sworn library!
 Click the [[light blue text\|light blue text]] to enter a link or a [[mpt/YHMAH\|book]].
 
 <span style="color:#FFA500">Notice</span>
-This website is under active development. Bugs may occur.
+This website is under active development. Bugs may occur occasionally.
 
 ***
 
-# New Arrival
+# New Arrivals
 ![sitnbanner.webp](/img/user/sitn/sitnbanner.webp)
 > ➔ [[sitn/sitn\|Strangers by Midnight]] • Romance • Light AU
 
-| Discover                                |                                  | Beta Testing                     |
+| Discover                                |                                  | Placeholder                      |
 | --------------------------------------- | -------------------------------- | -------------------------------- |
-| ![coverimg\|160](/img/user/yeo/yeostorage/yeocover.webp)         | ![coverimg\|160](/img/user/sitn/sitncover.webp) | ![coverimg\|160](/img/user/sitn/sitncover.webp) |
+| ![coverimg\|165](/img/user/yeo/yeostorage/yeocover.webp)         | ![coverimg\|165](/img/user/sitn/sitncover.webp) | ![coverimg\|165](/img/user/sitn/sitncover.webp) |
 | [[yeo/yeo\|Your Eyes Only]] • Arriving soon | [[sitn/sitn\|Strangers by Midnight]]  | [[sitn/sitn\|Strangers by Midnight]]  |
 
-# Soon
+# Not Available
 
 ![tmpbanner.webp](/img/user/b%20storage/a%20storage/tmpbanner.webp)
 >  ➔ [[mpt/YHMAH\|The Mafia's Princess]] 
