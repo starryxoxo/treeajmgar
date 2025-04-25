@@ -7,26 +7,22 @@
 <div id="library-display"></div>
 
 <script>
-function getLibrary() {
-  return JSON.parse(localStorage.getItem("bookLibrary") || "[]");
-}
-
 function renderLibrary() {
-  const display = document.getElementById("library-display");
-  if (!display) return;
+  const container = document.getElementById("library-display");
+  if (!container) return;
 
-  const lib = getLibrary();
-  if (!lib.length) {
-    display.innerText = "No books in your library.";
+  const library = JSON.parse(localStorage.getItem("bookLibrary") || "[]");
+  if (library.length === 0) {
+    container.innerText = "No books in your library.";
     return;
   }
 
-  let result = "";
-  lib.forEach((book, index) => {
-    result += `${index + 1}\n---\n${book.imgMD}\n---\n[[${book.title}]](${book.link})\n\n`;
+  let output = "";
+  library.forEach((book, index) => {
+    output += `${index + 1}\n---\n${book.imgMD}\n---\n${book.wikilink}\n\n`;
   });
 
-  display.innerText = result;
+  container.innerText = output;
 }
 
 document.addEventListener("DOMContentLoaded", renderLibrary);
