@@ -39,6 +39,3 @@ All Rights Reserved.
 Bookmark this website and visit it every once in a while. Accompany us while we grow our collection!
 
 ***
-TESTING PAGES.
-Do not enter! May break functionality of the browser.
-[[b storage/Library\|Library]] [[yeor\|yeor]]
