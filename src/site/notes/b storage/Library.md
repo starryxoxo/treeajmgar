@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/b-storage/library/"}
 ---
 
-## Library
+## Your Reading List
 
 **This feature is experimental and unstable as of now.** It may be deprecated or included in later versions. It may break functionality for this website. Use with caution.
 

@@ -9,7 +9,7 @@
 ![bookimg\|360](/img/user/sitn/sitncover.webp)
 ***
 
-<button id="library-toggle" onclick="toggleLibrary()">Add to Library</button>
+<button id="library-toggle" onclick="toggleLibrary()">Add to Reading List</button>
 
 ###### ENHYPEN ONESHOT AU
 # Strangers by Midnight
@@ -48,7 +48,6 @@ Copyright © 2025 the sworn library
 All Rights Reserved.
 
 <script>
-  // Function to fetch book info (title and link), ignoring the first H1 in navbar
   function getBookInfo() {
     const h1Elements = Array.from(document.querySelectorAll("h1"));
     const bookTitleElement = h1Elements.find(h1 => h1.closest("main")); // Look for the first H1 inside <main>
@@ -67,11 +66,10 @@ All Rights Reserved.
     if (!book) return;
     const button = document.getElementById("library-toggle");
     if (button) {
-      button.textContent = isInLibrary(book.link) ? "Remove from Library" : "Add to Library";
+      button.textContent = isInLibrary(book.link) ? "Remove from Reading List" : "Add to Reading List";
     }
   }
 
-  // Function to toggle adding/removing book from the library
   function toggleLibrary() {
     const book = getBookInfo();
     if (!book) return;

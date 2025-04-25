@@ -8,7 +8,7 @@ Welcome to the sworn library!
 > New to sworn library?
 Click the [[blue text\|blue text]] to enter a link or a [[mpt/YHMAH\|book]].
 
-[[b storage/Library\|Visit your Library]]
+[[b storage/Library\|Visit your Reading List]]
 ***
 # New Arrivals
 
