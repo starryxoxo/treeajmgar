@@ -17,7 +17,7 @@ function renderLibrary() {
   if (!e) return;
 
   const library = JSON.parse(localStorage.getItem("bookLibrary") || "[]");
-  if (library.length === 0) return void (e.innerText = "No books in your reading list yet.");
+  if (library.length === 0) return void (e.innerText = "No books in your reading list just yet.");
 
   let displayContent = "";
   library.forEach((book, index) => {
@@ -35,13 +35,11 @@ document.addEventListener("DOMContentLoaded", renderLibrary);
 <script>
   // Function to reset the library (clear all saved books)
   function resetLibrary() {
-    // Remove the bookLibrary from localStorage
-    localStorage.removeItem("bookLibrary");
-
-    // Refresh the display after clearing the library
-    renderLibrary();
+    if (confirm("This will remove all books from your reading list. Continue?")) {
+      localStorage.removeItem("bookLibrary");
+      renderLibrary();
+    }
   }
 
-  // Add event listener to the Reset Collection button
-  document.getElementById("reset-collection").addEventListener("click", resetLibrary);
+document.getElementById("reset-collection").addEventListener("click", resetLibrary);
 </script>
