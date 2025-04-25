@@ -19,7 +19,7 @@ function renderLibrary() {
 
   let output = "";
   library.forEach((book, index) => {
-    output += `${index + 1}\n---\n${book.imgMD}\n---\n${book.wikilink}\n\n`;
+    output += `${index + 1}. [[${book.link}|${book.title}]]\n\n`;
   });
 
   container.innerText = output;

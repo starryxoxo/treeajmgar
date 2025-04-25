@@ -13,39 +13,27 @@ This is a testing page.
 
 <script>
 function getBookInfo() {
-  const titleElement = document.querySelector("h1");
-  const imageElement = document.querySelector('img[alt="bookimg"]');
-  if (!titleElement || !imageElement) return null;
+  // Find the first H1 that doesn't have the navbar class
+  const bookTitle = Array.from(document.querySelectorAll("h1"))
+    .find(h1 => !h1.closest('nav')); // Ignore H1 inside navbar
 
-  const title = titleElement.textContent.trim();
-  const imageSrc = imageElement.getAttribute("src");
-  const imageAlt = imageElement.getAttribute("alt");
-  const bookLink = window.location.href;
+  if (!bookTitle) return null;
 
-  return {
-    title: title,
-    imgMD: `![${imageAlt}](${imageSrc.startsWith("http") ? imageSrc : location.origin + imageSrc})`,
-    wikilink: `[[${bookLink}|${title}]]`
-  };
+  // Get the title and the current link
+  const title = bookTitle.textContent.trim();
+  const link = window.location.href;
+
+  return { title, link };
 }
 
-function getLibrary() {
-  return JSON.parse(localStorage.getItem("bookLibrary") || "[]");
-}
+function updateLibraryButton() {
+  const bookInfo = getBookInfo();
+  if (!bookInfo) return;
 
-function saveLibrary(library) {
-  localStorage.setItem("bookLibrary", JSON.stringify(library));
-}
-
-function isInLibrary(bookLink) {
-  return getLibrary().some(book => book.link === bookLink);
-}
-
-function updateButton(bookLink) {
   const button = document.getElementById("library-toggle");
-  if (button) {
-    button.textContent = isInLibrary(bookLink) ? "Remove from Library" : "Add to Library";
-  }
+  if (!button) return;
+
+  button.textContent = isInLibrary(bookInfo.link) ? "Remove from Library" : "Add to Library";
 }
 
 function toggleLibrary() {
@@ -53,7 +41,9 @@ function toggleLibrary() {
   if (!bookInfo) return alert("Book info not found.");
 
   let library = getLibrary();
-  if (isInLibrary(bookInfo.link)) {
+  const existingBook = library.find(book => book.link === bookInfo.link);
+
+  if (existingBook) {
     library = library.filter(book => book.link !== bookInfo.link);
     alert("Removed from your library.");
   } else {
@@ -62,11 +52,10 @@ function toggleLibrary() {
   }
 
   saveLibrary(library);
-  updateButton(bookInfo.link);
+  updateLibraryButton();
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const bookInfo = getBookInfo();
-  if (bookInfo) updateButton(bookInfo.link);
+  updateLibraryButton();
 });
 </script>
