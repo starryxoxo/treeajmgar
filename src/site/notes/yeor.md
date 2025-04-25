@@ -12,45 +12,66 @@ This is a testing page.
 # Your Eyes Only
 
 <script>
-function getBookInfo() {
-  const bookTitleElement = Array.from(document.querySelectorAll("h1")).find((h1) => !h1.closest("nav"));
-  if (!bookTitleElement) return null;
+  // Function to fetch book info (title and link), ignoring the first H1 in navbar
+  function getBookInfo() {
+    const h1Elements = Array.from(document.querySelectorAll("h1"));
+    const bookTitleElement = h1Elements.find(h1 => h1.closest("main")); // Look for the first H1 inside <main>
 
-  return {
-    title: bookTitleElement.textContent.trim(),
-    link: window.location.href // This should be the correct current link
-  };
-}
+    if (!bookTitleElement) return null;
 
-function updateLibraryButton() {
-  const book = getBookInfo();
-  if (!book) return;
-  const button = document.getElementById("library-toggle");
-  if (button) {
-    button.textContent = isInLibrary(book.link) ? "Remove from Library" : "Add to Library";
+    return {
+      title: bookTitleElement.textContent.trim(),
+      link: window.location.href // Get the current URL for the book
+    };
   }
-}
 
-function toggleLibrary() {
-  const book = getBookInfo();
-  if (!book) return alert("Book info not found.");
-
-  let library = getLibrary();
-  const existingBookIndex = library.findIndex(b => b.link === book.link);
-
-  if (existingBookIndex !== -1) {
-    library.splice(existingBookIndex, 1); // Remove from library
-    alert("Removed from your library.");
-  } else {
-    library.unshift(book); // Add to library
-    alert("Book added to your library!");
+  // Function to update the button text based on whether the book is in the library
+  function updateLibraryButton() {
+    const book = getBookInfo();
+    if (!book) return;
+    const button = document.getElementById("library-toggle");
+    if (button) {
+      button.textContent = isInLibrary(book.link) ? "Remove from Library" : "Add to Library";
+    }
   }
-  saveLibrary(library);
-  updateLibraryButton();
-}
 
-// Ensuring the button is updated when the page loads
-document.addEventListener("DOMContentLoaded", () => {
-  updateLibraryButton();
-});
+  // Function to toggle adding/removing book from the library
+  function toggleLibrary() {
+    const book = getBookInfo();
+    if (!book) return alert("Book info not found.");
+
+    let library = getLibrary(); // Fetch the current library
+    const existingBookIndex = library.findIndex(b => b.link === book.link);
+
+    if (existingBookIndex !== -1) {
+      library.splice(existingBookIndex, 1); // Remove book from library
+      alert("Removed from your library.");
+    } else {
+      library.unshift(book); // Add book to library
+      alert("Book added to your library!");
+    }
+    saveLibrary(library); // Save the updated library
+    updateLibraryButton(); // Update the button text
+  }
+
+  // Event listener to update the button text once the page has loaded
+  document.addEventListener("DOMContentLoaded", () => {
+    updateLibraryButton();
+  });
+
+  // Helper function to get the library from localStorage (ensure this is implemented somewhere)
+  function getLibrary() {
+    return JSON.parse(localStorage.getItem("bookLibrary") || "[]");
+  }
+
+  // Helper function to save the library to localStorage (ensure this is implemented somewhere)
+  function saveLibrary(library) {
+    localStorage.setItem("bookLibrary", JSON.stringify(library));
+  }
+
+  // Helper function to check if a book is already in the library (ensure this is implemented somewhere)
+  function isInLibrary(link) {
+    const library = getLibrary();
+    return library.some(book => book.link === link);
+  }
 </script>
