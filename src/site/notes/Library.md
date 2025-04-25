@@ -8,21 +8,20 @@
 
 <script>
 function renderLibrary() {
-  const container = document.getElementById("library-display");
-  if (!container) return;
+  const e = document.getElementById("library-display");
+  if (!e) return;
 
   const library = JSON.parse(localStorage.getItem("bookLibrary") || "[]");
-  if (library.length === 0) {
-    container.innerText = "No books in your library.";
-    return;
-  }
+  if (library.length === 0) return void (e.innerText = "No books in your library.");
 
-  let output = "";
+  let displayContent = "";
   library.forEach((book, index) => {
-    output += `${index + 1}. [[${book.link}|${book.title}]]\n\n`;
+    // Using the saved link in the library data
+    displayContent += `${index + 1}. <a class="internal-link" href="${book.link}" target="_blank">${book.title}</a><br><br>`;
   });
 
-  container.innerText = output;
+  // Insert the formatted book list into the HTML
+  e.innerHTML = displayContent;
 }
 
 document.addEventListener("DOMContentLoaded", renderLibrary);
