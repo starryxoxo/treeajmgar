@@ -37,7 +37,7 @@ function toggleLibrary() {
 
   let library = getLibrary();
   const existingBookIndex = library.findIndex(b => b.link === book.link);
-  
+
   if (existingBookIndex !== -1) {
     library.splice(existingBookIndex, 1); // Remove from library
     alert("Removed from your library.");
@@ -45,8 +45,12 @@ function toggleLibrary() {
     library.unshift(book); // Add to library
     alert("Book added to your library!");
   }
-
   saveLibrary(library);
   updateLibraryButton();
 }
+
+// Ensuring the button is updated when the page loads
+document.addEventListener("DOMContentLoaded", () => {
+  updateLibraryButton();
+});
 </script>
