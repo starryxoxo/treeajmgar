@@ -13,49 +13,48 @@ This is a testing page.
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  function getBook() {
-    const btn = document.getElementById('library-toggle');
-    const h1 = [...document.querySelectorAll('h1')].find(h => h.compareDocumentPosition(btn) & 2);
-    
-    // Match literal image markdown from innerText
-    const mdSource = document.body.innerText;
-    const imgMatch = mdSource.match(/!bookimg\|?\d*[^)]+/); // e.g. ![bookimg|360](file.webp)
+  function getBookInfo() {
+    const button = document.getElementById('library-toggle');
+    const titleEl = [...document.querySelectorAll('h1')].find(h1 => h1.compareDocumentPosition(button) & 2);
+    const rawText = document.body.innerText;
+    const imageMatch = rawText.match(/!bookimg\|?\d*[^)]+/);
 
-    if (!h1 || !imgMatch) {
-      alert('Missing title or image markdown.');
-      return null;
-    }
+    if (!titleEl || !imageMatch) return null;
 
-    const title = h1.textContent.trim();
-    const fullLink = window.location.href;
-    const imgMD = imgMatch[0];
-    const wikilink = `[[${fullLink}|${title}]]`;
+    const title = titleEl.textContent.trim();
+    const link = window.location.href;
+    const imgMD = imageMatch[0];
+    const wikilink = `[[${link}|${title}]]`;
 
-    return { title, link: fullLink, imgMD, wikilink };
+    return { title, link, imgMD, wikilink };
   }
 
   function getLibrary() {
-    return JSON.parse(localStorage.bookLibrary || '[]');
+    return JSON.parse(localStorage.getItem('bookLibrary') || '[]');
   }
 
   function saveLibrary(lib) {
-    localStorage.bookLibrary = JSON.stringify(lib);
+    localStorage.setItem('bookLibrary', JSON.stringify(lib));
   }
 
-  function updateBtn(link) {
+  function isInLibrary(link) {
+    return getLibrary().some(b => b.link === link);
+  }
+
+  function updateButton(link) {
     const btn = document.getElementById('library-toggle');
-    const exists = getLibrary().some(b => b.link === link);
-    btn.textContent = exists ? 'Remove from Library' : 'Add to Library';
+    if (btn) btn.textContent = isInLibrary(link) ? 'Remove from Library' : 'Add to Library';
   }
 
-  function toggleLibrary() {
-    const book = getBook();
-    if (!book) return;
+  window.toggleLibrary = () => {
+    const book = getBookInfo();
+    if (!book) return alert('Book info not found.');
 
     let lib = getLibrary();
-    const index = lib.findIndex(b => b.link === book.link);
-    if (index !== -1) {
-      lib.splice(index, 1);
+    const exists = lib.findIndex(b => b.link === book.link);
+
+    if (exists !== -1) {
+      lib.splice(exists, 1);
       alert('Removed from library');
     } else {
       lib.unshift(book);
@@ -63,11 +62,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     saveLibrary(lib);
-    updateBtn(book.link);
-  }
+    updateButton(book.link);
+    renderLibrary(); // Optional: Live update
+  };
 
-  const book = getBook();
-  if (book) updateBtn(book.link);
-  window.toggleLibrary = toggleLibrary;
+  const book = getBookInfo();
+  if (book) updateButton(book.link);
+  renderLibrary(); // Load existing on page load
+
+  window.renderLibrary = () => {
+    const container = document.getElementById('library-display');
+    if (!container) return;
+
+    const lib = getLibrary();
+    if (!lib.length) {
+      container.innerText = 'Your library is empty.';
+      return;
+    }
+
+    let markdown = '';
+    lib.forEach((book, i) => {
+      markdown += `${i + 1}\n-\n${book.imgMD}\n-\n${book.wikilink}\n\n`;
+    });
+
+    container.innerText = markdown;
+  };
 });
 </script>
