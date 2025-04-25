@@ -21,11 +21,12 @@ function renderLibrary() {
     return;
   }
 
-  let table = "";
-  lib.forEach((book, i) => {
-    table += `| | |\n|-|-|\n| **Cover** | ${book.imgMD} |\n| **Title** | ${book.wikilink} |\n\n`;
+  let result = "";
+  lib.forEach((book, index) => {
+    result += `${index + 1}\n---\n${book.imgMD}\n---\n[[${book.title}]](${book.link})\n\n`;
   });
-  display.innerText = table;
+
+  display.innerText = result;
 }
 
 document.addEventListener("DOMContentLoaded", renderLibrary);
