@@ -17,7 +17,7 @@ function renderLibrary() {
   if (!e) return;
 
   const library = JSON.parse(localStorage.getItem("bookLibrary") || "[]");
-  if (library.length === 0) return void (e.innerText = "No books in your library.");
+  if (library.length === 0) return void (e.innerText = "No books in your reading list yet.");
 
   let displayContent = "";
   library.forEach((book, index) => {
