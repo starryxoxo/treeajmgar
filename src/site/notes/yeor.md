@@ -13,14 +13,16 @@ This is a testing page.
 
 <script>
 function getBookInfo() {
-  const titleEl = document.querySelector("h1");
+  const titleEl = Array.from(document.querySelectorAll("h1")).find(h => h.id && h.textContent.trim() !== "the sworn library");
   const imgEl = document.querySelector('img[alt^="bookimg"]');
   if (!titleEl || !imgEl) return null;
 
   const title = titleEl.textContent.trim();
   const link = window.location.href;
-  const imgSrc = imgEl.getAttribute("src");
-  const imgMD = `![](${imgSrc})`;
+
+  const imgPath = imgEl.getAttribute("src");
+  const imgURL = imgPath.startsWith("http") ? imgPath : `${location.origin}${imgPath}`;
+  const imgMD = `![](${imgURL})`;
   const wikilink = `[[${title}]](${link})`;
 
   return { title, link, imgMD, wikilink };
