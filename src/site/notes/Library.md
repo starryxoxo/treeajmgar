@@ -13,16 +13,16 @@ function renderLibrary() {
 
   const library = JSON.parse(localStorage.getItem("bookLibrary") || "[]");
   if (library.length === 0) {
-    container.innerHTML = "No books in your library.";
+    container.innerText = "No books in your library.";
     return;
   }
 
   let output = "";
   library.forEach((book, index) => {
-    output += `${index + 1}\n---\n${book.imgMD}\n---\n[[${book.link}|${book.title}]]\n\n`;
+    output += `${index + 1}\n---\n${book.imgMD}\n---\n${book.wikilink}\n\n`;
   });
 
-  container.innerHTML = output;
+  container.innerText = output;
 }
 
 document.addEventListener("DOMContentLoaded", renderLibrary);

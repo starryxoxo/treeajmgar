@@ -13,23 +13,20 @@ This is a testing page.
 
 <script>
 function getBookInfo() {
-  const titleEl = Array.from(document.querySelectorAll("h1")).find(
-    h => h.id && h.textContent.trim() !== "the sworn library"
-  );
-  const imgEl = document.querySelector('img[alt^="bookimg"]');
-  if (!titleEl || !imgEl) return null;
+  const titleElement = document.querySelector("h1");
+  const imageElement = document.querySelector('img[alt="bookimg"]');
+  if (!titleElement || !imageElement) return null;
 
-  const title = titleEl.textContent.trim();
-  const link = window.location.href;
+  const title = titleElement.textContent.trim();
+  const imageSrc = imageElement.getAttribute("src");
+  const imageAlt = imageElement.getAttribute("alt");
+  const bookLink = window.location.href;
 
-  const altText = imgEl.getAttribute("alt");
-  const imgPath = imgEl.getAttribute("src");
-  const imgURL = imgPath.startsWith("http") ? imgPath : `${location.origin}${imgPath}`;
-  const imgMD = `![${altText}](${imgURL})`;
-
-  const wikilink = `[[${link}|${title}]]`;
-
-  return { title, link, imgMD, wikilink };
+  return {
+    title: title,
+    imgMD: `![${imageAlt}](${imageSrc.startsWith("http") ? imageSrc : location.origin + imageSrc})`,
+    wikilink: `[[${bookLink}|${title}]]`
+  };
 }
 
 function getLibrary() {
@@ -40,38 +37,36 @@ function saveLibrary(library) {
   localStorage.setItem("bookLibrary", JSON.stringify(library));
 }
 
-function isInLibrary(link) {
-  return getLibrary().some(book => book.link === link);
+function isInLibrary(bookLink) {
+  return getLibrary().some(book => book.link === bookLink);
 }
 
-function updateButton(link) {
-  const btn = document.getElementById("library-toggle");
-  if (btn) {
-    btn.textContent = isInLibrary(link) ? "Remove from Library" : "Add to Library";
+function updateButton(bookLink) {
+  const button = document.getElementById("library-toggle");
+  if (button) {
+    button.textContent = isInLibrary(bookLink) ? "Remove from Library" : "Add to Library";
   }
 }
 
 function toggleLibrary() {
-  const book = getBookInfo();
-  if (!book) return alert("Book info not found.");
+  const bookInfo = getBookInfo();
+  if (!bookInfo) return alert("Book info not found.");
 
   let library = getLibrary();
-  const exists = library.find(b => b.link === book.link);
-
-  if (exists) {
-    library = library.filter(b => b.link !== book.link);
+  if (isInLibrary(bookInfo.link)) {
+    library = library.filter(book => book.link !== bookInfo.link);
     alert("Removed from your library.");
   } else {
-    library.unshift(book);
+    library.unshift(bookInfo);
     alert("Book added to your library!");
   }
 
   saveLibrary(library);
-  updateButton(book.link);
+  updateButton(bookInfo.link);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const book = getBookInfo();
-  if (book) updateButton(book.link);
+  const bookInfo = getBookInfo();
+  if (bookInfo) updateButton(bookInfo.link);
 });
 </script>
