@@ -11,51 +11,57 @@ This is a testing page.
 ###### ENHYPEN AU
 # Your Eyes Only
 
+
 <script>
 function getBookInfo() {
   const titleEl = document.querySelector('h1');
-  const imgMatch = document.body.innerText.match(/!bookimg\|?.*?[^)]+/);
+  const imgEl = document.querySelector('img[alt^="bookimg"]');
 
-  if (!titleEl || !imgMatch) return null;
+  if (!titleEl || !imgEl) return null;
 
-  return {
-    title: titleEl.textContent.trim(),
-    link: window.location.href,
-    imgMD: imgMatch[0],
-    wikilink: `[[${window.location.href}|${titleEl.textContent.trim()}]]`
-  };
+  const title = titleEl.textContent.trim();
+  const link = window.location.href;
+  const src = imgEl.getAttribute('src');
+  const alt = imgEl.getAttribute('alt') || 'bookimg';
+  const imgMD = `![${alt}](${src})`;
+  const wikilink = `[[${link}|${title}]]`;
+
+  return { title, link, imgMD, wikilink };
 }
 
 function getLibrary() {
-  return JSON.parse(localStorage.getItem('bookLibrary') || '[]');
+  return JSON.parse(localStorage.getItem("bookLibrary") || "[]");
 }
 
 function saveLibrary(lib) {
-  localStorage.setItem('bookLibrary', JSON.stringify(lib));
+  localStorage.setItem("bookLibrary", JSON.stringify(lib));
 }
 
 function isInLibrary(link) {
-  return getLibrary().some(b => b.link === link);
+  return getLibrary().some(book => book.link === link);
 }
 
 function updateButton(link) {
-  const btn = document.getElementById('library-toggle');
-  if (btn) btn.textContent = isInLibrary(link) ? 'Remove from Library' : 'Add to Library';
+  const btn = document.getElementById("library-toggle");
+  if (btn) btn.textContent = isInLibrary(link) ? "Remove from Library" : "Add to Library";
 }
 
 function toggleLibrary() {
   const book = getBookInfo();
-  if (!book) return alert('Book info not found.');
+  if (!book) {
+    alert("Book info not found.");
+    return;
+  }
 
   let lib = getLibrary();
-  const exists = lib.some(b => b.link === book.link);
+  const exists = isInLibrary(book.link);
 
   if (exists) {
     lib = lib.filter(b => b.link !== book.link);
-    alert('Removed from library');
+    alert("Removed from library");
   } else {
     lib.unshift(book);
-    alert('Added to library');
+    alert("Added to library");
   }
 
   saveLibrary(lib);
@@ -64,24 +70,23 @@ function toggleLibrary() {
 }
 
 function renderLibrary() {
-  const container = document.getElementById('library-display');
-  if (!container) return;
+  const display = document.getElementById("library-display");
+  if (!display) return;
 
   const lib = getLibrary();
   if (!lib.length) {
-    container.innerText = 'No books in your library.';
+    display.innerText = "No books in your library.";
     return;
   }
 
-  let md = '';
+  let table = "";
   lib.forEach((book, i) => {
-    md += `${i + 1}\n-\n${book.imgMD}\n-\n${book.wikilink}\n\n`;
+    table += `| | |\n|-|-|\n| **Cover** | ${book.imgMD} |\n| **Title** | ${book.wikilink} |\n\n`;
   });
-
-  container.innerText = md;
+  display.innerText = table;
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   const book = getBookInfo();
   if (book) updateButton(book.link);
   renderLibrary();
