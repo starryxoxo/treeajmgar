@@ -38,17 +38,15 @@ This is a testing page.
   // Function to toggle adding/removing book from the library
   function toggleLibrary() {
     const book = getBookInfo();
-    if (!book) return alert("Book info not found.");
+    if (!book) return;
 
     let library = getLibrary(); // Fetch the current library
     const existingBookIndex = library.findIndex(b => b.link === book.link);
 
     if (existingBookIndex !== -1) {
       library.splice(existingBookIndex, 1); // Remove book from library
-      alert("Removed from your library.");
     } else {
       library.unshift(book); // Add book to library
-      alert("Book added to your library!");
     }
     saveLibrary(library); // Save the updated library
     updateLibraryButton(); // Update the button text
@@ -59,17 +57,17 @@ This is a testing page.
     updateLibraryButton();
   });
 
-  // Helper function to get the library from localStorage (ensure this is implemented somewhere)
+  // Helper function to get the library from localStorage
   function getLibrary() {
     return JSON.parse(localStorage.getItem("bookLibrary") || "[]");
   }
 
-  // Helper function to save the library to localStorage (ensure this is implemented somewhere)
+  // Helper function to save the library to localStorage
   function saveLibrary(library) {
     localStorage.setItem("bookLibrary", JSON.stringify(library));
   }
 
-  // Helper function to check if a book is already in the library (ensure this is implemented somewhere)
+  // Helper function to check if a book is already in the library
   function isInLibrary(link) {
     const library = getLibrary();
     return library.some(book => book.link === link);
