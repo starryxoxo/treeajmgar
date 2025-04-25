@@ -20,10 +20,12 @@ function getBookInfo() {
   const title = titleEl.textContent.trim();
   const link = window.location.href;
 
+  const altText = imgEl.getAttribute("alt");
   const imgPath = imgEl.getAttribute("src");
   const imgURL = imgPath.startsWith("http") ? imgPath : `${location.origin}${imgPath}`;
-  const imgMD = `![](${imgURL})`;
-  const wikilink = `[[${title}]](${link})`;
+  const imgMD = `![${altText}](${imgURL})`;
+
+  const wikilink = `[[${link}|${title}]]`;
 
   return { title, link, imgMD, wikilink };
 }
