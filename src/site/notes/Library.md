@@ -19,10 +19,10 @@ function renderLibrary() {
 
   let output = "";
   library.forEach((book, index) => {
-    output += `${index + 1}\n---\n${book.imgMD}\n---\n${book.wikilink}\n\n`;
+    output += `<p>${index + 1}</p><hr>${book.imgMD}<hr><p>[[${book.title}]](${book.link})</p><br>`;
   });
 
-  container.innerText = output;
+  container.innerHTML = output;
 }
 
 document.addEventListener("DOMContentLoaded", renderLibrary);

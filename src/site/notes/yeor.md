@@ -13,7 +13,9 @@ This is a testing page.
 
 <script>
 function getBookInfo() {
-  const titleEl = Array.from(document.querySelectorAll("h1")).find(h => h.id && h.textContent.trim() !== "the sworn library");
+  const titleEl = Array.from(document.querySelectorAll("h1")).find(
+    h => h.id && h.textContent.trim() !== "the sworn library"
+  );
   const imgEl = document.querySelector('img[alt^="bookimg"]');
   if (!titleEl || !imgEl) return null;
 
