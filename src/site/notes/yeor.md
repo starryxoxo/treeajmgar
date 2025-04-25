@@ -13,13 +13,13 @@ This is a testing page.
 
 <script>
 function getBookInfo() {
-  // Find the first H1 that doesn't have the navbar class
+  // Find the first H1 that isn't part of the navbar
   const bookTitle = Array.from(document.querySelectorAll("h1"))
-    .find(h1 => !h1.closest('nav')); // Ignore H1 inside navbar
+    .find(h1 => !h1.closest('nav')); // Exclude navbar H1
 
   if (!bookTitle) return null;
 
-  // Get the title and the current link
+  // Get the title and current link of the book
   const title = bookTitle.textContent.trim();
   const link = window.location.href;
 
@@ -44,9 +44,11 @@ function toggleLibrary() {
   const existingBook = library.find(book => book.link === bookInfo.link);
 
   if (existingBook) {
+    // Remove book from library
     library = library.filter(book => book.link !== bookInfo.link);
     alert("Removed from your library.");
   } else {
+    // Add book to library
     library.unshift(bookInfo);
     alert("Book added to your library!");
   }
@@ -55,6 +57,20 @@ function toggleLibrary() {
   updateLibraryButton();
 }
 
+function getLibrary() {
+  return JSON.parse(localStorage.getItem("bookLibrary") || "[]");
+}
+
+function saveLibrary(library) {
+  localStorage.setItem("bookLibrary", JSON.stringify(library));
+}
+
+function isInLibrary(link) {
+  const library = getLibrary();
+  return library.some(book => book.link === link);
+}
+
+// Initialize button state on page load
 document.addEventListener("DOMContentLoaded", () => {
   updateLibraryButton();
 });
