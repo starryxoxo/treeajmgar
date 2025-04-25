@@ -13,13 +13,13 @@ function renderLibrary() {
 
   const library = JSON.parse(localStorage.getItem("bookLibrary") || "[]");
   if (library.length === 0) {
-    container.innerText = "No books in your library.";
+    container.innerHTML = "No books in your library.";
     return;
   }
 
   let output = "";
   library.forEach((book, index) => {
-    output += `<p>${index + 1}</p><hr>${book.imgMD}<hr><p>[[${book.title}]](${book.link})</p><br>`;
+    output += `${index + 1}\n---\n${book.imgMD}\n---\n[[${book.link}|${book.title}]]\n\n`;
   });
 
   container.innerHTML = output;
