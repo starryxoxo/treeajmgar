@@ -15,15 +15,16 @@ This is a testing page.
 document.addEventListener('DOMContentLoaded', () => {
   function getBookInfo() {
     const button = document.getElementById('library-toggle');
-    const titleEl = [...document.querySelectorAll('h1')].find(h1 => h1.compareDocumentPosition(button) & 2);
-    const rawText = document.body.innerText;
-    const imageMatch = rawText.match(/!bookimg\|?\d*[^)]+/);
+    const h1 = [...document.querySelectorAll('h1')]
+      .find(h => h.compareDocumentPosition(button) & 2); // H1 comes after button
 
-    if (!titleEl || !imageMatch) return null;
+    const imgMatch = document.body.innerText.match(/!bookimg\|?.*?[^)]+/);
 
-    const title = titleEl.textContent.trim();
+    if (!h1 || !imgMatch) return null;
+
+    const title = h1.textContent.trim();
     const link = window.location.href;
-    const imgMD = imageMatch[0];
+    const imgMD = imgMatch[0];
     const wikilink = `[[${link}|${title}]]`;
 
     return { title, link, imgMD, wikilink };
@@ -51,24 +52,20 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!book) return alert('Book info not found.');
 
     let lib = getLibrary();
-    const exists = lib.findIndex(b => b.link === book.link);
+    const index = lib.findIndex(b => b.link === book.link);
 
-    if (exists !== -1) {
-      lib.splice(exists, 1);
+    if (index !== -1) {
+      lib.splice(index, 1);
       alert('Removed from library');
     } else {
-      lib.unshift(book);
+      lib.unshift(book); // new book goes to top
       alert('Added to library');
     }
 
     saveLibrary(lib);
     updateButton(book.link);
-    renderLibrary(); // Optional: Live update
+    renderLibrary();
   };
-
-  const book = getBookInfo();
-  if (book) updateButton(book.link);
-  renderLibrary(); // Load existing on page load
 
   window.renderLibrary = () => {
     const container = document.getElementById('library-display');
@@ -76,16 +73,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const lib = getLibrary();
     if (!lib.length) {
-      container.innerText = 'Your library is empty.';
+      container.innerText = 'No books in your library.';
       return;
     }
 
-    let markdown = '';
+    let md = '';
     lib.forEach((book, i) => {
-      markdown += `${i + 1}\n-\n${book.imgMD}\n-\n${book.wikilink}\n\n`;
+      md += `${i + 1}\n-\n${book.imgMD}\n-\n${book.wikilink}\n\n`;
     });
 
-    container.innerText = markdown;
+    container.innerText = md;
   };
+
+  const book = getBookInfo();
+  if (book) updateButton(book.link);
+  renderLibrary();
 });
 </script>
