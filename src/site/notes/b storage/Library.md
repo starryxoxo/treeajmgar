@@ -8,8 +8,7 @@
 
 Use the same browser when adding and reading from your library.
 
-**DEVS**: To reset this list, **delete your browsing data for this website** or remove bookInfo from your localStorage.
-
+<button id="reset-collection" style="color: red; font-size: 16px;">Reset Collection</button>
 <div id="library-display"></div>
 
 <script>
@@ -31,4 +30,18 @@ function renderLibrary() {
 }
 
 document.addEventListener("DOMContentLoaded", renderLibrary);
+</script>
+
+<script>
+  // Function to reset the library (clear all saved books)
+  function resetLibrary() {
+    // Remove the bookLibrary from localStorage
+    localStorage.removeItem("bookLibrary");
+
+    // Refresh the display after clearing the library
+    renderLibrary();
+  }
+
+  // Add event listener to the Reset Collection button
+  document.getElementById("reset-collection").addEventListener("click", resetLibrary);
 </script>
