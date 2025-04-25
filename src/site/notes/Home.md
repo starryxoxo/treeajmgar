@@ -8,6 +8,7 @@ Welcome to the sworn library!
 > New to sworn library?
 Click the [[blue text\|blue text]] to enter a link or a [[mpt/YHMAH\|book]].
 
+[[b storage/Library\|Visit your Library]]
 ***
 # New Arrivals
 
@@ -40,4 +41,4 @@ Bookmark this website and visit it every once in a while. Accompany us while we 
 ***
 TESTING PAGES.
 Do not enter! May break functionality of the browser.
-[[Library\|Library]] [[yeor\|yeor]]
+[[b storage/Library\|Library]] [[yeor\|yeor]]
