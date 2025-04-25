@@ -6,6 +6,10 @@
 
 **This feature is experimental and unstable as of now.** It may be deprecated or included in later versions. It may break functionality for this website. Use with caution.
 
+Use the same browser when adding and reading from your library.
+
+**DEVS**: To reset this list, **delete your browsing data for this website** or remove bookInfo from your localStorage.
+
 <div id="library-display"></div>
 
 <script>
