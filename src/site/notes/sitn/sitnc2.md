@@ -186,7 +186,7 @@ Looking at his deathbed surrounded by flowers, thinking of what we could have be
 
 **Acknowledgement** • From the author
 
-Hi reader! Thank you so much for reading this oneshot I made. It really means alot for me to make and share the stories I make with you. This has been a really fun journey and I hope you aren't crying, lol. Instead, take this opportunity to love your loved ones before it's too late. Time passes by and from day to day, we don't know what will come next.
+Hi reader! Thank you so much for reading this oneshot I made. It really means alot for me to make and share the stories I make with you. This has been a really fun journey to do lol.
 
 **Again, thank you for reading Strangers by Midnight.** I hope you liked it!
 
