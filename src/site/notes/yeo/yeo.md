@@ -27,14 +27,16 @@ I always catch you looking at me and it isn't the same as anyone else's gaze. Th
 **Before Reading**
 [[dev/slowload\|Read Notice: Slowload]]
 This book is rated **PG**.
+Contains **13+** content.
 
-[[yeo/yeop1\|Read]]
+2 parts, 2 pages • [[yeo/yeop1\|Read]]
+
 
 ***
 
 | Other Stories                    |                      |
 | :------------------------------- | -------------------- |
-| ![coverimg\|185](/img/user/sitn/sitncover.webp) | More stories soon... |
+| ![coverimg\|160](/img/user/sitn/sitncover.webp) | More stories soon... |
 | [[sitn/sitn\|Strangers by Midnight]]  |                      |
 
 ***
