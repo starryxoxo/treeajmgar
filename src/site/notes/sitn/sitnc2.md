@@ -10,8 +10,8 @@
 
 ***
 
-![sitn37.jpg](/img/user/b%20storage/a%20storage/sitn37.jpg)
-![sitn38.jpg](/img/user/b%20storage/a%20storage/sitn38.jpg)
+![sitn37](https://i.imgur.com/inzJBQR.jpeg)
+![sitn38](https://i.imgur.com/3J4blb2.jpeg)
 
 After thinking na puntahan si Jay sa classroom niya, biglang dumating yung kasunod na teacher namin kaya umupo nalang ako sa upuan ko.
 
@@ -19,8 +19,8 @@ After thinking na puntahan si Jay sa classroom niya, biglang dumating yung kasun
 ##### After 2nd Period
 *Ang tagal naman ng oras... gusto ko nang umuwi...*
 
-![sitn39.jpg](/img/user/b%20storage/a%20storage/sitn39.jpg)
-![sitn40.jpg](/img/user/b%20storage/a%20storage/sitn40.jpg)
+![sitn39](https://i.imgur.com/0bzNUGe.jpeg)
+![sitn40](https://i.imgur.com/0yFr2IM.jpeg)
 
 ***
 
@@ -32,19 +32,19 @@ It's been 5 months with Jay. Nagpaalam na kami sa parents namin, and they approv
 
 *Someone like Jay was her dream son-in-law. Masipag na, gwapo pa.* And no one's in a bad side, so it's a win-win.
 
-![sitn41.jpg](/img/user/b%20storage/a%20storage/sitn41.jpg)
-![sitn42.jpg](/img/user/b%20storage/a%20storage/sitn42.jpg)
-
+![sitn41](https://i.imgur.com/LkyCo9f.jpeg)
+![sitn42](https://i.imgur.com/tjIw69b.jpeg)
 
 And that, brings us to now.
 
- ![sitn43.jpg](/img/user/b%20storage/a%20storage/sitn43.jpg)![sitn44.jpg](/img/user/b%20storage/a%20storage/sitn44.jpg)
+![sitn43](https://i.imgur.com/wtgx69a.jpeg)
+![sitn44](https://i.imgur.com/3DM1l1b.jpeg)
 
-![sitn45.jpg](/img/user/b%20storage/a%20storage/sitn45.jpg)
-![sitn46.jpg](/img/user/b%20storage/a%20storage/sitn46.jpg)
+![sitn45](https://i.imgur.com/2SjJcdv.jpeg)
+![sitn46](https://i.imgur.com/HRjeOqZ.jpeg)
 
-![sitn47.jpg](/img/user/b%20storage/a%20storage/sitn47.jpg)
-![sitn48.jpg](/img/user/b%20storage/a%20storage/sitn48.jpg)
+![sitn47](https://i.imgur.com/dIxrq4D.jpeg)
+![sitn48](https://i.imgur.com/3ZqGLcU.jpeg)
 
 Pagkauwi ko ng bahay nagpaalam ako kay Mama na lalabas lang kami ni Jay para mag-date.
 
@@ -62,16 +62,16 @@ Di ako makababa since this is our **first date**. *Natural blush 'to.*
 
 After a few seconds of hesitation, nagbaba na ako. Our eyes met at a glance, but I immediately looked away.
 
-![sitn49.jpg](/img/user/b%20storage/a%20storage/sitn49.jpg)
+![sitn49](https://i.imgur.com/ROWMDWa.jpeg)
 
-![sitn50.jpg](/img/user/b%20storage/a%20storage/sitn50.jpg)
-![sitn51.jpg](/img/user/b%20storage/a%20storage/sitn51.jpg)
+![sitn50](https://i.imgur.com/wQY7hgV.jpeg)
+![sitn51](https://i.imgur.com/LbBSZrV.jpeg)
 
 It was undoubtedly a wonderful night. We went shopping, eating, strolling and so much more. I wished time would stop but it kept going. It's just *so nice* to be with you.
 
-![sitn52.jpg](/img/user/b%20storage/a%20storage/sitn52.jpg)
-![sitn53.png](/img/user/b%20storage/a%20storage/sitn53.png)
-![sitn55.png](/img/user/b%20storage/a%20storage/sitn55.png)
+![sitn52](https://i.imgur.com/iATTMFu.jpeg)
+![sitn53](https://i.imgur.com/6MHVHa8.png)
+![sitn55](https://i.imgur.com/3LKr3j6.jpeg)
 
 Obviously, it was a brag with them lol.
 
@@ -116,18 +116,18 @@ I received a message. But it wasn't Jay...
 
 **It was her mom.**
 
-![sitn56.jpg](/img/user/b%20storage/a%20storage/sitn56.jpg)
+![sitn56](https://i.imgur.com/OEWzv5Y.jpeg)
 
 *... There's no way, please... huwag lang itong iniisip ko.* 
 
-![sitn57.jpg](/img/user/b%20storage/a%20storage/sitn57.jpg)
+![sitn57](https://i.imgur.com/azLkRfH.jpeg)
 
 *I was right...*
 Looking at these messages, I couldn't see my phone in front of me. *My tears were awfully burning my eyes.*
 
 *What do I do now?...*
 
-![sitn58.jpg](/img/user/b%20storage/a%20storage/sitn58.jpg)
+![sitn58](https://i.imgur.com/MY75dAI.jpeg)
 
 I rushed downstairs, my legs trembling and my eyes red-colored. Nakita ako ni mamang naiyak and she immediately came to hug me.
 
@@ -172,10 +172,10 @@ Malungkot na tumingin sa'kin si mama.
 
 ***
 
-![sitn59.png](/img/user/b%20storage/a%20storage/sitn59.png)
-![sitn60.png](/img/user/b%20storage/a%20storage/sitn60.png)
-![sitn61.png](/img/user/b%20storage/a%20storage/sitn61.png)
-![sitn62.png](/img/user/b%20storage/a%20storage/sitn62.png)
+![sitn59](https://i.imgur.com/IkOMVVQ.jpeg)
+![sitn60](https://i.imgur.com/NxSYd5f.png)
+![sitn61](https://i.imgur.com/hrXkBTr.jpeg)
+![sitn62](https://i.imgur.com/lz1UTcX.png)
 
 ###### The End
 Jay never woke up the next day. I suppose he is resting now.
