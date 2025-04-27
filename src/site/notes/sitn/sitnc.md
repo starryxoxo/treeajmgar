@@ -15,6 +15,9 @@ Any resemblances to actual persons, living or dead, or actual events are purely 
 
 ***
 
+|  1  |
+| :-: |
+
 ![sitnbanner.webp](/img/user/sitn/sitnbanner.webp)
 
 ***
