@@ -126,3 +126,4 @@ Copyright © 2025 the sworn library
 All Rights Reserved.
 
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/protect-images.js"></script>
+<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/basf.js"></script>
