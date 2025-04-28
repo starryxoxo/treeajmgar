@@ -54,6 +54,11 @@ Pagkauwi ko ng bahay nagpaalam ako kay Mama na lalabas lang kami ni Jay para mag
 
 As minutes passed, I took the time to change my clothes. In a sudden, our doorbell rang. It was Jay, as expected.
 
+|      You May Like       |
+| :---------------------: |
+|   ![yeobanner.webp](/img/user/yeo/yeostorage/yeobanner.webp)   |
+| [[yeo/yeo\|Your Eyes Only]] |
+
 *"Anak, si Jay narito na!"* 
 Sigaw ni mama sa baba.
 
@@ -203,4 +208,3 @@ Copyright © 2025 the sworn library.
 All Rights Reserved.
 
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/protect-images.js"></script>
-<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/wait.js"></script>
