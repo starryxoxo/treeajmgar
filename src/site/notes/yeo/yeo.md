@@ -30,7 +30,7 @@ This book is rated **PG**.
 Contains **13+** content.
 
 1 part, 2 pages • [[yeo/yeop1\|Read]]
-[[yeoparts\|Table of Contents]]
+[[yeo/yeoparts\|Table of Contents]]
 
 
 ***
