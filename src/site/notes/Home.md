@@ -22,6 +22,11 @@ Click the [[blue text\|blue text]] to enter a link or a [[mpt/YHMAH\|book]].
 |      ![sitnbanner.webp](/img/user/sitn/sitnbanner.webp)       |
 | [[sitn/Strangers by Midnight\|Strangers by Midnight]] |
 
+| Discover                        |                                  |                                  |
+| ------------------------------- | -------------------------------- | -------------------------------- |
+| ![coverimg\|165](/img/user/yeo/yeostorage/yeocover.webp) | ![coverimg\|165](/img/user/sitn/sitncover.webp) | ![coverimg\|165](/img/user/sitn/sitncover.webp) |
+| [[yeo/Your Eyes Only\|Your Eyes Only]]              | [[sitn/Strangers by Midnight\|Strangers by Midnight]]        | [[sitn/Strangers by Midnight\|Strangers by Midnight]]        |
+
 |           Coming Soon           |
 | :-----------------------------: |
 |       ![tmpbanner.webp](/img/user/b%20storage/a%20storage/tmpbanner.webp)       |
