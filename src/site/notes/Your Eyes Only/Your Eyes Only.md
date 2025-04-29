@@ -31,7 +31,7 @@ I always catch you looking at me and it isn't the same as anyone else's gaze. Th
 This book is rated **PG**.
 Contains **13+** content.
 
-2 parts, 2 pages • [[Part 1\|Read]]
+2 parts, 2 pages • [[Your Eyes Only/Part 1\|Read]]
 [[Your Eyes Only/yeoparts\|Table of Contents]]
 
 
