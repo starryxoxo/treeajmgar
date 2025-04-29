@@ -4,7 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
       "Other Reads",
       "Suggested Titles",
       "You Might Enjoy",
-      "Explore More"
+      "Explore More",
+      "You May Like",
+      "Take a Break",
+      "Check This Out",
+      "Other Books"
     ];
 
     // Select the specific wrapper div
