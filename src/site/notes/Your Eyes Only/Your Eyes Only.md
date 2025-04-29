@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"/yeo","permalink":"//yeo/"}
+{"dg-publish":true,"permalink":"/your-eyes-only/your-eyes-only/"}
 ---
 
 [[Home\|Home]]
