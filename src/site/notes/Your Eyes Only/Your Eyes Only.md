@@ -5,9 +5,7 @@
 [[Home\|Home]]
 
 ***
-
-![bookimg\|360](/img/user/Your Eyes Only/yeostorage/yeocover.webp)
-
+![bookimg|360](/img/user/Your Eyes Only/yeostorage/yeocover.webp)
 ***
 <button id="library-toggle" onclick="toggleLibrary()">Add to Reading List</button>
 

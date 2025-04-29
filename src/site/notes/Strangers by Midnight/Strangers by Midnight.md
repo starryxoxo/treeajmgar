@@ -5,8 +5,7 @@
 
 [[Home\|Home]]
 
-***
-![bookimg\|360](/img/user/Strangers by Midnight/sitncover.webp)
+![bookimg|360](/img/user/Strangers by Midnight/sitncover.webp)
 ***
 
 <button id="library-toggle" onclick="toggleLibrary()">Add to Reading List</button>
