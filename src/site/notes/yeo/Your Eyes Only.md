@@ -29,7 +29,7 @@ I always catch you looking at me and it isn't the same as anyone else's gaze. Th
 This book is rated **PG**.
 Contains **13+** content.
 
-2 parts, 2 pages • [[yeo/Part 1\|Read]]
+0 pages • [[yeo/Part 1\|Read]]
 [[yeo/yeoparts\|Table of Contents]]
 
 
