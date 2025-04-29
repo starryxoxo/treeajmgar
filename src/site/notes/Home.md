@@ -22,10 +22,10 @@ Click the [[blue text\|blue text]] to enter a link or a [[mpt/YHMAH\|book]].
 |      ![sitnbanner.webp](/img/user/Strangers%20by%20Midnight/sitnbanner.webp)       |
 | [[Strangers by Midnight/Strangers by Midnight\|Strangers by Midnight]] |
 
-| Discover                        |                                  |                                  |
-| ------------------------------- | -------------------------------- | -------------------------------- |
-| ![coverimg\|165](/img/user/Your Eyes Only/yeostorage/yeocover.webp) | ![coverimg\|165](/img/user/Strangers by Midnight/sitncover.webp) | ![coverimg\|165](/img/user/Strangers by Midnight/sitncover.webp) |
-| [[Your Eyes Only/Your Eyes Only\|Your Eyes Only]]         | [[Strangers by Midnight/Strangers by Midnight\|Strangers by Midnight]]  | [[Strangers by Midnight/Strangers by Midnight\|Strangers by Midnight]] |
+| Discover                           |                                                  |                                                  |
+| ---------------------------------- | ------------------------------------------------ | ------------------------------------------------ |
+| ![coverimg\|165](/img/user/Your Eyes Only/yeostorage/yeocover.webp)    | ![coverimg\|165](/img/user/Strangers by Midnight/sitncover.webp)                 | ![coverimg\|165](/img/user/Strangers by Midnight/sitncover.webp)                 |
+| [[Your Eyes Only/Your Eyes Only\|Your Eyes Only]] | [[Strangers by Midnight/Strangers by Midnight\|Strangers by Midnight]] | [[Strangers by Midnight/Strangers by Midnight\|Strangers by Midnight]] |
 
 |           Coming Soon           |
 | :-----------------------------: |
