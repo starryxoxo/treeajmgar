@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/dev/slowload/"}
+{"dg-publish":true,"permalink":"/dev/slowload/","hide":true}
 ---
 
 

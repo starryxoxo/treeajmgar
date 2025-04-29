@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/dev/dev/"}
+{"dg-publish":true,"permalink":"/dev/dev/","hide":true}
 ---
 
 

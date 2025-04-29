@@ -30,7 +30,7 @@ This book is rated **PG**.
 Contains **13+** content:
 Blood and detailed content.
 
-2 pages • [[Strangers by Midnight/Page 1\|Read]]
+2 pages • [[Strangers by Midnight/sitnc\|Read]]
 
 ***
 

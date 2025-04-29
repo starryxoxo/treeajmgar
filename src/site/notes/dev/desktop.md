@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/dev/desktop/"}
+{"dg-publish":true,"permalink":"/dev/desktop/","hide":true}
 ---
 
 [[Home\|Home]]
