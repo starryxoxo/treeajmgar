@@ -2,23 +2,27 @@ document.addEventListener("DOMContentLoaded", () => {
   const lastPage = localStorage.getItem("lastPage");
   const scrollPos = localStorage.getItem("scrollPos");
   const currentPage = window.location.href;
+
+  const section = document.getElementById("continue-section");
   const continueBtn = document.getElementById("continueBtn");
 
-  // Only show the button if lastPage exists and isn't the current home page
-  if (lastPage && lastPage !== currentPage) {
-    continueBtn.style.display = "inline-block";
+  // Check for valid saved data and not already on last page
+  if (lastPage && scrollPos !== null && lastPage !== currentPage) {
+    section.style.display = "block";
 
     continueBtn.addEventListener("click", () => {
-      // Store scrollPos separately so we can use it *after* navigation
       sessionStorage.setItem("resumeScrollPos", scrollPos);
       window.location.href = lastPage;
     });
+  } else {
+    // No data or already on last page, hide section
+    section.style.display = "none";
   }
 
-  // If returning to the saved page, scroll to position
+  // If resuming to last page, apply scroll
   const resumePos = sessionStorage.getItem("resumeScrollPos");
   if (resumePos !== null) {
     window.scrollTo(0, parseInt(resumePos));
-    sessionStorage.removeItem("resumeScrollPos"); // only scroll once
+    sessionStorage.removeItem("resumeScrollPos");
   }
 });
