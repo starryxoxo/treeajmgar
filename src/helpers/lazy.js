@@ -1,49 +1,53 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const transparentPlaceholder = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
 
+  document.addEventListener("DOMContentLoaded", function () {
     function setupLazyImages() {
       const images = document.querySelectorAll("img:not([data-lazy])");
 
       images.forEach(img => {
-        const realSrc = img.getAttribute("src");
-        if (realSrc && !img.hasAttribute("data-src")) {
-          img.setAttribute("data-src", realSrc);
-          img.setAttribute("src", transparentPlaceholder); // Keep sizing, delay load
+        const src = img.getAttribute("src");
+        if (src && !img.hasAttribute("data-src")) {
+          img.setAttribute("data-src", src);
+          img.setAttribute("data-lazy", "true");
+          // Do NOT touch the src — let it stay for sizing
+          img.setAttribute("loading", "lazy"); // modern lazy loading
+          img.style.visibility = "hidden";     // hide it until it's loaded
         }
-        img.setAttribute("data-lazy", "true");
       });
 
+      function loadImage(img) {
+        const realSrc = img.getAttribute("data-src");
+        if (realSrc) {
+          // Reload the image only if needed
+          const clone = new Image();
+          clone.src = realSrc;
+          clone.onload = function () {
+            img.style.visibility = "visible"; // show when loaded
+            img.classList.add("loaded");
+            img.removeAttribute("data-src");
+          };
+        }
+      }
+
       if ('IntersectionObserver' in window) {
-        const observer = new IntersectionObserver((entries, observer) => {
+        const observer = new IntersectionObserver((entries, obs) => {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
-              const img = entry.target;
-              const realSrc = img.getAttribute("data-src");
-              if (realSrc) {
-                img.setAttribute("src", realSrc);
-                img.removeAttribute("data-src");
-                observer.unobserve(img);
-              }
+              loadImage(entry.target);
+              obs.unobserve(entry.target);
             }
           });
         });
 
         document.querySelectorAll("img[data-lazy]").forEach(img => observer.observe(img));
       } else {
-        // Fallback for older browsers
-        document.querySelectorAll("img[data-lazy]").forEach(img => {
-          const realSrc = img.getAttribute("data-src");
-          if (realSrc) {
-            img.setAttribute("src", realSrc);
-            img.removeAttribute("data-src");
-          }
-        });
+        // Fallback: load all immediately
+        document.querySelectorAll("img[data-lazy]").forEach(img => loadImage(img));
       }
     }
 
     setupLazyImages();
 
-    // Observe new images if dynamically added (e.g., Obsidian re-renders)
+    // Re-run for dynamically added markdown
     const mo = new MutationObserver(setupLazyImages);
     mo.observe(document.body, { childList: true, subtree: true });
   });
