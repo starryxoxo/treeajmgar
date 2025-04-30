@@ -127,3 +127,4 @@ All Rights Reserved.
 
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/protect-images.js"></script>
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/lazy.js"></script>
+<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/lastPage.js"></script>

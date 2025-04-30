@@ -15,6 +15,10 @@ Click the [[blue text\|blue text]] to enter a link or a [[mpt/YHMAH\|book]].
 [[b storage/Library\|Visit your Reading List]]
 
 ***
+<section id="continue-section" style="display: none;">
+    <button id="continueBtn">Continue where you left off</button>
+</section>
+
 # New Arrivals
 
 |            Featured             |
@@ -45,3 +49,4 @@ Bookmark this website and visit it every once in a while. Accompany us while we 
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/dynamictable.js"></script>
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/protect-images.js"></script>
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/lazy.js"></script>
+<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/homeLastPage.js"></script>
