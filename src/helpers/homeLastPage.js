@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const section = document.getElementById("continue-section");
+  const continueBtn = document.getElementById("continueBtn");
+
   const lastPage = localStorage.getItem("lastPage");
   const scrollPos = localStorage.getItem("scrollPos");
   const currentPage = window.location.href;
 
-  const section = document.getElementById("continue-section");
-  const continueBtn = document.getElementById("continueBtn");
-
-  // Check for valid saved data and not already on last page
+  // Only show button if lastPage is valid and not this page
   if (lastPage && scrollPos !== null && lastPage !== currentPage) {
     section.style.display = "block";
 
@@ -15,14 +15,15 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = lastPage;
     });
   } else {
-    // No data or already on last page, hide section
     section.style.display = "none";
   }
 
-  // If resuming to last page, apply scroll
-  const resumePos = sessionStorage.getItem("resumeScrollPos");
-  if (resumePos !== null) {
-    window.scrollTo(0, parseInt(resumePos));
-    sessionStorage.removeItem("resumeScrollPos");
-  }
+  // Restore scroll AFTER all content has loaded
+  window.addEventListener("load", () => {
+    const resumePos = sessionStorage.getItem("resumeScrollPos");
+    if (resumePos !== null) {
+      window.scrollTo({ top: parseInt(resumePos), behavior: "auto" });
+      sessionStorage.removeItem("resumeScrollPos");
+    }
+  });
 });
