@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const scrollPos = localStorage.getItem("scrollPos");
   const currentPage = window.location.href;
 
-  // Only show button if lastPage is valid and not this page
+  // Only show section if valid last page exists and it's not this one
   if (lastPage && scrollPos !== null && lastPage !== currentPage) {
     section.style.display = "block";
 
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     section.style.display = "none";
   }
 
-  // Restore scroll AFTER all content has loaded
+  // Apply scroll after navigation to last page
   window.addEventListener("load", () => {
     const resumePos = sessionStorage.getItem("resumeScrollPos");
     if (resumePos !== null) {
