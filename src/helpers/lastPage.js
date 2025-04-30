@@ -1,16 +1,20 @@
-function saveProgress() {
-  const scrollY = window.scrollY;
-  const href = window.location.href;
-  localStorage.setItem("lastPage", href);
-  localStorage.setItem("scrollPos", scrollY);
-  console.log("[Save] Page:", href);
-  console.log("[Save] ScrollY:", scrollY);
-}
+// Force saving scroll position every second
+  setInterval(() => {
+    const scrollY = window.scrollY;
+    localStorage.setItem("scrollPos", scrollY);
+    console.log("[Force Save] Scroll position saved:", scrollY);
+  }, 3000); // Save every 3 seconds
 
-// Save when leaving or tab hides
-window.addEventListener("beforeunload", saveProgress);
-window.addEventListener("visibilitychange", () => {
-  if (document.visibilityState === "hidden") {
-    saveProgress();
-  }
-});
+  // Save last page when the page is unloaded or hidden (for navigation purposes)
+  window.addEventListener("pagehide", () => {
+    const scrollY = window.scrollY;
+    localStorage.setItem("scrollPos", scrollY);
+    console.log("[Pagehide] Saved scrollPos:", scrollY);
+    localStorage.setItem("lastPage", window.location.href);
+    console.log("[Pagehide] Saved lastPage:", window.location.href);
+  });
+
+  // Debugging output to check scroll position on page load
+  window.addEventListener("load", () => {
+    console.log("[Initial Load] Initial scroll position:", window.scrollY);
+  });
