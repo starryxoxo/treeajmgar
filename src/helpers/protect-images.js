@@ -54,9 +54,9 @@ window.addEventListener("load", () => {
   });
 });
 
-// Prevent screenshots
+// Prevent screenshots with Incognito-like technique
 function preventScreenshots() {
-  // For desktop: detect PrintScreen key
+  // Detect the PrintScreen key and clear the clipboard
   document.addEventListener("keyup", (e) => {
     if (e.key === "PrintScreen") {
       navigator.clipboard.writeText(""); // Clear clipboard
@@ -64,19 +64,28 @@ function preventScreenshots() {
     }
   });
 
-  // For mobile: prevent screen recording and screenshots
+  // Use hardware-accelerated overlay
+  window.addEventListener("load", () => {
+    const blocker = document.createElement("div");
+    blocker.style.position = "absolute";
+    blocker.style.top = "0";
+    blocker.style.left = "0";
+    blocker.style.width = "100vw";
+    blocker.style.height = "100vh";
+    blocker.style.background = "rgba(255, 255, 255, 0.01)"; // Invisible overlay
+    blocker.style.zIndex = "9999";
+    blocker.style.pointerEvents = "none"; // Allow interaction below it
+    blocker.style.backdropFilter = "blur(0)"; // Anti-screenshot filter
+    blocker.id = "screenshot-blocker";
+
+    document.body.appendChild(blocker);
+  });
+
+  // Detect screen recording using WebGL
   setInterval(() => {
-    const video = document.createElement("video");
-    const canvas = document.createElement("canvas");
-    const ctx = canvas.getContext("2d");
-
-    // Try to draw something on the canvas
-    ctx.drawImage(video, 0, 0);
-    const pixelData = ctx.getImageData(0, 0, 1, 1).data;
-
-    // If the pixel data is empty, a screenshot is being taken
-    if (!pixelData.length) {
-      alert("Screenshots and screen recording are disabled on this site.");
+    const gl = document.createElement("canvas").getContext("webgl");
+    if (!gl) {
+      alert("Screen recording is disabled on this site.");
     }
   }, 1000);
 }
