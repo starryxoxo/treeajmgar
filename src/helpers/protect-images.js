@@ -53,3 +53,32 @@ window.addEventListener("load", () => {
     img.remove();
   });
 });
+
+// Prevent screenshots
+function preventScreenshots() {
+  // For desktop: detect PrintScreen key
+  document.addEventListener("keyup", (e) => {
+    if (e.key === "PrintScreen") {
+      navigator.clipboard.writeText(""); // Clear clipboard
+      alert("Screenshots are disabled on this site.");
+    }
+  });
+
+  // For mobile: prevent screen recording and screenshots
+  setInterval(() => {
+    const video = document.createElement("video");
+    const canvas = document.createElement("canvas");
+    const ctx = canvas.getContext("2d");
+
+    // Try to draw something on the canvas
+    ctx.drawImage(video, 0, 0);
+    const pixelData = ctx.getImageData(0, 0, 1, 1).data;
+
+    // If the pixel data is empty, a screenshot is being taken
+    if (!pixelData.length) {
+      alert("Screenshots and screen recording are disabled on this site.");
+    }
+  }, 1000);
+}
+
+preventScreenshots();
