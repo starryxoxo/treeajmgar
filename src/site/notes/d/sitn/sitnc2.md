@@ -52,6 +52,13 @@ Pagkauwi ko ng bahay nagpaalam ako kay Mama na lalabas lang kami ni Jay para mag
 *"Una niyo yang labas ah. Sige, payag ako basta mag-iingat lang kayo."* Sabay payag ni mama sa'kin.
 "Opo ma." Sagot ko sakanya.
 
+
+|                              Listen to ENHYPEN                              |
+| :-------------------------------------------------------------------------: |
+|                                ![en1.jpg](/img/user/d/sitn/en1.jpg)                                 |
+| [YouTube Music](https://music.youtube.com/channel/UC5bxTdrcWXji987o_LlcNNA) |
+
+
 As minutes passed, I took the time to change my clothes. In a sudden, our doorbell rang. It was Jay, as expected.
 
 *"Anak, si Jay narito na!"* 

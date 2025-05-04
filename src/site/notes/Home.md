@@ -34,8 +34,8 @@ Click the [[blue text\|blue text]] to enter a link or a [[b storage/mpt/YHMAH\|b
 
 |     Coming Soon     |
 | :-----------------: |
-| ![ddmbanner.webp](/img/user/daydreamin/ddmstorage/ddmbanner.webp) |
-|  [[daydreamin/ddm\|Daydream]]  |
+| ![ddmbanner.webp](/img/user/dayd/ddmstorage/ddmbanner.webp) |
+|  [[dayd/ddm\|Daydream]]  |
 
 ---
 Copyright © 2025 the sworn library

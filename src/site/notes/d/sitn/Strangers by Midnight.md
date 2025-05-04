@@ -45,4 +45,4 @@ All Rights Reserved.
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/protect-images.js"></script>
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/lazy.js"></script>
 
-[^1]: This book is Tagalog-dominant. To learn more about language ranking, click [[lang\|here]]
+[^1]: This book is Tagalog-dominant. To learn more about language ranking, click [[b storage/lang\|here]]
