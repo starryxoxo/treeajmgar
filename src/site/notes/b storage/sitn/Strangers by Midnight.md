@@ -7,6 +7,11 @@
 
 ***
 
+![sitncover.webp](/img/user/b%20storage/sitn/sitncover.webp)
+
+
+***
+
 <button id="library-toggle" onclick="toggleLibrary()">Add to Reading List</button>
 
 ###### ENHYPEN ONESHOT AU
