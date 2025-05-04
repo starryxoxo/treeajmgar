@@ -5,7 +5,6 @@
 
 [[Home\|Home]]
 
-![bookimg|360](/img/user/b storage/sitn/sitncover.webp)
 ***
 
 <button id="library-toggle" onclick="toggleLibrary()">Add to Reading List</button>
