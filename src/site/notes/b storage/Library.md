@@ -11,5 +11,4 @@ Use the **same browser** when adding and reading from your library.
 <button id="reset-collection" style="color: red; font-size: 16px;">Reset Collection</button>
 <div id="library-display"></div>
 
-<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/librender.js"></script>
-<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/libreset.js"></script>
+<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/library.js"></script>
