@@ -23,14 +23,14 @@ Click the [[blue text\|blue text]] to enter a link or a [[b storage/mpt/YHMAH\|b
 
 |            Featured             |
 | :-----------------------------: |
-|      ![sitnbanner.webp](/img/user/b%20storage/sitn/sitnbanner.webp)       |
-| [[b storage/sitn/Strangers by Midnight\|Strangers by Midnight]] |
+|      ![sitnbanner.webp](/img/user/d/sitn/sitnbanner.webp)       |
+| [[d/sitn/Strangers by Midnight\|Strangers by Midnight]] |
 
 
 | Discover                         |                           |                           |                           |
 | -------------------------------- | ------------------------- | ------------------------- | ------------------------- |
-| ![coverimg\|165](/img/user/b storage/sitn/sitncover.webp) | ![coverimg\|165](/img/user/b storage/swb.jpg) | ![coverimg\|165](/img/user/b storage/swb.jpg) | ![coverimg\|165](/img/user/b storage/swb.jpg) |
-| [[b storage/sitn/Strangers by Midnight\|Strangers by Midnight]]        |                           |                           |                           |
+| ![coverimg\|165](/img/user/d/sitn/sitncover.webp) | ![coverimg\|165](/img/user/d/swb.jpg) | ![coverimg\|165](/img/user/d/swb.jpg) | ![coverimg\|165](/img/user/d/swb.jpg) |
+| [[d/sitn/Strangers by Midnight\|Strangers by Midnight]]        |                           |                           |                           |
 
 |     Coming Soon     |
 | :-----------------: |

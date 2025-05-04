@@ -5,8 +5,8 @@
 
 | Discover                    |                                 |                                 |
 | --------------------------- | ------------------------------- | ------------------------------- |
-| ![book\|160](/img/user/yeo/yeostorage/yeocover.webp) | ![book\|160](/img/user/b storage/sitn/sitncover.webp)    | ![book\|160](/img/user/b storage/sitn/sitncover.webp)    |
-| [[yeo/Your Eyes Only\|Your Eyes Only]]     | [[b storage/sitn/Strangers by Midnight\|Strangers by Midnight]] | [[b storage/sitn/Strangers by Midnight\|Strangers by Midnight]] |
+| ![book\|160](/img/user/yeo/yeostorage/yeocover.webp) | ![book\|160](/img/user/d/sitn/sitncover.webp)    | ![book\|160](/img/user/d/sitn/sitncover.webp)    |
+| [[yeo/Your Eyes Only\|Your Eyes Only]]     | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]] | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]] |
 
 This is a testing page.
 
@@ -57,5 +57,5 @@ This is a testing page.
 
 |            Featured             |
 | :-----------------------------: |
-|   ![banner](/img/user/b storage/sitn/sitnbanner.webp)    |
-| [[b storage/sitn/Strangers by Midnight\|Strangers by Midnight]] |
+|   ![banner](/img/user/d/sitn/sitnbanner.webp)    |
+| [[d/sitn/Strangers by Midnight\|Strangers by Midnight]] |
