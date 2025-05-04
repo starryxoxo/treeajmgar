@@ -47,7 +47,6 @@ Bookmark this website and visit it every once in a while. Accompany us while we 
 
 ***
 
-<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/dynamictable.js"></script>
-<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/protect-images.js"></script>
-<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/lazy.js"></script>
+<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/tables.js"></script>
+<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/imagelist.js"></script>
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/homeLastPage.js"></script>

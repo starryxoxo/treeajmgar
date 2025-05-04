@@ -209,7 +209,5 @@ Hi reader! Thank you so much for reading this oneshot I made. It really means al
 Copyright © 2025 the sworn library.
 All Rights Reserved.
 
-<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/protect-images.js"></script>
-<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/tbheader.js"></script>
-<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/lazy.js"></script>
+<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/imagelist.js"></script>
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/lastPage.js"></script>
