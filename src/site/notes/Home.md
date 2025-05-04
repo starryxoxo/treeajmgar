@@ -13,12 +13,6 @@ Click the [[blue text\|blue text]] to enter a link or a [[b storage/mpt/YHMAH\|b
 ***
 
 [[b storage/Library\|Visit your Reading List]]
-
-***
-<section id="continue-section" style="display: none;">
-    <button id="continueBtn">Continue where you left off</button>
-</section>
-
 # New Arrivals
 
 |            Featured             |
@@ -38,12 +32,10 @@ Click the [[blue text\|blue text]] to enter a link or a [[b storage/mpt/YHMAH\|b
 |  [[dayd/ddm\|Daydream]]  |
 
 ---
+Bookmark this website and visit it every once in a while. Accompany us while we grow our collection!
+
 Copyright © 2025 the sworn library
 All Rights Reserved.
-
-***
-
-Bookmark this website and visit it every once in a while. Accompany us while we grow our collection!
 
 ***
 
