@@ -8,7 +8,7 @@
 | :-----------: |
 
 > New to sworn library?
-Click the [[blue text\|blue text]] to enter a link or a [[mpt/YHMAH\|book]].
+Click the [[blue text\|blue text]] to enter a link or a [[b storage/mpt/YHMAH\|book]].
 
 ***
 
@@ -23,18 +23,18 @@ Click the [[blue text\|blue text]] to enter a link or a [[mpt/YHMAH\|book]].
 
 |            Featured             |
 | :-----------------------------: |
-|      ![sitnbanner.webp](/img/user/sitn/sitnbanner.webp)       |
-| [[sitn/Strangers by Midnight\|Strangers by Midnight]] |
+|      ![sitnbanner.webp](/img/user/b%20storage/sitn/sitnbanner.webp)       |
+| [[b storage/sitn/Strangers by Midnight\|Strangers by Midnight]] |
 
-|                                  |                           |                           |                           |
+| Discover                         |                           |                           |                           |
 | -------------------------------- | ------------------------- | ------------------------- | ------------------------- |
-| ![coverimg\|165](/img/user/sitn/sitncover.webp) | ![coverimg\|165](/img/user/swb.jpg) | ![coverimg\|165](/img/user/swb.jpg) | ![coverimg\|165](/img/user/swb.jpg) |
-| [[sitn/Strangers by Midnight\|Strangers by Midnight]]        | Soon...                   | Soon...                   | Soon...                   |
+| ![coverimg\|165](/img/user/b storage/sitn/sitncover.webp) | ![coverimg\|165](/img/user/b storage/swb.jpg) | ![coverimg\|165](/img/user/b storage/swb.jpg) | ![coverimg\|165](/img/user/b storage/swb.jpg) |
+| [[b storage/sitn/Strangers by Midnight\|Strangers by Midnight]]        | Soon...                   | Soon...                   | Soon...                   |
 
-|           Coming Soon           |
-| :-----------------------------: |
-|       ![tmpbanner.webp](/img/user/b%20storage/a%20storage/tmpbanner.webp)       |
-| [[mpt/YHMAH\|The Mafia's Princess]] |
+|     Coming Soon     |
+| :-----------------: |
+| ![ddmbanner.webp](/img/user/daydreamin/ddmstorage/ddmbanner.webp) |
+|  [[daydreamin/ddm\|Daydream]]  |
 
 ---
 Copyright © 2025 the sworn library

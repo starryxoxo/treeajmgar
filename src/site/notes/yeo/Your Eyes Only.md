@@ -37,8 +37,8 @@ Moderate profanities
 
 | Other Stories                    |                      |
 | :------------------------------- | -------------------- |
-| ![coverimg\|160](/img/user/sitn/sitncover.webp) | More stories soon... |
-| [[sitn/Strangers by Midnight\|Strangers by Midnight]]  |                      |
+| ![coverimg\|160](/img/user/b storage/sitn/sitncover.webp) | More stories soon... |
+| [[b storage/sitn/Strangers by Midnight\|Strangers by Midnight]]  |                      |
 
 ***
 
