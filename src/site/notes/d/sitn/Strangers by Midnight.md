@@ -23,7 +23,7 @@
 That's what they always say. But with you, there's certainly more than love that I feel. Just as I began to realize my feelings deeper for you, nahanap ako ng tadhana. Why now...
 
 **Author**: the sworn library
-**Languages**: Tagalog, English
+**Languages**: Tagalog, English[^1]
 **Status**: Completed
 **Date**: April 14, 2025
 
@@ -46,3 +46,5 @@ All Rights Reserved.
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/addtolist.js"></script> 
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/protect-images.js"></script>
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/lazy.js"></script>
+
+[^1]: This book is Tagalog-dominant. To learn more about language ranking, click [[lang\|here]]
