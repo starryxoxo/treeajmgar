@@ -121,9 +121,18 @@ Matatapos na ang recess at pumasok si Sunoo sa room. Sunoo looked rushed and the
 [[d/sitn/sitnc2\|Continue]]
 [[Home\|Home]] • [[d/sitn/Strangers by Midnight\|Book Info]]
 
+
+<div id="disqus_thread"></div> <script> / RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS. * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */ /* var disqus_config = function () { this.page.url ="https://swrn.vercel.app/d/sitn/sitnc"; 
+this.page.identifier = sitnc; 
+(function() {
+s = d.createElement('script'); s.src = 'https://swrn.disqus.com/embed.js'; s.setAttribute('data-timestamp', +new Date()); (d.head || d.body).appendChild(s); })(); </script> <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
 ***
 Copyright © 2025 the sworn library
 All Rights Reserved.
 
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/imagelist.js"></script>
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/lastPage.js"></script>
+<script id="dsq-count-scr" src="//swrn.disqus.com/count.js" async></script>
