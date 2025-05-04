@@ -27,10 +27,10 @@ Click the [[blue text\|blue text]] to enter a link or a [[b storage/mpt/YHMAH\|b
 | [[b storage/sitn/Strangers by Midnight\|Strangers by Midnight]] |
 
 
-| Discover                         |                           |                           |
-| -------------------------------- | ------------------------- | ------------------------- |
-| ![coverimg\|165](/img/user/b storage/sitn/sitncover.webp) | ![coverimg\|165](/img/user/b storage/swb.jpg) | ![coverimg\|165](/img/user/b storage/swb.jpg) |
-| [[b storage/sitn/Strangers by Midnight\|Strangers by Midnight]]        | Soon...                   | Soon...                   |
+| Discover                  |                           |                           |
+| ------------------------- | ------------------------- | ------------------------- |
+| ![[sitncover.webp\|165](/img/user/b storage/swb.jpg) | ![coverimg\|165](/img/user/b storage/swb.jpg) |
+| [[b storage/sitn/Strangers by Midnight\|Strangers by Midnight]] | Soon...                   | Soon...                   |
 
 
 |     Coming Soon     |
