@@ -35,11 +35,9 @@ Blood and detailed content.
 
 2 pages • [[d/sitn/sitnc\|Read]]
 
-***
-
 [[Home\|Home]]
 
-***
+
 Copyright © 2025 the sworn library
 All Rights Reserved.
 
