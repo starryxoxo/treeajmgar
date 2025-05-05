@@ -20,7 +20,6 @@ Click the [[blue text\|blue text]] to enter a link or a [[b storage/mpt/YHMAH\|b
 |      ![sitnbanner.webp](/img/user/d/sitn/sitnbanner.webp)       |
 | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]] |
 
-<div id="block1">
 
 
 | Discover                         |                           |                           |                           |
@@ -29,17 +28,10 @@ Click the [[blue text\|blue text]] to enter a link or a [[b storage/mpt/YHMAH\|b
 | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]]        |                           |                           |                           |
 
 
-</div> 
-
-
-<div id="block2">
-
 |     Coming Soon     |
 | :-----------------: |
 | ![ddmbanner.webp](/img/user/dayd/ddmstorage/ddmbanner.webp) |
 |  [[dayd/ddm\|Daydream]]  |
-
-</div>
 
 ---
 Bookmark this website and visit it every once in a while. Accompany us while we grow our collection!
@@ -54,4 +46,3 @@ v 5.1.3-4
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/tables.js"></script>
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/imagelist.js"></script>
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/homeLastPage.js"></script>
-<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/block.js"></script>
