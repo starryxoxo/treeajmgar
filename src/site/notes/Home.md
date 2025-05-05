@@ -7,7 +7,7 @@
 | ![swrn.jpg](/img/user/b%20storage/swrn.jpg) |
 | :-----------: |
 
-> New to sworn library?
+> New to the sworn library?
 Click the [[blue text\|blue text]] to enter a link or a [[b storage/mpt/YHMAH\|book]].
 
 ***

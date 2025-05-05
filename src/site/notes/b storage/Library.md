@@ -4,9 +4,9 @@
 
 ## Your Reading List
 
-**This feature is experimental and unstable as of now.** It may be deprecated or included in later versions. It may break functionality for this website. Use with caution.
+Please **use the same browser** when adding and reading from your library.
 
-Use the **same browser** when adding and reading from your library.
+For **Chrome** users, please don't clear your cookies. Chrome stores your list using cookies, unlike other browsers.
 
 <button id="reset-collection" style="color: red; font-size: 16px;">Reset Collection</button>
 <div id="library-display"></div>

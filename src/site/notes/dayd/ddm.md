@@ -1,0 +1,38 @@
+---
+{"dg-publish":true,"permalink":"/dayd/ddm/"}
+---
+
+[[Home\|Home]]
+
+***
+
+![ddmcover.webp](/img/user/dayd/ddmstorage/ddmcover.webp)
+
+***
+<button id="library-toggle" onclick="toggleLibrary()">Add to Reading List</button>
+
+###### ENHYPEN BXB AU
+# Daydream
+#enhypen #bxb #heavyau #jakehoon
+
+**Description** 
+If somehow, you fell in love with a person you weren't supposed to, would you still love them? *I knows it's impossible for us to get together, but can I at least* **daydream** *that I have you by my side?*
+
+**Author**: the sworn library
+**Languages**: English, Tagalog
+**Status**: Not yet available
+**Date**:
+
+**Before Reading**
+[[dev/slowload\|Read Notice: Slowload]]
+This book is rated **PG**.
+Contains **13+** content.
+
+Not yet available • [[dayd/ddmc1\|Read]]
+
+***
+Copyright © the sworn library 2025
+All Rights Reserved.
+
+<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/imagelist.js"></script>
+<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/list.js"></script> 
