@@ -8,11 +8,16 @@
 | :-----------: |
 
 > New to the sworn library?
-Click the [[blue text\|blue text]] to enter a link or a [[b storage/mpt/YHMAH\|book]].
+Click the [[blue text\|blue text]] to enter a link or a [[d/sitn/Strangers by Midnight\|book]].
 
 ***
 
 [[b storage/Library\|Visit your Reading List]]
+
+<section id="continue-section" style="display: none;">
+    <button id="continueBtn">Continue where you left off</button>
+</section>
+
 # New Arrivals
 
 |            Featured             |
