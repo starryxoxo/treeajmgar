@@ -19,7 +19,7 @@
 <br>
 
 **Description** 
-If somehow, you fell in love with a person you weren't supposed to, would you still love them? *I knows it's impossible for us to get together, but can I at least* **daydream** *that I have you by my side?*
+if somehow, you fell in love with a person you weren't supposed to, would you still love them? *i know it's impossible for us to get together, but can i at least* **daydream** *that i have you by my side?*
 
 **Author**: the sworn library
 **Languages**: English, Tagalog
