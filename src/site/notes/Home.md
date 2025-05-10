@@ -20,9 +20,9 @@ Click the [[blue text\|blue text]] to enter a link or a [[d/sitn/Strangers by Mi
 
 # New Arrivals
 
-|            Featured             |
-| :-----------------------------: |
-|      ![sitnbanner.webp](/img/user/d/sitn/sitnbanner.webp)       |
+|       <div class="fake-button">Featured</div>        |
+| :----------------------------------------------: |
+|               ![sitnbanner.webp](/img/user/d/sitn/sitnbanner.webp)               |
 | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]] |
 
 
@@ -47,6 +47,8 @@ All Rights Reserved.
 ***
 
 v 5.1.3-4
+
+This website is still under development.
 
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/tables.js"></script>
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/imagelist.js"></script>
