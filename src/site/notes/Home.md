@@ -20,7 +20,7 @@ Click the [[blue text\|blue text]] to enter a link or a [[d/sitn/Strangers by Mi
 
 # New Arrivals
 
-|       <div class="fake-button">Featured</div>        |
+|      Featured      |
 | :----------------------------------------------: |
 |               ![sitnbanner.webp](/img/user/d/sitn/sitnbanner.webp)               |
 | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]] |
