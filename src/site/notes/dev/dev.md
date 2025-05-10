@@ -10,6 +10,10 @@
 
 This is a testing page.
 
+<div class="fake-button">New</div>
+<div class="fake-button">New Release</div>
+<div class="fake-button">Upcoming</div>
+
 
 | Featured      |     |
 | ------------- | --- |
