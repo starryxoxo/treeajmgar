@@ -40,3 +40,31 @@ min-width: 160px;
   cursor: default;
   transition: all 0.3s ease;
 }
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    align-items: flex-start;
+  }
+  .image {
+    order: 1;
+    flex: 0 0 auto; /* fix image size */
+    margin-right: 20px;
+  }
+  .text {
+    order: 2;
+    flex: 1;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .container {
+    display: block; /* stack vertically */
+  }
+  .image, .text {
+    order: initial;
+    margin: 0;
+  }
+}
