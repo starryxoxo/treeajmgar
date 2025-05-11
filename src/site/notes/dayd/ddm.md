@@ -6,7 +6,7 @@
 
 ***
 
-![ddmcover.webp](/img/user/dayd/ddmstorage/ddmcover.webp)
+![ddmcover.webp|left](/img/user/dayd/ddmstorage/ddmcover.webp)
 
 ***
 <button id="library-toggle" onclick="toggleLibrary()">Add to Reading List</button>
