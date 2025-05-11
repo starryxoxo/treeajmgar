@@ -41,30 +41,34 @@ min-width: 160px;
   transition: all 0.3s ease;
 }
 
-/* Desktop styles */
+/* Desktop: float image left, text flows right */
 @media (min-width: 768px) {
-  .container {
-    display: flex;
-    align-items: flex-start;
+  /* Target all images that are immediately followed by a <p> */
+  img + p {
+    /* Make sure text clears the float */
+    overflow: hidden;
   }
-  .image {
-    order: 1;
-    flex: 0 0 auto; /* fix image size */
+
+  /* Float the image left */
+  img {
+    float: left;
     margin-right: 20px;
-  }
-  .text {
-    order: 2;
-    flex: 1;
+    max-width: 40%; /* adjust as needed */
+    height: auto;
   }
 }
 
-/* Mobile styles */
+/* Mobile: remove float, stack vertically */
 @media (max-width: 767px) {
-  .container {
-    display: block; /* stack vertically */
+  img {
+    float: none;
+    display: block;
+    margin: 0 auto 10px; /* center image with margin below */
+    max-width: 100%;
+    height: auto;
   }
-  .image, .text {
-    order: initial;
-    margin: 0;
+
+  img + p {
+    overflow: visible;
   }
 }
