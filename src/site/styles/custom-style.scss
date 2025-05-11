@@ -40,35 +40,3 @@ min-width: 160px;
   cursor: default;
   transition: all 0.3s ease;
 }
-
-/* Desktop: float image left, text flows right */
-@media (min-width: 768px) {
-  /* Target all images that are immediately followed by a <p> */
-  img + p {
-    /* Make sure text clears the float */
-    overflow: hidden;
-  }
-
-  /* Float the image left */
-  img {
-    float: left;
-    margin-right: 20px;
-    max-width: 40%; /* adjust as needed */
-    height: auto;
-  }
-}
-
-/* Mobile: remove float, stack vertically */
-@media (max-width: 767px) {
-  img {
-    float: none;
-    display: block;
-    margin: 0 auto 10px; /* center image with margin below */
-    max-width: 100%;
-    height: auto;
-  }
-
-  img + p {
-    overflow: visible;
-  }
-}
