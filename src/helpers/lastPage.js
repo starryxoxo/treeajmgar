@@ -5,64 +5,88 @@ function ensureAnchors() {
     if (!p.querySelector('.scroll-anchor')) {
       const div = document.createElement('div');
       div.className = 'scroll-anchor';
-      div.style.position = 'absolute';
-      div.style.left = '-9999px';
       div.style.height = '1px';
+      div.style.margin = '0';
+      div.style.padding = '0';
+      div.style.border = '0';
+      div.style.pointerEvents = 'none';
+      div.style.userSelect = 'none';
       p.prepend(div);
     }
   });
 }
 
-function getTopVisibleAnchorIndex() {
+function getTopVisibleAnchorIndexAndContext() {
   const container = document.querySelector('.content.cm-s-obsidian');
-  if (!container) return 0;
+  if (!container) return { anchorIndex: 0, wordContext: "" };
   const anchors = container.querySelectorAll('.scroll-anchor');
   const containerTop = container.scrollTop;
   for (let i = 0; i < anchors.length; i++) {
-    const off = anchors[i].parentElement.offsetTop;
-    if (off >= containerTop) {
-      return i;
+    const p = anchors[i].parentElement;
+    if (p.offsetTop + p.offsetHeight > containerTop) {
+      // Fallback word context
+      let words = p.textContent.trim().split(/\s+/);
+      let idx = words.findIndex(w => w.length > 0);
+      let prev = words[idx - 1] || '';
+      let curr = words[idx] || '';
+      let next = words[idx + 1] || '';
+      let wordContext = [prev, curr, next].join(' ');
+      return { anchorIndex: i, wordContext };
     }
   }
-  return 0;
+  return { anchorIndex: 0, wordContext: "" };
 }
 
 function saveProgress() {
   const container = document.querySelector('.content.cm-s-obsidian');
   if (!container) return;
-  const anchorIndex = getTopVisibleAnchorIndex();
+  const { anchorIndex, wordContext } = getTopVisibleAnchorIndexAndContext();
   localStorage.setItem('lastPageData', JSON.stringify({
     page: window.location.href,
-    anchorIndex: anchorIndex
+    anchorIndex,
+    wordContext
   }));
 }
 
+// Ensure anchors always present (on DOM load and when saving)
 window.addEventListener("DOMContentLoaded", () => {
   ensureAnchors();
-  // Restore
+
+  // Restore scroll
   const lastPageDataRaw = localStorage.getItem('lastPageData');
-  let anchorIndex = null;
   if (lastPageDataRaw) {
     try {
       const data = JSON.parse(lastPageDataRaw);
-      if (typeof data.anchorIndex === 'number' && !isNaN(data.anchorIndex)) {
-        anchorIndex = data.anchorIndex;
-      }
-    } catch (e) {}
-  }
-  const container = document.querySelector('.content.cm-s-obsidian');
-  if (anchorIndex !== null && container) {
-    const anchors = container.querySelectorAll('.scroll-anchor');
-    const target = anchors[anchorIndex] || anchors[0];
-    if (target) {
+      const container = document.querySelector('.content.cm-s-obsidian');
+      if (!container) return;
+      ensureAnchors();
       setTimeout(() => {
-        container.scrollTop = target.parentElement.offsetTop;
+        const anchors = container.querySelectorAll('.scroll-anchor');
+        // Try anchorIndex first
+        if (typeof data.anchorIndex === 'number' && anchors[data.anchorIndex]) {
+          container.scrollTop = anchors[data.anchorIndex].parentElement.offsetTop;
+        } else if (typeof data.wordContext === 'string' && data.wordContext.length > 0) {
+          // Fallback: try word context matching
+          const ps = container.querySelectorAll('p');
+          for (let i = 0; i < ps.length; i++) {
+            let words = ps[i].textContent.trim().split(/\s+/);
+            for (let j = 0; j < words.length; j++) {
+              let prev = words[j - 1] || '';
+              let curr = words[j] || '';
+              let next = words[j + 1] || '';
+              let context = [prev, curr, next].join(' ');
+              if (context === data.wordContext) {
+                container.scrollTop = ps[i].offsetTop;
+                return;
+              }
+            }
+          }
+        }
       }, 50);
-    }
+    } catch (e) {}
   }
 });
 
-// Save on scroll, before unload, or tab hidden
 window.addEventListener("DOMContentLoaded", () => {
   ensureAnchors();
   const container = document.querySelector('.content.cm-s-obsidian');
