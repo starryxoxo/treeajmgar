@@ -12,3 +12,9 @@ For **Chrome** users, please don't clear your cookies. Chrome stores your list u
 <div id="library-display"></div>
 
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/library.js"></script>
+
+<noscript>
+  <p style="color: red; font-weight: bold; text-align: center;">
+    Your JavaScript setting is not turned on. Your reading list relies on JS to gather your list.
+  </p>
+</noscript>
