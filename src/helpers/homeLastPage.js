@@ -1,20 +1,20 @@
 const lastPageDataRaw = localStorage.getItem('lastPageData');
-let lastPage = null, scrollPos = null;
+let lastPage = null, paraIndex = null;
 if (lastPageDataRaw) {
   try {
     const data = JSON.parse(lastPageDataRaw);
     lastPage = data.page;
-    scrollPos = data.scroll;
+    paraIndex = data.paraIndex;
   } catch (e) {}
 }
 
 const section = document.getElementById("continue-section");
 const currentPage = window.location.href;
 
-if (lastPage && scrollPos !== null && lastPage !== currentPage) {
+if (lastPage && paraIndex !== null && lastPage !== currentPage) {
   section.style.display = "block";
   document.getElementById("continueBtn").onclick = function () {
-    sessionStorage.setItem("resumeScrollPos", scrollPos);
+    sessionStorage.setItem("resumeParaIndex", paraIndex);
     window.location.href = lastPage;
   };
 } else {
@@ -22,10 +22,16 @@ if (lastPage && scrollPos !== null && lastPage !== currentPage) {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  const resumePos = sessionStorage.getItem("resumeScrollPos");
-  const scrollContainer = document.querySelector('.content.cm-s-obsidian');
-  if (resumePos && scrollContainer) {
-    scrollContainer.scrollTop = parseInt(resumePos, 10);
-    sessionStorage.removeItem("resumeScrollPos");
+  const paraIndex = sessionStorage.getItem("resumeParaIndex");
+  if (paraIndex !== null) {
+    const container = document.querySelector('.content.cm-s-obsidian');
+    const ps = container ? container.querySelectorAll('p') : [];
+    const targetP = ps[paraIndex] || ps[0];
+    if (container && targetP) {
+      setTimeout(() => {
+        container.scrollTop = targetP.offsetTop;
+      }, 50);
+    }
+    sessionStorage.removeItem("resumeParaIndex");
   }
 });
