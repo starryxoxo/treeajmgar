@@ -9,7 +9,7 @@
 ![ddmcover.webp](/img/user/dayd/ddmstorage/ddmcover.webp)
 
 ***
-<button id="library-toggle" onclick="toggleLibrary()">Add to Reading List</button>
+<button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button>
 
 ###### ENHYPEN BXB AU
 # Daydream

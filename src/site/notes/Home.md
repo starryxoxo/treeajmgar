@@ -10,6 +10,8 @@
 > New to the sworn library?
 Click the [[blue text\|blue text]] to enter a link or a [[d/sitn/Strangers by Midnight\|book]].
 
+[[b storage/Library\|Visit your Reading List]]
+
 <noscript>
   <p style="color: red; font-weight: bold; text-align: center;">
     Your JavaScript setting is turned off. JavaScript-reliant features may not work.
@@ -21,8 +23,6 @@ Click the [[blue text\|blue text]] to enter a link or a [[d/sitn/Strangers by Mi
 <section id="continue-section" style="display: none;">
     <button id="continueBtn" class="squared-button">Continue Reading</button>
 </section>
-
-[[b storage/Library\|Visit your Reading List]]
 
 # New Arrivals
 
