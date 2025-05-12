@@ -3,12 +3,12 @@ function ensureAnchors() {
   if (!container) return;
   container.querySelectorAll('p').forEach(p => {
     if (!p.querySelector('.scroll-anchor')) {
-      const span = document.createElement('span');
-      span.className = 'scroll-anchor';
-      span.style.position = 'absolute';
-      span.style.left = '-9999px';
-      span.style.height = '1px';
-      p.prepend(span);
+      const div = document.createElement('div');
+      div.className = 'scroll-anchor';
+      div.style.position = 'absolute';
+      div.style.left = '-9999px';
+      div.style.height = '1px';
+      p.prepend(div);
     }
   });
 }
