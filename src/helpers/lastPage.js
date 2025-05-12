@@ -91,7 +91,9 @@ window.addEventListener("DOMContentLoaded", () => {
   ensureAnchors();
   const container = document.querySelector('.content.cm-s-obsidian');
   if (container) {
-    container.addEventListener('scroll', saveProgress);
+
+// Save progress every 3 seconds (adjust interval as needed)
+setInterval(saveProgress, 3000);    container.addEventListener('scroll', saveProgress);
     window.addEventListener('beforeunload', saveProgress);
     window.addEventListener('visibilitychange', () => {
       if (document.visibilityState === 'hidden') saveProgress();
