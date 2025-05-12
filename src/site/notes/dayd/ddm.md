@@ -6,17 +6,18 @@
 
 ***
 
-![ddmcover.webp|left](/img/user/dayd/ddmstorage/ddmcover.webp)
+![ddmcover.webp](/img/user/dayd/ddmstorage/ddmcover.webp)
 
 ***
 <button id="library-toggle" onclick="toggleLibrary()">Add to Reading List</button>
 
 ###### ENHYPEN BXB AU
 # Daydream
-<div class="fake-button">enhypen</div>
-<div class="fake-button">bxb</div>
-<div class="fake-button">jakehoon</div>
-<br>
+<div class="fake-button-container">
+  <span class="fake-button">enhypen</span>
+  <span class="fake-button">bxb</span>
+  <span class="fake-button">jakehoon</span>
+</div>
 
 **Description** 
 if somehow, you fell in love with a person you weren't supposed to, would you still love them? *i know it's impossible for us to get together, but can i at least* **daydream** *that i have you by my side?*
