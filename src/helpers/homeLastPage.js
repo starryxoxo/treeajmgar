@@ -19,7 +19,7 @@ if (lastPage && scrollTop !== null && lastPage !== currentPage) {
     sessionStorage.setItem("resumeScrollTop", scrollTop);
     window.location.href = lastPage;
   };
-} else {
+} else if (section) {
   section.style.display = "none";
 }
 
@@ -30,9 +30,12 @@ window.addEventListener("DOMContentLoaded", () => {
     const container = (function findScrollableContainer() {
       let el = document.body;
       while (el) {
+        const style = window.getComputedStyle(el);
         const hasScrollableContent = el.scrollHeight > el.clientHeight;
-        const overflowYStyle = window.getComputedStyle(el).overflowY;
-        const isScrollable = (overflowYStyle !== "visible" && overflowYStyle !== "hidden");
+        const isScrollable = (
+          (style.overflowY === 'auto' || style.overflowY === 'scroll') ||
+          (el === document.body || el === document.documentElement)
+        );
         if (hasScrollableContent && isScrollable) {
           return el;
         }
