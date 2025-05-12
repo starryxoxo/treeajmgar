@@ -1,12 +1,12 @@
 const lastPageDataRaw = localStorage.getItem('lastPageData');
-let lastPage = null, paraIndex = null;
+let lastPage = null, anchorIndex = null;
 if (lastPageDataRaw) {
   try {
     const data = JSON.parse(lastPageDataRaw);
     lastPage = data.page;
     // Defensive: check for integer-ness and not undefined/null
-    if (typeof data.paraIndex === 'number' && !isNaN(data.paraIndex)) {
-      paraIndex = data.paraIndex;
+    if (typeof data.anchorIndex === 'number' && !isNaN(data.anchorIndex)) {
+      anchorIndex = data.anchorIndex;
     }
   } catch (e) {}
 }
@@ -14,10 +14,10 @@ if (lastPageDataRaw) {
 const section = document.getElementById("continue-section");
 const currentPage = window.location.href;
 
-if (lastPage && paraIndex !== null && lastPage !== currentPage) {
+if (lastPage && anchorIndex !== null && lastPage !== currentPage) {
   section.style.display = "block";
   document.getElementById("continueBtn").onclick = function () {
-    sessionStorage.setItem("resumeParaIndex", paraIndex);
+    sessionStorage.setItem("resumeAnchorIndex", anchorIndex);
     window.location.href = lastPage;
   };
 } else {
@@ -25,18 +25,18 @@ if (lastPage && paraIndex !== null && lastPage !== currentPage) {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  const paraIndexStr = sessionStorage.getItem("resumeParaIndex");
+  const anchorIndexStr = sessionStorage.getItem("resumeAnchorIndex");
   // Defensive: convert string to number and check for validity
-  const paraIndex = paraIndexStr !== null ? parseInt(paraIndexStr, 10) : null;
-  if (paraIndex !== null && !isNaN(paraIndex)) {
+  const anchorIndex = anchorIndexStr !== null ? parseInt(anchorIndexStr, 10) : null;
+  if (anchorIndex !== null && !isNaN(anchorIndex)) {
     const container = document.querySelector('.content.cm-s-obsidian');
-    const ps = container ? container.querySelectorAll('p') : [];
-    const targetP = ps[paraIndex] || ps[0];
-    if (container && targetP) {
+    const anchors = container ? container.querySelectorAll('.scroll-anchor') : [];
+    const target = anchors[anchorIndex] || anchors[0];
+    if (container && target) {
       setTimeout(() => {
-        container.scrollTop = targetP.offsetTop;
+        container.scrollTop = target.parentElement.offsetTop;
       }, 50);
     }
-    sessionStorage.removeItem("resumeParaIndex");
+    sessionStorage.removeItem("resumeAnchorIndex");
   }
 });
