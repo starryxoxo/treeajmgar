@@ -1,3 +1,4 @@
+// Inject a scroll-anchor div at the top of each paragraph if not already present
 function ensureAnchors() {
   const container = document.querySelector('.content.cm-s-obsidian');
   if (!container) return;
@@ -16,15 +17,20 @@ function ensureAnchors() {
   });
 }
 
+// Find the top-most visible anchor and extract word context from its parent <p>
 function getTopVisibleAnchorIndexAndContext() {
   const container = document.querySelector('.content.cm-s-obsidian');
   if (!container) return { anchorIndex: 0, wordContext: "" };
   const anchors = container.querySelectorAll('.scroll-anchor');
   const containerTop = container.scrollTop;
+  const containerBottom = containerTop + container.clientHeight;
   for (let i = 0; i < anchors.length; i++) {
-    const p = anchors[i].parentElement;
-    if (p.offsetTop + p.offsetHeight > containerTop) {
-      // Fallback word context
+    const anchor = anchors[i];
+    const p = anchor.parentElement;
+    const pTop = p.offsetTop;
+    const pBottom = pTop + p.offsetHeight;
+    // If any part of the <p> is visible in the container
+    if (pBottom > containerTop && pTop < containerBottom) {
       let words = p.textContent.trim().split(/\s+/);
       let idx = words.findIndex(w => w.length > 0);
       let prev = words[idx - 1] || '';
@@ -37,31 +43,7 @@ function getTopVisibleAnchorIndexAndContext() {
   return { anchorIndex: 0, wordContext: "" };
 }
 
-function getFirstVisibleWordContext() {
-  const container = document.querySelector('.content.cm-s-obsidian');
-  if (!container) return null;
-  const ps = container.querySelectorAll('p');
-  const containerTop = container.scrollTop;
-  const containerHeight = container.clientHeight;
-  for (let i = 0; i < ps.length; i++) {
-    const p = ps[i];
-    // Calculate the position of the paragraph relative to the container
-    const pTop = p.offsetTop;
-    const pBottom = pTop + p.offsetHeight;
-    // Check if any part of the paragraph is visible in the container
-    if (pBottom > containerTop && pTop < containerTop + containerHeight) {
-      // Found the first visible paragraph
-      let words = p.textContent.trim().split(/\s+/);
-      let idx = words.findIndex(w => w.length > 0);
-      let prev = words[idx - 1] || '';
-      let curr = words[idx] || '';
-      let next = words[idx + 1] || '';
-      return [prev, curr, next].join(' ');
-    }
-  }
-  return null;
-}
-
+// Save progress to localStorage
 function saveProgress() {
   const container = document.querySelector('.content.cm-s-obsidian');
   if (!container) return;
@@ -73,25 +55,24 @@ function saveProgress() {
   }));
 }
 
-// Ensure anchors always present (on DOM load and when saving)
 window.addEventListener("DOMContentLoaded", () => {
   ensureAnchors();
 
-  // Restore scroll
+  const container = document.querySelector('.content.cm-s-obsidian');
+  if (!container) return;
+
+  // Restore scroll position
   const lastPageDataRaw = localStorage.getItem('lastPageData');
   if (lastPageDataRaw) {
     try {
       const data = JSON.parse(lastPageDataRaw);
-      const container = document.querySelector('.content.cm-s-obsidian');
-      if (!container) return;
       ensureAnchors();
       setTimeout(() => {
         const anchors = container.querySelectorAll('.scroll-anchor');
-        // Try anchorIndex first
         if (typeof data.anchorIndex === 'number' && anchors[data.anchorIndex]) {
           container.scrollTop = anchors[data.anchorIndex].parentElement.offsetTop;
         } else if (typeof data.wordContext === 'string' && data.wordContext.length > 0) {
-          // Fallback: try word context matching
+          // Fallback: search for wordContext
           const ps = container.querySelectorAll('p');
           for (let i = 0; i < ps.length; i++) {
             let words = ps[i].textContent.trim().split(/\s+/);
@@ -110,19 +91,13 @@ window.addEventListener("DOMContentLoaded", () => {
       }, 50);
     } catch (e) {}
   }
-});
 
-window.addEventListener("DOMContentLoaded", () => {
-  ensureAnchors();
-  const container = document.querySelector('.content.cm-s-obsidian');
-  if (container) {
-
-// Save progress every 3 seconds (adjust interval as needed)
-setInterval(saveProgress, 3000);    container.addEventListener('scroll', saveProgress);
-
-    window.addEventListener('beforeunload', saveProgress);
-    window.addEventListener('visibilitychange', () => {
-      if (document.visibilityState === 'hidden') saveProgress();
-    });
-  }
+  // Save on scroll, unload, visibilitychange
+  container.addEventListener('scroll', saveProgress);
+  window.addEventListener('beforeunload', saveProgress);
+  window.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'hidden') saveProgress();
+  });
+  // Periodic save (in case user is idle)
+  setInterval(saveProgress, 3000);
 });
