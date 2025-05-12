@@ -27,7 +27,7 @@ min-width: 160px;
 .fake-button-container {
   display: flex;
   flex-wrap: wrap;        /* Allows buttons to move to next line if needed */
-  gap: 0.75rem;           /* Adjust spacing between buttons */
+  gap: 0.50rem;           /* Adjust spacing between buttons */
   margin-bottom: 1rem;    /* Optional: space below the button group */
 }
 
