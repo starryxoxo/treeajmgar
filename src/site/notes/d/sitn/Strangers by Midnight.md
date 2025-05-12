@@ -16,8 +16,11 @@
 
 ###### ENHYPEN ONESHOT AU
 # Strangers by Midnight
-<div class="fake-button">enhypen</div> <div class="fake-button">oneshot</div> <div class="fake-button">romance</div>
-<br>
+<div class="fake-button-container">
+  <span class="fake-button">enhypen</span>
+  <span class="fake-button">oneshot</span>
+  <span class="fake-button">romance</span>
+</div>
 
 **Description**
 "If love isn't forever, why waste your time on it?"
