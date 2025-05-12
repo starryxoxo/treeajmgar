@@ -48,6 +48,22 @@ min-width: 160px;
   /* No need for display property here */
 }
 
+.squared-button {
+  padding: 0.5rem 1rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  color: white;
+  border-radius: 0.5rem; /* Smaller radius for squared shape */
+  font-weight: 600;
+  font-size: clamp(1rem, 1.1vw, 1.125rem);
+  backdrop-filter: blur(0.625rem);
+  -webkit-backdrop-filter: blur(0.625rem);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.4);
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
 h6, h1 {
   all: unset;
   display: block;
