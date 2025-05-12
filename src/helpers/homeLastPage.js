@@ -22,15 +22,9 @@ if (lastPage && scrollPos !== null && lastPage !== currentPage) {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  // Restore scroll position after navigation
   const resumePos = sessionStorage.getItem("resumeScrollPos");
-  const scrollContainer = document.querySelector('.content.cm-s-obsidian');
   if (resumePos && !isNaN(resumePos)) {
-    if (scrollContainer) {
-      scrollContainer.scrollTo(0, parseInt(resumePos, 10));
-    } else {
-      window.scrollTo(0, parseInt(resumePos, 10));
-    }
+    window.scrollTo(0, parseInt(resumePos, 10));
     sessionStorage.removeItem("resumeScrollPos");
   }
 });
