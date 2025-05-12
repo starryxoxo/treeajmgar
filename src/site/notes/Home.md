@@ -23,6 +23,8 @@ Click the [[blue text\|blue text]] to enter a link or a [[d/sitn/Strangers by Mi
 <section id="continue-section" style="display: none;">
     <button id="continueBtn" class="squared-button">Continue Reading</button>
 </section>
+<br>
+
 
 # New Arrivals
 
