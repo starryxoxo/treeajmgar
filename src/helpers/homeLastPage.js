@@ -23,7 +23,7 @@ if (lastPage && scrollPos !== null && lastPage !== currentPage) {
 
 window.addEventListener("DOMContentLoaded", () => {
   const resumePos = sessionStorage.getItem("resumeScrollPos");
-  const scrollContainer = document.querySelector('.content.cm-s-obsidian');
+  const scrollContainer = document.querySelector('.theme-dark.markdown-preview.markdown-rendered.markdown-preview-section');
   if (resumePos && scrollContainer) {
     scrollContainer.scrollTop = parseInt(resumePos, 10);
     sessionStorage.removeItem("resumeScrollPos");
