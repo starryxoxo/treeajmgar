@@ -4,7 +4,10 @@ if (lastPageDataRaw) {
   try {
     const data = JSON.parse(lastPageDataRaw);
     lastPage = data.page;
-    paraIndex = data.paraIndex;
+    // Defensive: check for integer-ness and not undefined/null
+    if (typeof data.paraIndex === 'number' && !isNaN(data.paraIndex)) {
+      paraIndex = data.paraIndex;
+    }
   } catch (e) {}
 }
 
@@ -22,8 +25,10 @@ if (lastPage && paraIndex !== null && lastPage !== currentPage) {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  const paraIndex = sessionStorage.getItem("resumeParaIndex");
-  if (paraIndex !== null) {
+  const paraIndexStr = sessionStorage.getItem("resumeParaIndex");
+  // Defensive: convert string to number and check for validity
+  const paraIndex = paraIndexStr !== null ? parseInt(paraIndexStr, 10) : null;
+  if (paraIndex !== null && !isNaN(paraIndex)) {
     const container = document.querySelector('.content.cm-s-obsidian');
     const ps = container ? container.querySelectorAll('p') : [];
     const targetP = ps[paraIndex] || ps[0];
