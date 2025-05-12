@@ -6,7 +6,7 @@
 
 ***
 
-<span class="scroll-anchor">
+<div class="scroll-anchor">
 
 **Note**
 This book is a work of fiction. Most of the names, characters, ages, events and places are either author's imagination or fictious manner.
@@ -126,7 +126,8 @@ Matatapos na ang recess at pumasok si Sunoo sa room. Sunoo looked rushed and the
 ***
 Copyright © 2025 the sworn library
 All Rights Reserved.
-</span>
+
+</div>
 
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/imagelist.js"></script>
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/lastPage.js"></script>
