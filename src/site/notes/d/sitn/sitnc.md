@@ -19,14 +19,10 @@ Any resemblances to actual persons, living or dead, or actual events are purely 
 
 ***
 
-<div class="scroll-anchor-0" id="scroll-anchor-0">
-
 *Hays, Monday nanaman. Wala bang pahinga d'yan?*  I mentally thought as I felt a vibration from my phone. I reached out to my pocket and checked the message. It was Jay.
 
 ![sitn1](https://i.imgur.com/kVJ6fps.jpeg)
 ![sitn2](https://i.imgur.com/BxUE1S3.jpeg)
-
-</div>
 
 ***
 
@@ -39,8 +35,6 @@ Any resemblances to actual persons, living or dead, or actual events are purely 
 
 ***
 
-<div class="scroll-anchor-1" id="scroll-anchor-1">
-
 ##### 5 Months Ago
 Naglalakad na ako palabas ng school nu'ng biglang hinawakan ni Jay yung balikat ko mula sa likod. Halatang tumakbo 'yan, pagod eh.
 
@@ -48,13 +42,8 @@ Naglalakad na ako palabas ng school nu'ng biglang hinawakan ni Jay yung balikat 
 
 Bigla akong napatigil sa pagkakasabi niya sa'kin no'n. Nakakagulat—??? Pa'no ako tatanggi sa mukhang 'yan?!
 
-</div>
-
 ![sitn7](https://i.imgur.com/37dBkkL.jpeg)
 ![sitn8](https://i.imgur.com/RvgQdpw.jpeg)
-
-
-<div class="scroll-anchor-2" id="scroll-anchor-2">
 
 Pinaupo ko muna siya sa upuan ko bago ko kinuha yung selpon ko. It was *awkward* talaga and I didn't know what to do. No one has confessed to me yet...
 
@@ -62,15 +51,11 @@ Pinaupo ko muna siya sa upuan ko bago ko kinuha yung selpon ko. It was *awkward*
 ![sitn10](https://i.imgur.com/p0g015D.jpeg)
 ![sitn11](https://i.imgur.com/JD7Y7Np.jpeg)
 
-</div>
-
 ![sitn13](https://i.imgur.com/QN7x3x4.jpeg)
 ![sitn12](https://i.imgur.com/3DQhubE.jpeg)
 
 ![sitn14](https://i.imgur.com/4GMWbsY.jpeg)
 ![sitn15](https://i.imgur.com/ei5Z3oh.jpeg)
-
-<div class="scroll-anchor-3" id="scroll-anchor-3">
 
 Tumayo ako, umuwi, at humiga sa kama ko.
 
@@ -86,8 +71,6 @@ Tumayo ako, umuwi, at humiga sa kama ko.
 
 ![sitn19](https://i.imgur.com/DJhNjRY.jpeg)
 
-</div>
-
 
 ![sitn20](https://i.imgur.com/q3jC7b1.jpeg)
 ![sitn21](https://i.imgur.com/ZSss8Oz.jpeg)
@@ -96,8 +79,6 @@ Tumayo ako, umuwi, at humiga sa kama ko.
 ![sitn23](https://i.imgur.com/nUkkRhh.jpeg)
 
 ***
-
-<div class="scroll-anchor-4" id="scroll-anchor-4">
 
 ##### After School
 Habang nagliligpit ng sarili kong gamit, tumingin ako kay Jay na nakasilip mula sa pintuan ng classroom namin. 
@@ -113,12 +94,8 @@ Binaba ko selpon ko at pinalapit si Jay sa upuan ko.
 
 Ito ba yung badum? Haha, joke.
 
-</div>
-
 ![sitn29](https://i.imgur.com/GPWWHhT.jpeg)
 ![sitn30](https://i.imgur.com/DNz3EVF.jpeg)
-
-<div class="scroll-anchor-5" id="scroll-anchor-5">
 
 Nako, ang galing magpaawa effect. Kaya ayoko ng ganto eh, nakakaawa...
 
@@ -134,8 +111,6 @@ Nako, ang galing magpaawa effect. Kaya ayoko ng ganto eh, nakakaawa...
 
 Matatapos na ang recess at pumasok si Sunoo sa room. Sunoo looked rushed and the atmosphere did get heavy. I figured it was me.
 
-</div>
-
 ![sitn34](https://i.imgur.com/QdLOBss.jpeg)
 
 ![sitn35](https://i.imgur.com/uN8BH9i.jpeg)
@@ -148,8 +123,6 @@ Matatapos na ang recess at pumasok si Sunoo sa room. Sunoo looked rushed and the
 ***
 Copyright © 2025 the sworn library
 All Rights Reserved.
-
-</div>
 
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/imagelist.js"></script>
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/lastPage.js"></script>
