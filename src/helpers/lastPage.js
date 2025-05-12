@@ -1,54 +1,49 @@
-// Find the ID of the top-most visible anchor in the scroll container
-function getTopVisibleAnchorId() {
-  const container = document.querySelector('.content.cm-s-obsidian');
-  if (!container) return null;
-  // Change the selector if your anchors are not direct children of container
-  const anchors = container.querySelectorAll('div[id^="scroll-anchor-"]');
-  const containerTop = container.scrollTop;
-  const containerBottom = containerTop + container.clientHeight;
-  for (let anchor of anchors) {
-    const p = anchor.parentElement;
-    const pTop = p.offsetTop;
-    const pBottom = pTop + p.offsetHeight;
-    if (pBottom > containerTop && pTop < containerBottom) {
-      return anchor.id;
+// Find the first scrollable element in the DOM
+function findScrollableContainer() {
+  let el = document.body;
+  while (el) {
+    // Checks if the element is scrollable (vertical)
+    const hasScrollableContent = el.scrollHeight > el.clientHeight;
+    const overflowYStyle = window.getComputedStyle(el).overflowY;
+    const isScrollable = (overflowYStyle !== "visible" && overflowYStyle !== "hidden");
+    if (hasScrollableContent && isScrollable) {
+      return el;
     }
+    el = el.parentElement;
   }
-  return anchors.length ? anchors[0].id : null;
+  // fallback to document.scrollingElement (usually <html> or <body>)
+  return document.scrollingElement || document.documentElement;
 }
 
-// Save the current anchor ID and page URL to localStorage
+// Save scroll position (container + scrollTop) and page URL to localStorage
 function saveProgress() {
-  const anchorId = getTopVisibleAnchorId();
-  if (!anchorId) return;
+  const container = findScrollableContainer();
+  if (!container) return;
   localStorage.setItem('lastPageData', JSON.stringify({
     page: window.location.href,
-    anchorId
+    scrollTop: container.scrollTop
   }));
 }
 
+// Restore scroll position if available
 window.addEventListener("DOMContentLoaded", () => {
-  const container = document.querySelector('.content.cm-s-obsidian');
-  if (!container) return;
-
-  // Restore scroll position
+  const container = findScrollableContainer();
   const lastPageDataRaw = localStorage.getItem('lastPageData');
-  if (lastPageDataRaw) {
+  if (container && lastPageDataRaw) {
     try {
       const data = JSON.parse(lastPageDataRaw);
-      setTimeout(() => {
-        if (data.anchorId) {
-          const anchor = document.getElementById(data.anchorId);
-          if (anchor && anchor.parentElement) {
-            container.scrollTop = anchor.parentElement.offsetTop;
-          }
-        }
-      }, 50);
+      if (typeof data.scrollTop === "number") {
+        setTimeout(() => {
+          container.scrollTop = data.scrollTop;
+        }, 50); // Wait for content load
+      }
     } catch (e) {}
   }
 
   // Save progress on scroll, before unload, visibility change, and periodically
-  container.addEventListener('scroll', saveProgress);
+  if (container) {
+    container.addEventListener('scroll', saveProgress);
+  }
   window.addEventListener('beforeunload', saveProgress);
   window.addEventListener('visibilitychange', () => {
     if (document.visibilityState === 'hidden') saveProgress();
