@@ -26,20 +26,21 @@ min-width: 160px;
 
 .fake-button {
   display: inline-block;
-  padding: 6px 16px;
-  background-color: rgba(255, 255, 255, 0.05); /* subtle light tint */
+  padding: 0.375rem 1rem; // 6px 16px
+  background-color: rgba(255, 255, 255, 0.05);
   color: white;
-  border-radius: 20px;
+  border-radius: 1.25rem; // 20px
   font-weight: 600;
-  font-size: 18px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  font-size: clamp(1rem, 1.1vw, 1.125rem); // fluid between 16px–18px
+  backdrop-filter: blur(0.625rem); // 10px
+  -webkit-backdrop-filter: blur(0.625rem);
   border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.4); // 4px 10px
   user-select: none;
   cursor: default;
   transition: all 0.3s ease;
 }
+
 
 h6, h1 {
   all: unset;
