@@ -7,7 +7,13 @@ function getTopVisibleParaIndex() {
   const containerTop = container.scrollTop;
   for (let i = 0; i < ps.length; i++) {
     if (ps[i].offsetTop >= containerTop) {
-     () {
+      return i;
+    }
+  }
+  return 0;
+}
+
+function saveProgress() {
   const container = document.querySelector('.content.cm-s-obsidian');
   if (!container) return;
   const paraIndex = getTopVisibleParaIndex();
@@ -33,7 +39,10 @@ window.addEventListener("DOMContentLoaded", () => {
   if (lastPageDataRaw) {
     try {
       const data = JSON.parse(lastPageDataRaw);
-      paraIndex = data.paraIndex;
+      // Defensive: check for integer-ness and not undefined/null
+      if (typeof data.paraIndex === 'number' && !isNaN(data.paraIndex)) {
+        paraIndex = data.paraIndex;
+      }
     } catch (e) {}
   }
   if (paraIndex !== null) {
