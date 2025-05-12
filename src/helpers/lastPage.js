@@ -37,6 +37,31 @@ function getTopVisibleAnchorIndexAndContext() {
   return { anchorIndex: 0, wordContext: "" };
 }
 
+function getFirstVisibleWordContext() {
+  const container = document.querySelector('.content.cm-s-obsidian');
+  if (!container) return null;
+  const ps = container.querySelectorAll('p');
+  const containerTop = container.scrollTop;
+  const containerHeight = container.clientHeight;
+  for (let i = 0; i < ps.length; i++) {
+    const p = ps[i];
+    // Calculate the position of the paragraph relative to the container
+    const pTop = p.offsetTop;
+    const pBottom = pTop + p.offsetHeight;
+    // Check if any part of the paragraph is visible in the container
+    if (pBottom > containerTop && pTop < containerTop + containerHeight) {
+      // Found the first visible paragraph
+      let words = p.textContent.trim().split(/\s+/);
+      let idx = words.findIndex(w => w.length > 0);
+      let prev = words[idx - 1] || '';
+      let curr = words[idx] || '';
+      let next = words[idx + 1] || '';
+      return [prev, curr, next].join(' ');
+    }
+  }
+  return null;
+}
+
 function saveProgress() {
   const container = document.querySelector('.content.cm-s-obsidian');
   if (!container) return;
