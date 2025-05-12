@@ -2,10 +2,12 @@
 function findScrollableContainer() {
   let el = document.body;
   while (el) {
-    // Checks if the element is scrollable (vertical)
+    const style = window.getComputedStyle(el);
     const hasScrollableContent = el.scrollHeight > el.clientHeight;
-    const overflowYStyle = window.getComputedStyle(el).overflowY;
-    const isScrollable = (overflowYStyle !== "visible" && overflowYStyle !== "hidden");
+    const isScrollable = (
+      (style.overflowY === 'auto' || style.overflowY === 'scroll') ||
+      (el === document.body || el === document.documentElement)
+    );
     if (hasScrollableContent && isScrollable) {
       return el;
     }
@@ -15,7 +17,7 @@ function findScrollableContainer() {
   return document.scrollingElement || document.documentElement;
 }
 
-// Save scroll position (container + scrollTop) and page URL to localStorage
+// Save scroll position (per page) to localStorage
 function saveProgress() {
   const container = findScrollableContainer();
   if (!container) return;
@@ -25,14 +27,14 @@ function saveProgress() {
   }));
 }
 
-// Restore scroll position if available
 window.addEventListener("DOMContentLoaded", () => {
   const container = findScrollableContainer();
   const lastPageDataRaw = localStorage.getItem('lastPageData');
   if (container && lastPageDataRaw) {
     try {
       const data = JSON.parse(lastPageDataRaw);
-      if (typeof data.scrollTop === "number") {
+      // Only restore if the saved page matches the current page!
+      if (typeof data.scrollTop === "number" && data.page === window.location.href) {
         setTimeout(() => {
           container.scrollTop = data.scrollTop;
         }, 50); // Wait for content load
