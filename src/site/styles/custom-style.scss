@@ -61,12 +61,27 @@ h1 {
   margin-bottom: 1.50rem !important;
 }
 
+body, html {
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important; // Prevent window scroll
+}
+
+body {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100vh !important;
+}
+
+nav { // if you have a navbar
+  height: 60px !important;
+  flex-shrink: 0 !important;
+}
+
 .content.cm-s-obsidian {
-    overflow-y: auto;
-    height: 100vh;
-  }
-  body, html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
+  flex: 1 1 auto !important;
+  overflow-y: auto !important;
+  height: auto !important;
+  min-height: 0 !important; // Fixes flexbox overflow bugs
+}
