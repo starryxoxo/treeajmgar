@@ -49,10 +49,10 @@ min-width: 160px;
 }
 
 .squared-button {
-  padding: 0.90rem 1.25rem;
+  padding: 1.2rem 1.25rem; /* More vertical space, same horizontal space */
+  border-radius: 0.75rem;  /* Slightly rounded corners */
   background-color: rgba(255, 255, 255, 0.03);
   color: white;
-  border-radius: 0.75rem; /* Slightly more rounded than before */
   font-weight: 600;
   font-size: clamp(1rem, 1.1vw, 1.125rem);
   backdrop-filter: blur(0.625rem);
