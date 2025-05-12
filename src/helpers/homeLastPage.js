@@ -23,8 +23,9 @@ if (lastPage && scrollPos !== null && lastPage !== currentPage) {
 
 window.addEventListener("DOMContentLoaded", () => {
   const resumePos = sessionStorage.getItem("resumeScrollPos");
-  if (resumePos && !isNaN(resumePos)) {
-    window.scrollTo(0, parseInt(resumePos, 10));
+  const scrollContainer = document.querySelector('.content.cm-s-obsidian');
+  if (resumePos && scrollContainer) {
+    scrollContainer.scrollTop = parseInt(resumePos, 10);
     sessionStorage.removeItem("resumeScrollPos");
   }
 });
