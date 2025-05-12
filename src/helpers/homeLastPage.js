@@ -1,38 +1,48 @@
-// Retrieve last read page and anchorId from localStorage
+// Retrieve last read page and scrollTop from localStorage
 const lastPageDataRaw = localStorage.getItem('lastPageData');
-let lastPage = null, anchorId = null;
+let lastPage = null, scrollTop = null;
 if (lastPageDataRaw) {
   try {
     const data = JSON.parse(lastPageDataRaw);
     lastPage = data.page;
-    anchorId = data.anchorId || null;
+    scrollTop = typeof data.scrollTop === "number" ? data.scrollTop : null;
   } catch (e) {}
 }
 
-// section = document.getElementById("continue-section");
+// Show "Continue Reading" button if valid
+const section = document.getElementById("continue-section");
 const currentPage = window.location.href;
 
-if (lastPage && anchorId && lastPage !== currentPage) {
+if (lastPage && scrollTop !== null && lastPage !== currentPage) {
   section.style.display = "block";
   document.getElementById("continueBtn").onclick = function () {
-    sessionStorage.setItem("resumeAnchorId", anchorId);
+    sessionStorage.setItem("resumeScrollTop", scrollTop);
     window.location.href = lastPage;
   };
 } else {
   section.style.display = "none";
 }
 
-// On destination page load, restore scroll position using anchorId
+// On destination page load, restore scroll position using scrollTop
 window.addEventListener("DOMContentLoaded", () => {
-  const anchorId = sessionStorage.getItem("resumeAnchorId");
-  const container = document.querySelector('.content.cm-s-obsidian');
-  if (container && anchorId) {
-    setTimeout(() => {
-      const anchor = document.getElementById(anchorId);
-      if (anchor && anchor.parentElement) {
-        container.scrollTop = anchor.parentElement.offsetTop;
-        sessionStorage.removeItem("resumeAnchorId");
+  const scrollTop = sessionStorage.getItem("resumeScrollTop");
+  if (scrollTop !== null) {
+    const container = (function findScrollableContainer() {
+      let el = document.body;
+      while (el) {
+        const hasScrollableContent = el.scrollHeight > el.clientHeight;
+        const overflowYStyle = window.getComputedStyle(el).overflowY;
+        const isScrollable = (overflowYStyle !== "visible" && overflowYStyle !== "hidden");
+        if (hasScrollableContent && isScrollable) {
+          return el;
+        }
+        el = el.parentElement;
       }
+      return document.scrollingElement || document.documentElement;
+    })();
+    setTimeout(() => {
+      container.scrollTop = parseInt(scrollTop, 10);
+      sessionStorage.removeItem("resumeScrollTop");
     }, 50);
   }
 });
