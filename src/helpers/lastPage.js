@@ -1,8 +1,10 @@
 function saveProgress() {
   const scrollContainer = document.querySelector('.content.cm-s-obsidian');
   const scrollPos = scrollContainer ? scrollContainer.scrollTop : window.scrollY;
-  localStorage.setItem('lastPage', window.location.href);
-  localStorage.setItem('scrollPos', scrollPos);
+  localStorage.setItem('lastPageData', JSON.stringify({
+    page: window.location.href,
+    scroll: scrollPos
+  }));
 }
 
 const scrollContainer = document.querySelector('.content.cm-s-obsidian');
