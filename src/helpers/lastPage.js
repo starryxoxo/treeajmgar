@@ -1,12 +1,26 @@
-// --- Save progress by paragraph index (no IDs needed) ---
+function ensureAnchors() {
+  const container = document.querySelector('.content.cm-s-obsidian');
+  if (!container) return;
+  container.querySelectorAll('p').forEach(p => {
+    if (!p.querySelector('.scroll-anchor')) {
+      const span = document.createElement('span');
+      span.className = 'scroll-anchor';
+      span.style.position = 'absolute';
+      span.style.left = '-9999px';
+      span.style.height = '1px';
+      p.prepend(span);
+    }
+  });
+}
 
-function getTopVisibleParaIndex() {
+function getTopVisibleAnchorIndex() {
   const container = document.querySelector('.content.cm-s-obsidian');
   if (!container) return 0;
-  const ps = container.querySelectorAll('p');
+  const anchors = container.querySelectorAll('.scroll-anchor');
   const containerTop = container.scrollTop;
-  for (let i = 0; i < ps.length; i++) {
-    if (ps[i].offsetTop >= containerTop) {
+  for (let i = 0; i < anchors.length; i++) {
+    const off = anchors[i].parentElement.offsetTop;
+    if (off >= containerTop) {
       return i;
     }
   }
@@ -16,43 +30,47 @@ function getTopVisibleParaIndex() {
 function saveProgress() {
   const container = document.querySelector('.content.cm-s-obsidian');
   if (!container) return;
-  const paraIndex = getTopVisibleParaIndex();
+  const anchorIndex = getTopVisibleAnchorIndex();
   localStorage.setItem('lastPageData', JSON.stringify({
     page: window.location.href,
-    paraIndex: paraIndex
+    anchorIndex: anchorIndex
   }));
 }
 
-const container = document.querySelector('.content.cm-s-obsidian');
-if (container) {
-  container.addEventListener('scroll', saveProgress);
-  window.addEventListener('beforeunload', saveProgress);
-  window.addEventListener('visibilitychange', () => {
-    if (document.visibilityState === 'hidden') saveProgress();
-  });
-}
-
-// --- Restore scroll to saved paragraph index ---
 window.addEventListener("DOMContentLoaded", () => {
+  ensureAnchors();
+  // Restore
   const lastPageDataRaw = localStorage.getItem('lastPageData');
-  let paraIndex = null;
+  let anchorIndex = null;
   if (lastPageDataRaw) {
     try {
       const data = JSON.parse(lastPageDataRaw);
-      // Defensive: check for integer-ness and not undefined/null
-      if (typeof data.paraIndex === 'number' && !isNaN(data.paraIndex)) {
-        paraIndex = data.paraIndex;
+      if (typeof data.anchorIndex === 'number' && !isNaN(data.anchorIndex)) {
+        anchorIndex = data.anchorIndex;
       }
     } catch (e) {}
   }
-  if (paraIndex !== null) {
-    const container = document.querySelector('.content.cm-s-obsidian');
-    const ps = container ? container.querySelectorAll('p') : [];
-    const targetP = ps[paraIndex] || ps[0];
-    if (container && targetP) {
+  const container = document.querySelector('.content.cm-s-obsidian');
+  if (anchorIndex !== null && container) {
+    const anchors = container.querySelectorAll('.scroll-anchor');
+    const target = anchors[anchorIndex] || anchors[0];
+    if (target) {
       setTimeout(() => {
-        container.scrollTop = targetP.offsetTop;
+        container.scrollTop = target.parentElement.offsetTop;
       }, 50);
     }
+  }
+});
+
+// Save on scroll, before unload, or tab hidden
+window.addEventListener("DOMContentLoaded", () => {
+  ensureAnchors();
+  const container = document.querySelector('.content.cm-s-obsidian');
+  if (container) {
+    container.addEventListener('scroll', saveProgress);
+    window.addEventListener('beforeunload', saveProgress);
+    window.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'hidden') saveProgress();
+    });
   }
 });
