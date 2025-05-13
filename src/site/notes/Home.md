@@ -2,8 +2,10 @@
 {"dg-publish":true,"permalink":"/home/","title":"the sworn library","tags":["gardenEntry"]}
 ---
 
-# Hi! Welcome to the sworn library.
+# Hello! WYou are in the unstable version of the sworn library.
 This domain is for testing purposes only. Please refer to the main website.
+
+<button onclick="window.location.href='https://swrn.vercelmapp'" class="squared-button">Main website</button>
 
 | ![swrn.jpg](/img/user/b%20storage/swrn.jpg) |
 | :-----------: |
