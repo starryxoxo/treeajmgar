@@ -3,6 +3,7 @@
 ---
 
 # Hi! Welcome to the sworn library.
+This domain is for testing purposes only. Please refer to the main website <a href="https://swrn.vercel.app"></a>
 
 | ![swrn.jpg](/img/user/b%20storage/swrn.jpg) |
 | :-----------: |
@@ -52,7 +53,7 @@ All Rights Reserved.
 
 ***
 
-v 5.1.3-4 (19)
+v 5.1.3-4 (19)-dev
 
 This website is still under development.
 
