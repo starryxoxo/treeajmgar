@@ -30,12 +30,9 @@ min-width: 160px;
   margin-bottom: 1rem;    /* Optional: space below the button group */
 }
 
-.fake-button {
-  /* Remove display: inline-block; */
-  padding: 0.375rem 1rem;
+.button-base {
   background-color: rgba(255, 255, 255, 0.03);
   color: white;
-  border-radius: 1.25rem;
   font-weight: 600;
   font-size: clamp(1rem, 1.1vw, 1.125rem);
   backdrop-filter: blur(0.625rem);
@@ -43,27 +40,31 @@ min-width: 160px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.4);
   user-select: none;
-  cursor: default;
   transition: all 0.3s ease;
-  /* No need for display property here */
-
 }
+
+.fake-button {
+  @extend .button-base;
+  padding: 0.375rem 1rem;
+  border-radius: 1.25rem;
+  cursor: default;
+}
+
 .squared-button {
+  // If on a <button>, reset default styles
   appearance: none;
   -webkit-appearance: none;
-  background-color: rgba(255, 255, 255, 0.03);
-  color: white;
-  border-radius: 0.75rem;
-  font-weight: 600;
-  font-size: clamp(1rem, 1.1vw, 1.125rem);
-  backdrop-filter: blur(0.625rem);
-  -webkit-backdrop-filter: blur(0.625rem);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.4);
-  user-select: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  padding: 0;
+  margin: 0;
+  // Custom
+  @extend .button-base;
   padding: 1.2rem 1.25rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
 }
 
 h6, h1 {
