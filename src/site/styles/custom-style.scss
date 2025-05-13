@@ -49,6 +49,17 @@ min-width: 160px;
 }
 
 .squared-button {
+  // Reset default styles
+  appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  padding: 0;
+  margin: 0;
+
+  // Your custom styles
   padding: 1.2rem 1.25rem; /* More vertical space, same horizontal space */
   border-radius: 0.75rem;  /* Slightly rounded corners */
   background-color: rgba(255, 255, 255, 0.03);
