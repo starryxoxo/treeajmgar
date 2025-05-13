@@ -3,7 +3,7 @@
 ---
 
 # Hi! Welcome to the sworn library.
-This domain is for testing purposes only. Please refer to the main website <a href="https://swrn.vercel.app"></a>
+This domain is for testing purposes only. Please refer to the main website.
 
 | ![swrn.jpg](/img/user/b%20storage/swrn.jpg) |
 | :-----------: |
@@ -11,7 +11,7 @@ This domain is for testing purposes only. Please refer to the main website <a hr
 > New to the sworn library?
 Click the [[blue text\|blue text]] to enter a link or a [[d/sitn/Strangers by Midnight\|book]].
 
-[[b storage/Library\|Visit your Reading List]]
+<a href="https://swrn.vercel.app/b-storage/library" class="squared-button">Visit your Reading List</a>
 
 <noscript>
   <p style="color: red; font-weight: bold; text-align: center;">
