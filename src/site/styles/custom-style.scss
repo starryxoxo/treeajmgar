@@ -46,24 +46,14 @@ min-width: 160px;
   cursor: default;
   transition: all 0.3s ease;
   /* No need for display property here */
-}
 
+}
 .squared-button {
-  // Reset default styles
   appearance: none;
   -webkit-appearance: none;
-  background: none;
-  border: none;
-  color: inherit;
-  font: inherit;
-  padding: 0;
-  margin: 0;
-
-  // Your custom styles
-  padding: 1.2rem 1.25rem; /* More vertical space, same horizontal space */
-  border-radius: 0.75rem;  /* Slightly rounded corners */
   background-color: rgba(255, 255, 255, 0.03);
   color: white;
+  border-radius: 0.75rem;
   font-weight: 600;
   font-size: clamp(1rem, 1.1vw, 1.125rem);
   backdrop-filter: blur(0.625rem);
@@ -73,6 +63,7 @@ min-width: 160px;
   user-select: none;
   cursor: pointer;
   transition: all 0.3s ease;
+  padding: 1.2rem 1.25rem;
 }
 
 h6, h1 {
