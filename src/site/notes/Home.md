@@ -11,7 +11,7 @@ This domain is for testing purposes only. Please refer to the main website.
 > New to the sworn library?
 Click the [[blue text\|blue text]] to enter a link or a [[d/sitn/Strangers by Midnight\|book]].
 
-<a href="https://swrn.vercel.app/b-storage/library" class="squared-button">Visit your Reading List</a>
+<button onclick="window.location.href='https://swrn.vercel.app/b-storage/library'" class="squared-button">Visit your Reading List</button>
 
 <noscript>
   <p style="color: red; font-weight: bold; text-align: center;">
