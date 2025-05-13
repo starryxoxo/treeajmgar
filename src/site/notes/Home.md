@@ -10,7 +10,7 @@
 > New to the sworn library?
 Click the [[blue text\|blue text]] to enter a link or a [[d/sitn/Strangers by Midnight\|book]].
 
-[[b storage/Library\|Visit your Reading List]]
+<button onclick="window.location.href='https://swrn.vercel.app/b-storage/library'" class="squared-button">Visit your Reading List</button>
 
 <noscript>
   <p style="color: red; font-weight: bold; text-align: center;">
@@ -32,12 +32,10 @@ Click the [[blue text\|blue text]] to enter a link or a [[d/sitn/Strangers by Mi
 | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]] |
 
 
-
 | Discover                         |                           |                           |                           |
 | -------------------------------- | ------------------------- | ------------------------- | ------------------------- |
 | ![coverimg\|165](/img/user/d/sitn/sitncover.webp) | ![coverimg\|165](/img/user/d/swb.jpg) | ![coverimg\|165](/img/user/d/swb.jpg) | ![coverimg\|165](/img/user/d/swb.jpg) |
 | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]]        |                           |                           |                           |
-
 
 |     Coming Soon     |
 | :-----------------: |
