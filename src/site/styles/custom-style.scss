@@ -43,18 +43,18 @@ min-width: 160px;
   transition: all 0.3s ease;
 }
 
-@keyframes bounce-in-out {
+@keyframes bounce-in-out-expressive {
   0% {
     transform: scale(1);
   }
-  40% {
-    transform: scale(0.88);
+  30% {
+    transform: scale(0.92);
   }
-  55% {
-    transform: scale(1.05);
+  60% {
+    transform: scale(1.04);
   }
-  70% {
-    transform: scale(0.97);
+  80% {
+    transform: scale(0.98);
   }
   100% {
     transform: scale(1);
@@ -83,7 +83,7 @@ button.squared-button {
   cursor: pointer;
 
   &:active {
-    animation: bounce-in-out 0.4s cubic-bezier(.4,2,.6,.8);
+    animation: bounce-in-out-expressive 0.5s cubic-bezier(0.2, 0, 0, 1);
   }
 }
 
