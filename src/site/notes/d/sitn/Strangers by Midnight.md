@@ -7,9 +7,7 @@
 
 ***
 
-<center>
-![360](/img/user/d/sitn/sitncover.webp)
-</center>
+![sitncover.webp|360](/img/user/d/sitn/sitncover.webp)
 
 ***
 
