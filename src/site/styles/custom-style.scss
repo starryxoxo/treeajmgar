@@ -93,3 +93,12 @@ h6, h1 {
 h1 {
   margin-bottom: 1.50rem !important;
 }
+
+@media screen and (min-width: 768px) { // Target desktop screens
+  img:not(table img) {
+    float: left;
+    max-width: 40%; // Adjust as needed for your specific design
+    margin-right: 1rem; // Optional: spacing between the image and text
+    height: auto; // Maintain the aspect ratio
+  }
+}
