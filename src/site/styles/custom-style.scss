@@ -102,7 +102,9 @@ h1 {
     height: auto; // Maintains the aspect ratio of the image
   }
 
-  p, h6, h1 {
+  body p,
+  body h6,
+  body h1 {
     overflow: hidden; // Ensures text wraps correctly and doesn't overlap
   }
 }
