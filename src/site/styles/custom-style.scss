@@ -105,6 +105,8 @@ h1 {
   body p,
   body h6,
   body h1 {
-    overflow: hidden; // Ensures text wraps correctly and doesn't overlap
+    overflow: hidden; // Ensures proper wrapping of text
+    display: block;   // Ensures these elements are block-level
+    margin-left: 41%; // Pushes the text to the right of the floated image
   }
 }
