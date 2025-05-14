@@ -77,3 +77,23 @@ h6, h1 {
 h1 {
   margin-bottom: 1.50rem !important;
 }
+
+body:not(.is-mobile) {
+  // Target a container that has an image followed by text
+  main:has(> img:first-of-type) {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+
+    img:first-of-type {
+      max-width: 280px;
+      flex-shrink: 0;
+      margin-right: 2rem;
+    }
+
+    // All text siblings after the image
+    h1, h6, p {
+      text-align: left;
+    }
+  }
+}
