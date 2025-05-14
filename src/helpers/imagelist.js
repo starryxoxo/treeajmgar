@@ -54,16 +54,6 @@ window.addEventListener("load", () => {
   });
 });
 
-// Prevent screenshots with Incognito-like technique
-function preventScreenshots() {
-  // Detect the PrintScreen key and clear the clipboard
-  document.addEventListener("keyup", (e) => {
-    if (e.key === "PrintScreen") {
-      navigator.clipboard.writeText(""); // Clear clipboard
-      alert("Screenshots are disabled on this site.");
-    }
-  });
-
   // Use hardware-accelerated overlay
   window.addEventListener("load", () => {
     const blocker = document.createElement("div");
@@ -80,17 +70,6 @@ function preventScreenshots() {
 
     document.body.appendChild(blocker);
   });
-
-  // Detect screen recording using WebGL
-  setInterval(() => {
-    const gl = document.createElement("canvas").getContext("webgl");
-    if (!gl) {
-      alert("Screen recording is disabled on this site.");
-    }
-  }, 1000);
-}
-
-preventScreenshots();
 
 // Lazy load images
 document.addEventListener("DOMContentLoaded", function () {
