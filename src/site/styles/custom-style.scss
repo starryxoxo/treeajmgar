@@ -45,9 +45,9 @@ min-width: 160px;
 
 @keyframes bounce-in-out-expressive {
   0%   { transform: scale(1); }
-  15%  { transform: scale(0.93, 0.96); }
-  40%  { transform: scale(1.03, 1.01); }
-  65%  { transform: scale(0.97, 0.99); }
+  20%  { transform: scale(0.97, 0.98); }
+  50%  { transform: scale(1.03, 1.01); }
+  80%  { transform: scale(0.99, 0.995); }
   100% { transform: scale(1); }
 }
 
@@ -62,23 +62,24 @@ button.squared-button {
   cursor: pointer;
   white-space: nowrap;
   overflow: hidden;
-  display: inline-flex;           // Ensures vertical centering
-  align-items: center;            // Ensures vertical centering
-  justify-content: center;        // Horizontal centering
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-width: 100px;
   max-width: 100%;
   transition:
-    width 1.6s cubic-bezier(0.2, 0, 0, 1),
-    transform 1.3s cubic-bezier(0.2, 0, 0, 1),
+    width 2s cubic-bezier(0.2, 0, 0, 1),
+    transform 2s cubic-bezier(0.2, 0, 0, 1),
     background 0.3s,
     color 0.3s;
 
   &:active {
-    animation: bounce-in-out-expressive 1.6s cubic-bezier(0.2, 0, 0, 1);
-    transform: scaleX(0.93) scaleY(0.96);
+    animation: bounce-in-out-expressive 2s cubic-bezier(0.2, 0, 0, 1);
+    /* Keep transform minimal for fluidity */
+    transform: scaleX(0.97) scaleY(0.98);
     transition:
-      transform 1.3s cubic-bezier(0.2, 0, 0, 1),
-      width 1.6s cubic-bezier(0.2, 0, 0, 1),
+      transform 2s cubic-bezier(0.2, 0, 0, 1),
+      width 2s cubic-bezier(0.2, 0, 0, 1),
       background 0.3s,
       color 0.3s;
   }
