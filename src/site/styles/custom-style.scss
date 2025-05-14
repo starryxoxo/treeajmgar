@@ -96,17 +96,13 @@ h1 {
 
 @media screen and (min-width: 768px) { // Target desktop screens
   body img:not(table img) {
-    float: left !important; // Override inline styles
-    max-width: 40% !important; // Override inline styles
-    margin-right: 1rem; // Adds spacing between the image and text
+    float: left !important; // Ensures the image stays on the left
+    max-width: 40% !important; // Adjust size of the image
+    margin-right: 1rem; // Adds space between image and text
     height: auto !important; // Maintain aspect ratio
   }
 
-  body p,
-  body h6,
-  body h1 {
-    overflow: hidden; // Ensures proper wrapping of text
-    display: block;   // Ensures these elements are block-level
-    margin-left: 41%; // Pushes the text to the right of the floated image
+  body * { 
+    overflow: hidden; // Ensures all text flows cleanly to the right
   }
 }
