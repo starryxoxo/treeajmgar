@@ -78,22 +78,24 @@ h1 {
   margin-bottom: 1.50rem !important;
 }
 
-body:not(.is-mobile) {
-  // Target a container that has an image followed by text
-  main:has(> img:first-of-type) {
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
+body:not(.is-mobile) main > img:first-of-type {
+  float: left;
+  max-width: 300px;
+  margin: 0 2rem 1rem 0;
+  border-radius: 8px;
+  display: block;
+}
 
-    img:first-of-type {
-      max-width: 280px;
-      flex-shrink: 0;
-      margin-right: 2rem;
-    }
+/* Place .fake-button-container below the image */
+body:not(.is-mobile) main > img:first-of-type + .fake-button-container {
+  clear: left;
+  display: block;
+  margin: 1rem 0 1rem 0; // adjust as needed
+}
 
-    // All text siblings after the image
-    h1, h6, p {
-      text-align: left;
-    }
-  }
+/* Ensure headings and paragraphs are aligned right of the image */
+body:not(.is-mobile) main > h6,
+body:not(.is-mobile) main > h1,
+body:not(.is-mobile) main > p {
+  text-align: left;
 }
