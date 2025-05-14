@@ -6,7 +6,9 @@
 
 ***
 
-![ddmcover.webp](/img/user/dayd/ddmstorage/ddmcover.webp)
+<center>
+![ddmcover.webp|360](/img/user/dayd/ddmstorage/ddmcover.webp)
+</center>
 
 ***
 <button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button>
