@@ -95,7 +95,7 @@ h1 {
 }
 
 @media screen and (min-width: 768px) { // Target desktop screens
-  img:not(table img) {
+  body img:not(table img) {
     float: left;
     max-width: 40%; // Adjust as needed for your specific design
     margin-right: 1rem; // Optional: spacing between the image and text
