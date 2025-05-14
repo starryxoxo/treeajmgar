@@ -43,6 +43,24 @@ min-width: 160px;
   transition: all 0.3s ease;
 }
 
+@keyframes bounce-in-out {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.88);
+  }
+  55% {
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.97);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .fake-button {
   @extend .button-base;
   padding: 0.375rem 1rem;
@@ -63,6 +81,10 @@ button.squared-button {
   padding: 1.2rem 1.25rem;
   border-radius: 0.75rem;
   cursor: pointer;
+
+  &:active {
+    animation: bounce-in-out 0.4s cubic-bezier(.4,2,.6,.8);
+  }
 }
 
 h6, h1 {
