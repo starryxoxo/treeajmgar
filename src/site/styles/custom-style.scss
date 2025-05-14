@@ -96,10 +96,10 @@ h1 {
 
 @media screen and (min-width: 768px) { // Target desktop screens
   body img:not(table img) {
-    float: left; // Makes the image float to the left
-    max-width: 40%; // Adjust as needed for your design
+    float: left !important; // Override inline styles
+    max-width: 40% !important; // Override inline styles
     margin-right: 1rem; // Adds spacing between the image and text
-    height: auto; // Maintains the aspect ratio of the image
+    height: auto !important; // Maintain aspect ratio
   }
 
   body p,
