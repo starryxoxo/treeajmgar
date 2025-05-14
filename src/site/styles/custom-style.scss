@@ -93,18 +93,3 @@ h6, h1 {
 h1 {
   margin-bottom: 1.50rem !important;
 }
-
-@media screen and (min-width: 768px) { // Target desktop screens
-  body > img:not(table img) {
-    float: left !important; // Ensures the image floats to the left
-    max-width: 90% !important; // Adjust image size
-    margin-right: 1rem; // Adds space between the image and the right
-    height: auto !important; // Maintain aspect ratio
-  }
-
-  body > *:not(img) { 
-    overflow: hidden; // Ensures proper wrapping of text
-    display: block;   // Ensures elements stack properly
-    margin-left: 41%; // Pushes text to the right of the floated image
-  }
-}
