@@ -7,7 +7,11 @@
 
 ***
 
+<div style="text-align:center;">
+
 ![sitncover.webp|360](/img/user/d/sitn/sitncover.webp)
+
+</div>
 
 ***
 
