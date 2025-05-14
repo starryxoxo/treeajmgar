@@ -45,13 +45,14 @@ min-width: 160px;
 
 @keyframes bounce-in-out-expressive {
   0%   { transform: scale(1); }
-  20%  { transform: scale(0.93); }
-  40%  { transform: scale(1.05); }
-  60%  { transform: scale(0.97); }
+  20%  { transform: scale(0.93, 0.97); }
+  40%  { transform: scale(1.04, 1.01); }
+  60%  { transform: scale(0.97, 0.99); }
   100% { transform: scale(1); }
 }
 
 button.squared-button {
+  @extend .button-base;
   appearance: none;
   -webkit-appearance: none;
   color: inherit;
@@ -61,21 +62,24 @@ button.squared-button {
   cursor: pointer;
   white-space: nowrap;
   overflow: hidden;
-  transition:
-    width 0.6s cubic-bezier(0.2, 0, 0, 1),
-    background 0.25s,
-    color 0.25s;
-  // Optional: add min-width if you want
+  display: inline-block;
   min-width: 100px;
   max-width: 100%;
+  transition:
+    width 1.1s cubic-bezier(0.2, 0, 0, 1),
+    transform 0.7s cubic-bezier(0.2, 0, 0, 1),
+    background 0.3s,
+    color 0.3s;
 
   &:active {
-    animation: bounce-in-out-expressive 0.7s cubic-bezier(0.2, 0, 0, 1);
-  }
-
-  // Animate width on content change (text toggle)
-  &.animating-width {
-    transition: width 0.6s cubic-bezier(0.2, 0, 0, 1);
+    animation: bounce-in-out-expressive 1.1s cubic-bezier(0.2, 0, 0, 1);
+    /* Slightly compress sideways for a fluid Material 3 feel */
+    transform: scaleX(0.92) scaleY(0.97);
+    transition:
+      transform 0.7s cubic-bezier(0.2, 0, 0, 1),
+      width 1.1s cubic-bezier(0.2, 0, 0, 1),
+      background 0.3s,
+      color 0.3s;
   }
 }
 
