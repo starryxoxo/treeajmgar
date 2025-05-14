@@ -49,32 +49,28 @@ button.squared-button {
   -webkit-appearance: none;
   color: inherit;
   font: inherit;
-  padding: 1.2rem 1.25rem;
-  border-radius: 0.75rem;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   white-space: nowrap;
   overflow: hidden;
+  background: inherit; // Ensures you keep the glassmorphic look
+  box-shadow: inherit;
   min-width: 100px;
   max-width: 100%;
+  padding: 1.2rem 1.25rem;
+  border-radius: 0.75rem;
   transition:
-    width 1.2s cubic-bezier(0.2, 0, 0, 1),
-    background 1.2s cubic-bezier(0.2, 0, 0, 1),
-    color 1.2s cubic-bezier(0.2, 0, 0, 1),
-    border-radius 1.2s cubic-bezier(0.2, 0, 0, 1),
-    box-shadow 1.2s cubic-bezier(0.2, 0, 0, 1),
-    padding 1.2s cubic-bezier(0.2, 0, 0, 1);
+    width 1.8s cubic-bezier(0.2, 0, 0, 1),
+    padding 1.8s cubic-bezier(0.2, 0, 0, 1),
+    border-radius 1.8s cubic-bezier(0.2, 0, 0, 1);
 
-  // Morph state (e.g., when "subscribed" or toggled)
+  // When toggled, apply .morph for a morphing effect
   &.morph {
-    background: #ffffff; // Morph to a solid background
-    color: #c00;         // Morph text color (example: YouTube red)
-    border-radius: 2rem; // More rounded
-    padding: 1.2rem 2rem; // Wider padding for morph effect
-    min-width: 140px;
-    box-shadow: 0 0.25rem 1.25rem rgba(200, 0, 0, 0.15);
+    width: 200px;           // target width for morph
+    padding: 1.2rem 2.5rem; // more horizontal padding
+    border-radius: 2rem;    // more rounded
   }
 }
 
