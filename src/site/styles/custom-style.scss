@@ -77,25 +77,3 @@ h6, h1 {
 h1 {
   margin-bottom: 1.50rem !important;
 }
-
-body:not(.is-mobile) main > img:first-of-type {
-  float: left;
-  max-width: 300px;
-  margin: 0 2rem 1rem 0;
-  border-radius: 8px;
-  display: block;
-}
-
-/* Place .fake-button-container below the image */
-body:not(.is-mobile) main > img:first-of-type + .fake-button-container {
-  clear: left;
-  display: block;
-  margin: 1rem 0 1rem 0; // adjust as needed
-}
-
-/* Ensure headings and paragraphs are aligned right of the image */
-body:not(.is-mobile) main > h6,
-body:not(.is-mobile) main > h1,
-body:not(.is-mobile) main > p {
-  text-align: left;
-}
