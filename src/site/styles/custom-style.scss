@@ -75,10 +75,10 @@ button.squared-button {
     width 1.2s cubic-bezier(0.2, 0, 0, 1),
     padding 1.2s cubic-bezier(0.2, 0, 0, 1),
     border-radius 1.2s cubic-bezier(0.2, 0, 0, 1);
+}
 
-  &:active {
-    animation: jiggly-bounce 4.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  }
+  button.squared-button:active {
+  animation: gelatin-bounce 3.6s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .fake-button {
