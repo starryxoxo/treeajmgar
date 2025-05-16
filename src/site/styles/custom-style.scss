@@ -44,15 +44,15 @@ min-width: 160px;
 }
 
 @keyframes gelatin-bounce {
-  0%   { transform: scale(1); }
-  12%  { transform: scale(0.88, 1.08); }
-  24%  { transform: scale(1.04, 0.96); }
-  36%  { transform: scale(0.95, 1.03); }
-  48%  { transform: scale(1.02, 0.98); }
-  60%  { transform: scale(0.98, 1.01); }
-  72%  { transform: scale(1.01, 0.99); }
-  84%  { transform: scale(0.995, 1.005); }
-  100% { transform: scale(1); }
+  0%   { transform: scale(1, 1); }
+  10%  { transform: scale(1.12, 0.88); }
+  22%  { transform: scale(0.90, 1.14); }
+  34%  { transform: scale(1.08, 0.92); }
+  46%  { transform: scale(0.96, 1.04); }
+  58%  { transform: scale(1.03, 0.97); }
+  70%  { transform: scale(0.98, 1.01); }
+  82%  { transform: scale(1.01, 0.99); }
+  100% { transform: scale(1, 1); }
 }
 
 button.squared-button {
