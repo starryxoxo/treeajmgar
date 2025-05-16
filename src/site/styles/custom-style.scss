@@ -43,14 +43,15 @@ min-width: 160px;
   transition: all 0.3s ease;
 }
 
-@keyframes jiggly-bounce {
+@keyframes gelatin-bounce {
   0%   { transform: scale(1); }
-  15%  { transform: scale(0.92, 0.97); }
-  28%  { transform: scale(1.04, 1.01); }
-  40%  { transform: scale(0.96, 0.99); }
-  53%  { transform: scale(1.02, 1.01); }
-  65%  { transform: scale(0.98, 1); }
-  78%  { transform: scale(1.01, 1); }
+  12%  { transform: scale(0.88, 1.08); }
+  24%  { transform: scale(1.04, 0.96); }
+  36%  { transform: scale(0.95, 1.03); }
+  48%  { transform: scale(1.02, 0.98); }
+  60%  { transform: scale(0.98, 1.01); }
+  72%  { transform: scale(1.01, 0.99); }
+  84%  { transform: scale(0.995, 1.005); }
   100% { transform: scale(1); }
 }
 
