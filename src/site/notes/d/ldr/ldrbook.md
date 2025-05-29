@@ -21,7 +21,7 @@ A short story of two lovers far away from each other. Will they be able to reuni
 **Status**: Upcoming
 **Date**:
 
-Quick read • [[d/ldr/ldrlc\|Read]]
+Not yet available • [[d/ldr/ldrlc\|Read]]
 
 ***
 
