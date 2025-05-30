@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/d/ldr/ldrbook/"}
+{"dg-publish":true,"permalink":"/d/ldr/ldrbook/","title":"LDR"}
 ---
 
 [[Home\|Home]]
