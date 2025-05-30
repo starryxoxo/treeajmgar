@@ -29,4 +29,4 @@ Our Service is not directed to children under the age of 13, and we do not knowi
 We reserve the right to update this Privacy Policy at any time. Any changes will be posted on this page with an updated effective date. Your continued use of the Service after such changes constitutes your acceptance of the updated policy.
 
 ### Contact Us
-If you have any questions or concerns about this Privacy Policy or our practices, please contact us at: .
+If you have any questions or concerns about this Privacy Policy or our practices, please contact us at: terrianwiki@gmail.com.
