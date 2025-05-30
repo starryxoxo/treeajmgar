@@ -12,6 +12,10 @@
 <button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button>
 ###### NOVELETTE
 # LDR
+<div class="fake-button-container">
+  <span class="fake-button">enhypen</span>
+  <span class="fake-button">oneshot</span>
+</div>
 
 **Description**:
 *LDR - an abbreviation for long-distance relationship.*
