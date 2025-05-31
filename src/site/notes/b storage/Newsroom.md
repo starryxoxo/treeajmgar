@@ -2,6 +2,8 @@
 {"dg-publish":true,"permalink":"/b-storage/newsroom/","title":"Newsroom"}
 ---
 
+[[Home\|Home]]
+
 # Newsroom
 
 | May 31, 2025 • Pinned                                                                                         |

@@ -2,6 +2,8 @@
 {"dg-publish":true,"permalink":"/dev/terms-1/"}
 ---
 
+[[Home\|Home]]
+
 # Terms of Use & Service
 
 **Effective Date:** May 30, 2025

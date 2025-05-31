@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/dev/privacy-policy/"}
 ---
 
+[[Home\|Home]]
 # Privacy Policy
 **Effective Date:** May 31, 2025
 
