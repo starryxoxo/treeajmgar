@@ -12,11 +12,11 @@
 | ![pripo.jpg](/img/user/dev/pripo.jpg)                                                                                                |
 | [[dev/privacy policy\|Read Privacy Policy]]                                                                       |
 
-| May 31, 2025 • Pinned                                                                            |
-| ------------------------------------------------------------------------------------------------ |
-| You can use this website, but you should see our Terms of Service to see your limits and access. |
-| ![tos.jpg](/img/user/dev/tos.jpg)                                                                                     |
-| [[dev/terms 1\|Read Terms of Use & Service]]                                                         |
+| May 31, 2025 • Pinned                                                                                                                   |
+| --------------------------------------------------------------------------------------------------------------------------------------- |
+| You can use this website, but you should see our Terms of Service to learn more about what you can and can't do when using our service. |
+| ![tos.jpg](/img/user/dev/tos.jpg)                                                                                                                            |
+| [[dev/terms 1\|Read Terms of Use & Service]]                                                                                                |
 ***
 
 No updates...
