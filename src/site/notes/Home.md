@@ -54,7 +54,7 @@ v 5.1.3-4 (19)
 
 This website is still under development.
 
-[[dev/privacy policy\|Privacy]] • [[dev/terms 1\|Terms]]
+[[dev/privacy policy\|Privacy]] • [[dev/terms 1\|Terms]] • [[b storage/Newsroom\|Newsroom]]
 
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/tables.js"></script>
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/imagelist.js"></script>
