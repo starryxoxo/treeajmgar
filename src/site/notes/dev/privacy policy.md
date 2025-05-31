@@ -3,7 +3,7 @@
 ---
 
 # Privacy Policy
-**Effective Date:** May 30, 2025
+**Effective Date:** May 31, 2025
 
 This Privacy Policy describes how the sworn library ("TSL", "we", "us", or "our") handles information when you visit or use our website located at swrn.vercel.app (the "Service"). Please read this policy carefully to understand our practices regarding your information.
 
@@ -17,7 +17,7 @@ Specifically:
 - We do **not** share or sell any data to third parties because we do not have any data to share.
 
 ### Use of Third-Party Services
-Our Service does not integrate with or embed any third-party services that collect data on your behalf. If this changes in the future, we will update this Privacy Policy accordingly.
+External links (such as YouTube Music) or any other third-party services may use cookies collect personal data, in which TSL does not have control over.
 
 ### Security
 Since we do not collect any personal data, there is no personal data to secure. However, we maintain reasonable technical and organizational measures to protect the integrity and availability of our website and its content.
