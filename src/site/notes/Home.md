@@ -6,7 +6,7 @@
 
 # Hi! Welcome to the sworn library.
 
-| ![swrn.jpg](/img/user/b%20storage/swrn.jpg) |
+| ![swrn.jpg](/img/user/b%20storage/favicon/swrn.jpg) |
 | :-----------: |
 
 > New to the sworn library?

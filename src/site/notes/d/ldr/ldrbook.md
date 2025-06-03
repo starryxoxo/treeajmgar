@@ -5,8 +5,11 @@
 [[Home\|Home]]
 
 ***
+<div style="text-align:center;">
 
-![ldrbook.jpg](/img/user/d/ldr/ldrbook.jpg)
+![ldrbook.jpg|360](/img/user/d/ldr/ldrbook.jpg)
+
+</div>
 
 ***
 <button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button>
@@ -26,6 +29,10 @@ A short story of two lovers far away from each other. Will they be able to happi
 **Language**: English
 **Status**: Upcoming
 **Date**:
+
+**Before Reading**
+This book is rated **PG**.
+Contains **13+** content.
 
 Not yet available • [[d/ldr/ldrlc\|Read]]
 
