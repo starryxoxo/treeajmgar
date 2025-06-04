@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/settings/"}
 ---
 
-# Feature Flags
+Feature Flags
 
 <p>
 <div id="feature-flags"></div>
