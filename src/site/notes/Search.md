@@ -2,11 +2,7 @@
 {"dg-publish":true,"permalink":"/search/"}
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Books in treeajmgar</title>
+
   <style>
     body { font-family: Arial, sans-serif; }
     .book-list a {
@@ -18,8 +14,7 @@
     }
     .book-list a:hover { text-decoration: underline; }
   </style>
-</head>
-<body>
+
   <h1>Search</h1>
   <div class="book-list" id="book-list">Loading…</div>
   <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
@@ -79,5 +74,3 @@
 
     renderBookTitles();
   </script>
-</body>
-</html>
