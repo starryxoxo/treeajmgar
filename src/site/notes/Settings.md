@@ -4,4 +4,4 @@
 
 # Feature Flags
 
-<script src="feature.js" defer></script>
+<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/feature.js" defer></script>
