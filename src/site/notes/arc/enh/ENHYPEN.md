@@ -14,7 +14,7 @@
 | ![img\|165](/img/user/arc/enh/enhyassets/jw.jpg)   | **Yang Jungwon**<br>양정원          |
 | ![img\|165](/img/user/arc/enh/enhyassets/lhs.jpg)  | **Lee Heeseung**<br>이희승          |
 | ![img\|165](/img/user/arc/enh/enhyassets/pjs.jpg)  | **Park Jongseong**<br>박정성<br>Jay |
-| ![[sjy.jpg\|165]]     | **Sim Jaeyun**<br>심재윤<br>Jake    |
+| ![img\|165](/img/user/arc/enh/enhyassets/sjy.jpg)  | **Sim Jaeyun**<br>심재윤<br>Jake    |
 | ![img\|165](/img/user/arc/enh/enhyassets/psh.jpg)  | **Park Sunghoon**<br>박성훈         |
 | ![img\|165](/img/user/arc/enh/enhyassets/ksn.jpg)  | **Kim Sunoo**<br>김선우             |
 | ![img\|165](/img/user/arc/enh/enhyassets/niki.jpg) | **Nishimura Riki**<br>니키         |
