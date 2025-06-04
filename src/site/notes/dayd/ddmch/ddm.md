@@ -37,6 +37,8 @@ Contains **13+** content.
 
 Not yet available • [[dayd/ddmch/ddmc1\|Read]]
 
+<div id="my-ab-div" style="display:none;">
+
 | About ENHYPEN                                                                                                                 |
 | ----------------------------------------------------------------------------------------------------------------------------- |
 | ![1ccb72d12a9042a171d481ee54dcf85e.jpg](/img/user/b%20storage/a%20storage/1ccb72d12a9042a171d481ee54dcf85e.jpg)                                                                                     |
@@ -52,8 +54,4 @@ All Rights Reserved.
 
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/imagelist.js"></script>
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/list.js"></script> 
-<script>
-  if (Math.random() < 0.25) { // 25% chance
-    document.getElementById('my-ab-div').style.display = '';
-  }
-</script>
+<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/ffunction.js" defer></script>

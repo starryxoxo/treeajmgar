@@ -63,9 +63,4 @@ All Rights Reserved.
 
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/imagelist.js"></script> 
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/list.js"></script> 
-
-<script>
-  if (Math.random() < 0.25) { // 25% chance
-    document.getElementById('my-ab-div').style.display = '';
-  }
-</script>
+<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/ffunction.js" defer></script>
