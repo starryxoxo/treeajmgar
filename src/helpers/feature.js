@@ -1,6 +1,6 @@
 // feature.js
 const FLAGS = [
-  { id: "my-ab-div", label: "Show 'About Artist' section" },
+  { id: "my-ab-div", label: "Show About Artist section" }
   // Add more flags here as needed, e.g.:
   // { id: "feature-xyz", label: "Enable XYZ Feature" }
 ];
@@ -22,10 +22,9 @@ function createToggle(flag) {
 function renderFeatureFlags(containerId = "feature-flags") {
   const container = document.getElementById(containerId);
   FLAGS.forEach(flag => {
-    // Add a break before each toggle for spacing
-    container.appendChild(document.createElement('br'));
+    container.appendChild(document.createElement('br')); // blank line before
     container.appendChild(createToggle(flag));
-    container.appendChild(document.createElement('br'));
+    container.appendChild(document.createElement('br')); // blank line after
   });
 }
 
