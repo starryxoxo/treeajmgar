@@ -1,17 +1,17 @@
 // ffunction.js
 function showFeatureIfEnabled(flagId, elementId) {
+  const el = document.getElementById(elementId);
+  if (!el) return;
   if (localStorage.getItem(flagId) === 'true') {
-    document.getElementById(elementId).style.display = '';
+    el.style.display = '';
   } else {
-    document.getElementById(elementId).style.display = 'none';
+    el.style.display = 'none';
   }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Example for the "ab" feature
-  if (document.getElementById('ab')) {
-    showFeatureIfEnabled('my-ab-div');
-  }
-  // For more features, repeat as needed:
-  // showFeatureIfEnabled('feature', 'xyz');
+  // Add one line for each feature-flagged section you want to control
+  showFeatureIfEnabled('my-ab-div', 'my-ab-div');
+  // For more features, repeat with their IDs:
+  // showFeatureIfEnabled('feature-xyz', 'xyz');
 });
