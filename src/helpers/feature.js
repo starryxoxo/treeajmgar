@@ -3,7 +3,7 @@ const FLAGS = [
   { id: "my-ab-div", label: "Show 'About Artist' section" },
   // Add more flags here as needed, e.g.:
   // { id: "feature-xyz", label: "Enable XYZ Feature" }
-];
+];;
 
 function createToggle(flag) {
   const label = document.createElement('label');
