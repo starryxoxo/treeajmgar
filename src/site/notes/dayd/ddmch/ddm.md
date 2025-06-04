@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/dayd/ddmch/ddm/","title":"Daydream","tags":["enhypen"]}
+{"dg-publish":true,"permalink":"/dayd/ddmch/ddm/","title":"Daydream","tags":["book"]}
 ---
 
 [[Home\|Home]]

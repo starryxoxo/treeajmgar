@@ -2,8 +2,9 @@
 {"dg-publish":true,"permalink":"/index/"}
 ---
 
-```dataview
-LIST tags, date
-FROM "enhypen"
-SORT date ASC
-```
+
+- [[d/ldr/ldrbook\|ldrbook]]
+- [[d/sitn/Strangers by Midnight\|Strangers by Midnight]]
+- [[dayd/ddmch/ddm\|ddm]]
+
+{ .block-language-dataview}

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/d/sitn/strangers-by-midnight/","title":"Strangers by Midnight","tags":["ENHYPEN"]}
+{"dg-publish":true,"permalink":"/d/sitn/strangers-by-midnight/","title":"Strangers by Midnight","tags":["book"]}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/d/ldr/ldrbook/","title":"LDR","tags":["enhypen"]}
+{"dg-publish":true,"permalink":"/d/ldr/ldrbook/","title":"LDR","tags":["book"]}
 ---
 
 [[Home\|Home]]
