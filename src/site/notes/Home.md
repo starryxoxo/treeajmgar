@@ -54,6 +54,7 @@ v 5.1.3 (21)
 This website is still under development.
 
 [[dev/Settings\|Settings]]
+[[Search\|Search]]
 
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/tables.js"></script>
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/imagelist.js"></script>
