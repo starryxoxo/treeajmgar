@@ -3,12 +3,12 @@
 ---
 
 <input type="text" id="search" placeholder="Search books...">
-<div id="results"></div>
+<table id="results"></table>
 
 <script>
 let books = [];
 const searchInput = document.getElementById('search');
-const resultsDiv = document.getElementById('results');
+const resultsTable = document.getElementById('results');
 
 fetch('https://swrn.vercel.app/books.json')
   .then(r => r.json())
@@ -17,34 +17,29 @@ fetch('https://swrn.vercel.app/books.json')
     searchInput.disabled = false;
   })
   .catch(() => {
-    resultsDiv.textContent = "Could not load books.json. Search is unavailable.";
+    resultsTable.innerHTML = "<tr><td>Could not load books.json. Search is unavailable.</td></tr>";
   });
 
 function showResults(query) {
-  resultsDiv.innerHTML = '';
+  resultsTable.innerHTML = '';
   const q = query.trim().toLowerCase();
   const filtered = books.filter(
     b => b.title && b.title.toLowerCase().includes(q)
   );
   if (!filtered.length && q.length > 0) {
-    resultsDiv.textContent = "No books found.";
+    resultsTable.innerHTML = "<tr><td>No books found.</td></tr>";
     return;
   }
   filtered.forEach(book => {
-    // Create an actual clickable HTML link, not a wikilink
+    const row = document.createElement('tr');
+    const cell = document.createElement('td');
     const a = document.createElement('a');
     a.href = book.url;
-    a.textContent = book.title; // Use the title as the link text
-    a.target = "_blank";
-    a.rel = "noopener";
-    resultsDiv.appendChild(a);
-    resultsDiv.appendChild(document.createElement('br'));
-
-    // If you want to also display the wikilink syntax as plain text (optional):
-    // const wikiSyntax = document.createElement('code');
-    // wikiSyntax.textContent = `[[${book.url}|${book.title}]]`;
-    // resultsDiv.appendChild(wikiSyntax);
-    // resultsDiv.appendChild(document.createElement('br'));
+    a.textContent = book.title;
+    // No a.target or a.rel here — opens in same tab
+    cell.appendChild(a);
+    row.appendChild(cell);
+    resultsTable.appendChild(row);
   });
 }
 
