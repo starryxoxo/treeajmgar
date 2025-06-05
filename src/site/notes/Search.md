@@ -2,54 +2,49 @@
 {"dg-publish":true,"permalink":"/search/"}
 ---
 
-<input type="text" id="search" placeholder="Search books..." disabled>
+<input type="text" id="search" placeholder="Search books...">
 <div id="results"></div>
-<link rel="stylesheet" href="/styles/main.css">
 
 <script>
 let books = [];
 const searchInput = document.getElementById('search');
 const resultsDiv = document.getElementById('results');
 
-// Show loading message and keep input disabled
-resultsDiv.textContent = "Loading books...";
-
 fetch('https://swrn.vercel.app/books.json')
-  .then(r => {
-    if (!r.ok) throw new Error("Not found");
-    return r.json();
-  })
+  .then(r => r.json())
   .then(data => {
     books = data;
-    searchInput.disabled = false; // Enable input
-    resultsDiv.textContent = "";  // Clear loading message
-    showResults(''); // Optionally show all books on load
+    searchInput.disabled = false;
   })
   .catch(() => {
     resultsDiv.textContent = "Could not load books.json. Search is unavailable.";
   });
 
-// Render wikilink-style clickable search results
 function showResults(query) {
   resultsDiv.innerHTML = '';
   const q = query.trim().toLowerCase();
   const filtered = books.filter(
-    b => typeof b.title === "string" && b.title.toLowerCase().includes(q)
+    b => b.title && b.title.toLowerCase().includes(q)
   );
   if (!filtered.length && q.length > 0) {
     resultsDiv.textContent = "No books found.";
     return;
   }
   filtered.forEach(book => {
-    const div = document.createElement('div');
-    // Create clickable wikilink: [[url\|title]]
+    // Create an actual clickable HTML link, not a wikilink
     const a = document.createElement('a');
     a.href = book.url;
-    a.textContent = `[[${book.url}|${book.title}]]`;
-    a.className = "book-link";
+    a.textContent = book.title; // Use the title as the link text
     a.target = "_blank";
-    div.appendChild(a);
-    resultsDiv.appendChild(div);
+    a.rel = "noopener";
+    resultsDiv.appendChild(a);
+    resultsDiv.appendChild(document.createElement('br'));
+
+    // If you want to also display the wikilink syntax as plain text (optional):
+    // const wikiSyntax = document.createElement('code');
+    // wikiSyntax.textContent = `[[${book.url}|${book.title}]]`;
+    // resultsDiv.appendChild(wikiSyntax);
+    // resultsDiv.appendChild(document.createElement('br'));
   });
 }
 
