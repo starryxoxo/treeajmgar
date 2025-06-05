@@ -74,6 +74,18 @@ button.squared-button {
   font-size: 1em;
 }
 
+#results {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 1em;           /* Adds space above the table */
+  border-collapse: collapse; /* For cleaner row borders */
+}
+
+#results td {
+  width: 100%;
+  padding: 0.5em;
+}
+
 h6, h1 {
   all: unset;
   display: block;
