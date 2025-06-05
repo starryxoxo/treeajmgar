@@ -12,7 +12,7 @@
   const searchInput = document.getElementById('search');
   const resultsDiv = document.getElementById('results');
 
-  fetch('/books.json')
+  fetch('https://swrn.vercel.app/books.json')
     .then(r => r.json())
     .then(data => {
       books = data;
