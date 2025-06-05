@@ -66,9 +66,16 @@ button.squared-button {
 }
 
 %vw-width {
-  width: 80vw !important;    // 98vw leaves a tiny margin; use 100vw for edge-to-edge
-  max-width: 80vw !important;
+  width: 80vw !important;
+  max-width: 100vw !important;
   box-sizing: border-box !important;
+}
+
+@media (min-width: 800px) {
+  %vw-width {
+    width: 80vw !important;
+    max-width: 800px !important;
+  }
 }
 
 #search {
