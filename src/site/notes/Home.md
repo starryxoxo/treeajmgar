@@ -2,9 +2,9 @@
 {"dg-publish":true,"permalink":"/home/","title":"the sworn library","tags":["gardenEntry"]}
 ---
 
-<div id="search-bar" style="display:none;">
-<input type="text" id="search" placeholder="Search books...">
-<table id="results"></table>
+<div id="enable-search" style="display:none;">
+  <input type="text" id="search" placeholder="Search books...">
+  <table id="results"></table>
 </div>
 
 [[dev/privacy policy\|Privacy]] • [[dev/terms 1\|Terms]] • [[b storage/Newsroom\|Newsroom]]
