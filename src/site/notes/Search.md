@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/search/"}
 ---
 
-<input type="text" id="search" placeholder="Search books..." disabled>
+<input type="text" id="search" placeholder="Search for books..." disabled>
 <div id="results"></div>
 
 <link rel="stylesheet" href="/styles/main.css">
@@ -16,7 +16,11 @@
   resultsDiv.textContent = "Loading books...";
 
   fetch('/books.json')
-    .then(r => r.json())
+    .then(r => {
+      // Defensive: check for fetch errors or non-JSON response
+      if (!r.ok) throw new Error("Not found");
+      return r.json();
+    })
     .then(data => {
       books = data;
       searchInput.disabled = false; // Enable input
@@ -39,12 +43,10 @@
       return;
     }
     filtered.forEach(book => {
-      const a = document.createElement('a');
-      a.href = book.url;
-      a.textContent = book.title;
-      a.className = "book-link";
-      a.target = "_blank";
-      resultsDiv.appendChild(a);
+      // Render wikilink: [[url\|title]]
+      const div = document.createElement('div');
+      div.textContent = `[[${book.url}|${book.title}]]`;
+      resultsDiv.appendChild(div);
     });
   }
 
