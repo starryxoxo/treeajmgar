@@ -7,7 +7,10 @@
 <div id="results"></div>
 <link rel="stylesheet" href="/styles/main.css">
 
+
+
 <script>
+document.addEventListener("DOMContentLoaded", function() {
   let books = [];
   const searchInput = document.getElementById('search');
   const resultsDiv = document.getElementById('results');
@@ -38,6 +41,7 @@ function showResults(query) {
   }
 
   searchInput.addEventListener('input', (e) => showResults(e.target.value));
+});
 </script>
 
 <style>
