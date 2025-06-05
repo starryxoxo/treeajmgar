@@ -65,8 +65,14 @@ button.squared-button {
   cursor: pointer;
 }
 
-.search {
+#search {
   @extend .button-base;
+  width: 100%;
+  box-sizing: border-box;
+  /* Optional for better appearance: */
+  padding: 0.5em;
+  font-size: 1em;
+}
 
 h6, h1 {
   all: unset;
