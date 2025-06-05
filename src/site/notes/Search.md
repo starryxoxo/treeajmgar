@@ -3,6 +3,8 @@
 ---
 
 <input type="text" id="search" placeholder="Search books...">
+
+<br>
 <table id="results"></table>
 
 <script>
