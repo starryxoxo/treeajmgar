@@ -33,34 +33,32 @@ if (tableZone) {
     const rows = Array.from(table.rows);
     const numCols = rows[0]?.cells.length || 0;
     if (numCols > 1) {
-      // Create array of column indexes except 0
-      const colIndexes = [...Array(numCols).keys()].slice(1);
+      // For the first row, fix the first cell (0,0), shuffle rest
+      const firstRowCells = Array.from(rows[0].cells);
+      const firstRowMovableIndexes = [...Array(numCols).keys()].slice(1);
 
-      // Shuffle colIndexes
-      for (let i = colIndexes.length - 1; i > 0; i--) {
+      // Shuffle the first row's movable columns (columns 1..N)
+      for (let i = firstRowMovableIndexes.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [colIndexes[i], colIndexes[j]] = [colIndexes[j], colIndexes[i]];
+        [firstRowMovableIndexes[i], firstRowMovableIndexes[j]] = [firstRowMovableIndexes[j], firstRowMovableIndexes[i]];
       }
 
-      // For first row: always keep cell 0, then append shuffled cells
-      const firstRowCells = Array.from(rows[0].cells);
+      // Rebuild the first row: keep (0,0) fixed
       while (rows[0].firstChild) rows[0].removeChild(rows[0].firstChild);
       rows[0].appendChild(firstRowCells[0]);
-      colIndexes.forEach(i => rows[0].appendChild(firstRowCells[i]));
+      firstRowMovableIndexes.forEach(idx => rows[0].appendChild(firstRowCells[idx]));
 
-      // For other rows: shuffle ALL columns (including col 0)
+      // For all other rows, shuffle ALL columns (including col 0)
       for (let r = 1; r < rows.length; r++) {
         const cells = Array.from(rows[r].cells);
-        // Create an array of shuffled indexes for this row (including 0)
-        const allIndexes = [0, ...colIndexes];
-        // Shuffle the indexes for this row
-        for (let i = allIndexes.length - 1; i > 0; i--) {
+        // Create a shuffled array of all column indices for this row
+        const rowIndexes = [...Array(numCols).keys()];
+        for (let i = rowIndexes.length - 1; i > 0; i--) {
           const j = Math.floor(Math.random() * (i + 1));
-          [allIndexes[i], allIndexes[j]] = [allIndexes[j], allIndexes[i]];
+          [rowIndexes[i], rowIndexes[j]] = [rowIndexes[j], rowIndexes[i]];
         }
-        // Rebuild the row with the shuffled cells
         while (rows[r].firstChild) rows[r].removeChild(rows[r].firstChild);
-        allIndexes.forEach(idx => rows[r].appendChild(cells[idx]));
+        rowIndexes.forEach(idx => rows[r].appendChild(cells[idx]));
       }
     }
   }
