@@ -2,15 +2,52 @@
 {"dg-publish":true,"permalink":"/search/"}
 ---
 
-<input type="text" id="search" placeholder="Type to search titles...">
-<div class="results loading" id="results">Loading...</div>
-<style>
-  body { font-family: Arial, sans-serif; background: #f8f9fa; margin: 0; padding: 2em; }
-  #search { 
-    width: 100%; max-width: 400px; padding: 10px; margin-bottom: 20px; 
-    border-radius: 4px; border: 1px solid #ccc; font-size: 1em;
+<input type="text" id="search" placeholder="Search for books...">
+<div id="results"></div>
+<link rel="stylesheet" href="/styles/main.css">
+<script>
+  let books = [];
+  const searchInput = document.getElementById('search');
+  const resultsDiv = document.getElementById('results');
+
+  // Fetch the JSON index
+  fetch('/books.json')
+    .then(r => r.json())
+    .then(data => {
+      books = data;
+      showResults('');
+    });
+
+  function showResults(query) {
+    resultsDiv.innerHTML = '';
+    const filtered = books.filter(b => b.title.toLowerCase().includes(query.toLowerCase()));
+    if (!filtered.length) {
+      resultsDiv.textContent = "No books found.";
+      return;
+    }
+    filtered.forEach(book => {
+      const a = document.createElement('a');
+      a.href = book.url;
+      a.textContent = book.title;
+      a.className = "book-link";
+      a.target = "_blank";
+      resultsDiv.appendChild(a);
+    });
   }
-  .results a {
+
+  searchInput.addEventListener('input', (e) => showResults(e.target.value));
+</script>
+<style>
+  #search {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+  }
+  #results a.book-link {
     display: block;
     margin: 8px 0;
     color: #3366cc;
@@ -20,84 +57,8 @@
     border-radius: 3px;
     transition: background 0.2s;
   }
-  .results a:hover {
+  #results a.book-link:hover {
     background: #e8eefd;
     text-decoration: underline;
   }
-  .loading { color: #888; }
 </style>
-<script>
-  // The root to crawl from:
-  const rootUrl = location.origin + '/';
-  const maxPages = 25; // Limit to avoid overloading
-
-  const resultsDiv = document.getElementById('results');
-  const searchInput = document.getElementById('search');
-  let pages = [];
-
-  async function fetchLinks(url) {
-    try {
-      let resp = await fetch(url);
-      let html = await resp.text();
-      let doc = new DOMParser().parseFromString(html, "text/html");
-      let anchors = Array.from(doc.querySelectorAll('a'));
-      let links = anchors
-        .map(a => a.href)
-        .filter(href =>
-          href.startsWith(location.origin) &&
-          !href.includes('#') &&
-          !href.endsWith('.png') && !href.endsWith('.jpg') && !href.endsWith('.jpeg') && !href.endsWith('.svg') &&
-          !href.endsWith('.pdf')
-        );
-      let uniqueLinks = Array.from(new Set(links));
-      return uniqueLinks.slice(0, maxPages);
-    } catch (e) {
-      return [url];
-    }
-  }
-
-  async function fetchTitle(url) {
-    try {
-      let resp = await fetch(url);
-      let html = await resp.text();
-      let titleMatch = html.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
-      if (titleMatch) {
-        return { title: titleMatch[1].trim(), url };
-      }
-    } catch (e) {}
-    return null;
-  }
-
-  (async function main() {
-    let links = await fetchLinks(rootUrl);
-    if (!links.includes(rootUrl)) links.unshift(rootUrl);
-    let results = await Promise.all(
-      links.map(fetchTitle)
-    );
-    pages = results.filter(Boolean);
-    resultsDiv.classList.remove('loading');
-    showResults('');
-  })();
-
-  function showResults(query) {
-    resultsDiv.innerHTML = '';
-    let filtered = pages.filter(page =>
-      page.title.toLowerCase().includes(query.toLowerCase())
-    );
-    if (!filtered.length) {
-      resultsDiv.textContent = "No results found.";
-      return;
-    }
-    filtered.forEach(page => {
-      let a = document.createElement('a');
-      a.href = page.url;
-      a.textContent = page.title;
-      a.target = "_blank";
-      resultsDiv.appendChild(a);
-    });
-  }
-
-  searchInput.addEventListener('input', e => {
-    showResults(e.target.value);
-  });
-</script>
