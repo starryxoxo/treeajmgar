@@ -65,27 +65,31 @@ button.squared-button {
   cursor: pointer;
 }
 
-#search {
-  @extend %button-base;
+// Define a reusable placeholder
+%full-width {
   width: 100%;
   box-sizing: border-box;
-  /* Optional for better appearance: */
+}
+
+// Apply it to both
+#search {
+  @extend %full-width;
+  @extend %button-base;
   padding: 0.5em;
   font-size: 1em;
 }
 
 #results {
-  width: 100%;
-  box-sizing: border-box;
+  @extend %full-width;
   margin-top: 1em;
   border-collapse: collapse;
-  table-layout: fixed;        /* Force columns to fill the width */
+  table-layout: fixed;      // Ensures table fills the width
 }
 
 #results td {
   width: 100%;
   padding: 0.5em;
-  word-break: break-word;     /* Prevents overflow if link text is long */
+  word-break: break-word;
 }
 
 h6, h1 {
