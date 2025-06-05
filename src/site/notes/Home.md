@@ -2,6 +2,9 @@
 {"dg-publish":true,"permalink":"/home/","title":"the sworn library","tags":["gardenEntry"]}
 ---
 
+<input type="text" id="search" placeholder="Search books...">
+<table id="results"></table>
+
 [[dev/privacy policy\|Privacy]] • [[dev/terms 1\|Terms]] • [[b storage/Newsroom\|Newsroom]]
 
 # Hi! Welcome to the sworn library.
@@ -54,8 +57,8 @@ v 5.1.3 (21)
 This website is still under development.
 
 [[dev/Settings\|Settings]]
-[[Search\|Search]]
 
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/tables.js"></script>
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/imagelist.js"></script>
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/homeLastPage.js"></script>
+<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/search.js"></script>
