@@ -33,30 +33,29 @@ if (tableZone) {
     const rows = Array.from(table.rows);
     const numCols = rows[0]?.cells.length || 0;
     if (numCols > 1) {
-      // For the first row, fix the first column
-      const fixedCellFirstRow = rows[0].cells[0];
-      const movableIndexesFirstRow = [...Array(numCols).keys()].slice(1);
+      // 1. Shuffle indexes for columns 1..N (leave 0 fixed)
+      const fixedIndex = 0;
+      const movableIndexes = [...Array(numCols).keys()].slice(1);
 
-      // Shuffle indexes for the first row (except the first column)
-      for (let i = movableIndexesFirstRow.length - 1; i > 0; i--) {
+      // Fisher-Yates shuffle on movableIndexes
+      for (let i = movableIndexes.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [movableIndexesFirstRow[i], movableIndexesFirstRow[j]] = [movableIndexesFirstRow[j], movableIndexesFirstRow[i]];
+        [movableIndexes[i], movableIndexes[j]] = [movableIndexes[j], movableIndexes[i]];
       }
 
-      // Rebuild the first row
+      // 2. Rebuild the first row: keep cell 0, shuffle the rest
       const firstRowCells = Array.from(rows[0].cells);
       while (rows[0].firstChild) rows[0].removeChild(rows[0].firstChild);
-      rows[0].appendChild(fixedCellFirstRow);
-      movableIndexesFirstRow.forEach(i => rows[0].appendChild(firstRowCells[i]));
+      rows[0].appendChild(firstRowCells[fixedIndex]);
+      movableIndexes.forEach(i => rows[0].appendChild(firstRowCells[i]));
 
-      // For subsequent rows, shuffle columns 1..N in the same order as first row
+      // 3. Rebuild other rows: apply the same movableIndexes (no fixed column)
       for (let r = 1; r < rows.length; r++) {
         const cells = Array.from(rows[r].cells);
-        const fixedCell = cells[0];
-        const shuffledCells = movableIndexesFirstRow.map(i => cells[i]);
+        // Collect cells in the shuffled order (including col 0 cell)
+        const newOrder = [cells[fixedIndex], ...movableIndexes.map(i => cells[i])];
         while (rows[r].firstChild) rows[r].removeChild(rows[r].firstChild);
-        rows[r].appendChild(fixedCell);
-        shuffledCells.forEach(cell => rows[r].appendChild(cell));
+        newOrder.forEach(cell => rows[r].appendChild(cell));
       }
     }
   }
