@@ -59,9 +59,36 @@ v 5.1.3 (21)
 This website is still under development.
 
 [[dev/Settings\|Settings]]
+<button id="theme-dark">Dark</button>
+<button id="theme-light">Light</button>
+<button id="theme-paper">Paper</button>
 
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/tables.js"></script>
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/imagelist.js"></script>
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/homeLastPage.js"></script>
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/search.js"></script>
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/ffunction.js"></script>
+
+<script>
+function setTheme(theme) {
+  document.body.classList.remove('theme-dark', 'theme-light', 'theme-paper');
+  document.body.classList.add('theme-' + theme);
+  localStorage.setItem('theme', theme);
+}
+
+function getSavedTheme() {
+  return localStorage.getItem('theme') || 'dark';
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  setTheme(getSavedTheme());
+});
+
+// Example (add theme switcher buttons in your HTML):
+// <button id="theme-dark">Dark</button>
+// <button id="theme-light">Light</button>
+// <button id="theme-paper">Paper</button>
+document.getElementById('theme-dark').onclick = () => setTheme('dark');
+document.getElementById('theme-light').onclick = () => setTheme('light');
+document.getElementById('theme-paper').onclick = () => setTheme('paper');
+</script>
