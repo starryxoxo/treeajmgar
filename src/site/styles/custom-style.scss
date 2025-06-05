@@ -30,7 +30,7 @@ min-width: 160px;
   margin-bottom: 1rem;    /* Optional: space below the button group */
 }
 
-.button-base {
+%button-base {
   background-color: rgba(255, 255, 255, 0.03);
   color: white;
   font-weight: 600;
@@ -44,7 +44,7 @@ min-width: 160px;
 }
 
 .fake-button {
-  @extend .button-base;
+  @extend %button-base;
   padding: 0.375rem 1rem;
   border-radius: 1.25rem;
   cursor: default;
@@ -59,33 +59,37 @@ button.squared-button {
   padding: 0;
   margin: 0;
   // Custom
-  @extend .button-base;
+  @extend %button-base;
   padding: 1.2rem 1.25rem;
   border-radius: 0.75rem;
   cursor: pointer;
 }
 
-#search {
-  @extend .button-base;
+// Define a reusable placeholder
+%full-width {
   width: 100%;
   box-sizing: border-box;
-  /* Optional for better appearance: */
+}
+
+// Apply it to both
+#search {
+  @extend %full-width;
+  @extend %button-base;
   padding: 0.5em;
   font-size: 1em;
 }
 
 #results {
-  width: 100%;
-  box-sizing: border-box;
+  @extend %full-width;
   margin-top: 1em;
   border-collapse: collapse;
-  table-layout: fixed;        /* Force columns to fill the width */
+  table-layout: fixed;      // Ensures table fills the width
 }
 
 #results td {
   width: 100%;
   padding: 0.5em;
-  word-break: break-word;     /* Prevents overflow if link text is long */
+  word-break: break-word;
 }
 
 h6, h1 {
