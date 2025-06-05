@@ -16,7 +16,7 @@ Feature Flags
 
 <script>
 function setTheme(theme) {
-  document.body.classList.remove('theme-dark', 'theme-light', 'theme-paper');
+  document.body.classList.remove('theme-light', 'theme-paper');
   if (theme) {
     document.body.classList.add('theme-' + theme);
     localStorage.setItem('theme', theme);
@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Button handlers
-document.getElementById('theme-dark').onclick = () => setTheme('dark');
 document.getElementById('theme-light').onclick = () => setTheme('light');
 document.getElementById('theme-paper').onclick = () => setTheme('paper');
 document.getElementById('theme-default').onclick = () => setTheme(null);
