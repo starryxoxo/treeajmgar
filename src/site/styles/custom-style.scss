@@ -65,6 +65,9 @@ button.squared-button {
   cursor: pointer;
 }
 
+.search {
+  @extend .button-base;
+
 h6, h1 {
   all: unset;
   display: block;
