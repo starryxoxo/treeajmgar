@@ -77,13 +77,15 @@ button.squared-button {
 #results {
   width: 100%;
   box-sizing: border-box;
-  margin-top: 1em;           /* Adds space above the table */
-  border-collapse: collapse; /* For cleaner row borders */
+  margin-top: 1em;
+  border-collapse: collapse;
+  table-layout: fixed;        /* Force columns to fill the width */
 }
 
 #results td {
   width: 100%;
   padding: 0.5em;
+  word-break: break-word;     /* Prevents overflow if link text is long */
 }
 
 h6, h1 {
