@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/search/"}
 ---
 
-<input type="text" id="search" placeholder="Search for books...">
+<input type="text" id="search" placeholder="Search books...">
 <div id="results"></div>
 <link rel="stylesheet" href="/styles/main.css">
 <script>
@@ -10,7 +10,6 @@
   const searchInput = document.getElementById('search');
   const resultsDiv = document.getElementById('results');
 
-  // Fetch the JSON index
   fetch('/books.json')
     .then(r => r.json())
     .then(data => {
@@ -18,10 +17,11 @@
       showResults('');
     });
 
-  function showResults(query) {
+function showResults(query) {
     resultsDiv.innerHTML = '';
-    const filtered = books.filter(b => b.title.toLowerCase().includes(query.toLowerCase()));
-    if (!filtered.length) {
+    const q = query.trim().toLowerCase();
+    const filtered = books.filter(b => b.title.toLowerCase().includes(q));
+    if (!filtered.length && q.length > 0) {
       resultsDiv.textContent = "No books found.";
       return;
     }
@@ -37,6 +37,7 @@
 
   searchInput.addEventListener('input', (e) => showResults(e.target.value));
 </script>
+
 <style>
   #search {
     width: 100%;
