@@ -11,7 +11,7 @@
   const resultsDiv = document.getElementById('results');
 
   // Fetch the JSON index
-  fetch('/books.json')
+  fetch('https://starryxoxo.github.io/treeajmgar/src/notes/books.json')
     .then(r => r.json())
     .then(data => {
       books = data;
