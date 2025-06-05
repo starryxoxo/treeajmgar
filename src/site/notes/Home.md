@@ -65,3 +65,4 @@ This website is still under development.
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/homeLastPage.js"></script>
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/search.js"></script>
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/ffunction.js"></script>
+<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/setTheme.js"</script>
