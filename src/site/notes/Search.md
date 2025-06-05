@@ -3,6 +3,7 @@
 ---
 
 <input type="text" id="search" placeholder="Search books...">
+
 <div id="results"></div>
 <link rel="stylesheet" href="/styles/main.css">
 
