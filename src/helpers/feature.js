@@ -1,7 +1,7 @@
 // feature.js
 const FLAGS = [
   { id: "my-ab-div", label: "Show the About Artist section" }
-  { id: "search", label: "Enable Search Bar" }
+  { id: "search-bar", label: "Enable Search Bar" }
   // Add more flags here as needed, e.g.:
   // { id: "feature-xyz", label: "Enable XYZ Feature" }
 ];
