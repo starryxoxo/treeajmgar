@@ -2,30 +2,38 @@
 {"dg-publish":true,"permalink":"/search/"}
 ---
 
-<input type="text" id="search" placeholder="Search books...">
-
+<input type="text" id="search" placeholder="Search books..." disabled>
 <div id="results"></div>
+
 <link rel="stylesheet" href="/styles/main.css">
 
-
-
 <script>
-document.addEventListener("DOMContentLoaded", function() {
   let books = [];
   const searchInput = document.getElementById('search');
   const resultsDiv = document.getElementById('results');
+
+  // Show loading message and keep input disabled
+  resultsDiv.textContent = "Loading books...";
 
   fetch('https://swrn.vercel.app/books.json')
     .then(r => r.json())
     .then(data => {
       books = data;
-      showResults('');
+      searchInput.disabled = false; // Enable input
+      resultsDiv.textContent = "";  // Clear loading message
+      showResults(''); // Optionally show all books on load
+    })
+    .catch(() => {
+      resultsDiv.textContent = "Could not load books.json. Search is unavailable.";
     });
 
-function showResults(query) {
+  function showResults(query) {
     resultsDiv.innerHTML = '';
     const q = query.trim().toLowerCase();
-    const filtered = books.filter(b => b.title.toLowerCase().includes(q));
+    const filtered = books.filter(b =>
+      typeof b.title === "string" &&
+      b.title.toLowerCase().includes(q)
+    );
     if (!filtered.length && q.length > 0) {
       resultsDiv.textContent = "No books found.";
       return;
@@ -41,31 +49,4 @@ function showResults(query) {
   }
 
   searchInput.addEventListener('input', (e) => showResults(e.target.value));
-});
 </script>
-
-<style>
-  #search {
-    width: 100%;
-    max-width: 400px;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 1em;
-  }
-  #results a.book-link {
-    display: block;
-    margin: 8px 0;
-    color: #3366cc;
-    text-decoration: none;
-    font-size: 1.15em;
-    padding: 6px 10px;
-    border-radius: 3px;
-    transition: background 0.2s;
-  }
-  #results a.book-link:hover {
-    background: #e8eefd;
-    text-decoration: underline;
-  }
-</style>
