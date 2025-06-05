@@ -152,4 +152,7 @@ h1 {
     --callout-title-padding: 0;
     --callout-title-size: inherit;
     --callout-content-padding: 0;
+    --table-border-color: var(--background-modifier-border);
+    --background-modifier-border: var(--color-base-30);
+    --color-base-30: #eae0b2;
 }
