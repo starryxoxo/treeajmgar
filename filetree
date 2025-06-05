@@ -1,0 +1,18 @@
+All files must have the same pattern for pathfinding.
+
+This often includes serveral namespaces, filename and content.
+
+In general, the path should be
+- index/basebook("spine")
+
+Which basebook or the spine contains:
+ - bookInfo (file)
+ - bookContent (folder), ending in ch
+ - bookAssets ("stor",folder), storage for the folder itself.
+
+The "book" can be shortened.
+
+If a book is unfinished, they are part of the root, where the files begin at spine level.
+
+All previous books aren't required to switch to this pattern.
+
