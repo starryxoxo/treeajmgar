@@ -18,7 +18,7 @@ Specifically:
 - We do **not** share or sell any data to third parties because we do not have any data to share.
 
 ### Use of Third-Party Services
-External links (such as YouTube Music) or any other third-party services may use cookies collect personal data, in which TSL does not have control over.
+External links (such as YouTube Music) or any other third-party services may use cookies which may collect personal data, in which TSL does not have control over.
 
 ### Security
 Since we do not collect any personal data, there is no personal data to secure. However, we maintain reasonable technical and organizational measures to protect the integrity and availability of our website and its content.
