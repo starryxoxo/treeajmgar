@@ -5,6 +5,7 @@
 <input type="text" id="search" placeholder="Search books...">
 <div id="results"></div>
 <link rel="stylesheet" href="/styles/main.css">
+
 <script>
   let books = [];
   const searchInput = document.getElementById('search');
