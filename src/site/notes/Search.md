@@ -15,7 +15,7 @@
   // Show loading message and keep input disabled
   resultsDiv.textContent = "Loading books...";
 
-  fetch('https://swrn.vercel.app/books.json')
+  fetch('/books.json')
     .then(r => r.json())
     .then(data => {
       books = data;
