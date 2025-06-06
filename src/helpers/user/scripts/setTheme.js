@@ -27,5 +27,3 @@ function getSavedTheme() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  // Restore saved theme
-  const saved = get **How your theme buttons should look:**
