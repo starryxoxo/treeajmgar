@@ -192,3 +192,26 @@ textarea {
     --color-base-70: #5d865d;
     --table-header-color: var(--color-base-70);
 }
+
+/* PURPLE THEME */
+.theme-purple {
+    --background-primary: #f8f5ff;
+    --background-secondary: #f1ebfa;
+    --input-text-color: var(--text-normal);
+    --text-normal: #3f235a;
+    --text-accent: #8e44ad;
+    --file-margins: 32px;
+    --callout-border-width: 0px;
+    --callout-border-opacity: 0.14;
+    --callout-padding: 12px 12px 12px 24px;
+    --callout-radius: 4px;
+    --callout-blend-mode: normal;
+    --callout-title-padding: 0;
+    --callout-title-size: inherit;
+    --callout-content-padding: 0;
+    --table-border-color: var(--background-modifier-border);
+    --background-modifier-border: var(--color-base-30);
+    --color-base-30: #dec7f7;
+    --color-base-70: #a58dcc;
+    --table-header-color: var(--color-base-70);
+}
