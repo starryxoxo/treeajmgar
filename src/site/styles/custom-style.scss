@@ -32,7 +32,7 @@ min-width: 160px;
 
 %button-base {
   background-color: rgba(255, 255, 255, 0.03);
-  color: white;
+  color: var(--text-normal);
   font-weight: 600;
   font-size: clamp(1rem, 1.1vw, 1.125rem);
   backdrop-filter: blur(0.625rem);
