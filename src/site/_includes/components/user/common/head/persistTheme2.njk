@@ -1,0 +1,21 @@
+{# persistTheme.njk #}
+<script>
+function setTheme(theme) {
+  document.body.classList.remove('theme-light', 'theme-paper', 'theme-green');
+  if (theme) {
+    document.body.classList.add('theme-' + theme);
+    localStorage.setItem('theme', theme);
+  } else {
+    localStorage.removeItem('theme');
+  }
+}
+
+function getSavedTheme() {
+  return localStorage.getItem('theme');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const saved = getSavedTheme();
+  if (saved) setTheme(saved);
+});
+</script>
