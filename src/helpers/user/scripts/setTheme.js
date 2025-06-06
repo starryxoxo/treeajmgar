@@ -9,10 +9,9 @@ const THEMES = [
 ];
 
 function setTheme(theme) {
-  // Only remove theme classes if there's a change
-  for (const t of THEMES) document.body.classList.remove(t);
-  if (theme) {
-    document.body.classList.add(theme);
+  THEMES.forEach(t => document.body.classList.remove(t));
+  if (theme && THEMES.includes('theme-' + theme)) {
+    document.body.classList.add('theme-' + theme);
     localStorage.setItem('theme', theme);
   } else {
     localStorage.removeItem('theme');
@@ -25,11 +24,10 @@ function getSavedTheme() {
 
 document.addEventListener('DOMContentLoaded', function() {
   const saved = getSavedTheme();
-  if (saved && THEMES.includes(saved)) setTheme(saved);
+  if (saved && THEMES.includes('theme-' + saved)) setTheme(saved);
 
-  // Single event delegation for all theme buttons
+  // This is the missing part: event delegation for buttons
   document.body.addEventListener('click', function(event) {
-    // Buttons should have data-theme attribute matching the theme class
     const btn = event.target.closest('[data-theme]');
     if (btn) {
       const theme = btn.getAttribute('data-theme');
