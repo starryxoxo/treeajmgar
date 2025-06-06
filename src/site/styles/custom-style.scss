@@ -128,7 +128,7 @@ textarea {
 .theme-light {
     --background-primary: #fff;
     --background-secondary: #f3f3f3;
-    --input-text-color: #1a1a1a;
+    --input-text-color: var(--text-normal);
     --text-normal: #1a1a1a;
     --text-accent: #0077cc;
     --file-margins: 32px;
@@ -151,7 +151,7 @@ textarea {
 .theme-paper {
     --background-primary: #f6ecd7;
     --background-secondary: #f2e3bb;
-    --input-text-color: #5b4636;
+    --input-text-color: var(--text-normal);
     --text-normal: #5b4636;
     --text-accent: #b48a2b;
     --file-margins: 32px;
@@ -174,7 +174,7 @@ textarea {
 .theme-green {
     --background-primary: #f5fff5;
     --background-secondary: #e1f5e1;
-    --input-text-color: #174d17;
+    --input-text-color: var(--text-normal);
     --text-normal: #174d17;
     --text-accent: #1b8f3b;
     --file-margins: 32px;
