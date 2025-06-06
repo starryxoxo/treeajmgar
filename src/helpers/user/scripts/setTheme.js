@@ -27,3 +27,5 @@ function getSavedTheme() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+   const saved = get
+}
