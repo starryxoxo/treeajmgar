@@ -13,7 +13,7 @@ Feature Flags
 Light Themes
 <div class="fake-button-container">
   <button data-theme="theme-light" class="squared-button">Light</button>
-  <button date-theme="theme-paper" class="squared-button">Paper</button>
+  <button data-theme="theme-paper" class="squared-button">Paper</button>
   <button data-theme="theme-green" class="squared-button">Green</button>
   <button data-theme="theme-purple" class="squared-button">Purple</button>
 </div>
