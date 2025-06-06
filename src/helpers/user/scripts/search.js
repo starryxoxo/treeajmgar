@@ -1,4 +1,4 @@
-/** search.js **\
+// search.js
 let books = [];
 const searchInput = document.getElementById('search');
 const resultsTable = document.getElementById('results');
