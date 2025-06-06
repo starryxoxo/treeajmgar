@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/b-storage/library/","hide":true}
+{"dg-publish":true,"permalink":"/b-storage/library/","title":"Reading List","hide":true}
 ---
 
 ## Your Reading List
@@ -18,3 +18,5 @@ For **Chrome** users, please don't clear your cookies. Chrome stores your list u
     Your JavaScript setting is not turned on. Your reading list relies on JS to gather your list.
   </p>
 </noscript>
+
+<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/setTheme.js"></script>

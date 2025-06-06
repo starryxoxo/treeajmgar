@@ -211,3 +211,4 @@ All Rights Reserved.
 
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/imagelist.js"></script>
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/lastPage.js"></script>
+<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/setTheme.js"></script>

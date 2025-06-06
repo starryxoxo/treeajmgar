@@ -31,3 +31,5 @@ We reserve the right to update this Privacy Policy at any time. Any changes will
 
 ### Contact Us
 If you have any questions or concerns about this Privacy Policy or our practices, please contact us at: terrianwiki@gmail.com.
+
+<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/setTheme.js"></script>
