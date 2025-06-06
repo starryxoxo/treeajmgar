@@ -156,3 +156,23 @@ h1 {
     --background-modifier-border: var(--color-base-30);
     --color-base-30: #eae0b2;
 }
+
+/*GREEN THEME*/
+.theme-green {
+    --background-primary: #f5fff5;
+    --background-secondary: #e1f5e1;
+    --text-normal: #174d17;
+    --text-accent: #1b8f3b;
+    --file-margins: 32px;
+    --callout-border-width: 0px;
+    --callout-border-opacity: 0.14;
+    --callout-padding: 12px 12px 12px 24px;
+    --callout-radius: 4px;
+    --callout-blend-mode: normal;
+    --callout-title-padding: 0;
+    --callout-title-size: inherit;
+    --callout-content-padding: 0;
+    --color-base-30: #c0e8c0;
+    --background-modifier-border: var(--color-base-30);
+    --table-border-color: var(--background-modifier-border);
+}
