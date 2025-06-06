@@ -9,10 +9,10 @@ Feature Flags
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/feature.js"></script>
 
 Themes (Beta)
-<button id="theme-default" class="squared-button">Default</button>
-
-<button id="theme-light" class="squared-button">Light</button>
-
-<button id="theme-paper" class="squared-button">Paper</button>
+<div class="fake-button-container">
+  <button id="theme-default" class="squared-button">Default</button>
+  <button id="theme-light" class="squared-button">Light</button>
+  <button id="theme-paper" class="squared-button">Paper</button>
+</div>
 
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/setTheme.js"></script>
