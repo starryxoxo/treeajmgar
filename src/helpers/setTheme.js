@@ -1,5 +1,5 @@
 function setTheme(theme) {
-  document.body.classList.remove('theme-light', 'theme-paper');
+  document.body.classList.remove('theme-light', 'theme-paper', 'theme-green');
   if (theme) {
     document.body.classList.add('theme-' + theme);
     localStorage.setItem('theme', theme);
@@ -22,4 +22,5 @@ document.addEventListener('DOMContentLoaded', function() {
 // Button handlers
 document.getElementById('theme-light').onclick = () => setTheme('light');
 document.getElementById('theme-paper').onclick = () => setTheme('paper');
+document.getElementById('theme-green').onclick = () => setTheme('green');
 document.getElementById('theme-default').onclick = () => setTheme(null);
