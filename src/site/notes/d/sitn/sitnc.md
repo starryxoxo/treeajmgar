@@ -124,6 +124,4 @@ Matatapos na ang recess at pumasok si Sunoo sa room. Sunoo looked rushed and the
 Copyright © 2025 the sworn library
 All Rights Reserved.
 
-<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/imagelist.js"></script>
-<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/lastPage.js"></script>
-<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/setTheme.js"></script>
+<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/user/scripts/lastPage.js"></script>

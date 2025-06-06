@@ -60,8 +60,6 @@ This website is still under development.
 
 [[dev/Settings\|Settings]]
 
-<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/tables.js"></script>
-<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/imagelist.js"></script>
-<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/homeLastPage.js"></script>
-<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/search.js"></script>
-<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/ffunction.js"></script>
+<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/user/scripts/tables.js"></script>
+<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/user/scripts/search.js"></script>
+<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/user/scripts/ffunction.js"></script>

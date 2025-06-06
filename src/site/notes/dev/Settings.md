@@ -6,7 +6,7 @@ Feature Flags
 
 <p>
 <div id="feature-flags"></div>
-<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/feature.js"></script>
+<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/user/scripts/feature.js"></script>
 
 Themes (Beta)
 <div class="fake-button-container">
@@ -15,5 +15,3 @@ Themes (Beta)
   <button id="theme-paper" class="squared-button">Paper</button>
   <button id="theme-green" class="squared-button">Green</button>
 </div>
-
-<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/setTheme.js"></script>

@@ -41,7 +41,4 @@ Not yet available • [[d/ldr/ldrlc\|Read]]
 Copyright © the sworn library 2025
 All Rights Reserved.
 
-<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/imagelist.js"></script>
-<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/list.js"></script>
-<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/setTheme.js"></script>
-
+<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/user/scripts/list.js"></script>
