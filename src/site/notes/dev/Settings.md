@@ -12,18 +12,18 @@ Feature Flags
 
 Light Themes
 <div class="fake-button-container">
-  <button id="theme-light" class="squared-button">Light</button>
-  <button id="theme-paper" class="squared-button">Paper</button>
-  <button id="theme-green" class="squared-button">Green</button>
-  <button id="theme-purple" class="squared-button">Purple</button>
+  <button data-theme="theme-light" class="squared-button">Light</button>
+  <button date-theme="theme-paper" class="squared-button">Paper</button>
+  <button data-theme="theme-green" class="squared-button">Green</button>
+  <button data-theme="theme-purple" class="squared-button">Purple</button>
 </div>
 
 Dark Themes
 <div class="fake-button-container">
-  <button id="theme-default" class="squared-button">Dark</button>
-  <button id="theme-dark-paper" class="squared-button">Paper</button>
-  <button id="theme-dark-green" class="squared-button">Green</button>
-  <button id="theme-dark-purple" class="squared-button">Purple</button>
+  <button data-theme="theme-default" class="squared-button">Dark</button>
+  <button data-theme="theme-dark-paper" class="squared-button">Paper</button>
+  <button data-theme="theme-dark-green" class="squared-button">Green</button>
+  <button data-theme="theme-dark-purple" class="squared-button">Purple</button>
 </div>
 
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/user/scripts/setTheme.js"></script>
