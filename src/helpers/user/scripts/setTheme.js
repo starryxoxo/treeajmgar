@@ -23,10 +23,11 @@ function getSavedTheme() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+  // Restore saved theme on page load
   const saved = getSavedTheme();
   if (saved && THEMES.includes('theme-' + saved)) setTheme(saved);
 
-  // This is the missing part: event delegation for buttons
+  // Listen for theme button
   document.body.addEventListener('click', function(event) {
     const btn = event.target.closest('[data-theme]');
     if (btn) {
