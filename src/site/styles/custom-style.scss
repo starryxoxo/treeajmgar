@@ -135,6 +135,8 @@ h1 {
     --table-border-color: var(--background-modifier-border);
     --background-modifier-border: var(--color-base-30);
     --color-base-30: #e0e0e0;
+    --color-base-70: #b0b0b0;
+    --table-header-color: var(--color-base-70);
 }
 
 /* PAPER (SEPIA) THEME */
@@ -155,6 +157,8 @@ h1 {
     --table-border-color: var(--background-modifier-border);
     --background-modifier-border: var(--color-base-30);
     --color-base-30: #eae0b2;
+    --color-base-70: #b0a16a;
+    --table-header-color: var(--color-base-70);
 }
 
 /*GREEN THEME*/
@@ -175,4 +179,6 @@ h1 {
     --color-base-30: #c0e8c0;
     --background-modifier-border: var(--color-base-30);
     --table-border-color: var(--background-modifier-border);
+    --color-base-70: #5d865d;
+    --table-header-color: var(--color-base-70);
 }
