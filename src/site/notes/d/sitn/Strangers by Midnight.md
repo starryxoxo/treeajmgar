@@ -61,5 +61,5 @@ Blood and detailed content.
 Copyright © 2025 the sworn library
 All Rights Reserved.
 
-<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/user/scritpts/list.js"></script> 
+<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/user/scripts/list.js"></script> 
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/user/scripts/ffunction.js"></script>
