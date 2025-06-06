@@ -15,3 +15,5 @@ Themes (Beta)
   <button id="theme-paper" class="squared-button">Paper</button>
   <button id="theme-green" class="squared-button">Green</button>
 </div>
+
+<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/user/scripts/setTheme.js"></script>
