@@ -1,16 +1,20 @@
-const THEMES = [
-  'theme-light',
-  'theme-paper',
-  'theme-green',
-  'theme-purple',
-  'theme-dark-paper',
-  'theme-dark-green',
-  'theme-dark-purple'
-];
+// Solution A: Use window.THEMES to avoid redeclaration errors
+
+if (!window.THEMES) {
+  window.THEMES = [
+    'theme-light',
+    'theme-paper',
+    'theme-green',
+    'theme-purple',
+    'theme-dark-paper',
+    'theme-dark-green',
+    'theme-dark-purple'
+  ];
+}
 
 function setTheme(theme) {
-  THEMES.forEach(t => document.body.classList.remove(t));
-  if (theme && THEMES.includes('theme-' + theme)) {
+  window.THEMES.forEach(t => document.body.classList.remove(t));
+  if (theme && window.THEMES.includes('theme-' + theme)) {
     document.body.classList.add('theme-' + theme);
     localStorage.setItem('theme', theme);
   } else {
@@ -23,16 +27,5 @@ function getSavedTheme() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  // Restore saved theme on page load
-  const saved = getSavedTheme();
-  if (saved && THEMES.includes('theme-' + saved)) setTheme(saved);
-
-  // Listen for theme button
-  document.body.addEventListener('click', function(event) {
-    const btn = event.target.closest('[data-theme]');
-    if (btn) {
-      const theme = btn.getAttribute('data-theme');
-      setTheme(theme === 'default' ? null : theme);
-    }
-  });
-});
+  // Restore saved theme
+  const saved = get **How your theme buttons should look:**
