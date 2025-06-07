@@ -1,6 +1,6 @@
 <script>
 function setTheme(theme) {
-  document.body.classList.remove('theme-light', 'theme-paper', 'theme-green', 'theme-purple', 'theme-dark-paper', 'theme-dark-green', 'theme-dark-purple');
+  document.body.classList.remove('theme-light', 'theme-paper', 'theme-green', 'theme-purple', 'd-theme-paper', 'd-theme-green', 'd-theme-purple');
   if (theme) {
     document.body.classList.add('theme-' + theme);
     localStorage.setItem('theme', theme);
