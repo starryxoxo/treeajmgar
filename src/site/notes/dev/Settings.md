@@ -25,4 +25,4 @@ Dark Themes
   <button id="theme-dark-purple" class="squared-button">Purple</button>
 </div>
 
-<script src defer="https://starryxoxo.github.io/treeajmgar/src/helpers/user/scripts/setTheme.js"></script>
+<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/user/scripts/setTheme.js" defer></script>
