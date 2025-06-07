@@ -27,4 +27,4 @@ document.getElementById('theme-purple').onclick = () => setTheme('purple');
 document.getElementById('theme-dark-paper').onclick = () => setTheme('dark-paper');
 document.getElementById('theme-dark-green').onclick = () => setTheme('dark-green');
 document.getElementById('theme-dark-purple').onclick = () => setTheme('dark-purple');
-document.getElementById('theme-default').onclick = () => setTheme('null')
+document.getElementById('theme-default').onclick = () => setTheme('null');
