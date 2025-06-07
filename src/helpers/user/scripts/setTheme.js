@@ -1,5 +1,5 @@
 function setTheme(theme) {
-  document.body.classList.remove('theme-light', 'theme-paper', 'theme-green', 'theme-purple', 'theme-dark-paper', 'theme-dark-green', 'theme-dark-purple');
+  document.body.classList.remove('theme-light', 'theme-paper', 'theme-green', 'theme-purple', 'theme-dark-paper', 'theme-dark-green', 'theme-dark-purple', 'theme-default');
   if (theme) {
     document.body.classList.add('theme-' + theme);
     localStorage.setItem('theme', theme);
@@ -27,3 +27,4 @@ document.getElementById('theme-purple').onclick = () => setTheme('purple');
 document.getElementById('theme-dark-paper').onclick = () => setTheme('dark-paper');
 document.getElementById('theme-dark-green').onclick = () => setTheme('dark-green');
 document.getElementById('theme-dark-purple').onclick = () => setTheme('dark-purple');
+document.getElementById('theme-default').onclick = () => setTheme('null')
