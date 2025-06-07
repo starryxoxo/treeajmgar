@@ -1,23 +1,10 @@
-// Solution A: Use window.THEMES to avoid redeclaration errors
-
-if (!window.THEMES) {
-  window.THEMES = [
-    'theme-light',
-    'theme-paper',
-    'theme-green',
-    'theme-purple',
-    'theme-dark-paper',
-    'theme-dark-green',
-    'theme-dark-purple'
-  ];
-}
-
 function setTheme(theme) {
-  window.THEMES.forEach(t => document.body.classList.remove(t));
-  if (theme && window.THEMES.includes('theme-' + theme)) {
+  document.body.classList.remove('theme-light', 'theme-paper', 'theme-green', 'theme-purple', 'theme-dark-paper', 'theme-dark-green', 'theme-dark-purple');
+  if (theme) {
     document.body.classList.add('theme-' + theme);
     localStorage.setItem('theme', theme);
   } else {
+    // No theme: remove localStorage and class (restores original/default)
     localStorage.removeItem('theme');
   }
 }
@@ -27,5 +14,7 @@ function getSavedTheme() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-   const saved = get
-}
+  const saved = getSavedTheme();
+  if (saved) setTheme(saved);
+  // If no saved theme, do nothing (original/default)
+});
