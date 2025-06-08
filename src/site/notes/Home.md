@@ -13,7 +13,6 @@
 
 | ![swrn.jpg](/img/user/b%20storage/favicon/swrn.jpg) |
 | :-----------: |
-
 > New to the sworn library?
 Click the [[blue text\|blue text]] to enter a link or a [[d/sitn/Strangers by Midnight\|book]].
 
