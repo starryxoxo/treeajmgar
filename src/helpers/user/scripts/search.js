@@ -3,7 +3,7 @@ let books = [];
 const searchInput = document.getElementById('search');
 const resultsTable = document.getElementById('results');
 
-fetch('https://swrn.vercel.app/books.json')
+fetch('https://swrn.netlify.app/books.json')
   .then(r => r.json())
   .then(data => {
     books = data;
