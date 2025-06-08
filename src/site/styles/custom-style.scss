@@ -145,6 +145,10 @@ textarea {
     --color-base-30: #e0e0e0;
     --color-base-70: #b0b0b0;
     --table-header-color: var(--color-base-70);
+
+blockquote {
+  border-left: 10px solid var(--text-accent);
+}
 }
 
 /* PAPER (SEPIA) THEME */
@@ -168,6 +172,10 @@ textarea {
     --color-base-30: #eae0b2;
     --color-base-70: #b0a16a;
     --table-header-color: var(--color-base-70);
+
+blockquote {
+  border-left: 10px solid var(--text-accent);
+}
 }
 
 /*GREEN THEME*/
@@ -191,6 +199,10 @@ textarea {
     --table-border-color: var(--background-modifier-border);
     --color-base-70: #5d865d;
     --table-header-color: var(--color-base-70);
+
+blockquote {
+  border-left: 10px solid var(--text-accent);
+}
 }
 
 /* PURPLE THEME */
@@ -214,6 +226,10 @@ textarea {
     --color-base-30: #dec7f7;
     --color-base-70: #a58dcc;
     --table-header-color: var(--color-base-70);
+
+blockquote {
+  border-left: 10px solid var(--text-accent);
+}
 }
 
 /* DARK PAPER (SEPIA) THEME */
@@ -237,6 +253,10 @@ textarea {
     --color-base-30: #6e5b36;
     --color-base-70: #bfa875;
     --table-header-color: var(--color-base-70);
+
+blockquote {
+  border-left: 10px solid var(--text-accent);
+}
 }
 
 /* DARK GREEN THEME */
@@ -260,6 +280,10 @@ textarea {
     --table-border-color: var(--background-modifier-border);
     --color-base-70: #7dcf7d;
     --table-header-color: var(--color-base-70);
+
+blockquote {
+  border-left: 10px solid var(--text-accent);
+}
 }
 
 /* DARK PURPLE THEME */
@@ -283,4 +307,8 @@ textarea {
     --color-base-30: #5a416e;
     --color-base-70: #cfb5e7;
     --table-header-color: var(--color-base-70);
+
+blockquote {
+  border-left: 10px solid var(--text-accent);
+}
 }
