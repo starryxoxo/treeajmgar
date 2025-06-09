@@ -1,14 +1,8 @@
-[
-  {
-    "title": "Strangers by Midnight",
-    "url": "https://swrn.vercel.app/d/sitn/strangers-by-midnight/"
-  },
-  {
-    "title": "LDR",
-    "url": "https://swrn.vercel.app/d/ldr/ldrbook/"
-  },
-  {
-    "title": "Daydream",
-    "url": "https://swrn.vercel.app/dayd/ddmch/ddm/"
-  }
-]
+{
+  "version": "2025-06-09-1512",
+  "books": [
+  { "title": "Strangers by Midnight", "url": "https://swrn.vercel.app/d/sitn/strangers-by-midnight/" },
+  { "title": "LDR", "url": "https://swrn.vercel.app/d/ldr/ldrbook/" },
+  { "title": "Daydream", "url": "https://swrn.vercel.app/dayd/ddmch/ddm/" }
+  ]
+}
