@@ -1,19 +1,20 @@
-// search.js - Vanilla IndexedDB book search with shuffle for blank input
-
 const searchInput = document.getElementById('search');
 const resultsTable = document.getElementById('results');
 const BOOKS_DB_NAME = 'BooksDB';
 const BOOKS_STORE = 'books';
-const BOOKS_JSON_URL = '/books.json'; // <-- Adjust path if needed
+const META_STORE = 'meta';
+const BOOKS_JSON_URL = '/books.json'; // Adjust if needed
 
-// Open or create the IndexedDB database
 function openDB() {
     return new Promise((resolve, reject) => {
-        const req = indexedDB.open(BOOKS_DB_NAME, 1);
+        const req = indexedDB.open(BOOKS_DB_NAME, 2); // bump version for meta store
         req.onupgradeneeded = function(event) {
             const db = event.target.result;
             if (!db.objectStoreNames.contains(BOOKS_STORE)) {
-                db.createObjectStore(BOOKS_STORE, { keyPath: 'title' }); // Use 'id' if present
+                db.createObjectStore(BOOKS_STORE, { keyPath: 'title' });
+            }
+            if (!db.objectStoreNames.contains(META_STORE)) {
+                db.createObjectStore(META_STORE, { keyPath: 'key' });
             }
         };
         req.onsuccess = function(event) {
@@ -25,46 +26,55 @@ function openDB() {
     });
 }
 
-// Store an array of books in IndexedDB
+function getMetaVersion() {
+    return openDB().then(db => {
+        return new Promise((resolve) => {
+            const tx = db.transaction(META_STORE, 'readonly');
+            const store = tx.objectStore(META_STORE);
+            const req = store.get('version');
+            req.onsuccess = () => resolve(req.result ? req.result.value : null);
+            req.onerror = () => resolve(null);
+        });
+    });
+}
+
+function setMetaVersion(version) {
+    return openDB().then(db => {
+        return new Promise((resolve) => {
+            const tx = db.transaction(META_STORE, 'readwrite');
+            const store = tx.objectStore(META_STORE);
+            store.put({ key: 'version', value: version });
+            tx.oncomplete = resolve;
+        });
+    });
+}
+
 function storeBooks(books) {
     return openDB().then(db => {
         return new Promise((resolve, reject) => {
             const tx = db.transaction(BOOKS_STORE, 'readwrite');
             const store = tx.objectStore(BOOKS_STORE);
             store.clear();
-            books.forEach(book => {
-                store.put(book);
-            });
-            tx.oncomplete = () => {
-                resolve();
-            };
-            tx.onerror = e => {
-                reject(e.target.error);
-            };
+            books.forEach(book => store.put(book));
+            tx.oncomplete = resolve;
+            tx.onerror = e => reject(e.target.error);
         });
     });
 }
 
-// Get all books from IndexedDB
 function getAllBooks() {
     return openDB().then(db => {
         return new Promise((resolve, reject) => {
             const tx = db.transaction(BOOKS_STORE, 'readonly');
             const store = tx.objectStore(BOOKS_STORE);
             const req = store.getAll();
-            req.onsuccess = () => {
-                resolve(req.result);
-            };
-            req.onerror = e => {
-                reject(e.target.error);
-            };
+            req.onsuccess = () => resolve(req.result);
+            req.onerror = e => reject(e.target.error);
         });
     });
 }
 
-// Shuffle utility
 function shuffleArray(arr) {
-    // Fisher-Yates shuffle
     for (let i = arr.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [arr[i], arr[j]] = [arr[j], arr[i]];
@@ -72,7 +82,6 @@ function shuffleArray(arr) {
     return arr;
 }
 
-// Get 3 random books from IndexedDB (shuffle full list, then pick 3)
 function getRandomBooks(count = 3) {
     return getAllBooks().then(books => {
         if (books.length <= count) return shuffleArray(books.slice());
@@ -81,7 +90,6 @@ function getRandomBooks(count = 3) {
     });
 }
 
-// Search books by query (title)
 function searchBooks(query) {
     return getAllBooks().then(books => {
         const q = query.trim().toLowerCase();
@@ -89,7 +97,6 @@ function searchBooks(query) {
     });
 }
 
-// Render books in the resultsTable
 function renderResults(books) {
     resultsTable.innerHTML = '';
     if (!books.length) {
@@ -108,28 +115,34 @@ function renderResults(books) {
     });
 }
 
-// Initialize: load books into IndexedDB if not present
+// Main initialization with version check
 function initializeBooks() {
-    getAllBooks().then(books => {
-        if (!books.length) {
-            fetch(BOOKS_JSON_URL)
-                .then(r => r.json())
-                .then(data => storeBooks(data))
-                .then(() => {
+    fetch(BOOKS_JSON_URL)
+        .then(r => r.json())
+        .then(data => {
+            const newVersion = data.version;
+            const books = data.books;
+            getMetaVersion().then(currentVersion => {
+                if (currentVersion !== newVersion) {
+                    // New version -- update DB
+                    storeBooks(books)
+                        .then(() => setMetaVersion(newVersion))
+                        .then(() => {
+                            searchInput.disabled = false;
+                            getRandomBooks(3).then(renderResults);
+                        });
+                } else {
+                    // Version matches -- use existing DB
                     searchInput.disabled = false;
                     getRandomBooks(3).then(renderResults);
-                })
-                .catch(() => {
-                    resultsTable.innerHTML = "<tr><td>Could not load books.json. Search is unavailable.</td></tr>";
-                });
-        } else {
-            searchInput.disabled = false;
-            getRandomBooks(3).then(renderResults);
-        }
-    });
+                }
+            });
+        })
+        .catch(() => {
+            resultsTable.innerHTML = "<tr><td>Could not load books.json. Search is unavailable.</td></tr>";
+        });
 }
 
-// Main search event
 searchInput.addEventListener('input', (e) => {
     const query = e.target.value.trim();
     if (!query) {
@@ -139,5 +152,4 @@ searchInput.addEventListener('input', (e) => {
     }
 });
 
-// Start everything
 initializeBooks();
