@@ -1,4 +1,4 @@
-// search.js - Vanilla IndexedDB book search with random display on blank input
+// search.js - Vanilla IndexedDB book search with shuffle for blank input
 
 const searchInput = document.getElementById('search');
 const resultsTable = document.getElementById('results');
@@ -62,16 +62,22 @@ function getAllBooks() {
     });
 }
 
+// Shuffle utility
+function shuffleArray(arr) {
+    // Fisher-Yates shuffle
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+}
+
 // Get 3 random books from IndexedDB (shuffle full list, then pick 3)
 function getRandomBooks(count = 3) {
     return getAllBooks().then(books => {
-        if (books.length <= count) return books;
-        // Shuffle the books array
-        for (let i = books.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [books[i], books[j]] = [books[j], books[i]];
-        }
-        return books.slice(0, count);
+        if (books.length <= count) return shuffleArray(books.slice());
+        const shuffled = shuffleArray(books.slice());
+        return shuffled.slice(0, count);
     });
 }
 
