@@ -4,7 +4,7 @@ const searchInput = document.getElementById('search');
 const resultsTable = document.getElementById('results');
 const BOOKS_DB_NAME = 'BooksDB';
 const BOOKS_STORE = 'books';
-const BOOKS_JSON_URL = 'https://swrn.vercel.app/books.json'; // <-- Adjust path if needed
+const BOOKS_JSON_URL = '/books.json'; // <-- Adjust path if needed
 
 // Open or create the IndexedDB database
 function openDB() {
