@@ -140,7 +140,6 @@ jake checked his phone and saw that someone texted him.
 | Enjoying this book? Add it to your reading list. |
 | :----------------------------------------------- |
 | [[dayd/ddmch/ddm\|Add to Reading List]]                     |
-
 ***
 
 Copyright © the sworn library 2025
