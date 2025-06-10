@@ -20,14 +20,13 @@
   <span class="fake-button">oneshot</span>
 </div>
 
-**Description**:
+**Description** • <small>UPCOMING</small>
 *LDR - an abbreviation for long-distance relationship.*
 
 A short story of two lovers far away from each other. Will they be able to happily reunite after a long time of separation?
 
 **Author**: the sworn library
 **Language**: English
-**Status**: Upcoming
 **Date**:
 
 **Before Reading**
