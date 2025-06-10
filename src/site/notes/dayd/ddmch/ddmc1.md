@@ -76,7 +76,7 @@ walking back to daniel's house, he admired the shooting stars that passed by abo
 
 the city lights were dim enough for stars to be seen this night.
 
-*it would've been nice with you. * jake chuckled at the thought.
+*it would've been nice with you.* jake chuckled at the thought.
 
 his phone went buzzing from all the messages, his groupmates were worried he might've been kidnapped.
 
