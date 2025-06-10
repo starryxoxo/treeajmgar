@@ -24,8 +24,12 @@ min-width: 160px;
 } 
 
 .navbar {
-    background-color: transparent;
-    backdrop-filter: blur(12px); // adjust blur as desired
+  background-color: transparent;
+  backdrop-filter: blur(12px) saturate(120%);
+  -webkit-backdrop-filter: blur(12px) saturate(120%);
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  transition: backdrop-filter 0.4s;
 }
 
 .fake-button-container {
