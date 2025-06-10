@@ -137,8 +137,6 @@ jake checked his phone and saw that someone texted him.
 
 ***
 
-**im so sorry if this chapter was short. i promise the next chapters will be longer💔**
-
 | Enjoying this book? Add it to your reading list. |
 | :----------------------------------------------- |
 | [[dayd/ddmch/ddm\|Add to Reading List]]                     |
