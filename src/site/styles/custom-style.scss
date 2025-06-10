@@ -23,6 +23,11 @@ padding: 0.5em;
 min-width: 160px; 
 } 
 
+.navbar {
+    background-color: transparent;
+    backdrop-filter: blur(12px); // adjust blur as desired
+}
+
 .fake-button-container {
   display: flex;
   flex-wrap: wrap;        /* Allows buttons to move to next line if needed */
