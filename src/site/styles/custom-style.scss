@@ -12,15 +12,6 @@ body {
     //  }
 }
 
-table {
-  overflow-x: auto;
-  display: block;
-  scroll-snap-type: x mandatory;
-}
-th, td {
-  scroll-snap-align: start;
-}
-
 .markdown-preview-view table { 
 display: block; width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; border-collapse: collapse; 
 white-space: nowrap; 
