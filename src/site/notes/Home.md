@@ -37,7 +37,7 @@ Click the [[blue text\|blue text]] to enter a link or a [[d/sitn/Strangers by Mi
 
 | Discover                         |                               |                           |                           |
 | :------------------------------- | :---------------------------- | :------------------------ | :------------------------ |
-| ![coverimg\|170](/img/user/d/sitn/sitncover.webp) | ![coverimg\|170](/img/user/d/ldr/ldrbook.jpg) | ![coverimg\|170](/img/user/d/swb.jpg) | ![coverimg\|170](/img/user/d/swb.jpg) |
+| ![coverimg\|180](/img/user/d/sitn/sitncover.webp) | ![coverimg\|180](/img/user/d/ldr/ldrbook.jpg) | ![coverimg\|180](/img/user/d/swb.jpg) | ![coverimg\|180](/img/user/d/swb.jpg) |
 | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]]        | [[d/ldr/ldrbook\|LDR]]              |                           |                           |
 
 ---
