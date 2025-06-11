@@ -30,20 +30,18 @@ min-width: 160px;
   mask-image: linear-gradient(
     to bottom,
     black 0%,
-    black 40%,
-    black 70%,
+    black 10%,
     transparent 100%
   );
   -webkit-mask-image: linear-gradient(
     to bottom,
     black 0%,
-    black 40%,
-    black 70%,
+    black 10%,
     transparent 100%
   );
   transition: backdrop-filter 0.4s;
-  padding-top: 0.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 0.8rem;
+  padding-bottom: 1.2rem;
 }
 
 .fake-button-container {
