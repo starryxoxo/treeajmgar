@@ -42,11 +42,8 @@ min-width: 160px;
     transparent 100%
   );
   transition: backdrop-filter 0.4s;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-    --nav-item-padding: var(--size-4-1) var(--size-4-2);
-    --size-4-1: 2px;
-    --size-4-2: 4px;
+  padding-top: 0.8rem;
+  padding-bottom: 1.2rem;
 }
 
 .fake-button-container {
