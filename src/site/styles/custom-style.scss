@@ -29,16 +29,14 @@ min-width: 160px;
   -webkit-backdrop-filter: blur(12px) saturate(120%);
   mask-image: linear-gradient(
     to bottom,
-    black 0%,         /* Fully blurred at the very top */
-    black 40%,        /* Hold blur for the top 40% */
-    rgba(0,0,0,0.3) 75%, /* Start fading out earlier and more gently */
-    transparent 100%  /* Fully transparent at the bottom */
+    black 0%,
+    black 50%,
+    transparent 100%
   );
   -webkit-mask-image: linear-gradient(
     to bottom,
     black 0%,
-    black 40%,
-    rgba(0,0,0,0.3) 75%,
+    black 50%,
     transparent 100%
   );
   transition: backdrop-filter 0.4s;
