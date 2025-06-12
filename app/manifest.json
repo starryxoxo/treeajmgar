@@ -1,20 +1,15 @@
 {
-  "name": "the sworn library",                      // Full name of the app
-  "short_name": "TSL",                   // Short name used on the home screen
-  "start_url": "/",                      // Start URL when the app is launched
-  "display": "standalone",              // Display mode (commonly "standalone")
-  "icons": [                             // At least one icon (must be PNG and 192x192 or 512x512)
+  "name": "the sworn library",              
+  "short_name": "TSL",                 
+  "start_url": "/", 
+  "display": "standalone",
+  "icons": [
     {
-      "src": "/icons/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/icons/icon-512.png",
-      "sizes": "512x512",
+      "src": "/swrn.png",
+      "sizes": "720x720",
       "type": "image/png"
     }
   ],
-  "background_color": "#ffffff",        // Background color for the splash screen
-  "theme_color": "#000000"              // Theme color for the browser UI
+  "background_color": "#ffffff",
+  "theme_color": "#000000"
 }
