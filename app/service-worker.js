@@ -17,3 +17,18 @@ self.addEventListener("fetch", (event) => {
     })
   );
 });
+
+self.addEventListener('activate', (event) => {
+  const keepCaches = [CACHE_NAME];
+  event.waitUntil(
+    caches.keys().then((names) =>
+      Promise.all(
+        names.map((name) => {
+          if (!keepCaches.includes(name)) {
+            return caches.delete(name);
+          }
+        })
+      )
+    )
+  );
+});
