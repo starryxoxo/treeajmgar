@@ -1,1 +1,5 @@
-<link rel="manifest" href="/app/app.webmanifest">
+<script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
+  }
+</script>
