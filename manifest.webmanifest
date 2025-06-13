@@ -1,0 +1,16 @@
+{
+  "name": "the sworn library",              
+  "short_name": "TSL",
+  "description": "Your favorite library.",
+  "start_url": "/", 
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/app/swrn.png",
+      "sizes": "720x720",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#ffffff",
+  "theme_color": "#000000"
+}
