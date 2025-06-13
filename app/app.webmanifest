@@ -1,6 +1,7 @@
 {
   "name": "the sworn library",              
-  "short_name": "TSL",                 
+  "short_name": "TSL",
+  "description": "Your favorite library.",
   "start_url": "/", 
   "display": "standalone",
   "icons": [
