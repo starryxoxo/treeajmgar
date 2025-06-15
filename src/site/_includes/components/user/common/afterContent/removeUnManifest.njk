@@ -1,0 +1,11 @@
+<script>
+  // Remove the first manifest link if it points to manifest.webmanifest
+  document.addEventListener("DOMContentLoaded", function() {
+    var links = document.querySelectorAll('link[rel="manifest"]');
+    links.forEach(function(link) {
+      if (link.getAttribute('href') === "manifest.webmanifest") {
+        link.remove();
+      }
+    });
+  });
+</script>
