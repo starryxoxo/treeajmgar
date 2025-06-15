@@ -1,4 +1,11 @@
 <script>
+ if ('serviceWorker' in navigator && 'PeriodicSyncManager' in window) {
+navigator.serviceWorker.ready.then(swReg => {
+swReg.periodicSync.register('content-sync', {minInterval: 24 * 60 * 60 * 1000}); // daily
+  });
+}
+// If not supported, you could fallback to setInterval in your page and postMessage() 'prefetch' to the SW.
+
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('/app/sw.js')
