@@ -3,7 +3,7 @@
   "short_name": "TSL",
   "description": "Your favorite library, now in your pocket.",
   "start_url": "/", 
-  "display": "standalone",
+  "display": "fullscreen",
   "icons": [
    {
       "src": "/app/icon192.png",
@@ -26,8 +26,13 @@
       "src": "/app/ss1.jpg",
       "type": "image/jpeg",
       "sizes": "720x1424"
+    },
+    {
+      "src": "/app/ss2.jpg",
+      "type": "image/jpeg",
+      "sizes": "720x1430"
     }
  ],
   "background_color": "#ffffff",
-  "theme_color": "#000000"
+  "theme_color": "#ffffff"
 }
