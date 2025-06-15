@@ -1,0 +1,46 @@
+From fd230734cd8b3843e35e4802e46b93aa7052b305 Mon Sep 17 00:00:00 2001
+From: starryxoxo <112181939+starryxoxo@users.noreply.github.com>
+Date: Sun, 15 Jun 2025 15:28:02 +0800
+Subject: [PATCH 1/2] Update pageheader.njk
+
+---
+ src/site/_includes/components/pageheader.njk | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+diff --git a/src/site/_includes/components/pageheader.njk b/src/site/_includes/components/pageheader.njk
+index 60436dde..db661dd2 100644
+--- a/src/site/_includes/components/pageheader.njk
++++ b/src/site/_includes/components/pageheader.njk
+@@ -28,8 +28,6 @@
+ <link href="{{style}}" rel="stylesheet">
+ {%- endfor -%}
+ 
+-{% favicons './src/site/favicon.svg', appleIconBgColor='#123' %}
+-
+ {% if metatags %}
+     {% for name, content in metatags %}
+         <meta name="{{ name }}" content="{{ content }}">
+@@ -42,4 +40,4 @@
+     </style>
+ {% endif %}
+ <style>
+-</style>
+\ No newline at end of file
++</style>
+
+From fcc135130b5f534114266a5435eebdae24b3cd71 Mon Sep 17 00:00:00 2001
+From: starryxoxo <112181939+starryxoxo@users.noreply.github.com>
+Date: Sun, 15 Jun 2025 15:29:40 +0800
+Subject: [PATCH 2/2] Update !aManifest.njk
+
+---
+ src/site/_includes/components/user/common/head/!aManifest.njk | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/site/_includes/components/user/common/head/!aManifest.njk b/src/site/_includes/components/user/common/head/!aManifest.njk
+index 35f15b7b..6918908c 100644
+--- a/src/site/_includes/components/user/common/head/!aManifest.njk
++++ b/src/site/_includes/components/user/common/head/!aManifest.njk
+@@ -1 +1 @@
+-<link rel="manifest" href="/my.webmanifest">
++<link rel="manifest" href="/manifest.webmanifest">
