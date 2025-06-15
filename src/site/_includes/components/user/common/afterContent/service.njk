@@ -1,17 +1,31 @@
 <script>
- if ('serviceWorker' in navigator && 'PeriodicSyncManager' in window) {
-navigator.serviceWorker.ready.then(swReg => {
-swReg.periodicSync.register('content-sync', {minInterval: 24 * 60 * 60 * 1000}); // daily
-  });
-}
-// If not supported, you could fallback to setInterval in your page and postMessage() 'prefetch' to the SW.
-
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
+  window.addEventListener('load', function () {
     navigator.serviceWorker.register('/app/sw.js')
-      .then(function(registration) {
-        console.log('ServiceWorker registration successful with scope: ', registration.scope);
-      }, function(error) {
+      .then(function (registration) {
+        console.log('ServiceWorker registration successful with scope:', registration.scope);
+
+        // Register periodic sync if supported
+        if ('periodicSync' in registration && 'PeriodicSyncManager' in window) {
+          registration.periodicSync.register('content-sync', {
+            minInterval: 24 * 60 * 60 * 1000 // daily
+          }).then(() => {
+            console.log('Periodic Sync registered');
+          }).catch((err) => {
+            // This will fail if the user blocks background sync, etc.
+            console.warn('Periodic Sync registration failed:', err);
+          });
+        } else {
+          // Fallback: You can use setInterval + postMessage to SW if needed
+          // Example:
+          // setInterval(() => {
+          //   if (navigator.serviceWorker.controller) {
+          //     navigator.serviceWorker.controller.postMessage('prefetch');
+          //   }
+          // }, 24 * 60 * 60 * 1000);
+        }
+
+      }, function (error) {
         console.log('ServiceWorker registration failed:', error);
       });
   });
