@@ -26,11 +26,6 @@
       "src": "/app/ss1.jpg",
       "type": "image/jpeg",
       "sizes": "720x1424"
-    },
-    {
-      "src": "/app/ss2.jpg",
-      "type": "image/jpeg",
-      "sizes": "720x1430"
     }
  ],
   "background_color": "#ffffff",
