@@ -15,16 +15,16 @@ This is a testing page.
 <div class="fake-button">Upcoming</div>
 
 
-| Featured      |     |
-| ------------- | --- |
-|               |     |
-| Explore       |     |
-|               |     |
-| New Arrivals  |     |
-|               |     |
-| Romance       |     |
-|               |     |
-| Other Stories |     |
+| Featured      | Snack Zone |
+| ------------- | ---------- |
+|               |            |
+| Explore       |            |
+|               |            |
+| New Arrivals  |            |
+|               |            |
+| Romance       |            |
+|               |            |
+| Other Stories |            |
 
 
 | You May Like        |     |
@@ -63,3 +63,12 @@ This is a testing page.
 | :-----------------------------: |
 |   ![banner](/img/user/d/sitn/sitnbanner.webp)    |
 | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]] |
+
+<div id="nightzone">
+
+| Discover                           |                                                  |                                                  |
+| ---------------------------------- | ------------------------------------------------ | ------------------------------------------------ |
+| ![book\|160](/img/user/yeo/yeostorage/yeocover.webp)        | ![book\|160](/img/user/d/sitn/sitncover.webp)                     | ![book\|160](/img/user/d/sitn/sitncover.webp)                     |
+| [[yeo/Your Eyes Only\|Your Eyes Only]] | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]] | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]] |
+
+</div>
