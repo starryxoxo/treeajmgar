@@ -1,4 +1,4 @@
-const CACHE = "pwabuilder-page-v2";
+const CACHE = "pwabuilder-page-v3";
 const OFFLINE_PAGE = "/app/offline.html";
 const PRECACHE_ASSETS = [
   "/",
@@ -30,53 +30,31 @@ self.addEventListener('activate', event => {
   );
 });
 
-// Fetch: cache all GET requests, revalidate, delete outdated cache
+// Fetch: always try network, cache result, fallback to cache, then offline page
 self.addEventListener('fetch', event => {
   if (event.request.method !== "GET") return;
 
   event.respondWith(
     (async () => {
       const cache = await caches.open(CACHE);
-
-      // Try to fetch from network
       try {
         const networkResponse = await fetch(event.request);
-
-        // Compare with cached response
-        const cachedResponse = await cache.match(event.request);
-
-        // If the new response is different or not cached, update cache
-        if (!cachedResponse || !(await compareResponses(networkResponse, cachedResponse))) {
-          await cache.put(event.request, networkResponse.clone());
+        // Cache every successful network response for future offline use
+        if (networkResponse && networkResponse.status === 200) {
+          cache.put(event.request, networkResponse.clone());
         }
         return networkResponse;
-      } catch (err) {
-        // Network failed: try to serve from cache
+      } catch (error) {
+        // Network failed, try cache
         const cachedResponse = await cache.match(event.request);
         if (cachedResponse) {
           return cachedResponse;
         }
-        return cache.match(OFFLINE_PAGE);
+        // Not in cache, show offline fallback for navigations
+        if (event.request.mode === 'navigate') {
+          return cache.match(OFFLINE_PAGE);
+        }
       }
     })()
   );
 });
-
-// Helper: Compare two responses (by ETag or content)
-async function compareResponses(resp1, resp2) {
-  if (!resp1 || !resp2) return false;
-
-  // Try ETag header first
-  const etag1 = resp1.headers.get('ETag');
-  const etag2 = resp2.headers.get('ETag');
-  if (etag1 && etag2) return etag1 === etag2;
-
-  // Fallback: compare bodies
-  const b1 = await resp1.clone().arrayBuffer();
-  const b2 = await resp2.clone().arrayBuffer();
-  if (b1.byteLength !== b2.byteLength) return false;
-  for (let i = 0; i < b1.byteLength; ++i) {
-    if (new Uint8Array(b1)[i] !== new Uint8Array(b2)[i]) return false;
-  }
-  return true;
-}
