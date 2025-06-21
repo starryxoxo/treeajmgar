@@ -1,8 +1,4 @@
-// Fixed Service Worker for PWA
-
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
-
-const CACHE = "pwabuilder-page-v1";
+const CACHE = "pwabuilder-page-v2";
 const OFFLINE_PAGE = "/app/offline.html";
 const PRECACHE_ASSETS = [
   "/",
@@ -19,14 +15,10 @@ self.addEventListener('install', event => {
   );
 });
 
-// Activate: take control ASAP + enable navigation preload + clean old caches
+// Activate: delete old caches
 self.addEventListener('activate', event => {
   event.waitUntil(
     (async () => {
-      if (self.registration.navigationPreload) {
-        await self.registration.navigationPreload.enable();
-      }
-      // Delete old caches
       const cacheNames = await caches.keys();
       await Promise.all(
         cacheNames.map(name => {
@@ -38,72 +30,53 @@ self.addEventListener('activate', event => {
   );
 });
 
-// Fetch: Serve from cache, fallback to network, then to offline page
+// Fetch: cache all GET requests, revalidate, delete outdated cache
 self.addEventListener('fetch', event => {
   if (event.request.method !== "GET") return;
 
-  // Use navigation preload if available for navigation requests
-  if (event.preloadResponse && event.request.mode === 'navigate') {
-    event.respondWith(
-      (async () => {
-        const preloadResp = await event.preloadResponse;
-        if (preloadResp) return preloadResp;
-        return fetchThenCacheOrOffline(event);
-      })()
-    );
-  } else {
-    event.respondWith(fetchThenCacheOrOffline(event));
-  }
+  event.respondWith(
+    (async () => {
+      const cache = await caches.open(CACHE);
+
+      // Try to fetch from network
+      try {
+        const networkResponse = await fetch(event.request);
+
+        // Compare with cached response
+        const cachedResponse = await cache.match(event.request);
+
+        // If the new response is different or not cached, update cache
+        if (!cachedResponse || !(await compareResponses(networkResponse, cachedResponse))) {
+          await cache.put(event.request, networkResponse.clone());
+        }
+        return networkResponse;
+      } catch (err) {
+        // Network failed: try to serve from cache
+        const cachedResponse = await cache.match(event.request);
+        if (cachedResponse) {
+          return cachedResponse;
+        }
+        return cache.match(OFFLINE_PAGE);
+      }
+    })()
+  );
 });
 
-async function fetchThenCacheOrOffline(event) {
-  try {
-    const response = await fetch(event.request);
-    // Optionally update cache here if desired
-    return response;
-  } catch (e) {
-    const cache = await caches.open(CACHE);
-    const cached = await cache.match(event.request);
-    return cached || cache.match(OFFLINE_PAGE);
+// Helper: Compare two responses (by ETag or content)
+async function compareResponses(resp1, resp2) {
+  if (!resp1 || !resp2) return false;
+
+  // Try ETag header first
+  const etag1 = resp1.headers.get('ETag');
+  const etag2 = resp2.headers.get('ETag');
+  if (etag1 && etag2) return etag1 === etag2;
+
+  // Fallback: compare bodies
+  const b1 = await resp1.clone().arrayBuffer();
+  const b2 = await resp2.clone().arrayBuffer();
+  if (b1.byteLength !== b2.byteLength) return false;
+  for (let i = 0; i < b1.byteLength; ++i) {
+    if (new Uint8Array(b1)[i] !== new Uint8Array(b2)[i]) return false;
   }
+  return true;
 }
-
-// 5. Periodic Background Sync (if supported)
-self.addEventListener('periodicsync', event => {
-  if (event.tag === 'content-sync') {
-    event.waitUntil(
-      prefetchContent()
-    );
-  }
-});
-
-// 7. Content Prefetching (called by periodic sync or can be called elsewhere)
-async function prefetchContent() {
-  const urlsToPrefetch = [
-    "/"
-  ];
-  const cache = await caches.open(CACHE);
-  await Promise.all(urlsToPrefetch.map(async url => {
-    try {
-      const res = await fetch(url, {cache: "reload"});
-      if (res.ok) await cache.put(url, res);
-    } catch (e) {
-      // Ignore fetch errors (offline, etc.)
-    }
-  }));
-}
-
-// Optional: Listen for messages to trigger manual update/prefetch
-self.addEventListener('message', event => {
-  if (event.data === 'prefetch') {
-    prefetchContent();
-  }
-});
-
-// For periodic background sync registration (PUT THIS IN YOUR MAIN JS, NOT THE SW!):
-// if ('serviceWorker' in navigator && 'PeriodicSyncManager' in window) {
-//   navigator.serviceWorker.ready.then(swReg => {
-//     swReg.periodicSync.register('content-sync', {minInterval: 24 * 60 * 60 * 1000}); // daily
-//   });
-// }
-// If not supported, you could fallback to setInterval in your page and postMessage() 'prefetch' to the SW.
