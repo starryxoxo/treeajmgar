@@ -7,11 +7,11 @@
   <table id="results"></table>
 </div>
 
-[[dev/privacy policy\|Privacy]] • [[dev/terms 1\|Terms]] • [[b storage/Newsroom\|Newsroom]]
+[[dev/privacy policy\|Privacy]] • [[dev/terms 1\|Terms]] • [[assets/Newsroom\|Newsroom]]
 
 | Welcome to TSL! |
 | :-------------: |
-| ![swrn.webp](/img/user/b%20storage/swrn.webp)  |
+| ![swrn.webp](/img/user/assets/swrn.webp)  |
 > New to the sworn library?
 Click the [[blue text\|blue text]] to enter a link or a [[d/sitn/Strangers by Midnight\|book]].
 
@@ -34,10 +34,10 @@ Click the [[blue text\|blue text]] to enter a link or a [[d/sitn/Strangers by Mi
 | ![ddmbanner.webp](/img/user/dayd/ddmstor/ddmbanner.webp) |
 |  [[dayd/ddmch/ddm\|Daydream]]  |
 
-| Discover                         |                               |                           |                           |
-| :------------------------------- | :---------------------------- | :------------------------ | :------------------------ |
-| ![coverimg\|175](/img/user/d/sitn/sitncover.webp) | ![coverimg\|175](/img/user/d/ldr/ldrbook.jpg) | ![coverimg\|175](/img/user/b storage/swb.webp) | ![coverimg\|175](/img/user/b storage/swb.webp) |
-| [[d/sitn/Strangers by Midnight\|Strangers by Midnight]]        | [[d/ldr/ldrbook\|LDR]]              |                           |                           |
+| Discover                         |                               |                            |                            |
+| :------------------------------- | :---------------------------- | :------------------------- | :------------------------- |
+| ![coverimg\|175](/img/user/d/sitn/sitncover.webp) | ![coverimg\|175](/img/user/d/ldr/ldrbook.jpg) | ![coverimg\|175](/img/user/assets/swb.webp) | ![coverimg\|175](/img/user/assets/swb.webp) |
+| [[d/sitn/Strangers by Midnight\|Strangers by Midnight]]        | [[d/ldr/ldrbook\|LDR]]              |                            |                            |
 
 ---
 Bookmark this website and visit it every once in a while. Accompany us while we grow our collection!

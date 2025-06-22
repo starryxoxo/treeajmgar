@@ -36,7 +36,7 @@ if somehow, you fell in love with a person you weren't supposed to, would you st
 
 | About ENHYPEN                                                                                                                 |
 | ----------------------------------------------------------------------------------------------------------------------------- |
-| ![1ccb72d12a9042a171d481ee54dcf85e.jpg](/img/user/b%20storage/a%20storage/1ccb72d12a9042a171d481ee54dcf85e.jpg)                                                                                     |
+| ![1ccb72d12a9042a171d481ee54dcf85e.jpg](/img/user/assets/a%20storage/1ccb72d12a9042a171d481ee54dcf85e.jpg)                                                                                     |
 | **ENHYPEN** is a **South Korean** boy band formed by Belift Lab. Formerly a joint venture between CJ ENM [[arc/enh/ENHYPEN\|more...]] |
 | <small>Source: Wikipedia CC-BY-SA 4.0</small>                                                                                 |
 

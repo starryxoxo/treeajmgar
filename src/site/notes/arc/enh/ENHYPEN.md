@@ -4,7 +4,7 @@
 
 [[Home\|Home]]
 
-![1ccb72d12a9042a171d481ee54dcf85e.jpg](/img/user/b%20storage/a%20storage/1ccb72d12a9042a171d481ee54dcf85e.jpg)
+![1ccb72d12a9042a171d481ee54dcf85e.jpg](/img/user/assets/a%20storage/1ccb72d12a9042a171d481ee54dcf85e.jpg)
 
 **ENHYPEN** is a **South Korean** boy band formed by Belift Lab. Formerly a joint venture between **CJ ENM** and **Hybe Corporation**, the group was formed through the **2020** survival competition show I-LAND. The group consists of seven members: Heeseung, Jay, Jake, Sunghoon, Sunoo, Jungwon, and Ni-Ki. They debuted on **November 30, 2020**, with the extended play (EP) Border: Day One.
 
