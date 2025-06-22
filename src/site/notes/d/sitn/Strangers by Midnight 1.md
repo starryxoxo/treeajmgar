@@ -7,10 +7,9 @@
 
 ***
 
-|        ENHYPEN ONESHOT AU        |
+|      Strangers by Midnight       |
 | :------------------------------: |
 | ![coverimg\|360](/img/user/d/sitn/sitncover.webp) |
-|      Strangers by Mignight       |
 
 <button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button>
 
