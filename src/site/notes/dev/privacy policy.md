@@ -6,7 +6,7 @@
 # Privacy Policy
 **Effective Date:** May 31, 2025
 
-This Privacy Policy describes how the sworn library ("TSL", "we", "us", or "our") handles information when you visit or use our website located at swrn.vercel.app (the "Service"). Please read this policy carefully to understand our practices regarding your information.
+This Privacy Policy describes how the sworn library ("TSL", "we", "us", or "our") handles information when you visit or use our website located at swrn.netlify.app (the "Service"). Please read this policy carefully to understand our practices regarding your information.
 
 ### No Personal Data Collection
 TSL is committed to protecting your privacy. We want to be transparent and clear: we do not collect, store, or process any personal data from visitors or users of our Service.

@@ -11,12 +11,12 @@
 
 # Hi! Welcome to the sworn library.
 
-| ![swrn.jpg](/img/user/b%20storage/favicon/swrn.jpg) |
+| ![swrn.webp](/img/user/b%20storage/swrn.webp) |
 | :-----------: |
 > New to the sworn library?
 Click the [[blue text\|blue text]] to enter a link or a [[d/sitn/Strangers by Midnight\|book]].
 
-  <button onclick="window.location.href='https://swrn.vercel.app/b-storage/library'" class="squared-button">Visit your Reading List</button>
+  <button onclick="window.location.href='https://swrn.netlify.app/b-storage/library'" class="squared-button">Visit your Reading List</button>
   
   <section id="continue-section" style="display: none;">
     <button id="continueBtn" class="squared-button">Continue Reading</button>
@@ -37,7 +37,7 @@ Click the [[blue text\|blue text]] to enter a link or a [[d/sitn/Strangers by Mi
 
 | Discover                         |                               |                           |                           |
 | :------------------------------- | :---------------------------- | :------------------------ | :------------------------ |
-| ![coverimg\|175](/img/user/d/sitn/sitncover.webp) | ![coverimg\|175](/img/user/d/ldr/ldrbook.jpg) | ![coverimg\|175](/img/user/d/swb.jpg) | ![coverimg\|175](/img/user/d/swb.jpg) |
+| ![coverimg\|175](/img/user/d/sitn/sitncover.webp) | ![coverimg\|175](/img/user/d/ldr/ldrbook.jpg) | ![coverimg\|175](/img/user/b storage/swb.webp) | ![coverimg\|175](/img/user/b storage/swb.webp) |
 | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]]        | [[d/ldr/ldrbook\|LDR]]              |                           |                           |
 
 ---

@@ -26,15 +26,13 @@
 **Description** • <small>ONGOING</small>
 if somehow, you fell in love with a person you weren't supposed to, would you still love them? *i know it's impossible for us to get together,* but *can i at least* **daydream** *that i have you by my side?*
 
+1 page • [[dayd/ddmch/ddmc1\|Start Reading]]
+<small>PG | 13+</small>
+
 **Author**: the sworn library
 **Languages**: English, Tagalog
 **Date**: June 10, 2025
 
-**Before Reading**
-This book is rated **PG**.
-Contains **13+** content.
-
-1 page • [[dayd/ddmch/ddmc1\|Read]]
 
 | About ENHYPEN                                                                                                                 |
 | ----------------------------------------------------------------------------------------------------------------------------- |

@@ -25,15 +25,12 @@
 
 A short story of two lovers far away from each other. Will they be able to happily reunite after a long time of separation?
 
+Not yet available
+<small>PG | 13+</small>
+
 **Author**: the sworn library
 **Language**: English
 **Date**:
-
-**Before Reading**
-This book is rated **PG**.
-Contains **13+** content.
-
-Not yet available • [[d/ldr/ldrlc\|Read]]
 
 ***
 

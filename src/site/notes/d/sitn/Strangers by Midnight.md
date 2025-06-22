@@ -29,16 +29,12 @@
 "If love isn't forever, why waste your time on it?"
 That's what they always say. But with you, there's certainly more than love that I feel. Just as I began to realize my feelings deeper for you, nahanap ako ng tadhana. Why now...
 
+2 pages • [[d/sitn/sitnc\|Start Reading]]
+<small>PG | 13+ | Blood and Detailed Content</small>
+
 **Author**: the sworn library
 **Languages**: Tagalog, English
 **Date**: April 14, 2025
-
-**Before Reading**
-This book is rated **PG**.
-Contains **13+** content:
-Blood and detailed content.
-
-2 pages • [[d/sitn/sitnc\|Read]]
 
 | About ENHYPEN                                                                                                                 |
 | ----------------------------------------------------------------------------------------------------------------------------- |

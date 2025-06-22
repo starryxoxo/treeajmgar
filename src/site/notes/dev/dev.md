@@ -10,9 +10,11 @@
 
 This is a testing page.
 
-<div class="fake-button">New</div>
-<div class="fake-button">New Release</div>
-<div class="fake-button">Upcoming</div>
+<div class="fake-button-container">
+  <span class="fake-button">New</span>
+  <span class="fake-button">New Release</span>
+  <span class="fake-button">Upcoming</span>
+</div>
 
 
 | Featured      | Snack Zone |
@@ -59,9 +61,9 @@ This is a testing page.
 | Workshop            |     |
 
 
-|            Featured             |
-| :-----------------------------: |
-|   ![banner](/img/user/d/sitn/sitnbanner.webp)    |
+|                     Featured                     |
+| :----------------------------------------------: |
+|            ![banner](/img/user/d/sitn/sitnbanner.webp)            |
 | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]] |
 
 <div id="nightzone">
