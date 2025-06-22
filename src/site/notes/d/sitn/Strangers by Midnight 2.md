@@ -7,19 +7,14 @@
 
 ***
 
-|                                                                                                                                  Strangers by Midnight                                                                                                                                   |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                                                             ![coverimg\|360](/img/user/d/sitn/sitncover.webp)                                                                                                                             |
-| <button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button><br><br><div class="fake-button-container">  <span class="fake-button">enhypen</span>  <span class="fake-button">oneshot</span>  <span class="fake-button">romance</span></div> |
-|                                                                                                2 pages • [[d/sitn/sitnc\|Start Reading]]<br> <small>PG \| 13+ \| Blood, detailed content</small>                                                                                                |
-
-
+|                                                                                          Strangers by Midnight                                                                                          |
+| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|                                                                                    ![coverimg\|360](/img/user/d/sitn/sitncover.webp)                                                                                     |
+| <button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button><br>2 pages • [[d/sitn/sitnc\|Start Reading]]<br> <small>PG \| 13+ \| Blood, detailed content</small> |
+<div class="fake-button-container">  <span class="fake-button">enhypen</span>  <span class="fake-button">oneshot</span>  <span class="fake-button">romance</span></div>
 **Description** • <small>COMPLETED</small>
 "If love isn't forever, why waste your time on it?"
 That's what they always say. But with you, there's certainly more than love that I feel. Just as I began to realize my feelings deeper for you, nahanap ako ng tadhana. Why now...
-
-2 pages • [[d/sitn/sitnc\|Start Reading]]
-<small>PG | 13+ | Blood and Detailed Content</small>
 
 **Author**: the sworn library
 **Languages**: Tagalog, English
