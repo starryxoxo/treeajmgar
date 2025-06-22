@@ -9,10 +9,9 @@
 
 [[dev/privacy policy\|Privacy]] • [[dev/terms 1\|Terms]] • [[b storage/Newsroom\|Newsroom]]
 
-# Hi! Welcome to the sworn library.
-
-| ![swrn.webp](/img/user/b%20storage/swrn.webp) |
-| :-----------: |
+| Welcome to TSL! |
+| :-------------: |
+| ![swrn.webp](/img/user/b%20storage/swrn.webp)  |
 > New to the sworn library?
 Click the [[blue text\|blue text]] to enter a link or a [[d/sitn/Strangers by Midnight\|book]].
 
