@@ -3,7 +3,7 @@
   "short_name": "TSL",
   "description": "Your favorite library, now in your pocket.",
   "start_url": "/", 
-  "display": "fullscreen",
+  "display": "standalone",
   "icons": [
    {
       "src": "/app/icon192.png",
