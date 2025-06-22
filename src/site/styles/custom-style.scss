@@ -12,10 +12,6 @@ body {
     //  }
 }
 
-small {
- font-size: 0.6em;
-}
-
 .markdown-preview-view table { 
 display: block; width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; border-collapse: collapse; 
 white-space: nowrap; 
@@ -200,6 +196,7 @@ textarea {
     --background-modifier-border: var(--color-base-30);
     --color-base-30: #e0e0e0;
     --color-base-70: #707070;
+    --font-small: 0.6em;
     --table-header-color: var(--color-base-70);
 
 blockquote {
@@ -227,6 +224,7 @@ blockquote {
     --background-modifier-border: var(--color-base-30);
     --color-base-30: #eae0b2;
     --color-base-70: #b0a16a;
+    --font-small: 0.6em;
     --table-header-color: var(--color-base-70);
 
 blockquote {
@@ -254,6 +252,7 @@ blockquote {
     --background-modifier-border: var(--color-base-30);
     --table-border-color: var(--background-modifier-border);
     --color-base-70: #5d865d;
+    --font-small: 0.6em;
     --table-header-color: var(--color-base-70);
 
 blockquote {
@@ -281,6 +280,7 @@ blockquote {
     --background-modifier-border: var(--color-base-30);
     --color-base-30: #dec7f7;
     --color-base-70: #a58dcc;
+    --font-small: 0.6em;
     --table-header-color: var(--color-base-70);
 
 blockquote {
@@ -308,6 +308,7 @@ blockquote {
     --background-modifier-border: var(--color-base-30);
     --color-base-30: #6e5b36;
     --color-base-70: #bfa875;
+    --font-small: 0.6em;
     --table-header-color: var(--color-base-70);
 
 blockquote {
@@ -335,6 +336,7 @@ blockquote {
     --background-modifier-border: var(--color-base-30);
     --table-border-color: var(--background-modifier-border);
     --color-base-70: #7dcf7d;
+    --font-small: 0.6em;
     --table-header-color: var(--color-base-70);
 
 blockquote {
@@ -362,6 +364,7 @@ blockquote {
     --background-modifier-border: var(--color-base-30);
     --color-base-30: #5a416e;
     --color-base-70: #cfb5e7;
+    --font-small: 0.6em;
     --table-header-color: var(--color-base-70);
 
 blockquote {
