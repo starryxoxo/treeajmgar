@@ -40,11 +40,7 @@ td:has(> a[href]):hover {
 
 #rc, .rc {
   display: flex;
-  gap: 0.75em;         /* space between buttons */
-  align-items: center; /* vertical alignment */
-  justify-content: flex-start; /* align buttons to the left, change to center if you want centered */
-  padding: 1em;        /* adjust as needed */
-}
+  gap: 0.50rem;
 
 #rc .squared-button:hover, .rc .squared-button:hover {
   background: #e2e2e2;
