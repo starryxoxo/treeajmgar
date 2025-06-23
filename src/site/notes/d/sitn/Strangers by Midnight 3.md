@@ -7,7 +7,7 @@
 
 ***
 
-|                                     ![coverimg\|165](/img/user/d/sitn/sitncover.webp)                                      | Strangers by Midnight                                                                   |
+|                                     ![coverimg\|165](/img/user/d/sitn/sitncover.webp)                                      | Strangers by Midnight 3                                                                 |
 | :-------------------------------------------------------------------------------------------------------: | --------------------------------------------------------------------------------------- |
 | <button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button> | 2 pages • [[d/sitn/sitnc\|Start Reading]]<br><small>PG \| 13+ \| Blood, detail content</small> |
 
