@@ -1,54 +1,59 @@
-// Book library functionality
-  function getBookInfo() {
-    const h1Elements = Array.from(document.querySelectorAll("h1"));
-    const bookTitleElement = h1Elements.find(h1 => h1.closest("main"));
+// Given: 'button' is the Add to Reading List button element
+function findBookTitle(button) {
+  // 1. Find the closest table ancestor
+  const table = button.closest('table');
+  if (!table) return null;
 
-    if (!bookTitleElement) return null;
+  // 2. Get all rows
+  const rows = table.querySelectorAll('tr');
+  if (!rows.length) return null;
 
-    return {
-      title: bookTitleElement.textContent.trim(),
-      link: window.location.href
-    };
-  }
+  // 3. Check for header row (first row)
+  const headerRow = rows[0];
+  let title = null;
 
-  function updateLibraryButton() {
-    const book = getBookInfo();
-    if (!book) return;
-    const button = document.getElementById("library-toggle");
-    if (button) {
-      button.textContent = isInLibrary(book.link) ? "Remove from Reading List" : "Add to Reading List";
+  // Case 1: Single column (header in <th>)
+  const th = headerRow.querySelector('th');
+  if (th && th.textContent.trim()) {
+    title = th.textContent.trim();
+  } else {
+    // Case 2: Two columns (look in the row with the image)
+    for (let row of rows) {
+      const cells = row.querySelectorAll('td');
+      if (cells.length === 2) {
+        // Assume right cell is the title if left cell has an image
+        const leftCellHasImage = cells[0].querySelector('img');
+        if (leftCellHasImage) {
+          title = cells[1].textContent.trim();
+          break;
+        }
+      }
     }
   }
 
-  function toggleLibrary() {
-    const book = getBookInfo();
-    if (!book) return;
-
-    let library = getLibrary();
-    const existingBookIndex = library.findIndex(b => b.link === book.link);
-
-    if (existingBookIndex !== -1) {
-      library.splice(existingBookIndex, 1);
-    } else {
-      library.unshift(book);
+  // Fallback 1: Try first non-empty <td> (if above didn't work)
+  if (!title) {
+    for (let row of rows) {
+      const td = row.querySelector('td');
+      if (td && td.textContent.trim()) {
+        title = td.textContent.trim();
+        break;
+      }
     }
-    saveLibrary(library);
-    updateLibraryButton();
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
-    updateLibraryButton();
-  });
-
-  function getLibrary() {
-    return JSON.parse(localStorage.getItem("bookLibrary") || "[]");
+  // Fallback 2: Try aria-label or data-title on table
+  if (!title) {
+    title = table.getAttribute('aria-label') || table.getAttribute('data-title') || null;
   }
 
-  function saveLibrary(library) {
-    localStorage.setItem("bookLibrary", JSON.stringify(library));
-  }
+  return title;
+}
 
-  function isInLibrary(link) {
-    const library = getLibrary();
-    return library.some(book => book.link === link);
-  }
+function findBookLink(button) {
+  const table = button.closest('table');
+  if (!table) return null;
+  // Look for the first anchor with a suitable href (customize as needed)
+  const link = table.querySelector('a[href]');
+  return link ? link.href : null;
+}
