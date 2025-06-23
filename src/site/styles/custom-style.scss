@@ -37,6 +37,33 @@ td:has(> a[href]):hover {
   background: rgba(200, 200, 255, 0.08);
 }
 
+
+#rc, .rc {
+  display: flex;
+  gap: 0.75em;         /* space between buttons */
+  align-items: center; /* vertical alignment */
+  justify-content: flex-start; /* align buttons to the left, change to center if you want centered */
+  padding: 1em;        /* adjust as needed */
+}
+
+/* Optional: uniform button styling if not already present */
+#rc .squared-button, .rc .squared-button {
+  padding: 0.5em 1.25em;
+  border-radius: 0.5em;
+  border: none;
+  background: #f4f4f4;
+  color: #222;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: background 0.2s;
+  margin: 0; /* remove default spacing */
+}
+
+#rc .squared-button:hover, .rc .squared-button:hover {
+  background: #e2e2e2;
+}
+
 .markdown-preview-view table { 
 display: block; width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; border-collapse: collapse; 
 white-space: nowrap; 
