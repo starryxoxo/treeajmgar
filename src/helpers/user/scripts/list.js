@@ -59,4 +59,44 @@ function isInLibrary(link) {
   return library.some(book => book.link === link);
 }
 
-// --- Main Logic
+// --- Main Logic ---
+function getBookInfoFromButton(button) {
+  return {
+    title: findBookTitle(button),
+    link: window.location.href
+  };
+}
+
+function updateLibraryButton(button) {
+  const book = getBookInfoFromButton(button);
+  if (!book || !book.title) return;
+  button.textContent = isInLibrary(book.link)
+    ? "Remove from Reading List"
+    : "Add to Reading List";
+}
+
+function toggleLibrary(button) {
+  const book = getBookInfoFromButton(button);
+  if (!book || !book.title) return;
+  let library = getLibrary();
+  const index = library.findIndex(b => b.link === book.link);
+
+  if (index !== -1) {
+    library.splice(index, 1);
+  } else {
+    library.unshift(book);
+  }
+  saveLibrary(library);
+  updateLibraryButton(button);
+}
+
+// --- Event Listener Registration ---
+document.addEventListener("DOMContentLoaded", function() {
+  var btn = document.getElementById("library-toggle");
+  if (btn) {
+    updateLibraryButton(btn);
+    btn.addEventListener("click", function() {
+      toggleLibrary(this);
+    });
+  }
+});
