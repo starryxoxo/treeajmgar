@@ -5,20 +5,61 @@ document.querySelectorAll('a').forEach(a => {
   }
 });
 
-document.querySelectorAll('td').forEach(td => {
-  const link = td.querySelector('a[href]');
-  if (link && td.querySelector('img')) {
-    td.style.cursor = 'pointer';
-    td.addEventListener('click', function(e) {
-      // Prevent if already clicking the link or image inside the link
-      if (!e.target.closest('a')) {
-        if (link.target === '_blank') {
-          window.open(link.href, '_blank');
-        } else {
-          window.location = link.href;
+document.querySelectorAll('table').forEach(table => {
+  const rows = Array.from(table.rows);
+  if (rows.length === 0) return;
+
+  // Get column count (handle thead/tbody/tfoot as well)
+  const colCount = Math.max(...rows.map(r => r.cells.length));
+
+  for (let col = 0; col < colCount; col++) {
+    // Find the first <a> in this column (any row)
+    let columnLink = null;
+    for (let row of rows) {
+      const cell = row.cells[col];
+      if (cell) {
+        const link = cell.querySelector('a[href]');
+        if (link) {
+          columnLink = link;
+          break;
         }
       }
-    });
+    }
+
+    if (!columnLink) continue;
+
+    // For every row, make the img in this column tappable to the columnLink.href
+    for (let row of rows) {
+      const cell = row.cells[col];
+      if (cell) {
+        const img = cell.querySelector('img');
+        if (img) {
+          img.style.cursor = 'pointer';
+          img.addEventListener('click', function(e) {
+            // Prevent following if the img is inside an <a>
+            if (!img.closest('a')) {
+              if (columnLink.target === '_blank') {
+                window.open(columnLink.href, '_blank');
+              } else {
+                window.location = columnLink.href;
+              }
+            }
+          });
+        }
+
+        // (Optional) Make the whole cell clickable, as before
+        cell.style.cursor = 'pointer';
+        cell.addEventListener('click', function(e) {
+          if (!e.target.closest('a')) {
+            if (columnLink.target === '_blank') {
+              window.open(columnLink.href, '_blank');
+            } else {
+              window.location = columnLink.href;
+            }
+          }
+        });
+      }
+    }
   }
 });
 </script>
