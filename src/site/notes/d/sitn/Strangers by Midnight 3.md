@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/d/sitn/strangers-by-midnight-2/","title":"Strangers by Midnight","tags":["book"]}
+{"dg-publish":true,"permalink":"/d/sitn/strangers-by-midnight-3/","title":"Strangers by Midnight","tags":["book"]}
 ---
 
 
@@ -7,11 +7,9 @@
 
 ***
 
-|                                          Strangers by Midnight 2                                          |
-| :-------------------------------------------------------------------------------------------------------: |
-|                                     ![coverimg\|360](/img/user/d/sitn/sitncover.webp)                                      |
-| <button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button> |
-|          2 pages • [[d/sitn/sitnc\|Start Reading]]<br><small>PG \| 13+ \| Blood, detail content</small>          |
+|                                     ![coverimg\|165](/img/user/d/sitn/sitncover.webp)                                      | Strangers by Midnight                                                                   |
+| :-------------------------------------------------------------------------------------------------------: | --------------------------------------------------------------------------------------- |
+| <button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button> | 2 pages • [[d/sitn/sitnc\|Start Reading]]<br><small>PG \| 13+ \| Blood, detail content</small> |
 
 <div class="fake-button-container">  <span class="fake-button">enhypen</span>  <span class="fake-button">oneshot</span>  <span class="fake-button">romance</span></div>
 
