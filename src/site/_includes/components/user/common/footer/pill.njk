@@ -5,61 +5,89 @@ document.querySelectorAll('a').forEach(a => {
   }
 });
 
-document.querySelectorAll('table').forEach(table => {
-  const rows = Array.from(table.rows);
-  if (rows.length === 0) return;
+// Debounce function to limit rapid calls
+function debounce(func, wait) {
+  let timeout;
+  return function(...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(this, args), wait);
+  };
+}
 
-  // Get column count (handle thead/tbody/tfoot as well)
-  const colCount = Math.max(...rows.map(r => r.cells.length));
+function makeTableCellsClickable() {
+  document.querySelectorAll('table').forEach(table => {
+    const rows = Array.from(table.rows);
+    if (rows.length === 0) return;
 
-  for (let col = 0; col < colCount; col++) {
-    // Find the first <a> in this column (any row)
-    let columnLink = null;
-    for (let row of rows) {
-      const cell = row.cells[col];
-      if (cell) {
-        const link = cell.querySelector('a[href]');
-        if (link) {
-          columnLink = link;
-          break;
-        }
-      }
-    }
+    const colCount = Math.max(...rows.map(r => r.cells.length));
 
-    if (!columnLink) continue;
-
-    // For every row, make the img in this column tappable to the columnLink.href
-    for (let row of rows) {
-      const cell = row.cells[col];
-      if (cell) {
-        const img = cell.querySelector('img');
-        if (img) {
-          img.style.cursor = 'pointer';
-          img.addEventListener('click', function(e) {
-            // Prevent following if the img is inside an <a>
-            if (!img.closest('a')) {
-              if (columnLink.target === '_blank') {
-                window.open(columnLink.href, '_blank');
-              } else {
-                window.location = columnLink.href;
-              }
-            }
-          });
-        }
-
-        // (Optional) Make the whole cell clickable, as before
-        cell.style.cursor = 'pointer';
-        cell.addEventListener('click', function(e) {
-          if (!e.target.closest('a')) {
-            if (columnLink.target === '_blank') {
-              window.open(columnLink.href, '_blank');
-            } else {
-              window.location = columnLink.href;
-            }
+    for (let col = 0; col < colCount; col++) {
+      let columnLink = null;
+      for (let row of rows) {
+        const cell = row.cells[col];
+        if (cell) {
+          const link = cell.querySelector('a[href]');
+          if (link) {
+            columnLink = link;
+            break;
           }
-        });
+        }
+      }
+
+      if (!columnLink) continue;
+
+      for (let row of rows) {
+        const cell = row.cells[col];
+        if (cell) {
+          // Prevent duplicate listeners
+          if (!cell.classList.contains('cell-link-activated')) {
+            cell.classList.add('cell-link-activated');
+            cell.style.cursor = 'pointer';
+            cell.addEventListener('click', function(e) {
+              if (!e.target.closest('a')) {
+                if (columnLink.target === '_blank') {
+                  window.open(columnLink.href, '_blank');
+                } else {
+                  window.location = columnLink.href;
+                }
+              }
+            });
+          }
+
+          const img = cell.querySelector('img');
+          if (img && !img.classList.contains('img-link-activated')) {
+            img.classList.add('img-link-activated');
+            img.style.cursor = 'pointer';
+            img.addEventListener('click', function(e) {
+              if (!img.closest('a')) {
+                if (columnLink.target === '_blank') {
+                  window.open(columnLink.href, '_blank');
+                } else {
+                  window.location = columnLink.href;
+                }
+              }
+            });
+          }
+        }
       }
     }
-  }
+  });
+}
+
+// Debounced version to avoid rapid-fire re-application
+const debouncedMakeTableCellsClickable = debounce(makeTableCellsClickable, 100);
+
+// MutationObserver to watch for new tables/cells
+const observer = new MutationObserver(() => {
+  debouncedMakeTableCellsClickable();
 });
+
+// Start observing the whole document for table changes
+observer.observe(document.body, {
+  childList: true,
+  subtree: true
+});
+
+// Initial run on page load
+makeTableCellsClickable();
 </script>
