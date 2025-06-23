@@ -29,6 +29,14 @@ a.start-reading-link {
   }
 }
 
+td:has(> a[href]) {
+  cursor: pointer;
+  transition: background 0.15s;
+}
+td:has(> a[href]):hover {
+  background: rgba(200, 200, 255, 0.08);
+}
+
 .markdown-preview-view table { 
 display: block; width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; border-collapse: collapse; 
 white-space: nowrap; 
