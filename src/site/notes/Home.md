@@ -12,14 +12,13 @@
 | Welcome to TSL! |
 | :-------------: |
 | ![swrn.webp](/img/user/assets/swrn.webp)  |
-> New to the sworn library?
-Click the [[blue text\|blue text]] to enter a link or a [[d/sitn/Strangers by Midnight\|book]].
 
-  <button onclick="window.location.href='https://swrn.netlify.app/assets/library'" class="squared-button">Visit your Reading List</button>
-  
-  <section id="continue-section" style="display: none;">
+<div id="fake-button-container">
+<button onclick="window.location.href='https://swrn.netlify.app/assets/library'" class="squared-button">Reading List</button>
+  <section id="continue-section" style="display:none;">
     <button id="continueBtn" class="squared-button">Continue Reading</button>
   </section>
+</div>
 
 <noscript>
   <p style="color: red; font-weight: bold; text-align: center;">
