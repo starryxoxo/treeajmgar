@@ -46,20 +46,6 @@ td:has(> a[href]):hover {
   padding: 1em;        /* adjust as needed */
 }
 
-/* Optional: uniform button styling if not already present */
-#rc .squared-button, .rc .squared-button {
-  padding: 0.5em 1.25em;
-  border-radius: 0.5em;
-  border: none;
-  background: #f4f4f4;
-  color: #222;
-  font-size: 1em;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  transition: background 0.2s;
-  margin: 0; /* remove default spacing */
-}
-
 #rc .squared-button:hover, .rc .squared-button:hover {
   background: #e2e2e2;
 }
