@@ -16,7 +16,7 @@
 <div id="rc">
 <button onclick="window.location.href='https://swrn.netlify.app/assets/library'" class="squared-button">Reading List</button>
   <section id="continue-section" style="display:none;">
-    <button id="continueBtn" class="squared-button">Continue Reading</button>
+    <button id="continueBtn" class="squared-button">Continue</button>
   </section>
 </div>
 
