@@ -12,24 +12,21 @@ body {
     //  }
 }
 
-a {
+a.start-reading-link {
+  @extend %button-base;
   display: inline-block;
   padding: 0.25em 1em;
-  background-color: rgba(255,255,255,0.13);  // translucent like button.base
-  color: var(--text-normal);
   border-radius: 999px;
   font-weight: bold;
   text-decoration: none;
   font-size: 0.9em;
   transition: background 0.2s;
-  backdrop-filter: blur(0.625rem);
-  -webkit-backdrop-filter: blur(0.625rem);
-  border: 1px solid rgba(255,255,255,0.15);
-}
 
-a:hover,
-a:focus {
-  background-color: rgba(255,255,255,0.24); // slightly more opaque on hover
+  &:hover,
+  &:focus {
+    background-color: rgba(255,255,255,0.24); // optional: stronger effect on hover
+    text-decoration: none;
+  }
 }
 
 .markdown-preview-view table { 
