@@ -1,59 +1,94 @@
-// Given: 'button' is the Add to Reading List button element
-function findBookTitle(button) {
-  // 1. Find the closest table ancestor
-  const table = button.closest('table');
-  if (!table) return null;
+function getBookInfo() {
+  // 1. Try to find a table header <th> (vertical layout)
+  const ths = document.querySelectorAll('table th');
+  if (ths.length > 0) {
+    for (const th of ths) {
+      // Prefer centered, colspan, or first row/column
+      const style = th.getAttribute('style') || '';
+      const colspan = th.getAttribute('colspan');
+      if (
+        style.includes('center') ||
+        colspan ||
+        th.cellIndex === 0 ||
+        th.parentElement.rowIndex === 0
+      ) {
+        const text = th.textContent.trim();
+        if (text.length > 0) return {
+          title: text,
+          link: window.location.href
+        };
+      }
+    }
+    // Fallback: just first <th>
+    const fallbackTh = ths[0].textContent.trim();
+    if (fallbackTh) return {
+      title: fallbackTh,
+      link: window.location.href
+    };
+  }
 
-  // 2. Get all rows
-  const rows = table.querySelectorAll('tr');
-  if (!rows.length) return null;
-
-  // 3. Check for header row (first row)
-  const headerRow = rows[0];
-  let title = null;
-
-  // Case 1: Single column (header in <th>)
-  const th = headerRow.querySelector('th');
-  if (th && th.textContent.trim()) {
-    title = th.textContent.trim();
-  } else {
-    // Case 2: Two columns (look in the row with the image)
-    for (let row of rows) {
-      const cells = row.querySelectorAll('td');
-      if (cells.length === 2) {
-        // Assume right cell is the title if left cell has an image
-        const leftCellHasImage = cells[0].querySelector('img');
-        if (leftCellHasImage) {
-          title = cells[1].textContent.trim();
-          break;
+  // 2. Horizontal table: If table has image in first cell, title in the next row or cell
+  const tables = document.querySelectorAll('table');
+  for (const table of tables) {
+    const rows = table.querySelectorAll('tr');
+    for (let i = 0; i < rows.length; ++i) {
+      const cells = rows[i].querySelectorAll('td');
+      if (cells.length > 0 && cells[0].querySelector('img')) {
+        // Horizontal format: try next row (if exists) for the title
+        if (rows[i + 1]) {
+          const possibleTitle = rows[i + 1].textContent.trim();
+          if (possibleTitle) return {
+            title: possibleTitle,
+            link: window.location.href
+          };
+        }
+        // Or, if 2 columns: right cell might be the title
+        if (cells.length > 1 && cells[1].textContent.trim()) {
+          return {
+            title: cells[1].textContent.trim(),
+            link: window.location.href
+          };
         }
       }
     }
   }
 
-  // Fallback 1: Try first non-empty <td> (if above didn't work)
-  if (!title) {
-    for (let row of rows) {
-      const td = row.querySelector('td');
-      if (td && td.textContent.trim()) {
-        title = td.textContent.trim();
-        break;
+  // 3. Fallback: original H1 method (classic layout)
+  const h1 = document.querySelector('h1');
+  if (h1 && h1.textContent.trim()) {
+    return {
+      title: h1.textContent.trim(),
+      link: window.location.href
+    };
+  }
+
+  // 4. Fallback: look after the reading list button (legacy)
+  const libraryBtn = document.getElementById('library-toggle');
+  if (libraryBtn) {
+    let next = libraryBtn.nextElementSibling;
+    while (next) {
+      if (
+        next.tagName === 'H1' ||
+        next.classList.contains('page-title') ||
+        (next.className && next.className.includes('title'))
+      ) {
+        return {
+          title: next.textContent.trim(),
+          link: window.location.href
+        };
       }
+      next = next.nextElementSibling;
     }
   }
 
-  // Fallback 2: Try aria-label or data-title on table
-  if (!title) {
-    title = table.getAttribute('aria-label') || table.getAttribute('data-title') || null;
+  // 5. Fallback: document title
+  if (document.title) {
+    return {
+      title: document.title,
+      link: window.location.href
+    };
   }
 
-  return title;
-}
-
-function findBookLink(button) {
-  const table = button.closest('table');
-  if (!table) return null;
-  // Look for the first anchor with a suitable href (customize as needed)
-  const link = table.querySelector('a[href]');
-  return link ? link.href : null;
+  // 6. Not found
+  return null;
 }
