@@ -6,17 +6,12 @@
 
 ***
 
-<div style="text-align:center;">
+|                                                 Daydream                                                  |
+| :-------------------------------------------------------------------------------------------------------: |
+|                                      ![coverimg\|360](/img/user/dayd/ddmstor/ddmcover.webp)                                      |
+| <button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button> |
+|                       1 page • [[dayd/ddmch/ddmc1\|Start Reading]]<br><small>PG \| 13+</small>                       |
 
-![ddmcover.webp|360](/img/user/dayd/ddmstor/ddmcover.webp)
-
-</div>
-
-***
-<button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button>
-
-###### ENHYPEN BXB AU
-# Daydream
 <div class="fake-button-container">
   <span class="fake-button">enhypen</span>
   <span class="fake-button">bxb</span>
@@ -26,13 +21,9 @@
 **Description** • <small>ONGOING</small>
 if somehow, you fell in love with a person you weren't supposed to, would you still love them? *i know it's impossible for us to get together,* but *can i at least* **daydream** *that i have you by my side?*
 
-1 page • [[dayd/ddmch/ddmc1\|Start Reading]]
-<small>PG | 13+</small>
-
 **Author**: the sworn library
 **Languages**: English, Tagalog
 **Date**: June 10, 2025
-
 
 | About ENHYPEN                                                                                                                 |
 | ----------------------------------------------------------------------------------------------------------------------------- |

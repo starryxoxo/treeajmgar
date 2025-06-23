@@ -5,16 +5,13 @@
 [[Home\|Home]]
 
 ***
-<div style="text-align:center;">
 
-![ldrbook.jpg|360](/img/user/d/ldr/ldrbook.jpg)
+|                                                    LDR                                                    |
+| :-------------------------------------------------------------------------------------------------------: |
+|                                       ![coverimg\|360](/img/user/d/ldr/ldrbook.jpg)                                       |
+| <button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button> |
+|                               Not yet available<br><small>PG \| 13+</small>                               |
 
-</div>
-
-***
-<button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button>
-###### NOVELETTE
-# LDR
 <div class="fake-button-container">
   <span class="fake-button">enhypen</span>
   <span class="fake-button">oneshot</span>
@@ -24,9 +21,6 @@
 *LDR - an abbreviation for long-distance relationship.*
 
 A short story of two lovers far away from each other. Will they be able to happily reunite after a long time of separation?
-
-Not yet available
-<small>PG | 13+</small>
 
 **Author**: the sworn library
 **Language**: English
