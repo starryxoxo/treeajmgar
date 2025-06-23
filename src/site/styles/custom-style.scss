@@ -12,6 +12,22 @@ body {
     //  }
 }
 
+a.pill-link {
+  display: inline-block;        /* Allows padding and border-radius to work */
+  padding: 0.25em 1em;          /* Vertical and horizontal padding */
+  background-color: #f5b800;    /* Example: Wattpad-like yellow/orange */
+  color: #fff;                  /* Text color */
+  border-radius: 999px;         /* Max-rounded for pill effect */
+  font-weight: bold;            /* Optional: make text bold */
+  text-decoration: none;        /* Removes underline */
+  font-size: 0.9em;             /* Optional: makes it slightly smaller */
+  transition: background 0.2s;  /* Smooth hover effect */
+}
+
+a.pill-link:hover {
+  background-color: #d49d00;    /* Slightly darker on hover */
+}
+
 .markdown-preview-view table { 
 display: block; width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; border-collapse: collapse; 
 white-space: nowrap; 
