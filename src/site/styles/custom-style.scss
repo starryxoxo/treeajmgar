@@ -41,6 +41,7 @@ td:has(> a[href]):hover {
 #rc, .rc {
   display: flex;
   gap: 0.50rem;
+}
 
 #rc .squared-button:hover, .rc .squared-button:hover {
   background: #e2e2e2;
