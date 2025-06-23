@@ -4,4 +4,22 @@ document.querySelectorAll('a').forEach(a => {
     a.classList.add('start-reading-link');
   }
 });
+
+document.querySelectorAll('td').forEach(td => {
+  const link = td.querySelector('a[href]');
+  if (link && td.children.length === 1) {
+    td.style.cursor = 'pointer';
+    td.addEventListener('click', function(e) {
+      // Prevent double navigation if the actual <a> was clicked
+      if (e.target.tagName.toLowerCase() !== 'a') {
+        // Optionally, open in new tab if the link has target="_blank"
+        if (link.target === '_blank') {
+          window.open(link.href, '_blank');
+        } else {
+          window.location = link.href;
+        }
+      }
+    });
+  }
+});
 </script>
