@@ -12,20 +12,24 @@ body {
     //  }
 }
 
-a.pill-link {
-  display: inline-block;        /* Allows padding and border-radius to work */
-  padding: 0.25em 1em;          /* Vertical and horizontal padding */
-  background-color: #f5b800;    /* Example: Wattpad-like yellow/orange */
-  color: #fff;                  /* Text color */
-  border-radius: 999px;         /* Max-rounded for pill effect */
-  font-weight: bold;            /* Optional: make text bold */
-  text-decoration: none;        /* Removes underline */
-  font-size: 0.9em;             /* Optional: makes it slightly smaller */
-  transition: background 0.2s;  /* Smooth hover effect */
+a {
+  display: inline-block;
+  padding: 0.25em 1em;
+  background-color: rgba(255,255,255,0.13);  // translucent like button.base
+  color: var(--text-normal);
+  border-radius: 999px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: background 0.2s;
+  backdrop-filter: blur(0.625rem);
+  -webkit-backdrop-filter: blur(0.625rem);
+  border: 1px solid rgba(255,255,255,0.15);
 }
 
-a.pill-link:hover {
-  background-color: #d49d00;    /* Slightly darker on hover */
+a:hover,
+a:focus {
+  background-color: rgba(255,255,255,0.24); // slightly more opaque on hover
 }
 
 .markdown-preview-view table { 
