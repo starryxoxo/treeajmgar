@@ -9,7 +9,7 @@
 
 |                                           Strangers by Midnight                                           |
 | :-------------------------------------------------------------------------------------------------------: |
-|                                     ![coverimg\|360](/img/user/d/sitn/sitncover.webp)                                      |
+|                                     ![coverimg](/img/user/d/sitn/sitncover.webp)                                      |
 | <button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button> |
 |          2 pages • [[d/sitn/sitnc\|Start Reading]]<br><small>PG \| 13+ \| Blood, detail content</small>          |
 

@@ -8,7 +8,7 @@
 
 |                                                    LDR                                                    |
 | :-------------------------------------------------------------------------------------------------------: |
-|                                       ![coverimg\|360](/img/user/d/ldr/ldrbook.jpg)                                       |
+|                                       ![coverimg](/img/user/d/ldr/ldrbook.jpg)                                       |
 | <button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button> |
 |                               Not yet available<br><small>PG \| 13+</small>                               |
 
