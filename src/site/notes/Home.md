@@ -35,7 +35,7 @@
 
 | Discover                         |                               |                            |                            |
 | :------------------------------- | :---------------------------- | :------------------------- | :------------------------- |
-| ![coverimg\|175](/img/user/d/sitn/sitncover.webp) | ![coverimg\|175](/img/user/d/ldr/ldrbook.jpg) | ![coverimg\|175](/img/user/assets/swb.webp) | ![coverimg\|175](/img/user/assets/swb.webp) |
+| ![coverimg\|165](/img/user/d/sitn/sitncover.webp) | ![coverimg\|165](/img/user/d/ldr/ldrbook.jpg) | ![coverimg\|165](/img/user/assets/swb.webp) | ![coverimg\|165](/img/user/assets/swb.webp) |
 | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]]        | [[d/ldr/ldrbook\|LDR]]              |                            |                            |
 
 ---
