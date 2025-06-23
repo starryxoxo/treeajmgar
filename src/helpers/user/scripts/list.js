@@ -103,3 +103,7 @@ function toggleLibrary(button) {
 //   var btn = document.getElementById("library-toggle");
 //   if (btn) updateLibraryButton(btn);
 // });
+
+document.getElementById("library-toggle").addEventListener("click", function() {
+  toggleLibrary(this);
+});
