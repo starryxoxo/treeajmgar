@@ -13,10 +13,12 @@
 | :-------------: |
 | ![swrn.webp](/img/user/assets/swrn.webp)  |
 
+<div id="rc">
 <button onclick="window.location.href='https://swrn.netlify.app/assets/library'" class="squared-button">Reading List</button>
   <section id="continue-section" style="display:none;">
     <button id="continueBtn" class="squared-button">Continue Reading</button>
   </section>
+</div>
 
 <noscript>
   <p style="color: red; font-weight: bold; text-align: center;">
