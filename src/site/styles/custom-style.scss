@@ -18,13 +18,12 @@ a.start-reading-link {
   padding: 1.2rem 1.25rem;
   border-radius: 0.75rem;
   cursor: pointer;
-  font-weight: bold;
   text-decoration: none;
-  transition: background 0.2s;
+  transition: all 0.3s ease; // match %button-base
 
   &:hover,
   &:focus {
-    background-color: rgba(255,255,255,0.24); // optional: stronger effect on hover
+    background: #e2e2e2;
     text-decoration: none;
   }
 }
