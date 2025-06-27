@@ -6,11 +6,11 @@
 
 ***
 
-|                                                 Daydream                                                  |
-| :-------------------------------------------------------------------------------------------------------: |
-|                                      ![coverimg](/img/user/dayd/ddmstor/ddmcover.webp)                                      |
-| <button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button> |
-|                       1 page • [[dayd/ddmch/ddmc1\|Start Reading]]<br><small>PG \| 13+</small>                       |
+|                                                               Daydream                                                                |
+| :-----------------------------------------------------------------------------------------------------------------------------------: |
+|                                                      ![coverimg](/img/user/dayd/ddmstor/ddmcover.webp)                                                       |
+|                                                   1 page • [[dayd/ddmch/ddmc1\|Start Reading]]                                                   |
+| <button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button><br><small>PG \| 13+</small> |
 
 <div class="fake-button-container">
   <span class="fake-button">enhypen</span>

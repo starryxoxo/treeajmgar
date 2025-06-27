@@ -6,11 +6,11 @@
 
 ***
 
-|                                                    LDR                                                    |
-| :-------------------------------------------------------------------------------------------------------: |
-|                                       ![coverimg](/img/user/d/ldr/ldrbook.jpg)                                       |
-| <button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button> |
-|                               Not yet available<br><small>PG \| 13+</small>                               |
+|                                                                  LDR                                                                  |
+| :-----------------------------------------------------------------------------------------------------------------------------------: |
+|                                                       ![coverimg](/img/user/d/ldr/ldrbook.jpg)                                                        |
+|                                                           Not yet available                                                           |
+| <button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button><br><small>PG \| 13+</small> |
 
 <div class="fake-button-container">
   <span class="fake-button">enhypen</span>
