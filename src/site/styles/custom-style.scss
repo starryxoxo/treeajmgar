@@ -12,22 +12,18 @@ body {
     //  }
 }
 
-a.start-reading-link {
+a..start-reading-link
   @extend %button-base;
   display: inline-block;
-  padding: 1.2rem 1.25rem;
-  border-radius: 0.75rem;
-  cursor: pointer;
+  padding: 0.375rem 1rem;
+  border-radius: 1.25rem;
+
+  font-weight: bold;
   text-decoration: none;
-  transition: all 0.3s ease;
+  font-size: 0.9em;
+  transition: background 0.2s;
 
-  &:hover,
-  &:focus {
-    background: #e2e2e2;
-    text-decoration: none;
-  }
-}
-
+// Reading list and Continue
 #rc, .rc {
   display: flex;
   gap: 0.50rem;
@@ -130,7 +126,7 @@ min-width: 180px;
   cursor: default;
 }
 
-.squared-button {
+button.squared-button {
   // If on a <button>, reset default styles
   appearance: none;
   -webkit-appearance: none;
