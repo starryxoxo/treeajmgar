@@ -7,11 +7,11 @@
 
 ***
 
-|                                                                         Strangers by Midnight                                                                         |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                      ![coverimg](/img/user/d/sitn/sitncover.webp)                                                                      |
-|                                                                       [[d/sitn/sitnc\|Start Reading]]                                                                        |
-| 2 pages • <button id="library-toggle" class="fake-button" onclick="toggleLibrary()">Add to Reading List</button><br><small>PG \| 13+ \| Blood, detail content</small> |
+|                                                                          Strangers by Midnight                                                                           |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|                                                                       ![coverimg](/img/user/d/sitn/sitncover.webp)                                                                        |
+|                                                                         [[d/sitn/sitnc\|Start Reading]]                                                                         |
+| 2 pages • <button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button><br><small>PG \| 13+ \| Blood, detail content</small> |
 
 <div class="fake-button-container">  <span class="fake-button">enhypen</span>  <span class="fake-button">oneshot</span>  <span class="fake-button">romance</span></div>
 
