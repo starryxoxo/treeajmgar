@@ -22,8 +22,7 @@ a.start-reading-link {
   font-size: clamp(1rem, 1.1vw, 1.125rem);
   transition: background 0.2s;
 
-  &:hover,
-  &:focus {
+  &:active {
 
     background-color: rgba(255,255,255,0.24);
     background: #e2e2e2;
@@ -148,8 +147,7 @@ button.squared-button {
   border-radius: 0.75rem;
   cursor: pointer;
 
-  &:hover,
-  &:focus {
+  &:active {
 
     background-color: rgba(255,255,255,0.24);
     background: #e2e2e2;
