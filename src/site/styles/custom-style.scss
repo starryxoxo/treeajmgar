@@ -155,15 +155,14 @@ button.squared-button {
 }
 
 %vw-width {
-  min-width: 100% !important;
   max-width: 100% !important;
   box-sizing: border-box !important;
 }
 
 @media (min-width: 800px) {
   %vw-width {
-    min-width: 100% !important;
-    max-width: 100% !important;
+    min-width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -176,16 +175,12 @@ button.squared-button {
 }
 
 #results {
-  @extend %vw-width;
-  margin-top: 1em;
-  border-collapse: collapse;
-  table-layout: fixed;
+  width: 100%;
+  table-layout: fixed; /* Ensures the column fills the table width */
 }
 
 #results td {
-  width: 100% !important;
-  max-width: 100% !important;
-  min-width: 100% !important;
+  width: 100%;
   padding: 0.5em;
   word-break: break-word;
 }
