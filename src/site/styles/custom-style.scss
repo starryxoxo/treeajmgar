@@ -23,7 +23,7 @@ body {
 
 .markdown-preview-view th, .markdown-preview-view td {
   padding: 0.5em;
-  min-width: 150px;
+  min-width: 175px;
 }
   
 a.start-reading-link {
@@ -158,10 +158,10 @@ button.squared-button {
 }
 
 #results {
-  width: 100%;
+  display: table !important;
+  width: 100% !important;
+  white-space: normal !important;
   table-layout: fixed;
-  margin-top: 1em;
-  border-collapse: collapse;
 }
 
 #results td {
