@@ -154,35 +154,22 @@ button.squared-button {
   }
 }
 
-%vw-width {
-  max-width: 100% !important;
-  box-sizing: border-box !important;
-}
-
-@media (min-width: 800px) {
-  %vw-width {
-    min-width: 100%;
-    max-width: 100%;
-  }
-}
-
-#search {
-  @extend %vw-width;
-  @extend %button-base;
-  padding: 1.2rem 1.25rem;
-  border-radius: 0.75rem;
-  font-size: 1em;
-}
-
 #results {
   width: 100%;
-  table-layout: fixed; /* Ensures the column fills the table width */
+  table-layout: fixed;
+  margin-top: 1em;
+  border-collapse: collapse;
 }
 
 #results td {
-  width: 100%;
   padding: 0.5em;
   word-break: break-word;
+}
+
+#search {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1em;
 }
 
 h6, h1 {
