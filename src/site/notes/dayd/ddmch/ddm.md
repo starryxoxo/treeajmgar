@@ -9,7 +9,7 @@
 |                                                               Daydream                                                                |
 | :-----------------------------------------------------------------------------------------------------------------------------------: |
 |                                                      ![coverimg](/img/user/dayd/ddmstor/ddmcover.webp)                                                       |
-|                                                   1 page • [[dayd/ddmch/ddmc1\|Start Reading]]                                                   |
+|                                                 1 chapter • [[dayd/ddmch/ddmc1\|Start Reading]]                                                  |
 | <button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button><br><small>PG \| 13+</small> |
 
 <div class="fake-button-container">

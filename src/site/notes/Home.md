@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/home/","title":"the sworn library","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/home/","title":"the sworn library"}
 ---
 
 <div id="enable-search" style="display:none;">
