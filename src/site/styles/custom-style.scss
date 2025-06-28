@@ -155,14 +155,13 @@ button.squared-button {
 }
 
 %vw-width {
-  width: 80vw !important;
-  max-width: 100vw !important;
+  width: 100% !important;
   box-sizing: border-box !important;
 }
 
 @media (min-width: 800px) {
   %vw-width {
-    width: 50vw !important;
+    width: 100% !important;
     max-width: 800px !important;
   }
 }
@@ -183,7 +182,7 @@ button.squared-button {
 }
 
 #results td {
-  width: 80vw !important;
+  width: 100% !important;
   padding: 0.5em;
   word-break: break-word;
 }
