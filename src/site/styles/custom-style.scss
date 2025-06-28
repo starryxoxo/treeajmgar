@@ -17,13 +17,13 @@ a.start-reading-link {
   display: inline-block;
   padding: 0.400rem 1.05rem;
   border-radius: 1.25rem;
+  cursor: pointer;
   font-weight: bold;
   text-decoration: none;
   font-size: clamp(1rem, 1.1vw, 1.125rem);
-  transition: background 0.2s;
+  transition: background 0.3s;
 
   &:active {
-
     background-color: rgba(255,255,255,0.24);
     background: #e2e2e2;
     text-decoration: none;
@@ -38,7 +38,7 @@ a.start-reading-link {
   margin-bottom: 1rem;
 }
 
-#rc .squared-button:hover, .rc .squared-button:hover {
+#rc .squared-button:active, .rc .squared-button:active {
   background: #e2e2e2;
 }
 
@@ -148,7 +148,6 @@ button.squared-button {
   cursor: pointer;
 
   &:active {
-
     background-color: rgba(255,255,255,0.24);
     background: #e2e2e2;
     text-decoration: none;
