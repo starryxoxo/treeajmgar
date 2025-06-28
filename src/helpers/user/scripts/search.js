@@ -97,7 +97,15 @@ function getRandomBooks(count = 3) {
 function searchBooks(query) {
     return getAllBooks().then(books => {
         const q = query.trim().toLowerCase();
-        return books.filter(b => b.title && b.title.toLowerCase().includes(q));
+        if (!q) return books;
+        return books.filter(b => {
+            if (!b.title) return false;
+            // Split title into words, check if any word starts with the query
+            return b.title
+                .toLowerCase()
+                .split(/\s+/)
+                .some(word => word.startsWith(q));
+        });
     });
 }
 
