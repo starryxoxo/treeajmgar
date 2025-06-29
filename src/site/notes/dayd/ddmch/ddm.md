@@ -13,6 +13,7 @@
 | <button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button><br><small>PG \| 13+</small> |
 
 <div class="fake-button-container">
+ <span class="fake-button">Chapter 2 on June 30, 8PM</span>
   <span class="fake-button">enhypen</span>
   <span class="fake-button">bxb</span>
   <span class="fake-button">jakehoon</span>
