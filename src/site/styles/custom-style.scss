@@ -29,11 +29,13 @@ body {
 #display-table {
   max-width: 100%;
   overflow-x: auto;
+  white-space: normal:
 }
 
 #display-table table {
   width: max-content; /* allows table to take as much space as its content needs */
   max-width: 100%;
+  white-space: normal;
 }
 
 a.start-reading-link {
