@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/dayd/ddmch/ddmc1/","title":"Daydream Page 1"}
+{"dg-publish":true,"permalink":"/dayd/ddmch/ddmc1/","title":"Daydream CH1"}
 ---
 
 [[Home\|Home]] • [[dayd/ddmch/ddm\|Book Info]]
