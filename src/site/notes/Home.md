@@ -2,23 +2,24 @@
 {"dg-publish":true,"permalink":"/home/","title":"the sworn library","tags":["gardenEntry"]}
 ---
 
+[[dev/privacy policy\|Privacy]] • [[dev/terms 1\|Terms]] • [[assets/Newsroom\|Newsroom]]
+
 <div id="enable-search" style="display:none;">
   <input type="text" id="search" placeholder="Search books...">
   <table id="results"></table>
 </div>
 
-[[dev/privacy policy\|Privacy]] • [[dev/terms 1\|Terms]] • [[assets/Newsroom\|Newsroom]]
+<div id="rc">
+<button onclick="window.location.href='https://swrn.netlify.app/assets/library/'" class="squared-button">Reading List</button>
+  <section id="continue-section" style="display:none;">
+    <button id="continueBtn" class="squared-button">Continue</button>
+  </section>
+</div>
 
 | Welcome to TSL! |
 | :-------------: |
 | ![swrn.webp](/img/user/assets/swrn.webp)  |
 
-<div id="rc">
-<button onclick="window.location.href='https://swrn.netlify.app/assets/library'" class="squared-button">Reading List</button>
-  <section id="continue-section" style="display:none;">
-    <button id="continueBtn" class="squared-button">Continue</button>
-  </section>
-</div>
 
 <noscript>
   <p style="color: red; font-weight: bold; text-align: center;">
