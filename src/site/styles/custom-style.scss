@@ -26,18 +26,10 @@ body {
   min-width: 175px;
 }
 
+#display-table table,
 #display-table td,
 #display-table th {
-  padding: 0.5em;
-  min-width: unset;
-  word-break: break-word;
-}
-
-#display-table table {
-  display: table;
-  width: 100%;
-  border-collapse: collapse;
-  /* Remove white-space rule */
+  border: none; /* Remove all borders */
 }
 
 a.start-reading-link {
