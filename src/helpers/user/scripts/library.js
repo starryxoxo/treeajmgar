@@ -54,29 +54,32 @@ function renderLibrary() {
     const booksChunk = library.slice(i, i + TABLE_SIZE);
     displayContent += `<table style="margin: 0px; border-spacing: 0px; border: none;"><tbody>`;
 
-    // Row 1: Covers
-displayContent += `<tr>`;
-for (let j = 0; j < TABLE_SIZE; j++) {
-  const book = booksChunk[j];
-  displayContent += `<td style="text-align:center; width: 190px; border: none; height: 180px; padding-bottom: 4px;">${
-    book && book.cover
-      ? `<img src="${book.cover}" alt="cover" style="max-width:220px; max-height:220px; border-radius: 0px; box-shadow: 0 2px 4px rgba(0,0,0,0.13); background: #eee;" />`
-      : ""
-  }</td>`;
-}
-displayContent += `</tr>`;
+        // Row: Covers
+        displayContent += `<tr>`;
+    for (let j = 0; j < TABLE_SIZE; j++) {
+      const book = booksChunk[j];
+      displayContent += `<td style="text-align:center; width: 190px; border: none; height: 190px;">${
+        book && book.cover
+          ? `<img src="${book.cover}" alt="cover" style="max-width:220px; max-height:220px; border-radius: 0px; box-shadow: 0 2px 4px rgba(0,0,0,0.13); background: #eee;" />`
+          : ""
+      }</td>`;
+    }
+    displayContent += `</tr>`;
 
-// Row 2: Titles
-displayContent += `<tr>`;
-for (let j = 0; j < TABLE_SIZE; j++) {
-  const book = booksChunk[j];
-  displayContent += `<td style="text-align:center; vertical-align:top; border: none; height: 40px; padding-top: 2px; padding-bottom: 24px;">${
-    book
-      ? `<a class="internal-link" href="${book.link}" target="_blank" style="font-weight:bold; font-size: 1.05em;">${book.title}</a>`
-      : ""
-  }</td>`;
-}
-displayContent += `</tr>`;
+    // Row 2: Titles
+    displayContent += `<tr>`;
+    for (let j = 0; j < TABLE_SIZE; j++) {
+      const book = booksChunk[j];
+      displayContent += `<td style="text-align:center; vertical-align:top; border: none; height: 40px;">${
+        book
+          ? `<a class="internal-link" href="${book.link}" target="_blank" style="font-weight:bold; font-size: 1.05em;">${book.title}</a>`
+          : ""
+      }</td>`;
+    }
+    displayContent += `</tr>`;
+
+    displayContent += `</tbody></table>`;
+  }
 
   e.innerHTML = displayContent;
 }
