@@ -1,4 +1,4 @@
-// library.js.
+// library.js
 
 function getLibrary() {
   return JSON.parse(localStorage.getItem("bookLibrary") || "[]");
