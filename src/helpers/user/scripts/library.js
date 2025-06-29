@@ -52,7 +52,7 @@ function renderLibrary() {
 
   for (let i = 0; i < library.length; i += TABLE_SIZE) {
     const booksChunk = library.slice(i, i + TABLE_SIZE);
-    displayContent += `<table style="margin: 0px; border-spacing: 0px;"><tbody>`;
+    displayContent += `<table style="margin: 0px; border-spacing: 0px; border: none;"><tbody>`;
 
     // Row 1: Covers (images)
     displayContent += `<tr>`;
