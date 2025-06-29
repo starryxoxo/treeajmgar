@@ -60,7 +60,7 @@ function renderLibrary() {
       const book = booksChunk[j];
       displayContent += `<td style="text-align:center; width: 190px; border: none; height: 190px;">${
         book && book.cover
-          ? `<img src="${book.cover}" alt="cover" style="max-width:180px; max-height:180px; border-radius: 0px; box-shadow: 0 2px 4px rgba(0,0,0,0.13); background: #eee;" />`
+          ? `<img src="${book.cover}" alt="cover" style="max-width:220px; max-height:220px; border-radius: 0px; box-shadow: 0 2px 4px rgba(0,0,0,0.13); background: #eee;" />`
           : ""
       }</td>`;
     }
