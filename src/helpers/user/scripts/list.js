@@ -45,6 +45,15 @@ function findBookTitle(button) {
   return title;
 }
 
+// --- Book Cover Extraction ---
+function findBookCover(button) {
+  const table = button.closest('table');
+  if (!table) return null;
+  const img = table.querySelector('img');
+  if (img && img.src) return img.src;
+  return null;
+}
+
 // --- Local Storage Helpers ---
 function getLibrary() {
   return JSON.parse(localStorage.getItem("bookLibrary") || "[]");
@@ -63,7 +72,8 @@ function isInLibrary(link) {
 function getBookInfoFromButton(button) {
   return {
     title: findBookTitle(button),
-    link: window.location.href
+    link: window.location.href,
+    cover: findBookCover(button)
   };
 }
 
