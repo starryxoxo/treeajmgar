@@ -52,15 +52,15 @@ function renderLibrary() {
 
   for (let i = 0; i < library.length; i += TABLE_SIZE) {
     const booksChunk = library.slice(i, i + TABLE_SIZE);
-    displayContent += `<table style="margin: 12px auto; border-collapse: separate;"><tbody>`;
+    displayContent += `<table style="margin: 0px; border-spacing: 0px;"><tbody>`;
 
-    // Row 1: Covers
+    // Row 1: Covers (images)
     displayContent += `<tr>`;
     for (let j = 0; j < TABLE_SIZE; j++) {
       const book = booksChunk[j];
       displayContent += `<td style="text-align:center; width: 190px; height: 190px;">${
         book && book.cover
-          ? `<img src="${book.cover}" alt="cover" style="width:175px;height:175px;object-fit:cover; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.13);" />`
+          ? `<img src="${book.cover}" alt="cover" style="max-width:175px; max-height:175px; border-radius: 0px; box-shadow: 0 2px 4px rgba(0,0,0,0.13); background: #eee;" />`
           : ""
       }</td>`;
     }
