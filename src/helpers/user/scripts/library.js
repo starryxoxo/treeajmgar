@@ -48,7 +48,7 @@ function renderLibrary() {
   }
 
   let displayContent = "";
-  const TABLE_SIZE = 2; // 2 columns per table
+  const TABLE_SIZE = 4; // 4 columns per table
 
   for (let i = 0; i < library.length; i += TABLE_SIZE) {
     const booksChunk = library.slice(i, i + TABLE_SIZE);
