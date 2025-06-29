@@ -26,16 +26,18 @@ body {
   min-width: 175px;
 }
 
-#display-table {
-  max-width: 100%;
-  overflow-x: auto;
-  white-space: normal:
+#display-table td,
+#display-table th {
+  padding: 0.5em;
+  min-width: unset;
+  word-break: break-word;
 }
 
 #display-table table {
-  width: max-content; /* allows table to take as much space as its content needs */
-  max-width: 100%;
-  white-space: normal;
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  /* Remove white-space rule */
 }
 
 a.start-reading-link {
