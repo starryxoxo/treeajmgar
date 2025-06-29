@@ -26,18 +26,14 @@ body {
   min-width: 175px;
 }
 
-#display-table table {
-  display: block;
-  width: 100%;
+#display-table {
+  max-width: 100%;
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  border-collapse: collapse;
-  white-space: nowrap;
 }
 
-#display-table th, #display-table td {
-  padding: 0.5em;
-  min-width: 175px;
+#display-table table {
+  width: max-content; /* allows table to take as much space as its content needs */
+  max-width: 100%;
 }
 
 a.start-reading-link {
