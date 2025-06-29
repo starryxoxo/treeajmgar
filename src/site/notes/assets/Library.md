@@ -4,9 +4,9 @@
 
 ## Your Reading List
 
-Please **use the same browser** when adding and reading from your library.
+Please **use the same browser** when adding and reading from the library.
 
-For **Chrome** users, please don't clear your cookies. Chrome stores your list using cookies, unlike other browsers.
+Your Reading List is a collection of stories you plan to read and you're currently reading.
 
 <button id="reset-collection" class="squared-button" style="color: red; font-size: 16px;">Reset Collection</button>
 <div id="library-display"></div>
