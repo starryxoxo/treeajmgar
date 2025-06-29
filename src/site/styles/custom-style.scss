@@ -12,6 +12,10 @@ body {
     //  }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .markdown-preview-view table {
   display: block;
   width: 100%;
