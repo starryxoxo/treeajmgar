@@ -58,7 +58,7 @@ function renderLibrary() {
     displayContent += `<tr>`;
     for (let j = 0; j < TABLE_SIZE; j++) {
       const book = booksChunk[j];
-      displayContent += `<td style="text-align:center; width: 190px; height: 190px;">${
+      displayContent += `<td style="text-align:center; width: 190px; border: none; height: 190px;">${
         book && book.cover
           ? `<img src="${book.cover}" alt="cover" style="max-width:175px; max-height:175px; border-radius: 0px; box-shadow: 0 2px 4px rgba(0,0,0,0.13); background: #eee;" />`
           : ""
@@ -70,7 +70,7 @@ function renderLibrary() {
     displayContent += `<tr>`;
     for (let j = 0; j < TABLE_SIZE; j++) {
       const book = booksChunk[j];
-      displayContent += `<td style="text-align:center; vertical-align:top; height: 40px;">${
+      displayContent += `<td style="text-align:center; vertical-align:top; border: none; height: 40px;">${
         book
           ? `<a class="internal-link" href="${book.link}" target="_blank" style="font-weight:bold; font-size: 1.05em;">${book.title}</a>`
           : ""
