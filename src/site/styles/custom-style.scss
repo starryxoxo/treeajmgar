@@ -25,7 +25,21 @@ body {
   padding: 0.5em;
   min-width: 175px;
 }
-  
+
+#display-table table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+#display-table th, #display-table td {
+  padding: 0.5em;
+  min-width: 175px;
+}
+
 a.start-reading-link {
   @extend %button-base;
   display: inline-block;
