@@ -52,25 +52,26 @@ function renderLibrary() {
 
   for (let i = 0; i < library.length; i += TABLE_SIZE) {
     const booksChunk = library.slice(i, i + TABLE_SIZE);
-    displayContent += `<table style="margin: 0px; border-spacing: 0px; border: none;"><tbody>`;
+    displayContent += `<table style="margin: 0 0 30px 0; border-spacing: 0; border: none;">`; 
+    // Bottom margin 30px to separate tables (row 2 and next row 1)
 
-        // Row: Covers
-        displayContent += `<tr>`;
+    // Row: Covers
+    displayContent += `<tr style="margin: 0; padding: 0;">`;
     for (let j = 0; j < TABLE_SIZE; j++) {
       const book = booksChunk[j];
-      displayContent += `<td style="text-align:center; width: 190px; border: none; height: 190px;">${
+      displayContent += `<td style="text-align:center; width: 190px; border: none; height: 190px; padding: 0;">${
         book && book.cover
-          ? `<img src="${book.cover}" alt="cover" style="max-width:220px; max-height:220px; border-radius: 0px; box-shadow: 0 2px 4px rgba(0,0,0,0.13); background: #eee;" />`
+          ? `<img src="${book.cover}" alt="cover" style="max-width:220px; max-height:220px; border-radius: 0; box-shadow: 0 2px 4px rgba(0,0,0,0.13); background: #eee;" />`
           : ""
       }</td>`;
     }
     displayContent += `</tr>`;
 
-    // Row 2: Titles
-    displayContent += `<tr>`;
+    // Row 2: Titles (closer to row 1)
+    displayContent += `<tr style="margin: 0; padding: 0;">`;
     for (let j = 0; j < TABLE_SIZE; j++) {
       const book = booksChunk[j];
-      displayContent += `<td style="text-align:center; vertical-align:top; border: none; height: 40px;">${
+      displayContent += `<td style="text-align:center; vertical-align:top; border: none; height: 30px; padding-top: 4px;">${
         book
           ? `<a class="internal-link" href="${book.link}" target="_blank" style="font-weight:bold; font-size: 1.05em;">${book.title}</a>`
           : ""
@@ -78,7 +79,7 @@ function renderLibrary() {
     }
     displayContent += `</tr>`;
 
-    displayContent += `</tbody></table>`;
+    displayContent += `</table>`;
   }
 
   e.innerHTML = displayContent;
@@ -93,7 +94,13 @@ function resetLibrary() {
 }
 
 // Attach event listener for reset button
-document.getElementById("reset-collection").addEventListener("click", resetLibrary);
+const resetBtn = document.getElementById("reset-collection");
+if (resetBtn) {
+  resetBtn.addEventListener("click", resetLibrary);
+}
 
 // Wait for the DOM to load, then render the library
 document.addEventListener("DOMContentLoaded", renderLibrary);
+
+// Note: You need to define getBookInfoFromButton(button) elsewhere
+// It should extract {title, link, cover} info from the button's context
