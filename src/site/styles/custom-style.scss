@@ -29,7 +29,7 @@ body {
 #display-table table,
 #display-table td,
 #display-table th {
-  border: none; /* Remove all borders */
+  border: none !important; /* Remove all borders */
 }
 
 a.start-reading-link {
