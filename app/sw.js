@@ -1,4 +1,4 @@
-const CACHE = "pwabuilder-page-v3";
+const CACHE = "v4";
 const OFFLINE_PAGE = "/app/offline.html";
 const PRECACHE_ASSETS = [
   "/",
