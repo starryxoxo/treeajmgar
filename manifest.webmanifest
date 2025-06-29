@@ -2,8 +2,8 @@
   "name": "the sworn library",              
   "short_name": "TSL",
   "description": "Your favorite library, now in your pocket.",
-  "start_url": "/", 
-  "scope": "/",
+  "start_url": "https://swrn.netlify.app/", 
+  "scope": "https://swrn.netlify.app/",
   "display": "standalone",
   "icons": [
    {
