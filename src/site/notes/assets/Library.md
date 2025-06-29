@@ -6,7 +6,7 @@
 
 Please **use the same browser** when adding and reading from the library.
 
-Your Reading List is a collection of stories you plan to read and you're currently reading.
+Your Reading List is a collection of stories you plan to read and what you're currently reading.
 
 <button id="reset-collection" class="squared-button" style="color: red; font-size: 16px;">Reset Collection</button>
 <div id="library-display"></div>
