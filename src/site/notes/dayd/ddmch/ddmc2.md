@@ -9,6 +9,7 @@
 ![ddmbanner.webp](/img/user/dayd/ddmstor/ddmbanner.webp)
 
 ***
+
 <h1 style="text-align:center;"> 02 </h1>
 <br>
 <p style="text-align:center;">+++++</p>
@@ -89,6 +90,7 @@ he took jake's earphones out of his ear, "have a break first. here, some water."
 "why are you apologizing? it's fine." sunghoon smiled at him and started to drive again.
 
 <p style="text-align:center;">+++++</p>
+
 both arrived at 7/11 after a long chill ride.
 
 <u>12:54am</u>
