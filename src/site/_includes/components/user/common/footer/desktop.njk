@@ -1,27 +1,52 @@
-<script>
 document.addEventListener("DOMContentLoaded", function () {
   if (window.innerWidth >= 769) {
     const main = document.querySelector("main.content.cm-s-obsidian");
-
     if (!main) return;
-
-    // Skip if already applied
     if (main.classList.contains("two-column-layout")) return;
 
-    // Create wrappers
     const mainColumn = document.createElement("div");
     mainColumn.className = "main-column";
 
     const sidebarColumn = document.createElement("aside");
     sidebarColumn.className = "sidebar-column";
 
-    // Move tags and meta info to sidebar if found
-    const buttonContainer = main.querySelector(".fake-button-container");
-    const metaInfoBlocks = Array.from(main.querySelectorAll("strong"))
-      .map(strong => strong.closest("p"))
-      .filter(Boolean);
+    // Collect all <p> elements that contain <strong>
+    const strongParagraphs = Array.from(main.querySelectorAll("p")).filter(p =>
+      p.querySelector("strong")
+    );
 
-    // Move existing elements into columns
+    // Function to find blocks starting with "Description" and ending with "Date"
+    function findDescriptionBlocks(paragraphs) {
+      const blocks = [];
+      let block = [];
+      let insideBlock = false;
+
+      paragraphs.forEach(p => {
+        const text = p.textContent.trim();
+
+        if (!insideBlock && text.includes("Description")) {
+          insideBlock = true;
+          block = [p];
+        } else if (insideBlock) {
+          block.push(p);
+          if (text.includes("Date")) {
+            blocks.push([...block]);
+            insideBlock = false;
+            block = [];
+          }
+        }
+      });
+
+      return blocks.flat();
+    }
+
+    // Get the meta info paragraphs based on your rule
+    const metaInfoBlocks = findDescriptionBlocks(strongParagraphs);
+
+    // Existing elements to move to sidebar
+    const buttonContainer = main.querySelector(".fake-button-container");
+
+    // Move elements to sidebar if they are in metaInfoBlocks or buttonContainer
     Array.from(main.children).forEach(child => {
       if (
         child === buttonContainer ||
@@ -40,4 +65,3 @@ document.addEventListener("DOMContentLoaded", function () {
     main.appendChild(sidebarColumn);
   }
 });
-</script>
