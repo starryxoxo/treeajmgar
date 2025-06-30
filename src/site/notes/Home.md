@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/home/","title":"the sworn library","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/home/","title":"the sworn library"}
 ---
 
 [[dev/privacy policy\|Privacy]] • [[dev/terms 1\|Terms]] • [[assets/Newsroom\|Newsroom]]
