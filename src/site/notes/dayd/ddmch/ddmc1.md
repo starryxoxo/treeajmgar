@@ -132,7 +132,7 @@ jake checked his phone and saw that someone texted him.
 
 "yep." jake took the forms from daniel's hands and put them in his bag.
 
-[[ddmc2 \|Next: 02]] 
+[[dayd/ddmch/ddmc2\|Next: 02]] 
 [[Home\|Home]] • [[dayd/ddmch/ddm\|Book Info]]
 
 ***
