@@ -454,26 +454,33 @@ blockquote {
 }
 
 @media (min-width: 769px) {
-  /* Only apply on non-home pages (not using .two-column-layout) */
-  main.content:not(.two-column-layout) img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 6px;
-    display: block;
-    margin: 0 auto;
-  }
-
-  main.content:not(.two-column-layout) table img {
-    width: 200px !important;
-    max-width: 100% !important;
-    height: auto !important;
-  }
-
-  main.content:not(.two-column-layout) table td > div[style*="width: 297px"],
-  main.content:not(.two-column-layout) table td > div[style*="width: 200px"] {
-    width: 200px !important;
-    max-width: 100% !important;
-    margin: 0 auto;
-  }
+  .sidebar-column {
+  padding: 1rem;
 }
 
+.sidebar-column p {
+  margin-bottom: 1rem;
+}
+
+.sidebar-column a.internal-link {
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.sidebar-search input[type="text"] {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid var(--color-base-30);
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-search table#results {
+  width: 100%;
+  margin-top: 0.5rem;
+  border-collapse: collapse;
+}
+}
