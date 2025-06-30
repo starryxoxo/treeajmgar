@@ -491,3 +491,32 @@ blockquote {
   }
 }
 
+@media (min-width: 769px) {
+  /* Container for pairs of images */
+  .image-pair-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .image-pair-container img {
+    width: 48%; /* Two images side-by-side with small gap */
+    height: auto;
+  }
+
+  /* Single image inside paragraph: float and shrink */
+  p img:only-child {
+    float: left;
+    width: 40%;
+    margin: 0 1rem 1rem 0;
+    height: auto;
+  }
+
+  /* Clear floats after paragraphs with floated images */
+  p::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
