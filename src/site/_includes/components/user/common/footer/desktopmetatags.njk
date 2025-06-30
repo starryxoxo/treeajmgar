@@ -2,8 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   if (window.innerWidth >= 769) {
     const main = document.querySelector("main.content.cm-s-obsidian");
-    if (!main) return;
-    if (main.classList.contains("two-column-layout")) return;
+    if (!main || main.classList.contains("two-column-layout")) return;
 
     const mainColumn = document.createElement("div");
     mainColumn.className = "main-column";
@@ -11,54 +10,36 @@ document.addEventListener("DOMContentLoaded", function () {
     const sidebarColumn = document.createElement("aside");
     sidebarColumn.className = "sidebar-column";
 
-    // Collect all <p> elements that contain <strong>
-    const strongParagraphs = Array.from(main.querySelectorAll("p")).filter(p =>
-      p.querySelector("strong")
-    );
+    const children = Array.from(main.children);
+    const metaInfoBlocks = [];
 
-    // Function to find blocks starting with "Description" and ending with "Date"
-    function findDescriptionBlocks(paragraphs) {
-      const blocks = [];
-      let block = [];
-      let insideBlock = false;
+    let insideBlock = false;
 
-      paragraphs.forEach(p => {
-        const text = p.textContent.trim();
+    children.forEach(child => {
+      const text = child.textContent.trim();
 
-        if (!insideBlock && text.includes("Description")) {
-          insideBlock = true;
-          block = [p];
-        } else if (insideBlock) {
-          block.push(p);
-          if (text.includes("Date")) {
-            blocks.push(...block);
-            insideBlock = false;
-            block = [];
-          }
+      if (!insideBlock && text.includes("Description")) {
+        insideBlock = true;
+      }
+
+      if (insideBlock) {
+        metaInfoBlocks.push(child);
+        if (text.includes("Date")) {
+          insideBlock = false;
         }
-      });
+      }
+    });
 
-      return blocks;
-    }
-
-    // Get the meta info paragraphs based on your rule
-    const metaInfoBlocks = findDescriptionBlocks(strongParagraphs);
-
-    // Get the button container if exists
     const buttonContainer = main.querySelector(".fake-button-container");
 
-    // Move elements to sidebar if they contain any metaInfo paragraph or are buttonContainer
-    Array.from(main.children).forEach(child => {
-  const hasMetaP = metaInfoBlocks.includes(child) || Array.from(child.querySelectorAll("p")).some(p => metaInfoBlocks.includes(p));
+    children.forEach(child => {
+      if (metaInfoBlocks.includes(child) || child === buttonContainer) {
+        sidebarColumn.appendChild(child);
+      } else {
+        mainColumn.appendChild(child);
+      }
+    });
 
-  if (child === buttonContainer || hasMetaP) {
-    sidebarColumn.appendChild(child);
-  } else {
-    mainColumn.appendChild(child);
-  }
-});
-
-    // Clear main and append the two columns
     main.innerHTML = "";
     main.classList.add("two-column-layout");
     main.appendChild(mainColumn);
