@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/dev/closed/","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/dev/closed/"}
 ---
 
 # the sworn library is currently under maintenance.
