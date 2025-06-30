@@ -31,35 +31,35 @@ document.addEventListener("DOMContentLoaded", function () {
         } else if (insideBlock) {
           block.push(p);
           if (text.includes("Date")) {
-            blocks.push([...block]);
+            blocks.push(...block);
             insideBlock = false;
             block = [];
           }
         }
       });
 
-      return blocks.flat();
+      return blocks;
     }
 
     // Get the meta info paragraphs based on your rule
     const metaInfoBlocks = findDescriptionBlocks(strongParagraphs);
 
-    // Existing elements to move to sidebar
+    // Get the button container if exists
     const buttonContainer = main.querySelector(".fake-button-container");
 
-    // Move elements to sidebar if they are in metaInfoBlocks or buttonContainer
+    // Move elements to sidebar if they contain any metaInfo paragraph or are buttonContainer
     Array.from(main.children).forEach(child => {
-      if (
-        child === buttonContainer ||
-        metaInfoBlocks.includes(child)
-      ) {
+      // Check if child contains any metaInfo paragraph
+      const hasMetaP = Array.from(child.querySelectorAll("p")).some(p => metaInfoBlocks.includes(p));
+
+      if (child === buttonContainer || hasMetaP) {
         sidebarColumn.appendChild(child);
       } else {
         mainColumn.appendChild(child);
       }
     });
 
-    // Apply layout
+    // Clear main and append the two columns
     main.innerHTML = "";
     main.classList.add("two-column-layout");
     main.appendChild(mainColumn);
