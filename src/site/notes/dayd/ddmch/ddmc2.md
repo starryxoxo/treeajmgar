@@ -125,7 +125,7 @@ sunghoon sighed and went to the cashier with the cart, while jake went inside th
 
 he opened his phone to take a peek at the clock.
 
-<u>1:15am.</a>
+<u>1:15am.</u>
 
 *wow, i took really long picking stuff there.*
 
