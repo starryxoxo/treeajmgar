@@ -1,60 +1,30 @@
-const CACHE = "pwabuilder-page-v3";
-const OFFLINE_PAGE = "/app/offline.html";
-const PRECACHE_ASSETS = [
-  "/",
-  "/app/swrn.png",
-  OFFLINE_PAGE
-];
+// sw.js
 
-// Install: cache required assets
-self.addEventListener('install', event => {
-  event.waitUntil(
-    caches.open(CACHE)
-      .then(cache => cache.addAll(PRECACHE_ASSETS))
-      .then(() => self.skipWaiting())
-  );
+self.addEventListener('install', (event) => {
+  // Activate immediately
+  self.skipWaiting();
 });
 
-// Activate: delete old caches
-self.addEventListener('activate', event => {
+self.addEventListener('activate', (event) => {
   event.waitUntil(
-    (async () => {
-      const cacheNames = await caches.keys();
-      await Promise.all(
-        cacheNames.map(name => {
-          if (name !== CACHE) return caches.delete(name);
-        })
-      );
-      await self.clients.claim();
-    })()
-  );
-});
-
-// Fetch: always try network, cache result, fallback to cache, then offline page
-self.addEventListener('fetch', event => {
-  if (event.request.method !== "GET") return;
-
-  event.respondWith(
-    (async () => {
-      const cache = await caches.open(CACHE);
-      try {
-        const networkResponse = await fetch(event.request);
-        // Cache every successful network response for future offline use
-        if (networkResponse && networkResponse.status === 200) {
-          cache.put(event.request, networkResponse.clone());
+    // Unregister this service worker
+    self.registration.unregister().then(() => {
+      // Get all clients (open tabs/windows)
+      return self.clients.matchAll();
+    }).then((clients) => {
+      // Reload each client to refresh without service worker
+      clients.forEach(client => {
+        if (client instanceof WindowClient) {
+          client.navigate(client.url);
         }
-        return networkResponse;
-      } catch (error) {
-        // Network failed, try cache
-        const cachedResponse = await cache.match(event.request);
-        if (cachedResponse) {
-          return cachedResponse;
-        }
-        // Not in cache, show offline fallback for navigations
-        if (event.request.mode === 'navigate') {
-          return cache.match(OFFLINE_PAGE);
-        }
-      }
-    })()
+      });
+    }).then(() => {
+      // Clear all caches
+      return caches.keys().then(cacheNames => {
+        return Promise.all(
+          cacheNames.map(cacheName => caches.delete(cacheName))
+        );
+      });
+    })
   );
 });
