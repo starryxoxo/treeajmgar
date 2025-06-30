@@ -1,0 +1,40 @@
+document.addEventListener("DOMContentLoaded", () => {
+  if (document.querySelector("main.content.cm-s-obsidian")) return; // Already exists
+
+  const main = document.createElement("main");
+  main.className = "content cm-s-obsidian";
+
+  // Identify container for main content - e.g., everything between navbar and sidebar
+  const navbar = document.querySelector("nav.navbar");
+  const sidebar = document.querySelector("aside.sidebar-column");
+
+  // Collect nodes between navbar and sidebar (or all if sidebar missing)
+  let nodesToMove = [];
+  if (navbar && sidebar) {
+    let sibling = navbar.nextElementSibling;
+    while (sibling && sibling !== sidebar) {
+      nodesToMove.push(sibling);
+      sibling = sibling.nextElementSibling;
+    }
+  } else if (navbar) {
+    // Move all siblings after navbar if no sidebar
+    let sibling = navbar.nextElementSibling;
+    while (sibling) {
+      nodesToMove.push(sibling);
+      sibling = sibling.nextElementSibling;
+    }
+  } else {
+    // Fallback: move all body children except scripts and styles
+    nodesToMove = Array.from(document.body.children).filter(el => !["SCRIPT", "STYLE", "NAV", "ASIDE"].includes(el.tagName));
+  }
+
+  // Append collected nodes into main
+  nodesToMove.forEach(node => main.appendChild(node));
+
+  // Insert main after navbar or at body start
+  if (navbar && navbar.parentNode) {
+    navbar.parentNode.insertBefore(main, navbar.nextSibling);
+  } else {
+    document.body.insertBefore(main, document.body.firstChild);
+  }
+});
