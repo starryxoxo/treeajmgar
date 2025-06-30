@@ -453,3 +453,27 @@ blockquote {
   color: var(--text-normal);
 }
 
+@media (min-width: 769px) {
+  /* Reduce image sizes on desktop only */
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Specifically target images inside tables */
+  table img {
+    width: 200px !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Shrink image wrappers used for overlays */
+  table td > div[style*="width: 297px"] {
+    width: 200px !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+  }
+}
