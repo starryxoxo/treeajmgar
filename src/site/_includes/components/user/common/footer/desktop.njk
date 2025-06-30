@@ -1,0 +1,43 @@
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.innerWidth >= 769) {
+    const main = document.querySelector("main.content.cm-s-obsidian");
+
+    if (!main) return;
+
+    // Skip if already applied
+    if (main.classList.contains("two-column-layout")) return;
+
+    // Create wrappers
+    const mainColumn = document.createElement("div");
+    mainColumn.className = "main-column";
+
+    const sidebarColumn = document.createElement("aside");
+    sidebarColumn.className = "sidebar-column";
+
+    // Move tags and meta info to sidebar if found
+    const buttonContainer = main.querySelector(".fake-button-container");
+    const metaInfoBlocks = Array.from(main.querySelectorAll("strong"))
+      .map(strong => strong.closest("p"))
+      .filter(Boolean);
+
+    // Move existing elements into columns
+    Array.from(main.children).forEach(child => {
+      if (
+        child === buttonContainer ||
+        metaInfoBlocks.includes(child)
+      ) {
+        sidebarColumn.appendChild(child);
+      } else {
+        mainColumn.appendChild(child);
+      }
+    });
+
+    // Apply layout
+    main.innerHTML = "";
+    main.classList.add("two-column-layout");
+    main.appendChild(mainColumn);
+    main.appendChild(sidebarColumn);
+  }
+});
+</script>
