@@ -12,8 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (firstParagraphWithLinks) {
     const linkGroup = firstParagraphWithLinks.cloneNode(true);
     sidebar.appendChild(linkGroup);
-    // Optionally remove original:
-    // firstParagraphWithLinks.remove();
+      firstParagraphWithLinks.remove();
   }
 
   // === Move search bar and results ===
