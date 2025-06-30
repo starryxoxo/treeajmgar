@@ -2,7 +2,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   if (window.innerWidth >= 769) {
     const main = document.querySelector("main.content.cm-s-obsidian");
-    if (!main || main.classList.contains("two-column-layout")) return;
+    if (!main) return;
+    if (main.classList.contains("two-column-layout")) return;
 
     const mainColumn = document.createElement("div");
     mainColumn.className = "main-column";
@@ -10,36 +11,58 @@ document.addEventListener("DOMContentLoaded", function () {
     const sidebarColumn = document.createElement("aside");
     sidebarColumn.className = "sidebar-column";
 
-    const children = Array.from(main.children);
-    const metaInfoBlocks = [];
-
-    let insideBlock = false;
-
-    children.forEach(child => {
-      const text = child.textContent.trim();
-
-      if (!insideBlock && text.includes("Description")) {
-        insideBlock = true;
-      }
-
-      if (insideBlock) {
-        metaInfoBlocks.push(child);
-        if (text.includes("Date")) {
-          insideBlock = false;
-        }
-      }
-    });
-
+    const allParagraphs = Array.from(main.querySelectorAll("p"));
     const buttonContainer = main.querySelector(".fake-button-container");
 
-    children.forEach(child => {
-      if (metaInfoBlocks.includes(child) || child === buttonContainer) {
+    // Identify and group the meta description block
+    function extractMetaBlock(paragraphs) {
+      const metaWrapper = document.createElement("div");
+      metaWrapper.className = "meta-block";
+
+      let insideBlock = false;
+
+      for (let i = 0; i < paragraphs.length; i++) {
+        const p = paragraphs[i];
+        const text = p.textContent.trim();
+
+        if (!insideBlock && text.includes("Description")) {
+          insideBlock = true;
+        }
+
+        if (insideBlock) {
+          metaWrapper.appendChild(p);
+
+          if (text.includes("Date")) {
+            break; // Stop at Date
+          }
+        }
+      }
+
+      // If block contains something, return it
+      return metaWrapper.children.length ? metaWrapper : null;
+    }
+
+    const metaBlock = extractMetaBlock(allParagraphs);
+
+    // Move children into main or sidebar
+    Array.from(main.children).forEach(child => {
+      const isMeta = metaBlock && Array.from(metaBlock.children).includes(child);
+      const isWrappedMeta = metaBlock && metaBlock.contains(child);
+      const isButton = child === buttonContainer;
+
+      if (isButton) {
         sidebarColumn.appendChild(child);
+      } else if (isMeta || isWrappedMeta) {
+        // Append the full meta block only once
+        if (!sidebarColumn.contains(metaBlock)) {
+          sidebarColumn.appendChild(metaBlock);
+        }
       } else {
         mainColumn.appendChild(child);
       }
     });
 
+    // Apply layout
     main.innerHTML = "";
     main.classList.add("two-column-layout");
     main.appendChild(mainColumn);
