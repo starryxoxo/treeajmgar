@@ -1,0 +1,37 @@
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Desktop-only
+  if (window.innerWidth < 769) return;
+
+  const main = document.querySelector("main.content.two-column-layout");
+  const sidebar = main?.querySelector(".sidebar-column");
+  if (!main || !sidebar) return;
+
+  // === Move first <p> with links to sidebar ===
+  const firstParagraphWithLinks = main.querySelector("p:has(a.internal-link)");
+  if (firstParagraphWithLinks) {
+    const linkGroup = firstParagraphWithLinks.cloneNode(true);
+    sidebar.appendChild(linkGroup);
+    // Optionally remove original:
+    // firstParagraphWithLinks.remove();
+  }
+
+  // === Move search bar and results ===
+  const searchInput = main.querySelector('input[type="text"]');
+  const resultsTable = main.querySelector('#results');
+  if (searchInput && resultsTable) {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'sidebar-search';
+    const searchLabel = document.createElement('label');
+    searchLabel.textContent = "Search Books";
+    searchLabel.style.fontWeight = "bold";
+    searchLabel.style.display = "block";
+    searchLabel.style.marginBottom = "0.5rem";
+
+    wrapper.appendChild(searchLabel);
+    wrapper.appendChild(searchInput);
+    wrapper.appendChild(resultsTable);
+    sidebar.appendChild(wrapper);
+  }
+});
+</script>
