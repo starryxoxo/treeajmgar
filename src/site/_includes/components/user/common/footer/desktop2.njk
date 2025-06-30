@@ -21,13 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (searchInput && resultsTable) {
     const wrapper = document.createElement('div');
     wrapper.className = 'sidebar-search';
-    const searchLabel = document.createElement('label');
-    searchLabel.textContent = "Search Books";
-    searchLabel.style.fontWeight = "bold";
-    searchLabel.style.display = "block";
-    searchLabel.style.marginBottom = "0.5rem";
 
-    wrapper.appendChild(searchLabel);
     wrapper.appendChild(searchInput);
     wrapper.appendChild(resultsTable);
     sidebar.appendChild(wrapper);
