@@ -49,15 +49,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Move elements to sidebar if they contain any metaInfo paragraph or are buttonContainer
     Array.from(main.children).forEach(child => {
-      // Check if child contains any metaInfo paragraph
-      const hasMetaP = Array.from(child.querySelectorAll("p")).some(p => metaInfoBlocks.includes(p));
+  const hasMetaP = metaInfoBlocks.includes(child) || Array.from(child.querySelectorAll("p")).some(p => metaInfoBlocks.includes(p));
 
-      if (child === buttonContainer || hasMetaP) {
-        sidebarColumn.appendChild(child);
-      } else {
-        mainColumn.appendChild(child);
-      }
-    });
+  if (child === buttonContainer || hasMetaP) {
+    sidebarColumn.appendChild(child);
+  } else {
+    mainColumn.appendChild(child);
+  }
+});
 
     // Clear main and append the two columns
     main.innerHTML = "";

@@ -11,26 +11,25 @@ document.addEventListener("DOMContentLoaded", function () {
   function isSingleImageInParagraph(img) {
     const parent = img.parentElement;
     if (!parent || parent.tagName.toLowerCase() !== "p") return false;
-    // Check if parent <p> has only this img and possibly whitespace text nodes
     const children = Array.from(parent.childNodes).filter(n => {
       return !(n.nodeType === Node.TEXT_NODE && !n.textContent.trim());
     });
     return children.length === 1 && children[0] === img;
   }
 
-  // Group images in pairs except single images in <p> tags
-  let container = null;
-  images.forEach((img, i) => {
-    if (isSingleImageInParagraph(img)) {
-      // Single image in paragraph - no grouping needed, CSS float will handle it
-      return;
-    }
+  // Helper: check if image is inside a <table>
+  function isInsideTable(img) {
+    return img.closest("table") !== null;
+  }
 
-    // For others, wrap pairs inside a container
+  let container = null;
+  images.forEach((img) => {
+    if (isInsideTable(img)) return;
+    if (isSingleImageInParagraph(img)) return;
+
     if (!container || container.children.length >= 2) {
       container = document.createElement("div");
       container.className = "image-pair-container";
-      // Insert container before current img
       img.parentElement.insertBefore(container, img);
     }
 
