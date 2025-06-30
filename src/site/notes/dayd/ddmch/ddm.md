@@ -9,7 +9,7 @@
 |                                                               Daydream                                                                |
 | :-----------------------------------------------------------------------------------------------------------------------------------: |
 |                                                      ![coverimg](/img/user/dayd/ddmstor/ddmcover.webp)                                                       |
-|                                                 2 chapters • [[dayd/ddmch/ddmc1\|Start Reading]]                                                 |
+|                                   [[dayd/ddmch/ddm#Table of Contents\|2 chapters]] • [[dayd/ddmch/ddmc1\|Start Reading]]                                    |
 | <button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button><br><small>PG \| 13+</small> |
 
 <div class="fake-button-container">
@@ -26,6 +26,9 @@ i know it's impossible for us to get together, but can i at least **daydream** t
 **Author**: the sworn library
 **Languages**: English, Tagalog
 **Date**: June 10, 2025
+
+###### Table of Contents
+[[dayd/ddmch/ddmc1\|01]] • [[dayd/ddmch/ddmc2\|02]]
 
 | About ENHYPEN                                                                                                                 |
 | ----------------------------------------------------------------------------------------------------------------------------- |
