@@ -484,3 +484,10 @@ blockquote {
   border-collapse: collapse;
 }
 }
+
+@media (min-width: 769px) {
+  main.content {
+    padding-top: 60px; /* adjust to your navbar height */
+  }
+}
+
