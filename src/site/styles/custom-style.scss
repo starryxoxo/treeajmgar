@@ -414,3 +414,84 @@ blockquote {
   border-left: 2px solid var(--text-accent);
 }
 }
+
+/* MOBILE + TABLET STYLES */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .table-wrapper table {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .markdown-preview-view th,
+  .markdown-preview-view td {
+    min-width: unset;
+    padding: 0.4em;
+  }
+
+  .squared-button,
+  button.squared-button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  a.start-reading-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .fake-button-container {
+    justify-content: center;
+    gap: 0.3rem;
+  }
+
+  .fake-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .table-wrapper div[style*="width: 297px"] {
+    width: 100% !important;
+  }
+
+  .content.cm-s-obsidian {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p, td, .cell-link-activated {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .theme-light,
+  .theme-paper,
+  .theme-green,
+  .theme-purple,
+  .theme-dark-paper,
+  .theme-dark-green,
+  .theme-dark-purple {
+    --file-margins: 16px;
+  }
+}
