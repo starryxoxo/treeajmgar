@@ -453,7 +453,7 @@ blockquote {
   color: var(--text-normal);
 }
 
-@media (min-width: 769px) {
+@media (min-width: 481px) {
   .sidebar-column {
   padding: 1rem;
 }
@@ -485,13 +485,13 @@ blockquote {
 }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 481px) {
   main.content {
     padding-top: 60px; /* adjust to your navbar height */
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width:481px) {
   /* Container for pairs of images */
   .image-pair-container {
     display: flex;
