@@ -9,11 +9,11 @@
 |                                                               Daydream                                                                |
 | :-----------------------------------------------------------------------------------------------------------------------------------: |
 |                                                      ![coverimg](/img/user/dayd/ddmstor/ddmcover.webp)                                                       |
-|                                                 1 chapter • [[dayd/ddmch/ddmc1\|Start Reading]]                                                  |
+|                                                 2 chapters • [[dayd/ddmch/ddmc1\|Start Reading]]                                                 |
 | <button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button><br><small>PG \| 13+</small> |
 
 <div class="fake-button-container">
- <span class="fake-button">Chapter 2 on June 30, 8PM</span>
+ <span class="fake-button">Chapter 2 out now</span>
   <span class="fake-button">enhypen</span>
   <span class="fake-button">bxb</span>
   <span class="fake-button">jakehoon</span>
