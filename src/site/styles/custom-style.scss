@@ -492,6 +492,11 @@ blockquote {
 }
 
 @media (min-width: 769px) {
+
+  .single-image-centered {
+  justify-content: centered;
+}
+
   /* Container for pairs of images */
   .image-pair-container {
     display: flex;
@@ -518,8 +523,4 @@ blockquote {
     display: block;
     clear: both;
   }
-}
-
-.single-image-centered {
-  justify-content: centered;
 }
