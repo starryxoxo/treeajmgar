@@ -7,32 +7,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const images = Array.from(main.querySelectorAll("img"));
 
-  // Helper: check if img is inside a <table>
-  function isInsideTable(img) {
-    return img.closest("table") !== null;
+  // Helper: check if img is the only child inside a <p>
+  function isSingleImageInParagraph(img) {
+    const parent = img.parentElement;
+    if (!parent || parent.tagName.toLowerCase() !== "p") return false;
+    const children = Array.from(parent.childNodes).filter(n => {
+      return !(n.nodeType === Node.TEXT_NODE && !n.textContent.trim());
+    });
+    return children.length === 1 && children[0] === img;
   }
 
-  // Check if image already has an image-pair-container
-  function hasImagePairContainer(img) {
-    return img.closest(".image-pair-container") !== null;
+  // Helper: check if image is inside a <table>
+  function isInsideTable(img) {
+    return img.closest("table") !== null;
   }
 
   let container = null;
   const containers = []; // Keep track of all containers created
 
   images.forEach((img) => {
-    if (isInsideTable(img)) return;  // Skip images inside tables
-    if (hasImagePairContainer(img)) return;  // Skip images that already have a container
+    if (isInsideTable(img)) return;
+    if (isSingleImageInParagraph(img)) return;
 
     if (!container || container.children.length >= 2) {
-      // Create a new container for image pairs
       container = document.createElement("div");
       container.className = "image-pair-container";
       img.parentElement.insertBefore(container, img);
       containers.push(container);
     }
 
-    // Append the image to the container
     container.appendChild(img);
   });
 
@@ -40,15 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
   containers.forEach((cont) => {
     if (cont.children.length === 1) {
       cont.classList.add("single-image-centered");
-    }
-  });
-
-  // Center images that do not have a container
-  images.forEach((img) => {
-    if (!hasImagePairContainer(img) && !isInsideTable(img)) {
-      img.style.display = 'block';
-      img.style.marginLeft = 'auto';
-      img.style.marginRight = 'auto';
     }
   });
 });
