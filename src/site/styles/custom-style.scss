@@ -511,7 +511,7 @@ blockquote {
 
   /* Single image inside paragraph: float and shrink */
   p img:only-child {
-    float: left;
+    float: center;
     width: 40%;
     margin: 0 1rem 1rem 0;
     height: auto;
