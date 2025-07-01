@@ -23,6 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   let container = null;
+  const containers = []; // Keep track of all containers created
+
   images.forEach((img) => {
     if (isInsideTable(img)) return;
     if (isSingleImageInParagraph(img)) return;
@@ -31,21 +33,16 @@ document.addEventListener("DOMContentLoaded", function () {
       container = document.createElement("div");
       container.className = "image-pair-container";
       img.parentElement.insertBefore(container, img);
+      containers.push(container);
     }
 
     container.appendChild(img);
   });
 
-  // After grouping images, center containers with only one image
-  const containers = main.querySelectorAll(".image-pair-container");
-  containers.forEach(container => {
-    if (container.children.length === 1) {
-      container.style.display = "flex";
-      container.style.justifyContent = "center";
-    } else {
-      // Reset in case styles were previously applied
-      container.style.display = "";
-      container.style.justifyContent = "";
+  // After grouping, check containers with only one image and center them
+  containers.forEach((cont) => {
+    if (cont.children.length === 1) {
+      cont.classList.add("single-image-centered");
     }
   });
 });
