@@ -424,15 +424,11 @@ blockquote {
   align-items: flex-start;
 }
 
-/* Main column stays fixed */
 .main-column {
   flex: 2;
   min-width: 0;
-  overflow-y: auto; /* Allow scrolling if the content overflows */
-  max-height: 100vh; /* Set max height for scrolling */
 }
 
-/* Sidebar column should scroll independently */
 .sidebar-column {
   flex: 1;
   position: sticky;
@@ -445,17 +441,10 @@ blockquote {
   background: var(--background-secondary);
   border-radius: 0.75rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.05);
-  overflow-y: auto; /* Make the sidebar scrollable */
-  max-height: 100vh; /* Limit the height of the sidebar so it can scroll */
 }
 
-/* Ensure the sidebar doesn't overflow the viewport */
-@media (min-width: 769px) {
-  .sidebar-column {
-    position: relative;
-    padding: 1rem;
-    margin-top: 0; /* Avoid sticking the sidebar to the main column */
-  }
+.sidebar-column .fake-button-container {
+  flex-wrap: wrap;
 }
 
 .meta-info {
@@ -466,34 +455,34 @@ blockquote {
 
 @media (min-width: 769px) {
   .sidebar-column {
-    padding: 1rem;
-  }
+  padding: 1rem;
+}
 
-  .sidebar-column p {
-    margin-bottom: 1rem;
-  }
+.sidebar-column p {
+  margin-bottom: 1rem;
+}
 
-  .sidebar-column a.internal-link {
-    display: inline-block;
-    margin-right: 0.5rem;
-    font-size: 0.95rem;
-  }
+.sidebar-column a.internal-link {
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-size: 0.95rem;
+}
 
-  .sidebar-search input[type="text"] {
-    width: 100%;
-    padding: 0.75rem;
-    font-size: 1rem;
-    border: 1px solid var(--color-base-30);
-    border-radius: 0.5rem;
-    box-sizing: border-box;
-    margin-bottom: 0.5rem;
-  }
+.sidebar-search input[type="text"] {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid var(--color-base-30);
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  margin-bottom: 0.5rem;
+}
 
-  .sidebar-search table#results {
-    width: 100%;
-    margin-top: 0.5rem;
-    border-collapse: collapse;
-  }
+.sidebar-search table#results {
+  width: 100%;
+  margin-top: 0.5rem;
+  border-collapse: collapse;
+}
 }
 
 @media (min-width: 769px) {
