@@ -73,7 +73,7 @@ function renderLibrary() {
       const book = booksChunk[j];
       displayContent += `<td style="text-align:center; vertical-align:top; border: none; height: 30px; padding-top: 4px;">${
         book
-          ? `<a class="internal-link" href="${book.link}" target="_blank" style="font-weight:bold; font-size: 1.05em;">${book.title}</a>`
+          ? `<a class="internal-link" href="${book.link}" style="font-weight:bold; font-size: 1.05em;">${book.title}</a>`
           : ""
       }</td>`;
     }
