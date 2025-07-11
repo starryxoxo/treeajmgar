@@ -9,6 +9,7 @@
   <table id="results"></table>
 </div>
 
+
 <div id="rc">
 <button onclick="window.location.href='https://swrn.netlify.app/assets/library/'" class="squared-button">Reading List</button>
   <section id="continue-section" style="display:none;">
@@ -16,9 +17,10 @@
   </section>
 </div>
 
-| Welcome to TSL! |
-| :-------------: |
-| ![swrn.webp](/img/user/assets/swrn.webp)  |
+|              Welcome to TSL!              |
+| :---------------------------------------: |
+|              ![swrn.webp](/img/user/assets/swrn.webp)               |
+| Your favorite library—now in your pocket. |
 
 
 <noscript>
