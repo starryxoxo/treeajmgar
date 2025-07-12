@@ -4,6 +4,6 @@
 
 # the sworn library is currently under maintenance.
 
-We've got some fixes and maintanance to serve you better. Come again another time.
+We've got some fixes and maintenance to serve you better. Come again another time.
 
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/setTheme.js"></script>
