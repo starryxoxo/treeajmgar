@@ -20,7 +20,7 @@
 **Description** • <small>UPCOMING</small>
 *LDR - an abbreviation for long-distance relationship.*
 
-A short story of two lovers far away from each other. Will they be able to happily reunite after a long time of separation?
+Jake is in a relationship, but he's struggling to keep up with love. Education keeps the two apart, and as Jake continues to explore himself, he wonders if his love can continue. Will they be able to have a happy ending?
 
 **Author**: the sworn library
 **Language**: English
