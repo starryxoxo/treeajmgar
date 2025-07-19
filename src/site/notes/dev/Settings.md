@@ -8,7 +8,7 @@ Feature Flags
 <div id="feature-flags"></div>
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/user/scripts/feature.js"></script>
 
-**Themes** (Beta)
+Themes (Beta)
 Light Themes
 <div class="fake-button-container">
   <button id="theme-light" class="squared-button">Light</button>
