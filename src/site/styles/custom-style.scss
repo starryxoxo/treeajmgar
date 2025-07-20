@@ -14,6 +14,9 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
     --table-border-color: var(--background-modifier-border);
     --background-modifier-border: var(--color-base-30);
     --color-base-30: #e0e0e0;
