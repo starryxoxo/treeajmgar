@@ -8,27 +8,22 @@
 
 |                                                               Daydream                                                                |
 | :-----------------------------------------------------------------------------------------------------------------------------------: |
-|                                                      ![coverimg](/img/user/dayd/ddmstor/ddmcover.webp)                                                       |
-|                                                 2 chapters • [[dayd/ddmch/ddmc1\|Start Reading]]                                                 |
+|                                                         ![coverimg](/img/user/assets/swb.webp)                                                         |
+|                                                  2 chapters • [[dayd/ddmch/ddm\|Not Available]]                                                  |
 | <button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button><br><small>PG \| 13+</small> |
 
 <div class="fake-button-container">
- <span class="fake-button">Chapter 2 out now</span>
+ <span class="fake-button">CANCELLED</span>
   <span class="fake-button">enhypen</span>
-  <span class="fake-button">bxb</span>
-  <span class="fake-button">jakehoon</span>
 </div>
 
-**Description** • <small>ONGOING</small>
+**Description** • <small>CANCELLED</small>
 if somehow, you fell in love with a person you weren't supposed to, would you still love them? 
 i know it's impossible for us to get together, but can i at least **daydream** that i have you by my side?
 
 **Author**: the sworn library
 **Languages**: English, Tagalog
 **Date**: June 10, 2025
-
-Table of Contents
-[[dayd/ddmch/ddmc1\|01]] • [[dayd/ddmch/ddmc2\|02]]
 
 | About ENHYPEN                                                                                                                 |
 | ----------------------------------------------------------------------------------------------------------------------------- |
