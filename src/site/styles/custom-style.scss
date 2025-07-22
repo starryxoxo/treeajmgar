@@ -76,6 +76,15 @@ a:active {
   background: #e2e2e2;
 }
 
+.info-box {
+  border: var(--background-modifier-border);
+  border-radius: 12px;
+  padding: 16px 20px;
+  background-color: transparent;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  line-height: 1.5;
+  max-width: 500px;
+}
 .navbar {
   background-color: transparent;
   backdrop-filter: blur(12px) saturate(120%);
