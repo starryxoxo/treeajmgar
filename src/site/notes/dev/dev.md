@@ -5,7 +5,7 @@
 
 | Discover                           |                                                  |                                                  |                                   |
 | ---------------------------------- | ------------------------------------------------ | ------------------------------------------------ | --------------------------------- |
-| ![book\|160](/img/user/yeo/yeostorage/yeocover.webp)        | ![book\|160](/img/user/d/sitn/sitncover.webp)                     | ![book\|160](/img/user/d/sitn/sitncover.webp)                     | ![coverimg\|250](/img/user/d/sitn/sitnbanner.webp) |
+| ![book\|160](/img/user/yeo/yeostorage/yeocover.webp)        | ![book\|160](/img/user/d/sitn/sitncover.webp)                     | ![book\|160](/img/user/d/sitn/sitncover.webp)                     | ![coverimg\|400](/img/user/d/sitn/sitnbanner.webp) |
 | [[yeo/Your Eyes Only\|Your Eyes Only]] | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]] | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]] | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]]         |
 
 This is a testing page.
