@@ -17,7 +17,7 @@
 </div>
 
 <div class="info-box">
-<p>This book is no longer available</p>
+<p>This book has been archived and won't be published here in the website. The eBook will be available for download once finished.</p>
 </div>
 
 **Description** • <small>ARCHIVED</small>
