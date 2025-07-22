@@ -34,7 +34,7 @@ That's what they always say. But with you, there's certainly more than love that
 [[Home\|Home]]
 
 
-Copyright © 2025 the sworn library
+Copyright © the sworn library
 All Rights Reserved.
 
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/user/scripts/list.js"></script> 

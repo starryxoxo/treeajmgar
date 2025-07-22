@@ -35,7 +35,7 @@ i know it's impossible for us to get together, but can i at least **daydream** t
 | <small>Source: Wikipedia CC-BY-SA 4.0</small>                                                                                 |
 
 ***
-Copyright © the sworn library 2025
+Copyright © the sworn library
 All Rights Reserved.
 
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/user/scripts/list.js"></script> 

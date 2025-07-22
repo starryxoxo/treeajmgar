@@ -44,7 +44,7 @@
 ---
 Bookmark this website and visit it every once in a while. Accompany us while we grow our collection!
 
-Copyright © 2025 the sworn library
+Copyright © the sworn library
 All Rights Reserved.
 
 ***

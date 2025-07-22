@@ -121,7 +121,7 @@ Matatapos na ang recess at pumasok si Sunoo sa room. Sunoo looked rushed and the
 [[Home\|Home]] • [[d/sitn/Strangers by Midnight\|Book Info]]
 
 ***
-Copyright © 2025 the sworn library
+Copyright © the sworn library
 All Rights Reserved.
 
 <script src="https://starryxoxo.github.io/treeajmgar/src/helpers/user/scripts/lastPage.js"></script>
