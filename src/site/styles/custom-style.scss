@@ -77,7 +77,7 @@ a:active {
 }
 
 .info-box {
-  border: var(--background-modifier-border);
+  border: 3px var(--background-modifier-border);
   border-radius: 12px;
   padding: 16px 20px;
   background-color: transparent;
@@ -85,6 +85,7 @@ a:active {
   line-height: 1.5;
   max-width: 500px;
 }
+
 .navbar {
   background-color: transparent;
   backdrop-filter: blur(12px) saturate(120%);
