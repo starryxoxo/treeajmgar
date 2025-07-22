@@ -36,10 +36,10 @@
 | ![coverimg\|165](/img/user/d/sitn/sitncover.webp) | ![coverimg\|165](/img/user/d/ldr/ldrbook.jpg) | ![coverimg\|165](/img/user/assets/swb.webp) | ![coverimg\|165](/img/user/assets/swb.webp) |
 | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]]        | [[d/ldr/ldrbook\|LDR]]              |                            |                            |
 
-|     |      Archived       |     |
-| --- | :-----------------: | --- |
-|     | ![ddmbanner.webp](/img/user/dayd/ddmstor/ddmbanner.webp) |     |
-|     |  [[dayd/ddmch/ddm\|Daydream]]  |     |
+|      Archived       |
+| :-----------------: |
+| ![ddmbanner.webp](/img/user/dayd/ddmstor/ddmbanner.webp) |
+|  [[dayd/ddmch/ddm\|Daydream]]  |
 
 ---
 Bookmark this website and visit it every once in a while. Accompany us while we grow our collection!
