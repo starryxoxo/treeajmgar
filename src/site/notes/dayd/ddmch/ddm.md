@@ -16,7 +16,7 @@
   <span class="fake-button">enhypen</span>
 </div>
 
-<div class="info-box" style="border: red;">
+<div class="info-box">
 <p>This book is no longer available</p>
 </div>
 
