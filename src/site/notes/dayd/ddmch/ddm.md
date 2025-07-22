@@ -13,8 +13,11 @@
 | <button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button><br><small>PG \| 13+</small> |
 
 <div class="fake-button-container">
- <span class="fake-button">Archived</span>
   <span class="fake-button">enhypen</span>
+</div>
+
+<div class="info-box" style="border: red;">
+<p>This book is no longer available</p>
 </div>
 
 **Description** • <small>ARCHIVED</small>
