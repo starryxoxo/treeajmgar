@@ -9,11 +9,11 @@
 |                                                               Daydream                                                                |
 | :-----------------------------------------------------------------------------------------------------------------------------------: |
 |                                                         ![coverimg](/img/user/assets/swb.webp)                                                         |
-|                                                  2 chapters • [[dayd/ddmch/ddm\|Not Available]]                                                  |
+|                                               2 chapters • [[dayd/ddmch/ddm\|No longer available]]                                               |
 | <button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button><br><small>PG \| 13+</small> |
 
 <div class="fake-button-container">
- <span class="fake-button">CANCELLED</span>
+ <span class="fake-button">Archived</span>
   <span class="fake-button">enhypen</span>
 </div>
 
