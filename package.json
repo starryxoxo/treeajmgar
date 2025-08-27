@@ -17,7 +17,6 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "@netlify/blobs": "^10.0.9",
         "@11ty/eleventy": "^2.0.1",
         "@11ty/eleventy-plugin-rss": "^1.2.0",
         "cross-env": "^7.0.3",
@@ -26,6 +25,7 @@
         "sass": "^1.49.9"
     },
     "dependencies": {
+        "@netlify/blobs": "^10.0.9",
         "@11ty/eleventy-img": "^4.0.2",
         "@sindresorhus/slugify": "^1.1.0",
         "axios": "^1.2.2",
