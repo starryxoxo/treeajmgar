@@ -24,7 +24,7 @@ TSLBank offers a unique financial platform designed to help users manage funds i
 
 **5. Virtual Currency (TSLC)**  
 - TSLC is a virtual currency within TSLBank and does not have real-world monetary value outside the platform.  
-- TSLC cannot be exchanged for cash except through mechanisms explicitly provided by TSLBank.
+- TSLC *can* be exchanged for cash *but* only through mechanisms explicitly provided by TSLBank.
 
 **6. Loans**  
 - Loans may be granted subject to approval criteria set by TSLBank.  
