@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tslb/tslbank/"}
+{"dg-publish":true,"dg-permalink":"tslb","permalink":"/tslb/"}
 ---
 
 
