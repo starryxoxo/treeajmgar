@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2025-9-22-79649/assets/library/","title":"Reading List","hide":true}
+{"dg-publish":true,"permalink":"/2025-9-22-79649/assets/library/","title":"Reading List"}
 ---
 
 ## Your Reading List
