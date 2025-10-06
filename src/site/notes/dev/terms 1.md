@@ -53,7 +53,9 @@ TSL reserves the right to modify or update these ToS at any time without prior n
 
 ## 6. Contact Information
 
-If you have any questions or requests regarding these Terms of Use, please contact us at: terrianwiki@gmail.com.
+If you have any questions or requests regarding these Terms of Use, please contact us.
+
+<a href="mailto: swornlibrary@gmail.com">Email us</a>
 
 ---
 
