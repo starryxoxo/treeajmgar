@@ -12,7 +12,7 @@ Mechanics
 </summary>
 There are two options you can choose from. May only be redeemed once. <br>
 • Buy FIVE data packs totalling at least 300 pesos to get ONE load free worth 80 pesos. <br>
- • Buy EIGHT data packs totalling at least 40 pesos to get ONE load free worth 100 pesos.
+ • Buy EIGHT data packs totalling at least 400 pesos to get ONE load free worth 100 pesos.
 </details>
 
 <br>
