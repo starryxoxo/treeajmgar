@@ -15,6 +15,7 @@ There are two options you can choose from. May only be redeemed once.
  • Buy EIGHT data packs totalling at least 40 pesos to get ONE load free worth 100 pesos.
 </details>
 
+<br>
 <details>
 <summary>
 Conditions
