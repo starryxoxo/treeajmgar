@@ -88,79 +88,118 @@ function weightedRandomSegment() {
     .map((seg, idx) => ({ ...seg, originalIndex: idx }))
     .filter(seg => seg.weight > 0);
 
-  // Sum the weights of filtered segments
-  const totalFilteredWeight = filteredSegments.reduce((sum, seg) => sum + seg.weight, 0);
+const canvas = document.getElementById('wheelCanvas');
+const ctx = canvas.getContext('2d');
+const center = canvas.width / 2;
 
-  // Generate a random number between 0 (inclusive) and totalFilteredWeight (exclusive)
+const segments = [
+  { label: 'FREE LOAD', weight: 0  },
+  { label: 'Spin Again', weight: 900 },
+  { label: '₱2 OFF', weight: 400 },
+  { label: 'FREE LOAD', weight: 0 },
+  { label: 'Spin Again', weight: 1000 },
+  { label: 'FREE LOAD', weight: 0 },
+  { label: '₱4 OFF', weight: 200 }
+];
+
+let currentRotation = 0;
+let isSpinning = false;
+let spinStartTime = 0;
+let spinDuration = 5000; // ms
+let spinEndAngle = 0;
+let chosenSegmentIndex = null;
+
+function drawWheelEqual(rotation = 0) {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.save();
+  ctx.translate(center, center);
+  ctx.rotate(rotation);
+
+  const segmentAngle = 2 * Math.PI / segments.length;
+
+  for (let i = 0; i < segments.length; i++) {
+    const startAngle = i * segmentAngle;
+    const endAngle = startAngle + segmentAngle;
+    
+    ctx.beginPath();
+    ctx.moveTo(0, 0);
+    ctx.arc(0, 0, center - 10, startAngle, endAngle);
+    ctx.fillStyle = 'rgba(0,0,0,0)';
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.save();
+    ctx.rotate(startAngle + segmentAngle / 2);
+    ctx.textAlign = 'right';
+    ctx.fillStyle = '#ffffff';
+    ctx.font = '18px Arial';
+    ctx.fillText(segments[i].label, center - 20, 10);
+    ctx.restore();
+  }
+
+  ctx.restore();
+}
+
+function weightedRandomSegment() {
+  const filteredSegments = segments
+    .map((seg, idx) => ({ ...seg, originalIndex: idx }))
+    .filter(seg => seg.weight > 0);
+
+  const totalFilteredWeight = filteredSegments.reduce((sum, seg) => sum + seg.weight, 0);
   let rand = Math.random() * totalFilteredWeight;
 
-  // Use cursor to pick segment
   for (let seg of filteredSegments) {
     rand -= seg.weight;
     if (rand < 0) {
-      return seg.originalIndex; // Return the original index so your spin logic matches the segment
+      return seg.originalIndex;
     }
   }
-
-  // Edge fallback (should never reach here)
   return filteredSegments[filteredSegments.length - 1].originalIndex;
 }
 
-  function animateSpin(timestamp) {
-    if (!spinStartTime) spinStartTime = timestamp;
-    let elapsed = timestamp - spinStartTime;
+function animateSpin(timestamp) {
+  if (!spinStartTime) spinStartTime = timestamp;
+  let elapsed = timestamp - spinStartTime;
 
-    let progress = Math.min(elapsed / spinDuration, 1);
-    let easeOutProgress = 1 - Math.pow(1 - progress, 3); // cubic easing out
-    currentRotation = easeOutProgress * spinEndAngle;
+  let progress = Math.min(elapsed / spinDuration, 1);
+  let easeOutProgress = 1 - Math.pow(1 - progress, 3);
+  currentRotation = easeOutProgress * spinEndAngle;
 
-    drawWheelEqual(currentRotation);
+  drawWheelEqual(currentRotation);
 
-    if (progress < 1) {
-      requestAnimationFrame(animateSpin);
-    } else {
-      isSpinning = false;
-      showResult(currentRotation);
-    }
-  }
-
-  function showResult(rotation) {
-    let normalized = rotation % (2 * Math.PI);
-    normalized = (2 * Math.PI + (3 * Math.PI / 2) - normalized) % (2 * Math.PI);
-
-    const segmentAngle = 2 * Math.PI / segments.length;
-    let index = Math.floor(normalized / segmentAngle);
-
-    document.getElementById('resultText').innerText = 'You won: ' + segments[index].label;
-  }
-
-  document.getElementById('spinButton').addEventListener('click', () => {
-    if (isSpinning) return;
-    isSpinning = true;
-
-    let winningSegmentIndex = weightedRandomSegment();
-
-    const segmentAngle = 2 * Math.PI / segments.length;
-    // Calculate angle range for chosen segment with random offset
-    let minAngle = winningSegmentIndex * segmentAngle;
-    let maxAngle = minAngle + segmentAngle;
-
-    // Spin several full rotations plus land within winning segment
-    let fullRotations = Math.floor(Math.random() * 3) + 4; // 4-6 full spins
-    let randomAngleInSegment = Math.random() * (maxAngle - minAngle) + minAngle;
-    spinEndAngle = fullRotations * 2 * Math.PI + randomAngleInSegment;
-
-    spinStartTime = null;
+  if (progress < 1) {
     requestAnimationFrame(animateSpin);
-  });
+  } else {
+    isSpinning = false;
+    showResult();
+  }
+}
 
-// At the end of your script, get the CSS variable value like this:
+function showResult() {
+  document.getElementById('resultText').innerText = 'You won: ' + segments[chosenSegmentIndex].label;
+}
+
+document.getElementById('spinButton').addEventListener('click', () => {
+  if (isSpinning) return;
+  isSpinning = true;
+
+  chosenSegmentIndex = weightedRandomSegment();
+
+  const segmentAngle = 2 * Math.PI / segments.length;
+  let minAngle = chosenSegmentIndex * segmentAngle;
+  let maxAngle = minAngle + segmentAngle;
+
+  let fullRotations = Math.floor(Math.random() * 3) + 4;
+  let randomAngleInSegment = Math.random() * (maxAngle - minAngle) + minAngle;
+  spinEndAngle = fullRotations * 2 * Math.PI + randomAngleInSegment;
+
+  spinStartTime = null;
+  requestAnimationFrame(animateSpin);
+});
 
 const textColor = getComputedStyle(document.documentElement).getPropertyValue('--text-color').trim();
-
-// Use textColor for your canvas strokeStyle or fillStyle assignments, for example:
-ctx.strokeStyle = textColor;
-ctx.fillStyle = textColor;
+ctx.strokeStyle = textColor || '#fff';
+ctx.fillStyle = textColor || '#fff';
 
 drawWheelEqual(currentRotation);
 
