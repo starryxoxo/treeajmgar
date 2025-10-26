@@ -24,7 +24,7 @@
   }
 </style>
 
-<canvas id="wheelCanvas" width="400" height="400"></canvas>
+<canvas id="wheelCanvas" width="300" height="300"></canvas>
 <button id="spinButton">Spin</button>
 <div id="resultText"></div>
 
@@ -48,33 +48,31 @@
   let spinDuration = 5000; // spin duration in ms
   let spinEndAngle = 0;
 
-  function drawWheel(rotation) {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    let anglePerUnit = (2 * Math.PI) / totalWeight;
-    let angle = rotation;
+  function drawWheelEqual() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  const segmentAngle = 2 * Math.PI / segments.length;
+  
+  for (let i = 0; i < segments.length; i++) {
+    const startAngle = i * segmentAngle;
+    const endAngle = startAngle + segmentAngle;
+    ctx.beginPath();
+    ctx.moveTo(center, center);
+    ctx.arc(center, center, center - 10, startAngle, endAngle);
+    ctx.fillStyle = 'rgba(0,0,0,0)'; // single color or use transparent like 'rgba(0,0,0,0)'
+    ctx.fill();
+    ctx.stroke();
 
-    for (let i = 0; i < segments.length; i++) {
-      let segmentAngle = segments[i].weight * anglePerUnit;
-      ctx.beginPath();
-      ctx.moveTo(center, center);
-      ctx.arc(center, center, center - 10, angle, angle + segmentAngle);
-      ctx.fillStyle = segments[i].color;
-      ctx.fill();
-      ctx.stroke();
-
-      // draw label
-      ctx.save();
-      ctx.translate(center, center);
-      ctx.rotate(angle + segmentAngle / 2);
-      ctx.textAlign = 'right';
-      ctx.fillStyle = '#fff';
-      ctx.font = '18px Arial';
-      ctx.fillText(segments[i].label, center - 20, 10);
-      ctx.restore();
-
-      angle += segmentAngle;
-    }
+    // Draw text label
+    ctx.save();
+    ctx.translate(center, center);
+    ctx.rotate(startAngle + segmentAngle / 2);
+    ctx.textAlign = 'right';
+    ctx.fillStyle = '#000'; // use a single color for text
+    ctx.font = '18px Arial';
+    ctx.fillText(segments[i].label, center - 20, 10);
+    ctx.restore();
   }
+}
 
   function weightedRandomSegment() {
     let rand = Math.random() * totalWeight;
