@@ -37,7 +37,7 @@
     { label: 'FREE LOAD', weight: 0  },
     { label: 'Spin Again', weight: 90000000000000 },
     { label: '₱2 OFF', weight: 90000999900099999999999999999999999999999999999090 },
-    { label: 'FREE LOAD', weight: 0 },
+    { label: 'FREE LOAD', weight: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001 },
     { label: 'Spin Again', weight: 8999999999997172726272772726258292929299292919999909999010011001199191919919191929828928292829999992929209299999999999000 },
     { label: 'FREE LOAD', weight: 0 },
     { label: '₱4 OFF', weight: 90099909999199191919999999999991991919191819181881818188183883838300 }
@@ -83,16 +83,22 @@
   }
 
   function weightedRandomSegment() {
-    let rand = Math.random() * totalWeight;
-    let cumulative = 0;
-    for (let i = 0; i < segments.length; i++) {
-      cumulative += segments[i].weight;
-      if (rand < cumulative) {
-        return i;
-      }
+  // Filter out zero weight segments first
+  const filteredSegments = segments.filter(seg => seg.weight > 0);
+  const filteredTotalWeight = filteredSegments.reduce((sum, seg) => sum + seg.weight, 0);
+
+  let rand = Math.random() * filteredTotalWeight;
+  let cumulative = 0;
+  for (let i = 0; i < filteredSegments.length; i++) {
+    cumulative += filteredSegments[i].weight;
+    if (rand < cumulative) {
+      // Need to find original index of this filtered segment
+      return segments.indexOf(filteredSegments[i]);
     }
-    return segments.length - 1; // fallback
   }
+  // fallback (should not occur)
+  return segments.findIndex(seg => seg.weight > 0);
+}
 
   function animateSpin(timestamp) {
     if (!spinStartTime) spinStartTime = timestamp;
