@@ -41,7 +41,7 @@
     { label: 'Spin Again', weight: 2000 },
     { label: '₱2 OFF', weight: 400000 },
     { label: 'FREE LOAD', weight: 0.01 },
-    { label: 'Spin Again', weight: 1000 },
+    { label: 'Spin Again', weight: 60000 },
     { label: 'No Spins', weight: 100000 },
     { label: 'FREE LOAD', weight: 0 },
     { label: '₱4 OFF', weight: 100000 }
@@ -181,11 +181,26 @@ Mechanics
 <summary>
 Wheel Chances
 </summary>
-• Free Load: 1%, 3%, 5%, increasing chances per spin.<br>
+• Free Load: 0.5%, 1%, 3%, increasing chances per spin.<br>
 • ₱2 Off: 20%, 40%, 80%, increasing chances per spin. <br>
 • ₱4 Off: 10%, 30%, 70%, increasing chances per spin.<br>
-• Spin Again: 50%
+• Spin Again: 50%<br>
+• No Spins: 20%
 </details>
+<br>
+
+<details>
+<summary>
+Event information
+</summary>
+<b>In: Phase 1</b> - Free load chances are extremely low. Free load chances lay around 0.5% to 3%.<br>
+<b>Phase 2</b> - Free load chances slightly increase from 0.5% to 4-6% (peak).<br>
+<b>Phase 3</b> - Free load chances slightly increase from 6% to 7-10% (peak). ₱4 OFF is removed. Second ₱2 OFF is added.<br>
+<b>Phase 4</b> - Given only one chance, free load chances increase from 10% to 15% (peak). ₱5 OFF is added.<br>
+<b>Phase 5</b> - Given only one chance, free load chances increase from 15% to 20%. ₱5 OFF is removed, ₱2 OFF is removed (both). Spin again is removed.
+</details>
+
+
 
 
 
