@@ -152,7 +152,8 @@ Mechanics
 </summary>
 • You are given two chances to spin the wheel per load, unless given another round by the wheel. <br>
 • You will be monitored as you spin the wheel. <br>
-• The free load which you can get through spinning the wheel.
+• The free load which you can get through spinning the wheel.<br>
+• Your last spin will be the spin that is valid and the one that will be used
 </details>
 <br>
 
