@@ -165,6 +165,27 @@
   drawWheel(currentRotation);
 </script>
 
+<script>
+let chancesLeft = 2;
+
+const totalWeight = wheelSegments.reduce((sum, seg) => sum + seg.weight, 0);
+
+function getSegmentWeight(label) {
+  const segment = wheelSegments.find(seg => seg.label === label);
+  return segment ? segment.weight : 0;
+}
+
+function calculateFreeLoadPity(chances) {
+  const freeLoadProb = getSegmentWeight("FREE LOAD") / totalWeight;
+  const pity = 1 - Math.pow(1 - freeLoadProb, chances);
+  return (pity * 100).toFixed(2) + "%";
+}
+
+// Usage inside your spin function where chancesLeft updates
+console.log("Pity chance for FREE LOAD:", calculateFreeLoadPity(chancesLeft));
+</script>
+
+
 <br>
 <details>
 <summary>
