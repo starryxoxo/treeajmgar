@@ -25,6 +25,9 @@
   }
 </style>
 
+<div id="pity-display">Chances Left: 2 | Pity Chance for FREE LOAD: </div>
+<br>
+
 <p align="center">
 <canvas id="wheelCanvas" width="300" height="300"></canvas>
 </p>
@@ -182,7 +185,15 @@ function calculateFreeLoadPity(chances) {
 }
 
 // Usage inside your spin function where chancesLeft updates
-console.log("Pity chance for FREE LOAD:", calculateFreeLoadPity(chancesLeft));
+function updateDisplay(chances) {
+  const pityChance = calculateFreeLoadPity(chances);
+  const displayElement = document.getElementById("pity-display");
+  displayElement.textContent = `Chances Left: ${chances} | Pity Chance for FREE LOAD: ${pityChance}`;
+}
+
+// Call after spins update chancesLeft
+updateDisplay(chancesLeft);
+
 </script>
 
 
