@@ -168,12 +168,12 @@
 Mechanics
 </summary>
 • You are given two chances to spin the wheel per load, unless given another round by the wheel. <br>
-• You will be monitored as you spin the wheel. <br>
-• The free load which you can get through spinning the wheel.<br>
+• You will be monitored as you spin the wheel.<br>
 • Your last spin will be the spin that is valid and the one that will be used.<br>
 • The free load must not exceed ₱100, excluding the charge fee.<br>
 • The ₱2 and ₱4 off is only usable to your next load.<br>
-• The location of the spinner's hand can change.
+• The location of the spinner's hand can change.<br>
+• There will be no charges for the free load.
 </details>
 <br>
 
