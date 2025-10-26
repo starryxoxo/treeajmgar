@@ -35,8 +35,8 @@
   const center = canvas.width / 2;
   const segments = [
     { label: 'FREE LOAD', weight: 0  },
-    { label: 'Spin Again', weight: 10000 },
-    { label: '₱2 OFF', weight: 10000 },
+    { label: 'Spin Again', weight: 100000 },
+    { label: '₱2 OFF', weight: 100000 },
     { label: 'FREE LOAD', weight: 0.000000000000000001 },
     { label: 'Spin Again', weight: 200000 },
     { label: '₱4 OFF', weight: 9000 }
@@ -144,6 +144,7 @@
   drawWheelEqual(0);
 </script>
 
+<br>
 <details>
 <summary>
 Mechanics
