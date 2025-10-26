@@ -175,7 +175,8 @@ Mechanics
 • The location of the spinner's hand can change.<br>
 • There will be no charges for the free load.<br>
 • Buy any load/data packs first to receive your chances.<br>
-• You can only participate once for a FREE LOAD per phase. You're eligible for ₱X OFF afterwards.
+• You can only participate once for a FREE LOAD per phase. You're eligible for ₱X OFF afterwards.<br>
+• Winning "No Spins" will remove all remaining spins.
 </details>
 <br>
 
