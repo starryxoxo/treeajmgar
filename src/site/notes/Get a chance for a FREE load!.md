@@ -35,12 +35,12 @@
   const center = canvas.width / 2;
   const segments = [
     { label: 'FREE LOAD', weight: 0  },
-    { label: 'Spin Again', weight: 90000000000000 },
-    { label: '₱2 OFF', weight: 90000999900099999999999999999999999999999999999090 },
+    { label: 'Spin Again', weight: 900 },
+    { label: '₱2 OFF', weight: 400 },
     { label: 'FREE LOAD', weight: 0 },
-    { label: 'Spin Again', weight: 8999999999997172726272772726258292929299292919999909999010011001199191919919191929828928292829999992929209299999999999000 },
+    { label: 'Spin Again', weight: 1000 },
     { label: 'FREE LOAD', weight: 0 },
-    { label: '₱4 OFF', weight: 90099909999199191919999999999991991919191819181881818188183883838300 }
+    { label: '₱4 OFF', weight: 200 }
   ];
 
   let totalWeight = segments.reduce((sum, seg) => sum + seg.weight, 0);
