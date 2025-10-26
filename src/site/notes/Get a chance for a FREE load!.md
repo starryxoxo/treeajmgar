@@ -31,6 +31,7 @@
 <div id="resultText"></div>
 <br>
 <button id="spinButton" style="padding: 36px; font-size: 1.2rem; border-radius: 12px; width: 100%;">Spin</button>
+<br>
 
 <script>
   // Canvas setup
