@@ -28,7 +28,6 @@
 <p align="center">
 <canvas id="wheelCanvas" width="300" height="300"></canvas>
 </p>
-<br>
 <div id="resultText"></div>
 <br>
 <button id="spinButton" style="padding: 36px; font-size: 1.2rem; border-radius: 12px; width: 100%;">Spin</button>
