@@ -7,7 +7,7 @@
 
 <style>
   #wheelCanvas {
-    border: 2px solid #fff;
+    border: 2px solid --text-normal;
     border-radius: 50%;
     display: block;
     margin: 20px auto;
@@ -62,6 +62,7 @@
       const startAngle = i * segmentAngle;
       const endAngle = startAngle + segmentAngle;
 
+      ctx.strokeStyle = '--text-normal';
       ctx.beginPath();
       ctx.moveTo(0, 0);
       ctx.arc(0, 0, center - 10, startAngle, endAngle);
@@ -73,7 +74,7 @@
       ctx.save();
       ctx.rotate(startAngle + segmentAngle / 2);
       ctx.textAlign = 'right';
-      ctx.fillStyle = '#ffffff'; // black text for contrast
+      ctx.fillStyle = '--text-normal'; // black text for contrast
       ctx.font = '18px Arial';
       ctx.fillText(segments[i].label, center - 20, 10);
       ctx.restore();
