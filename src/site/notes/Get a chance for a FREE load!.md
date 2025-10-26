@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"load-spin","permalink":"/load-spin/"}
+{"dg-publish":true,"dg-permalink":"load-spins","permalink":"/load-spins/"}
 ---
 
 
