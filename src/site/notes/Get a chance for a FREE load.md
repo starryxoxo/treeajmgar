@@ -33,11 +33,11 @@
   const ctx = canvas.getContext('2d');
   const center = canvas.width / 2;
   const segments = [
-    { label: 'FREE LOAD', weight: 0.007, color: '#FF5733' },
-    { label: 'Spin Again', weight: 9, color: '#33FF57' },
-    { label: '₱3 OFF', weight: 5, color: '#3357FF' },
+    { label: 'FREE LOAD', weight: 0.007  },
+    { label: 'Spin Again', weight: 9 },
+    { label: '₱3 OFF', weight: 5 },
     { label: 'FREE LOAD', weight: 0.005, color: '#FF33A1' },
-    { label: 'Spin Again', weight: 9, color: '#A133FF' }
+    { label: 'Spin Again', weight: 9 }
   ];
 
   let totalWeight = segments.reduce((sum, seg) => sum + seg.weight, 0);
