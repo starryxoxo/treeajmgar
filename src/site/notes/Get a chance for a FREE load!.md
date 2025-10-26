@@ -207,21 +207,42 @@ Event information
 </details>
 <br>
 
-<div style="overflow-x: hidden;">
-
-| Probability | 1 in X chance |
-| ----------- | ------------- |
-| 0.5%        | 1 in 200      |
-| 1%          | 1 in 100      |
-| 3%          | 1 in 33       |
-| 6%          | 1 in 17       |
-| 10%         | 1 in 10       |
-| 15%         | 1 in 7        |
-
+<div style="overflow-x: hidden; width: 100%;">
+  <table style="width: 100%; border-collapse: collapse;">
+    <thead>
+      <tr>
+        <th style="border: 1px text-normal; padding: 4px;">Probability</th>
+        <th style="border: 1px solid text-normal; padding: 4px;">1 in X chance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border: 1px solid text-normal; padding: 4px;">0.5%</td>
+        <td style="border: 1px solid text-normal; padding: 4px;">1 in 200</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid text-normal; padding: 4px;">1%</td>
+        <td style="border: 1px solid text-normal; padding: 4px;">1 in 100</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid text-normal; padding: 4px;">3%</td>
+        <td style="border: 1px solid text-normal; padding: 4px;">1 in 33</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid text-normal; padding: 4px;">6%</td>
+        <td style="border: 1px solid text-normal; padding: 4px;">1 in 17</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid text-normal; padding: 4px;">10%</td>
+        <td style="border: 1px solid text-normal; padding: 4px;">1 in 10</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid text-normal; padding: 4px;">15%</td>
+        <td style="border: 1px solid text-normal; padding: 4px;">1 in 7</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
-
-
-
 
 
 
