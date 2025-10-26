@@ -6,6 +6,14 @@
 # Get a chance for a FREE load!
 
 <style>
+  #canvas {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
   #wheelCanvas {
     border: 2px solid #fff;
     border-radius: 50%;
@@ -26,7 +34,7 @@
 </style>
 
 <canvas id="wheelCanvas" width="300" height="300"></canvas>
-<button id="spinButton" style="padding: 24px; font-size: 1.2rem; border-radius: 12px; width: 100%;">Spin</button>
+<button id="spinButton" style="padding: 36px; font-size: 1.2rem; border-radius: 12px; width: 100%;">Spin</button>
 <div id="resultText"></div>
 
 <script>
@@ -159,6 +167,14 @@
 
   // Initial render
   drawWheel(currentRotation);
+</script>
+
+<script>
+window.onload = window.onresize = function() {
+    var canvas = document.getElementById('canvas');
+    canvas.width = window.innerWidth * 0.8;
+    canvas.height = window.innerHeight * 0.8;
+}
 </script>
 
 
