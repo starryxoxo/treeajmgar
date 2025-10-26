@@ -566,3 +566,11 @@ details[open] summary {
   border-bottom: 1px solid var(--text-muted);
   margin-bottom: 0.5em;
 }
+
+button {
+&:active {
+    background-color: rgba(255,255,255,0.24);
+    background: #e2e2e2;
+    text-decoration: none;
+  }
+}
