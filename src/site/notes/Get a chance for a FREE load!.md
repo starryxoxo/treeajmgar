@@ -142,8 +142,6 @@
     requestAnimationFrame(animateSpin);
   });
 
-  drawWheelEqual(0);
-
 // At the end of your script, get the CSS variable value like this:
 
 const textColor = getComputedStyle(document.documentElement).getPropertyValue('--text-color').trim();
@@ -151,6 +149,8 @@ const textColor = getComputedStyle(document.documentElement).getPropertyValue('-
 // Use textColor for your canvas strokeStyle or fillStyle assignments, for example:
 ctx.strokeStyle = textColor;
 ctx.fillStyle = textColor;
+
+drawWheelEqual(currentRotation);
 
 </script>
 
