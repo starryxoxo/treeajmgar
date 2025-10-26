@@ -35,10 +35,11 @@
   const center = canvas.width / 2;
   const segments = [
     { label: 'FREE LOAD', weight: 0  },
-    { label: 'Spin Again', weight: 100 },
-    { label: '₱3 OFF', weight: 100 },
-    { label: 'FREE LOAD', weight: 0.0000001 },
-    { label: 'Spin Again', weight: 2000 }
+    { label: 'Spin Again', weight: 10000 },
+    { label: '₱2 OFF', weight: 10000 },
+    { label: 'FREE LOAD', weight: 0.000000000000000001 },
+    { label: 'Spin Again', weight: 200000 },
+    { label: '₱4 OFF', weight: 9000 }
   ];
 
   let totalWeight = segments.reduce((sum, seg) => sum + seg.weight, 0);
@@ -142,3 +143,29 @@
 
   drawWheelEqual(0);
 </script>
+
+<details>
+<summary>
+Mechanics
+</summary>
+• You are given two chances to spin the wheel per load, unless given another round by the wheel. <br>
+• You will be monitored as you spin the wheel. <br>
+• The free load which you can get through spinning the wheel.
+</details>
+<br>
+
+<details>
+<summary>
+Wheel Chances
+</summary>
+• Free Load: 1%, 3%, 5%, increasing chances per spin.<br>
+• ₱3 Off: 20%, 40%, 80%, increasing chances per spin. <br>
+• ₱4 Off: 10%, 30%, 70%, increasing chances per spin.<br>
+• Spin Again: 50%
+</details>
+
+
+
+
+
+
