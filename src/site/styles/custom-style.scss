@@ -567,9 +567,9 @@ details[open] summary {
   margin-bottom: 0.5em;
 }
 
-button {
+#spinButton {
 &:active {
-    background-color: rgba(255,255,255,0.24);
+    background-color: rgba(0,0,0,0.24);
     background: #e2e2e2;
     text-decoration: none;
   }
