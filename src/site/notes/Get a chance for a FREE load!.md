@@ -36,11 +36,11 @@
   const segments = [
     { label: 'FREE LOAD', weight: 0  },
     { label: 'Spin Again', weight: 90000000000000 },
-    { label: '₱2 OFF', weight: 900009999000090 },
-    { label: 'FREE LOAD', weight: 0.00000000000000000000000000000001 },
-    { label: 'Spin Again', weight: 899000000000000 },
+    { label: '₱2 OFF', weight: 900009999000999999999999999999999999999999999090 },
+    { label: 'FREE LOAD', weight: 0.00000000000000000000000000000000000000000000000000000000001 },
+    { label: 'Spin Again', weight: 89999999999999999999999000 },
     { label: 'FREE LOAD', weight: 0 },
-    { label: '₱4 OFF', weight: 900999000 }
+    { label: '₱4 OFF', weight: 9009990999919919191999999999999292929191991919191819181881818188183883838300 }
   ];
 
   let totalWeight = segments.reduce((sum, seg) => sum + seg.weight, 0);
