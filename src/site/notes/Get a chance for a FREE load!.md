@@ -35,11 +35,11 @@
   const center = canvas.width / 2;
   const segments = [
     { label: 'FREE LOAD', weight: 0  },
-    { label: 'Spin Again', weight: 100000 },
-    { label: '₱2 OFF', weight: 100000 },
+    { label: 'Spin Again', weight: 9000000000 },
+    { label: '₱2 OFF', weight: 90000999990 },
     { label: 'FREE LOAD', weight: 0.000000000000000001 },
-    { label: 'Spin Again', weight: 200000 },
-    { label: '₱4 OFF', weight: 9000 }
+    { label: 'Spin Again', weight: 89900000 },
+    { label: '₱4 OFF', weight: 9009990 }
   ];
 
   let totalWeight = segments.reduce((sum, seg) => sum + seg.weight, 0);
