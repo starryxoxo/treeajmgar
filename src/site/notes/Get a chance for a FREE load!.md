@@ -7,7 +7,7 @@
 
 <style>
   #wheelCanvas {
-    border: 2px solid #444;
+    border: 2px solid #fff;
     border-radius: 50%;
     display: block;
     margin: 20px auto;
@@ -34,10 +34,10 @@
   const ctx = canvas.getContext('2d');
   const center = canvas.width / 2;
   const segments = [
-    { label: 'FREE LOAD', weight: 0.007  },
+    { label: 'FREE LOAD', weight: 0  },
     { label: 'Spin Again', weight: 9 },
     { label: '₱3 OFF', weight: 5 },
-    { label: 'FREE LOAD', weight: 0.005 },
+    { label: 'FREE LOAD', weight: 0.0000001 },
     { label: 'Spin Again', weight: 9 }
   ];
 
