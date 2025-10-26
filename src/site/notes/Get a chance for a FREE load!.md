@@ -26,7 +26,7 @@
 </style>
 
 <canvas id="wheelCanvas" width="300" height="300"></canvas>
-<button id="spinButton" style="width: 100%; padding: 12px; border-radius: 12px;" >Spin</button>
+<button id="spinButton" style="width: 100%; padding: 30px; border-radius: 12px; font-size: 1.2rem;" >Spin</button>
 <div id="resultText"></div>
 
 <script>
@@ -35,10 +35,10 @@
   const center = canvas.width / 2;
   const segments = [
     { label: 'FREE LOAD', weight: 0  },
-    { label: 'Spin Again', weight: 9 },
-    { label: '₱3 OFF', weight: 5 },
+    { label: 'Spin Again', weight: 100 },
+    { label: '₱3 OFF', weight: 100 },
     { label: 'FREE LOAD', weight: 0.0000001 },
-    { label: 'Spin Again', weight: 9 }
+    { label: 'Spin Again', weight: 2000 }
   ];
 
   let totalWeight = segments.reduce((sum, seg) => sum + seg.weight, 0);
