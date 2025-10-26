@@ -36,9 +36,9 @@
   const segments = [
     { label: 'FREE LOAD', weight: 0  },
     { label: 'Spin Again', weight: 90000000000000 },
-    { label: '₱2 OFF', weight: 900009999000999999999999999999999999999999999090 },
-    { label: 'FREE LOAD', weight: 0.00000000000000000000000000000000000000000000000000000000001 },
-    { label: 'Spin Again', weight: 89999999999999999999999000 },
+    { label: '₱2 OFF', weight: 90000999900099999999999999999999999999999999999090 },
+    { label: 'FREE LOAD', weight: 0.000000000000000000000000000000000000000000000000000000000000000000000000001 },
+    { label: 'Spin Again', weight: 8999999999997172726272772726258292929299292919999909999010011001029929191919819191991919199191919919191929828928292829999992929209299999999999000 },
     { label: 'FREE LOAD', weight: 0 },
     { label: '₱4 OFF', weight: 9009990999919919191999999999999292929191991919191819181881818188183883838300 }
   ];
@@ -163,7 +163,8 @@ Mechanics
 • You will be monitored as you spin the wheel. <br>
 • The free load which you can get through spinning the wheel.<br>
 • Your last spin will be the spin that is valid and the one that will be used.<br>
-• The free load must not exceed ₱100, excluding the charge fee.
+• The free load must not exceed ₱100, excluding the charge fee.<br>
+• The ₱2 and ₱4 off is only usable to your next load.
 </details>
 <br>
 
