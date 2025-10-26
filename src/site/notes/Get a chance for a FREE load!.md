@@ -82,22 +82,28 @@
     ctx.restore();
   }
 
-  function weightedRandomSegment() {
-  // Filter out zero weight segments first
-  const filteredSegments = segments.filter(seg => seg.weight > 0);
-  const filteredTotalWeight = filteredSegments.reduce((sum, seg) => sum + seg.weight, 0);
+function weightedRandomSegment() {
+  // Filter only non-zero weight segments with their original indexes
+  const filteredSegments = segments
+    .map((seg, idx) => ({ ...seg, originalIndex: idx }))
+    .filter(seg => seg.weight > 0);
 
-  let rand = Math.random() * filteredTotalWeight;
-  let cumulative = 0;
-  for (let i = 0; i < filteredSegments.length; i++) {
-    cumulative += filteredSegments[i].weight;
-    if (rand < cumulative) {
-      // Need to find original index of this filtered segment
-      return segments.indexOf(filteredSegments[i]);
+  // Sum the weights of filtered segments
+  const totalFilteredWeight = filteredSegments.reduce((sum, seg) => sum + seg.weight, 0);
+
+  // Generate a random number between 0 (inclusive) and totalFilteredWeight (exclusive)
+  let rand = Math.random() * totalFilteredWeight;
+
+  // Use cursor to pick segment
+  for (let seg of filteredSegments) {
+    rand -= seg.weight;
+    if (rand < 0) {
+      return seg.originalIndex; // Return the original index so your spin logic matches the segment
     }
   }
-  // fallback (should not occur)
-  return segments.findIndex(seg => seg.weight > 0);
+
+  // Edge fallback (should never reach here)
+  return filteredSegments[filteredSegments.length - 1].originalIndex;
 }
 
   function animateSpin(timestamp) {
