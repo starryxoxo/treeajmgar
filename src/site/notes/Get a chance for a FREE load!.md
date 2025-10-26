@@ -7,7 +7,7 @@
 
 <style>
   #wheelCanvas {
-    border: 2px solid --text-normal;
+    border: 2px solid #fff;
     border-radius: 50%;
     display: block;
     margin: 20px auto;
@@ -61,8 +61,7 @@
     for (let i = 0; i < segments.length; i++) {
       const startAngle = i * segmentAngle;
       const endAngle = startAngle + segmentAngle;
-
-      ctx.strokeStyle = '--text-normal';
+      
       ctx.beginPath();
       ctx.moveTo(0, 0);
       ctx.arc(0, 0, center - 10, startAngle, endAngle);
@@ -74,7 +73,7 @@
       ctx.save();
       ctx.rotate(startAngle + segmentAngle / 2);
       ctx.textAlign = 'right';
-      ctx.fillStyle = '--text-normal'; // black text for contrast
+      ctx.fillStyle = '#ffffff'; // black text for contrast
       ctx.font = '18px Arial';
       ctx.fillText(segments[i].label, center - 20, 10);
       ctx.restore();
@@ -144,6 +143,15 @@
   });
 
   drawWheelEqual(0);
+
+// At the end of your script, get the CSS variable value like this:
+
+const textColor = getComputedStyle(document.documentElement).getPropertyValue('--text-color').trim();
+
+// Use textColor for your canvas strokeStyle or fillStyle assignments, for example:
+ctx.strokeStyle = textColor;
+ctx.fillStyle = textColor;
+
 </script>
 
 <br>
