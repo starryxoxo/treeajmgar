@@ -39,12 +39,12 @@
   const segments = [
     { label: 'FREE LOAD', weight: 0  },
     { label: 'Spin Again', weight: 2000 },
-    { label: '₱2 OFF', weight: 40000 },
-    { label: 'FREE LOAD', weight: 1 },
+    { label: '₱2 OFF', weight: 400000 },
+    { label: 'FREE LOAD', weight: 0.01 },
     { label: 'Spin Again', weight: 1000 },
-    { label: 'No Spins', weight: 100000 },
+    { label: 'No Spins', weight: 10000 },
     { label: 'FREE LOAD', weight: 0 },
-    { label: '₱4 OFF', weight: 20000 }
+    { label: '₱4 OFF', weight: 100000 }
   ];
 
   // State
