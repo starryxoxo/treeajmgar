@@ -39,8 +39,8 @@
     { label: '₱2 OFF', weight: 90000999990 },
     { label: 'FREE LOAD', weight: 0.000000000000000001 },
     { label: 'Spin Again', weight: 89900000 },
-    { label: '₱4 OFF', weight: 9009990 },
     { label: 'FREE LOAD', weight: 0 }
+    { label: '₱4 OFF', weight: 9009990 }
   ];
 
   let totalWeight = segments.reduce((sum, seg) => sum + seg.weight, 0);
@@ -162,7 +162,7 @@ Mechanics
 Wheel Chances
 </summary>
 • Free Load: 1%, 3%, 5%, increasing chances per spin.<br>
-• ₱3 Off: 20%, 40%, 80%, increasing chances per spin. <br>
+• ₱2 Off: 20%, 40%, 80%, increasing chances per spin. <br>
 • ₱4 Off: 10%, 30%, 70%, increasing chances per spin.<br>
 • Spin Again: 50%
 </details>
