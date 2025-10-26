@@ -201,7 +201,7 @@ Event information
 <b>Phase 4</b> - Given only one chance, free load chances increase from 10% to 15% (peak). ₱5 OFF is added.<br>
 <b>Phase 5</b> - Given only one chance, free load chances increase from 15% to 20%. ₱5 OFF is removed, ₱2 OFF is removed (both). Spin again is removed.
 </details>
-
+<br>
 
 | Probability | 1 in X chance |
 | ----------- | ------------- |
