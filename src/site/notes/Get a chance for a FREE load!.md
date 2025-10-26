@@ -173,7 +173,8 @@ Mechanics
 • The free load must not exceed ₱100, excluding the charge fee.<br>
 • The ₱2 and ₱4 off is only usable to your next load.<br>
 • The location of the spinner's hand can change.<br>
-• There will be no charges for the free load.
+• There will be no charges for the free load.<br>
+• Buy any load/data packs first to receive your chances.
 </details>
 <br>
 
