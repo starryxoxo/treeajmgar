@@ -63,7 +63,7 @@
       ctx.beginPath();
       ctx.moveTo(0, 0);
       ctx.arc(0, 0, center - 10, startAngle, endAngle);
-      ctx.fillStyle = 'rgba(0,0,0,0)'; // transparent fill to remove colors
+      ctx.fillStyle = '#ffffff'; // transparent fill to remove colors
       ctx.fill();
       ctx.stroke();
 
@@ -71,7 +71,7 @@
       ctx.save();
       ctx.rotate(startAngle + segmentAngle / 2);
       ctx.textAlign = 'right';
-      ctx.fillStyle = '#000'; // black text for contrast
+      ctx.fillStyle = '#ffffff'; // black text for contrast
       ctx.font = '18px Arial';
       ctx.fillText(segments[i].label, center - 20, 10);
       ctx.restore();
