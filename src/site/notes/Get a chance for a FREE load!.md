@@ -63,7 +63,7 @@
       ctx.beginPath();
       ctx.moveTo(0, 0);
       ctx.arc(0, 0, center - 10, startAngle, endAngle);
-      ctx.fillStyle = '#ffffff'; // transparent fill to remove colors
+      ctx.fillStyle = 'rgba(0,0,0,0)'; // transparent fill to remove colors
       ctx.fill();
       ctx.stroke();
 
