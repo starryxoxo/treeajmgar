@@ -38,12 +38,13 @@
   // Segments and weights (customize as needed)
   const segments = [
     { label: 'FREE LOAD', weight: 0  },
-    { label: 'Spin Again', weight: 200 },
-    { label: '₱2 OFF', weight: 4000 },
+    { label: 'Spin Again', weight: 2000 },
+    { label: '₱2 OFF', weight: 40000 },
+    { label: 'FREE LOAD', weight: 1 },
+    { label: 'Spin Again', weight: 1000 },
+    { label: 'No Spins', weight: 100000 },
     { label: 'FREE LOAD', weight: 0 },
-    { label: 'Spin Again', weight: 100 },
-    { label: 'FREE LOAD', weight: 0 },
-    { label: '₱4 OFF', weight: 200 }
+    { label: '₱4 OFF', weight: 20000 }
   ];
 
   // State
@@ -171,7 +172,8 @@ Mechanics
 • The free load which you can get through spinning the wheel.<br>
 • Your last spin will be the spin that is valid and the one that will be used.<br>
 • The free load must not exceed ₱100, excluding the charge fee.<br>
-• The ₱2 and ₱4 off is only usable to your next load.
+• The ₱2 and ₱4 off is only usable to your next load.<br>
+• The location of the spinner's hand can change.
 </details>
 <br>
 
