@@ -35,12 +35,12 @@
   const center = canvas.width / 2;
   const segments = [
     { label: 'FREE LOAD', weight: 0  },
-    { label: 'Spin Again', weight: 9000000000 },
-    { label: '₱2 OFF', weight: 90000999990 },
-    { label: 'FREE LOAD', weight: 0.000000000000000001 },
-    { label: 'Spin Again', weight: 89900000 },
+    { label: 'Spin Again', weight: 90000000000000 },
+    { label: '₱2 OFF', weight: 900009999000090 },
+    { label: 'FREE LOAD', weight: 0.00000000000000000000000000000001 },
+    { label: 'Spin Again', weight: 899000000000000 },
     { label: 'FREE LOAD', weight: 0 },
-    { label: '₱4 OFF', weight: 9009990 }
+    { label: '₱4 OFF', weight: 900999000 }
   ];
 
   let totalWeight = segments.reduce((sum, seg) => sum + seg.weight, 0);
@@ -162,7 +162,8 @@ Mechanics
 • You are given two chances to spin the wheel per load, unless given another round by the wheel. <br>
 • You will be monitored as you spin the wheel. <br>
 • The free load which you can get through spinning the wheel.<br>
-• Your last spin will be the spin that is valid and the one that will be used
+• Your last spin will be the spin that is valid and the one that will be used.<br>
+• The free load must not exceed ₱100, excluding the charge fee.
 </details>
 <br>
 
