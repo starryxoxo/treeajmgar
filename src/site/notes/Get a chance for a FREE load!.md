@@ -207,6 +207,8 @@ Event information
 </details>
 <br>
 
+<div style="overflow-x: hidden;">
+
 | Probability | 1 in X chance |
 | ----------- | ------------- |
 | 0.5%        | 1 in 200      |
@@ -215,6 +217,8 @@ Event information
 | 6%          | 1 in 17       |
 | 10%         | 1 in 10       |
 | 15%         | 1 in 7        |
+
+</div>
 
 
 
