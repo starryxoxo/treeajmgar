@@ -174,7 +174,8 @@ Mechanics
 • The ₱2 and ₱4 off is only usable to your next load.<br>
 • The location of the spinner's hand can change.<br>
 • There will be no charges for the free load.<br>
-• Buy any load/data packs first to receive your chances.
+• Buy any load/data packs first to receive your chances.<br>
+• You can only participate once for a FREE LOAD per phase. You're eligible for ₱X OFF afterwards.
 </details>
 <br>
 
@@ -196,10 +197,20 @@ Event information
 </summary>
 <b>In: Phase 1</b> - Free load chances are extremely low. Free load chances lay around 0.4% to 0.8%.<br>
 <b>Phase 2</b> - Free load chances slightly increase from 0.8% to 3-6% (peak).<br>
-<b>Phase 3</b> - Free load chances slightly increase from 6% to 7-10% (peak). ₱4 OFF is removed. Second ₱2 OFF is added.<br>
+<b>Phase 3</b> - Given only one chance, free load chances slightly increase from 6% to 7-10% (peak). ₱4 OFF is removed. Second ₱2 OFF is added.<br>
 <b>Phase 4</b> - Given only one chance, free load chances increase from 10% to 15% (peak). ₱5 OFF is added.<br>
 <b>Phase 5</b> - Given only one chance, free load chances increase from 15% to 20%. ₱5 OFF is removed, ₱2 OFF is removed (both). Spin again is removed.
 </details>
+
+
+| Probability | 1 in X chance |
+| ----------- | ------------- |
+| 0.5%        | 1 in 200      |
+| 1%          | 1 in 100      |
+| 3%          | 1 in 33       |
+| 6%          | 1 in 17       |
+| 10%         | 1 in 10       |
+| 15%         | 1 in 7        |
 
 
 
