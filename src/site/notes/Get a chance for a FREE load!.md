@@ -25,7 +25,8 @@
   }
 </style>
 
-<div id="pity-display">Chances Left: 2 | Pity Chance for FREE LOAD: </div>
+<div id="pity-display"> </div>
+<div id="pity-chance"></div>
 <br>
 
 <p align="center">
@@ -169,31 +170,32 @@
 </script>
 
 <script>
-let chancesLeft = 2;
+// Initialize chances on page load
+let chancesLeft = 2; 
 
-const totalWeight = wheelSegments.reduce((sum, seg) => sum + seg.weight, 0);
-
-function getSegmentWeight(label) {
-  const segment = wheelSegments.find(seg => seg.label === label);
-  return segment ? segment.weight : 0;
-}
-
-function calculateFreeLoadPity(chances) {
-  const freeLoadProb = getSegmentWeight("FREE LOAD") / totalWeight;
-  const pity = 1 - Math.pow(1 - freeLoadProb, chances);
-  return (pity * 100).toFixed(2) + "%";
-}
-
-// Usage inside your spin function where chancesLeft updates
+// Called after each spin to update chances based on result
 function updateDisplay(chances) {
   const pityChance = calculateFreeLoadPity(chances);
-  const displayElement = document.getElementById("pity-display");
-  displayElement.textContent = `Chances Left: ${chances} | Pity Chance for FREE LOAD: ${pityChance}`;
+  const chancesElement = document.getElementById("pity-display");
+  const pityElement = document.getElementById("pity-chance");
+
+  chancesElement.textContent = `Chances Left: ${chances}`;
+  pityElement.textContent = `Pity: ${pityChance}`;
 }
 
-// Call after spins update chancesLeft
-updateDisplay(chancesLeft);
+// Wrap your spin button event listener
+document.getElementById('spinButton').addEventListener('click', () => {
+  if (chancesLeft <= 0) {
+    alert('No chances left!');
+    return;
+  }
 
+  // Your existing spin logic...
+  // After spin completes and result is set:
+  
+  // Call to update chances
+  updateChancesAndDisplay();
+});
 </script>
 
 
@@ -234,7 +236,7 @@ Event information
 <b>In: Phase 1</b> - Free load chances are extremely low. Free load chances lay around 0.4% to 0.8%.<br>
 <b>Phase 2</b> - Free load chances slightly increase from 0.8% to 3-5% (peak).<br>
 <b>Phase 3</b> - Given only one chance, free load chances slightly increase from 5% to 6% (peak). ₱4 OFF is removed. Second ₱2 OFF is added.<br>
-<b>Phase 4</b> - Given only one chance, free load chances increase from 6% to 10% (peak). ₱5 OFF is added.<br>
+<b>Phase 4</b> - Given only one chance, free load chances increase from 6% to 10% (peak). ₱50 OFF is added.<br>
 <b>Phase 5</b> - Given only one chance, free load chances increase from 10% to 15%. ₱5 OFF is removed, ₱2 OFF is removed (both). Spin again is removed.
 </details>
 <br>
