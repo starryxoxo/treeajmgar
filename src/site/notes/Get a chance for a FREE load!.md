@@ -25,10 +25,6 @@
   }
 </style>
 
-<div id="pity-display"> </div>
-<div id="pity-chance"></div>
-<br>
-
 <p align="center">
 <canvas id="wheelCanvas" width="300" height="300"></canvas>
 </p>
@@ -168,31 +164,6 @@
   // Initial render
   drawWheel(currentRotation);
 </script>
-
-<script>
-let chancesLeft = 2; // initialized globally
-
-// Update chances based on result text and update displays
-function updateChancesAndDisplay() {
-  const resultText = document.getElementById('resultText').innerText;
-
-  if (resultText.includes('Spin Again')) {
-    chancesLeft++;
-  } else if (resultText.includes('No Spins')) {
-    chancesLeft = 0;
-  } else {
-    chancesLeft--;
-  }
-  
-  if (chancesLeft < 0) chancesLeft = 0;
-
-  const pityChance = calculateFreeLoadPity(chancesLeft);
-
-  document.getElementById("pity-display").textContent = `Chances Left: ${chancesLeft}`;
-  document.getElementById("pity-chance").textContent = `Pity: ${pityChance}`;
-}
-</script>
-
 
 <br>
 <details>
