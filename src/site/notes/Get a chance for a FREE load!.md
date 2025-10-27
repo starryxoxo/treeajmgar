@@ -42,13 +42,13 @@
   // Segments and weights (customize as needed)
   const segments = [
     { label: 'FREE LOAD', weight: 0  },
-    { label: 'Spin Again', weight: 50 },
-    { label: '₱2 OFF', weight: 20 },
+    { label: 'Spin Again', weight: 20 },
+    { label: '₱2 OFF', weight: 40 },
     { label: 'FREE LOAD', weight: 0.5 },
     { label: 'Spin Again', weight: 0 },
     { label: 'No Spins', weight: 19.5 },
     { label: 'FREE LOAD', weight: 0 },
-    { label: '₱4 OFF', weight: 10 }
+    { label: '₱4 OFF', weight: 20 }
   ];
 
   // State
@@ -189,7 +189,7 @@ Wheel Chances
 </summary>
 • Free Load: 0.4%, 0.6%, 0.8%, increasing chances per spin.<br>
 • ₱2 Off: 20%, 40%, 80%, increasing chances per spin. <br>
-• ₱4 Off: 10%, 30%, 70%, increasing chances per spin.<br>
+• ₱4 Off: 10%, 30%, 50%, increasing chances per spin.<br>
 • Spin Again: 50%<br>
 • No Spins: 20%
 </details>
