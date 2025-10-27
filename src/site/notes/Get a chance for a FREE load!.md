@@ -162,7 +162,13 @@
 
     // Reset timer and start
     spinStartTime = null;
-    requestAnimationFrame(animateSpin);
+    
+    // Inside animateSpin or wherever you finalize the spin and set resultText
+document.getElementById('resultText').innerText = 'You won: ' + segments[chosenSegmentIndex].label;
+
+// Update chances and UI displays based on that result
+updateChancesAndDisplay();
+requestAnimationFrame(animateSpin);
   });
 
   // Initial render
@@ -170,32 +176,27 @@
 </script>
 
 <script>
-// Initialize chances on page load
-let chancesLeft = 2; 
+let chancesLeft = 2; // initialized globally
 
-// Called after each spin to update chances based on result
-function updateDisplay(chances) {
-  const pityChance = calculateFreeLoadPity(chances);
-  const chancesElement = document.getElementById("pity-display");
-  const pityElement = document.getElementById("pity-chance");
+// Update chances based on result text and update displays
+function updateChancesAndDisplay() {
+  const resultText = document.getElementById('resultText').innerText;
 
-  chancesElement.textContent = `Chances Left: ${chances}`;
-  pityElement.textContent = `Pity: ${pityChance}`;
-}
-
-// Wrap your spin button event listener
-document.getElementById('spinButton').addEventListener('click', () => {
-  if (chancesLeft <= 0) {
-    alert('No chances left!');
-    return;
+  if (resultText.includes('Spin Again')) {
+    chancesLeft++;
+  } else if (resultText.includes('No Spins')) {
+    chancesLeft = 0;
+  } else {
+    chancesLeft--;
   }
-
-  // Your existing spin logic...
-  // After spin completes and result is set:
   
-  // Call to update chances
-  updateChancesAndDisplay();
-});
+  if (chancesLeft < 0) chancesLeft = 0;
+
+  const pityChance = calculateFreeLoadPity(chancesLeft);
+
+  document.getElementById("pity-display").textContent = `Chances Left: ${chancesLeft}`;
+  document.getElementById("pity-chance").textContent = `Pity: ${pityChance}`;
+}
 </script>
 
 
