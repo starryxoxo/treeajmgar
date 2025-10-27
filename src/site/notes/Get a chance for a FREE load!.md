@@ -162,13 +162,7 @@
 
     // Reset timer and start
     spinStartTime = null;
-    
-    // Inside animateSpin or wherever you finalize the spin and set resultText
-document.getElementById('resultText').innerText = 'You won: ' + segments[chosenSegmentIndex].label;
-
-// Update chances and UI displays based on that result
-updateChancesAndDisplay();
-requestAnimationFrame(animateSpin);
+    requestAnimationFrame(animateSpin);
   });
 
   // Initial render
