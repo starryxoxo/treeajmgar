@@ -43,10 +43,10 @@
   const segments = [
     { label: 'FREE LOAD', weight: 0  },
     { label: 'Spin Again', weight: 27 },
-    { label: '₱10 OFF', weight: 15 },
+    { label: '₱10 OFF', weight: 18 },
     { label: 'FREE LOAD', weight: 0.5 },
-    { label: 'Spin Again', weight: 20 },
-    { label: 'No Spins', weight: 32.5 },
+    { label: 'Spin Again', weight: 5 },
+    { label: 'No Spins', weight: 43.5 },
     { label: 'FREE LOAD', weight: 0 },
     { label: '₱30 OFF', weight: 5 }
   ];
@@ -189,10 +189,10 @@ Wheel Chances
 </summary>
 We're at Phase 1.<br>
 • Free Load: 0.4%, 0.6%, 0.8%, increasing chances per spin.<br>
-• ₱10 Off: 20%, 40%, 80%, increasing chances per spin. <br>
-• ₱30 Off: 10%, 30%, 50%, increasing chances per spin.<br>
-• Spin Again: 50%<br>
-• No Spins: 20%
+• ₱10 Off: 18%<br>
+• ₱30 Off: 5%<br>
+• Spin Again: 32%<br>
+• No Spins: 40%
 </details>
 <br>
 
@@ -244,8 +244,5 @@ Event information
     </tbody>
   </table>
 </div>
-
-
-
 
 
