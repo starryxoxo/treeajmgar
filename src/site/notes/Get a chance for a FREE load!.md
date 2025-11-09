@@ -42,13 +42,13 @@
   // Segments and weights (customize as needed)
   const segments = [
     { label: 'FREE LOAD', weight: 0  },
-    { label: 'Spin Again', weight: 20 },
-    { label: '₱2 OFF', weight: 40 },
+    { label: 'Spin Again', weight: 49 },
+    { label: '₱10 OFF', weight: 15 },
     { label: 'FREE LOAD', weight: 0.5 },
     { label: 'Spin Again', weight: 0 },
-    { label: 'No Spins', weight: 19.5 },
+    { label: 'No Spins', weight: 30.5 },
     { label: 'FREE LOAD', weight: 0 },
-    { label: '₱4 OFF', weight: 20 }
+    { label: '₱30 OFF', weight: 5 }
   ];
 
   // State
@@ -174,7 +174,7 @@ Mechanics
 • You will be monitored as you spin the wheel.<br>
 • Your last spin will be the spin that is valid and the one that will be used.<br>
 • The free load must not exceed ₱100, excluding the charge fee.<br>
-• The ₱2 and ₱4 off is only usable to your next load.<br>
+• The ₱X off is only usable to your next load.<br>
 • The location of the spinner's hand can change.<br>
 • There will be no charges for the free load.<br>
 • Buy any load/data packs first to receive your chances.<br>
@@ -187,9 +187,10 @@ Mechanics
 <summary>
 Wheel Chances
 </summary>
+We're at Phase 1.<br>
 • Free Load: 0.4%, 0.6%, 0.8%, increasing chances per spin.<br>
-• ₱2 Off: 20%, 40%, 80%, increasing chances per spin. <br>
-• ₱4 Off: 10%, 30%, 50%, increasing chances per spin.<br>
+• ₱10 Off: 20%, 40%, 80%, increasing chances per spin. <br>
+• ₱30 Off: 10%, 30%, 50%, increasing chances per spin.<br>
 • Spin Again: 50%<br>
 • No Spins: 20%
 </details>
@@ -201,9 +202,9 @@ Event information
 </summary>
 <b>In: Phase 1</b> - Free load chances are extremely low. Free load chances lay around 0.4% to 0.8%.<br>
 <b>Phase 2</b> - Free load chances slightly increase from 0.8% to 3-5% (peak).<br>
-<b>Phase 3</b> - Given only one chance, free load chances slightly increase from 5% to 6% (peak). ₱4 OFF is removed. Second ₱2 OFF is added.<br>
+<b>Phase 3</b> - Given only one chance, free load chances slightly increase from 5% to 6% (peak). ₱30 OFF is removed. Second ₱10 OFF is added.<br>
 <b>Phase 4</b> - Given only one chance, free load chances increase from 6% to 10% (peak). ₱50 OFF is added.<br>
-<b>Phase 5</b> - Given only one chance, free load chances increase from 10% to 15%. ₱50 OFF is removed, ₱2 OFF is removed (both). Spin again is removed.
+<b>Phase 5</b> - Given only one chance, free load chances increase from 10% to 15%. ₱50 OFF is removed, ₱10 OFF is removed (both). Spin again is removed.
 </details>
 <br>
 
