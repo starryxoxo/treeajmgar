@@ -42,11 +42,11 @@
   // Segments and weights (customize as needed)
   const segments = [
     { label: 'FREE LOAD', weight: 0  },
-    { label: 'Spin Again', weight: 49 },
+    { label: 'Spin Again', weight: 27 },
     { label: '₱10 OFF', weight: 15 },
     { label: 'FREE LOAD', weight: 0.5 },
-    { label: 'Spin Again', weight: 0 },
-    { label: 'No Spins', weight: 30.5 },
+    { label: 'Spin Again', weight: 20 },
+    { label: 'No Spins', weight: 32.5 },
     { label: 'FREE LOAD', weight: 0 },
     { label: '₱30 OFF', weight: 5 }
   ];
