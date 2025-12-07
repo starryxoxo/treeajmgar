@@ -21,6 +21,34 @@ body {
     --hr-color: #6c6c78;
 }
 
+html, body {
+    --background-primary: #241b2d;
+    --background-secondary: #2c1e38;
+    --input-text-color: var(--text-normal);
+    --text-normal: #f3e8ff;
+    --text-accent: #c39bfa;
+    --file-margins: 32px;
+    --callout-border-width: 0px;
+    --callout-border-opacity: 0.14;
+    --callout-padding: 12px 12px 12px 24px;
+    --callout-radius: 4px;
+    --callout-blend-mode: normal;
+    --callout-title-padding: 0;
+    --callout-title-size: inherit;
+    --callout-content-padding: 0;
+    --table-border-color: var(--background-modifier-border);
+    --background-modifier-border: var(--color-base-30);
+    --color-base-30: #5a416e;
+    --color-base-70: #cfb5e7;
+    --font-smallest: 0.6em;
+    --hr-color: var(--color-base-30);
+    --table-header-color: var(--color-base-70);
+
+blockquote {
+  border-left: 2px solid var(--text-accent);
+}
+}
+
 .markdown-preview-view table {
   display: block;
   width: 100%;
