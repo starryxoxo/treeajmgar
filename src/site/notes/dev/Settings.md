@@ -4,10 +4,6 @@
 
 Feature Flags
 
-<p>
-<div id="feature-flags"></div>
-<script src="https://starryxoxo.github.io/treeajmgar/src/helpers/user/scripts/feature.js"></script>
-
 Themes (Beta)
 Light Themes
 <div class="fake-button-container">
