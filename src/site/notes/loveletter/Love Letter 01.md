@@ -24,8 +24,7 @@ It's about time I let you know what I feel whenever we're together. No dodging, 
 
 ***
 
-[[Home\|Home]] • [[loveletter/Publish your own love letter\|Publish your own love letter]]
-
+[[Home\|Home]] • [[loveletter/Publish your own love letter\|Your own letter]]
 Copyright © the sworn library
 All Rights Reserved.
 
