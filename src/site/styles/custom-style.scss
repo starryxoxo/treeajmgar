@@ -603,3 +603,8 @@ details[open] summary {
     text-decoration: none;
   }
 }
+
+textarea {
+        field-sizing: content;
+        min-height: 4rem; /* Ensure a minimum height */
+    }
