@@ -4,11 +4,9 @@
 
 [[dev/privacy policy\|Privacy]] • [[dev/terms 1\|Terms]] • [[assets/Newsroom\|Newsroom]]
 
-<div id="enable-search" style="display:none;">
+
   <input type="text" id="search" placeholder="Search books...">
   <table id="results"></table>
-</div>
-
 
 <div id="rc">
 <button onclick="window.location.href='https://swrn.netlify.app/assets/library/'" class="squared-button">Reading List</button>
