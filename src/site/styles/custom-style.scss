@@ -605,6 +605,8 @@ details[open] summary {
 }
 
 textarea {
-        field-sizing: content;
-        min-height: 4rem; /* Ensure a minimum height */
+   field-sizing: content;
+   height: auto !important;
+   white-space: normal;
+   min-height: 4rem; /* Ensure a minimum height */
     }
