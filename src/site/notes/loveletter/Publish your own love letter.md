@@ -6,7 +6,7 @@
 
 <form id="emailForm">
   <input type="text" style="width: 100%; padding: 24px; border-radius: 12px; margin-bottom: 12px;" id="subject" placeholder="To" required>
-  <input type="textarea" style="width: 100%; padding: 24px; border-radius: 12px; margin-bottom: 12px; font-weight: 600;" id="body" placeholder="Your letter" required></textarea>
+  <textarea id="body" style="width: 100%; padding: 24px; border-radius: 12px; margin-bottom: 12px; font-weight: 600; resize: vertical;" rows="6" placeholder="Your letter" required></textarea>
   <br>
   <button type="submit" style="padding: 30px; width: 100%; font-size: 1.1rem; border-radius: 12px;">Request</button>
 </form>
