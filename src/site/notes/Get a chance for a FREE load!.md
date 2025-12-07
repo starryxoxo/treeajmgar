@@ -44,9 +44,9 @@
     { label: 'FREE LOAD', weight: 0  },
     { label: 'Spin Again', weight: 27 },
     { label: '₱10 OFF', weight: 18 },
-    { label: 'FREE LOAD', weight: 0.5 },
+    { label: 'FREE LOAD', weight: 0.3 },
     { label: 'Spin Again', weight: 5 },
-    { label: 'No Spins', weight: 43.5 },
+    { label: 'No Spins', weight: 43.7 },
     { label: 'FREE LOAD', weight: 0 },
     { label: '₱30 OFF', weight: 5 }
   ];

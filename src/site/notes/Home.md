@@ -31,10 +31,10 @@
 
 ***
 
-| Discover                         |                               |                            |                            |
-| :------------------------------- | :---------------------------- | :------------------------- | :------------------------- |
-| ![coverimg\|165](/img/user/d/sitn/sitncover.webp) | ![coverimg\|165](/img/user/d/ldr/ldrbook.jpg) | ![coverimg\|165](/img/user/assets/swb.webp) | ![coverimg\|165](/img/user/assets/swb.webp) |
-| [[d/sitn/Strangers by Midnight\|Strangers by Midnight]]        | [[d/ldr/ldrbook\|LDR]]              |                            |                            |
+| Discover                         | Timeless Archives                   |                               |                            |
+| :------------------------------- | :---------------------------------- | :---------------------------- | :------------------------- |
+| ![coverimg\|165](/img/user/d/sitn/sitncover.webp) | ![coverimg\|165](/img/user/loveletter/loveletter01.webp) | ![coverimg\|165](/img/user/d/ldr/ldrbook.jpg) | ![coverimg\|165](/img/user/assets/swb.webp) |
+| [[d/sitn/Strangers by Midnight\|Strangers by Midnight]]        | [[loveletter/Love Letter 01\|Love Letter 01]]                  | [[d/ldr/ldrbook\|LDR]]              |                            |
 
 |      Archived       |
 | :-----------------: |
