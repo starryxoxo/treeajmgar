@@ -5,8 +5,8 @@
 # Want to publish your own love letter?
 
 <form id="emailForm">
-  <input type="text" style="width: 100%; padding: 24px; margin-bottom: 12px;" id="subject" placeholder="Love Letter To" required>
-  <input type="text" style="width: 100%; padding: 24px; margin-bottom: 12px; font-weight: 600;" id="body" placeholder="Body" required></textarea>
+  <input type="text" style="width: 100%; padding: 24px; border-radius: 12px; margin-bottom: 12px;" id="subject" placeholder="To" required>
+  <input type="text" style="width: 100%; padding: 24px; border-radius: 12px; margin-bottom: 12px; font-weight: 600;" id="body" placeholder="Your letter" required></textarea>
   <br>
   <button type="submit" style="padding: 30px; width: 100%; font-size: 1.1rem; border-radius: 12px;">Request</button>
 </form>
