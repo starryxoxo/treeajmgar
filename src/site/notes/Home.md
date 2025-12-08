@@ -37,7 +37,7 @@
 | Timeless Archives                   |                                                 |
 | ----------------------------------- | ----------------------------------------------- |
 | ![coverimg\|165](/img/user/loveletter/loveletter01.webp) | ![coverimg\|165](/img/user/UNSENTletters.webp)            |
-| [[loveletter/Love Letter 01\|Love Letter 01]]                  | [[loveletter/Publish your own love letter\|Send a letter]] |
+| [[loveletter/Love Letter 01\|Love Letter 01]]                  | [[loveletter/Publish your own letter\|Send a letter]] |
 
 ---
 Bookmark this website and visit it every once in a while. Accompany us while we grow our collection!
