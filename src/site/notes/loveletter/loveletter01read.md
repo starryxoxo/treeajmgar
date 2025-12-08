@@ -4,7 +4,7 @@
 
 [[Home\|Home]]
 
-![loveletter01.webp](/img/user/loveletter/loveletter01.webp)
+![1765168360837.png](/img/user/loveletter/1765168360837.png)
 # Love Letter 01
 **By:** anonymous
 **To:** 547
