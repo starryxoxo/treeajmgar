@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/d/sitn/strangers-by-midnight/","title":"Strangers by Midnight","tags":["book"]}
+{"dg-publish":true,"dg-permalink":"d/sitn/strangers-by-midnight/","permalink":"/d/sitn/strangers-by-midnight/","title":"Strangers by Midnight","tags":["book"]}
 ---
 
 

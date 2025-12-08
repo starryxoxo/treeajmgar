@@ -29,15 +29,15 @@
 
 ***
 
-| Discover                         |                               | Timeless Archives                   |                            |
-| :------------------------------- | :---------------------------- | :---------------------------------- | :------------------------- |
-| ![coverimg\|165](/img/user/d/sitn/sitncover.webp) | ![coverimg\|165](/img/user/d/ldr/ldrbook.jpg) | ![coverimg\|165](/img/user/loveletter/loveletter01.webp) | ![coverimg\|165](/img/user/assets/swb.webp) |
-| [[d/sitn/Strangers by Midnight\|Strangers by Midnight]]        | [[d/ldr/ldrbook\|LDR]]              | [[loveletter/Love Letter 01\|Love Letter 01]]                  |                            |
+| Discover                         |                               |                            |
+| :------------------------------- | :---------------------------- | :------------------------- |
+| ![coverimg\|165](/img/user/d/sitn/sitncover.webp) | ![coverimg\|165](/img/user/d/ldr/ldrbook.jpg) | ![coverimg\|165](/img/user/assets/swb.webp) |
+| [[d/sitn/Strangers by Midnight\|Strangers by Midnight]]        | [[d/ldr/ldrbook\|LDR]]              |                            |
 
-|      Archived       |
-| :-----------------: |
-| ![ddmbanner.webp](/img/user/dayd/ddmstor/ddmbanner.webp) |
-|  [[dayd/ddmch/ddm\|Daydream]]  |
+| Timeless Archives                   |                                                 |
+| ----------------------------------- | ----------------------------------------------- |
+| ![coverimg\|165](/img/user/loveletter/loveletter01.webp) | ![coverimg\|165](/img/user/UNSENTletters.webp)            |
+| [[loveletter/Love Letter 01\|Love Letter 01]]                  | [[loveletter/Publish your own love letter\|Send a letter]] |
 
 ---
 Bookmark this website and visit it every once in a while. Accompany us while we grow our collection!
