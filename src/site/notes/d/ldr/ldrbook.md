@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/d/ldr/ldrbook/","title":"LDR","tags":["book"]}
+{"dg-publish":true,"dg-permalink":"d/ldr/ldrbook/","permalink":"/d/ldr/ldrbook/","title":"LDR","tags":["book"]}
 ---
 
 [[Home\|Home]]
@@ -19,8 +19,6 @@
 
 **Description** • <small>UPCOMING</small>
 *LDR - an abbreviation for long-distance relationship.*
-
-Jake is in a relationship, but he's struggling to keep up with love. Education keeps the two apart, and as Jake continues to explore himself, he wonders if his love can continue. Will they be able to have a happy ending?
 
 **Author**: the sworn library
 **Language**: English
