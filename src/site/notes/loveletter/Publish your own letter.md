@@ -2,6 +2,7 @@
 {"dg-publish":true,"dg-permalink":"publish-letter","permalink":"/publish-letter/"}
 ---
 
+![unsentbanner.png](/img/user/loveletter/unsentbanner.png)
 # Want to publish your own letter?
 
 <form id="emailForm">
