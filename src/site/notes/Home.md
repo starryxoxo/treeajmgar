@@ -5,7 +5,7 @@
 [[dev/privacy policy\|Privacy]] • [[dev/terms 1\|Terms]] • [[assets/Newsroom\|Newsroom]]
 
 
-  <input type="text" id="search" placeholder="What do you need?">
+  <input type="text" id="search" placeholder="Search TSL">
   <table id="results"></table>
 
 <div id="rc">
