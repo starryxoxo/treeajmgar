@@ -5,7 +5,7 @@
 [[dev/privacy policy\|Privacy]] • [[dev/terms 1\|Terms]] • [[assets/Newsroom\|Newsroom]]
 
 
-  <input type="text" id="search" placeholder="What are you looking for?">
+  <input type="text" id="search" placeholder="I'm finding...">
   <table id="results"></table>
 
 <div id="rc">
