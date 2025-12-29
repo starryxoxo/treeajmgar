@@ -1,0 +1,57 @@
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Find ANY "Start Reading" button/link
+  const startReadingBtn = Array.from(document.querySelectorAll('a, button')).find(el => 
+    el.textContent.trim().includes('Start Reading')
+  );
+
+  if (!startReadingBtn) return;
+
+  // Create transparent fixed full-width container
+  const pillContainer = document.createElement("div");
+  pillContainer.id = "floating-start-reading";
+  pillContainer.style.cssText = `
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 12px;
+    height: 50px;
+    margin-left: 12px;
+    margin-right: 12px;
+    z-index: 10000;
+    pointer-events: none;
+  `;
+
+  // Style button: 42px height, 100% rounded, centered, full body width
+  startReadingBtn.style.cssText = `
+    height: 42px !important;
+    width: 100% !important;
+    line-height: 42px !important;
+    margin: 0 !important;
+    padding: 0 24px !important;
+    border-radius: 100px !important;
+    background: white !important;
+    color: black !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    font-size: 24px !important;
+    display: block !important;
+    text-align: center !important;
+    border: none !important;
+    cursor: pointer !important;
+    pointer-events: all !important;
+    box-sizing: border-box !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    max-height: 42px !important;
+    box-shadow: 0 -2px 12px rgba(0,0,0,0.15) !important;
+  `;
+
+  // Remove from original location and move to container
+  startReadingBtn.remove();
+  pillContainer.appendChild(startReadingBtn);
+  document.body.appendChild(pillContainer);
+});
+</script>
