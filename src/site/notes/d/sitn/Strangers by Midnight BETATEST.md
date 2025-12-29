@@ -25,7 +25,7 @@ That's what they always say. But with you, there's certainly more than love that
 
 | About ENHYPEN                                                                                                                 |
 | ----------------------------------------------------------------------------------------------------------------------------- |
-|                                                                                                                               |
+| ![[1ccb72d12a9042a171d481ee54dcf85e.jpg\|1ccb72d12a9042a171d481ee54dcf85e.jpg]]                                                                                     |
 | **ENHYPEN** is a **South Korean** boy band formed by Belift Lab. Formerly a joint venture between CJ ENM [[arc/enh/ENHYPEN\|more...]] |
 | <small>Source: Wikipedia CC-BY-SA 4.0</small>                                                                                 |
 
@@ -47,75 +47,94 @@ document.addEventListener("DOMContentLoaded", function() {
   
   if (!startReadingBtn) return;
   
-  // Create fixed pill container
+  // Create fixed full-width pill container (Wattpad-style)
   const pillContainer = document.createElement("div");
   pillContainer.id = "floating-start-reading";
+  pillContainer.style.cssText = `
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 42px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 24px 24px 0 0;
+    margin: 0 16px;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
+  `;
   
-  // Move the button to the new container
+  // Style the button for pill appearance
+  startReadingBtn.style.cssText = `
+    height: 42px;
+    line-height: 42px;
+    padding: 0 24px;
+    margin: 0;
+    border-radius: 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white !important;
+    text-decoration: none !important;
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+  `;
+  
+  // Add hover effect
+  startReadingBtn.addEventListener('mouseenter', function() {
+    this.style.transform = 'translateY(-2px)';
+    this.style.boxShadow = '0 6px 25px rgba(102, 126, 234, 0.6)';
+  });
+  startReadingBtn.addEventListener('mouseleave', function() {
+    this.style.transform = 'translateY(0)';
+    this.style.boxShadow = '0 4px 15px rgba(102, 126, 234, 0.4)';
+  });
+  
+  // Move button to container
   pillContainer.appendChild(startReadingBtn);
-  
-  // Insert container at body end (will be positioned fixed)
   document.body.appendChild(pillContainer);
   
-  // Handle responsive layout adjustment
-  function adjustLayout() {
-    const mainContent = document.querySelector("main.content.cm-s-obsidian");
-    if (!mainContent) return;
-    
-    const isTwoColumn = mainContent.classList.contains("two-column-layout");
-    const sidebar = document.querySelector(".sidebar-column");
-    
-    // Find the original table cell/row that contained the button
-    const originalCell = document.evaluate(
-      "//td[contains(., 'Start Reading') or .//a[contains(@href, '/sitn/') or contains(@href, '/sitnc/')]]",
+  // Adjust original table cell
+  function adjustOriginalLocation() {
+    const tableCell = document.evaluate(
+      "//td[.//a[contains(@href, '/sitn/') or contains(@href, '/sitnc/') or contains(text(), 'Start Reading')]]",
       document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null
     ).singleNodeValue;
     
-    if (originalCell) {
-      // Clear the original cell content but keep structure
-      const remainingContent = originalCell.cloneNode(true);
-      const btnClone = remainingContent.querySelector('a[href*="/sitn/"], a[href*="/sitnc/"], .start-reading-link');
-      if (btnClone) btnClone.remove();
-      
-      // Replace with rating/content only
-      originalCell.innerHTML = remainingContent.innerHTML || '<small>PG | 13+ | Blood, detailed content</small>';
-    }
-    
-    // Adjust sidebar content spacing if two-column layout
-    if (isTwoColumn && sidebar) {
-      const buttonsRow = sidebar.querySelector("td:has(.squared-button)");
-      if (buttonsRow) {
-        buttonsRow.style.paddingBottom = "20px";
-      }
+    if (tableCell) {
+      // Keep only the rating content
+      tableCell.innerHTML = '<small>PG | 13+ | Blood, detailed content</small>';
+      tableCell.style.textAlign = 'center';
     }
   }
   
   // Initial adjustment
-  adjustLayout();
+  adjustOriginalLocation();
   
-  // Re-adjust on layout changes (for dynamic sidebar creation)
-  const observer = new MutationObserver(debounce(adjustLayout, 100));
-  observer.observe(document.body, { 
-    childList: true, 
-    subtree: true, 
-    attributes: true, 
-    attributeFilter: ['class'] 
+  // Handle dynamic layout changes
+  const observer = new MutationObserver(function() {
+    const mainContent = document.querySelector("main.content.cm-s-obsidian");
+    if (mainContent && !mainContent.classList.contains("floating-btn-adjusted")) {
+      mainContent.classList.add("floating-btn-adjusted");
+      adjustOriginalLocation();
+    }
   });
   
-  // Handle window resize
-  window.addEventListener("resize", debounce(adjustLayout, 100));
+  observer.observe(document.body, { 
+    childList: true, 
+    subtree: true 
+  });
   
-  // Utility debounce function
-  function debounce(func, wait) {
-    let timeout;
-    return function executedFunction(...args) {
-      const later = () => {
-        clearTimeout(timeout);
-        func(...args);
-      };
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
-    };
-  }
+  // Prevent body scroll interference
+  pillContainer.addEventListener('click', function(e) {
+    e.stopPropagation();
+  });
 });
 </script>
