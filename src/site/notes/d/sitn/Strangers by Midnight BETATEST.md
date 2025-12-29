@@ -42,12 +42,14 @@ All Rights Reserved.
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  // Find ANY "Start Reading" link/button - no path restrictions
-  const startReadingBtn = document.querySelector('a[href*="Start Reading"], a:contains("Start Reading"), .start-reading-link, [class*="start-reading"], td:has-text("Start Reading") a');
+  // Find ANY "Start Reading" button/link - no path restrictions
+  const startReadingBtn = Array.from(document.querySelectorAll('a, button')).find(el => 
+    el.textContent.trim().includes('Start Reading')
+  );
   
-  if (!startReadingBtn || document.getElementById('floating-start-reading')) return;
+  if (!startReadingBtn) return;
   
-  // Create transparent fixed container (Wattpad-style bottom bar)
+  // Create transparent fixed full-width container
   const pillContainer = document.createElement("div");
   pillContainer.id = "floating-start-reading";
   pillContainer.style.cssText = `
@@ -57,50 +59,44 @@ document.addEventListener("DOMContentLoaded", function() {
     bottom: 0;
     height: 42px;
     z-index: 10000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 16px;
     pointer-events: none;
   `;
   
-  // Style button as full-width 24px pill (white bg, black text, 100% rounded)
+  // Style button: 24px height, full width, white bg, black text, fully rounded
   startReadingBtn.style.cssText = `
-    height: 24px;
-    line-height: 24px;
-    width: 100%;
-    max-width: 100%;
-    padding: 0 20px;
-    margin: 0;
-    border-radius: 100px;
-    background: white;
+    height: 24px !important;
+    width: 100vw !important;
+    max-width: 100% !important;
+    line-height: 24px !important;
+    margin: 0 !important;
+    padding: 0 16px !important;
+    border-radius: 12px !important;
+    background: white !important;
     color: black !important;
     text-decoration: none !important;
-    font-weight: 600;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
-    transition: all 0.2s ease;
-    border: none;
-    cursor: pointer;
-    pointer-events: auto;
-    text-align: center;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    display: block !important;
+    text-align: center !important;
+    border: none !important;
+    cursor: pointer !important;
+    pointer-events: all !important;
+    box-sizing: border-box !important;
+    position: absolute !important;
+    bottom: 9px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    box-shadow: 0 -2px 12px rgba(0,0,0,0.15) !important;
   `;
   
-  // Hover effect
-  startReadingBtn.addEventListener('mouseenter', function() {
-    this.style.transform = 'translateY(-1px)';
-    this.style.boxShadow = '0 4px 16px rgba(0,0,0,0.25)';
-  });
-  startReadingBtn.addEventListener('mouseleave', function() {
-    this.style.transform = 'translateY(0)';
-    this.style.boxShadow = '0 2px 12px rgba(0,0,0,0.15)';
-  });
-  
-  // ONLY move the button - nothing else
+  // Remove from original location and move to container
+  startReadingBtn.remove();
   pillContainer.appendChild(startReadingBtn);
   document.body.appendChild(pillContainer);
+  
+  // Handle mobile viewport adjustment
+  window.addEventListener('resize', function() {
+    startReadingBtn.style.width = window.innerWidth + 'px';
+  });
 });
 </script>
