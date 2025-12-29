@@ -42,7 +42,7 @@ All Rights Reserved.
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  // Find ANY "Start Reading" button/link - no path restrictions
+  // Find ANY "Start Reading" button/link
   const startReadingBtn = Array.from(document.querySelectorAll('a, button')).find(el => 
     el.textContent.trim().includes('Start Reading')
   );
@@ -62,20 +62,20 @@ document.addEventListener("DOMContentLoaded", function() {
     pointer-events: none;
   `;
   
-  // Style button: 24px height, full width, white bg, black text, fully rounded
+  // Style button: 42px height, 100% rounded, centered, full body width
   startReadingBtn.style.cssText = `
-    height: 24px !important;
-    width: 100vw !important;
-    max-width: 100% !important;
-    line-height: 24px !important;
+    height: 42px !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    line-height: 42px !important;
     margin: 0 !important;
-    padding: 0 16px !important;
-    border-radius: 12px !important;
+    padding: 0 24px !important;
+    border-radius: 21px !important;
     background: white !important;
     color: black !important;
     text-decoration: none !important;
     font-weight: 600 !important;
-    font-size: 14px !important;
+    font-size: 16px !important;
     display: block !important;
     text-align: center !important;
     border: none !important;
@@ -83,9 +83,10 @@ document.addEventListener("DOMContentLoaded", function() {
     pointer-events: all !important;
     box-sizing: border-box !important;
     position: absolute !important;
-    bottom: 9px !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    max-height: 42px !important;
     box-shadow: 0 -2px 12px rgba(0,0,0,0.15) !important;
   `;
   
@@ -93,10 +94,5 @@ document.addEventListener("DOMContentLoaded", function() {
   startReadingBtn.remove();
   pillContainer.appendChild(startReadingBtn);
   document.body.appendChild(pillContainer);
-  
-  // Handle mobile viewport adjustment
-  window.addEventListener('resize', function() {
-    startReadingBtn.style.width = window.innerWidth + 'px';
-  });
 });
 </script>
