@@ -42,12 +42,12 @@ All Rights Reserved.
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  // Find the "Start Reading" link/button
-  const startReadingBtn = document.querySelector('a[href*="/sitn/"], a[href*="/sitnc/"], .start-reading-link');
+  // Find ANY "Start Reading" link/button - no path restrictions
+  const startReadingBtn = document.querySelector('a[href*="Start Reading"], a:contains("Start Reading"), .start-reading-link, [class*="start-reading"], td:has-text("Start Reading") a');
   
-  if (!startReadingBtn) return;
+  if (!startReadingBtn || document.getElementById('floating-start-reading')) return;
   
-  // Create fixed full-width pill container (Wattpad-style)
+  // Create transparent fixed container (Wattpad-style bottom bar)
   const pillContainer = document.createElement("div");
   pillContainer.id = "floating-start-reading";
   pillContainer.style.cssText = `
@@ -56,85 +56,51 @@ document.addEventListener("DOMContentLoaded", function() {
     right: 0;
     bottom: 0;
     height: 42px;
-    z-index: 1000;
+    z-index: 10000;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0,0,0,0.9);
-    backdrop-filter: blur(10px);
-    border-radius: 24px 24px 0 0;
-    margin: 0 16px;
-    box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
+    padding: 0 16px;
+    pointer-events: none;
   `;
   
-  // Style the button for pill appearance
+  // Style button as full-width 24px pill (white bg, black text, 100% rounded)
   startReadingBtn.style.cssText = `
-    height: 42px;
-    line-height: 42px;
-    padding: 0 24px;
+    height: 24px;
+    line-height: 24px;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
     margin: 0;
-    border-radius: 24px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white !important;
+    border-radius: 100px;
+    background: white;
+    color: black !important;
     text-decoration: none !important;
     font-weight: 600;
-    font-size: 16px;
-    display: inline-flex;
+    font-size: 14px;
+    display: flex;
     align-items: center;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
-    transition: all 0.3s ease;
+    justify-content: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    transition: all 0.2s ease;
     border: none;
     cursor: pointer;
+    pointer-events: auto;
+    text-align: center;
   `;
   
-  // Add hover effect
+  // Hover effect
   startReadingBtn.addEventListener('mouseenter', function() {
-    this.style.transform = 'translateY(-2px)';
-    this.style.boxShadow = '0 6px 25px rgba(102, 126, 234, 0.6)';
+    this.style.transform = 'translateY(-1px)';
+    this.style.boxShadow = '0 4px 16px rgba(0,0,0,0.25)';
   });
   startReadingBtn.addEventListener('mouseleave', function() {
     this.style.transform = 'translateY(0)';
-    this.style.boxShadow = '0 4px 15px rgba(102, 126, 234, 0.4)';
+    this.style.boxShadow = '0 2px 12px rgba(0,0,0,0.15)';
   });
   
-  // Move button to container
+  // ONLY move the button - nothing else
   pillContainer.appendChild(startReadingBtn);
   document.body.appendChild(pillContainer);
-  
-  // Adjust original table cell
-  function adjustOriginalLocation() {
-    const tableCell = document.evaluate(
-      "//td[.//a[contains(@href, '/sitn/') or contains(@href, '/sitnc/') or contains(text(), 'Start Reading')]]",
-      document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null
-    ).singleNodeValue;
-    
-    if (tableCell) {
-      // Keep only the rating content
-      tableCell.innerHTML = '<small>PG | 13+ | Blood, detailed content</small>';
-      tableCell.style.textAlign = 'center';
-    }
-  }
-  
-  // Initial adjustment
-  adjustOriginalLocation();
-  
-  // Handle dynamic layout changes
-  const observer = new MutationObserver(function() {
-    const mainContent = document.querySelector("main.content.cm-s-obsidian");
-    if (mainContent && !mainContent.classList.contains("floating-btn-adjusted")) {
-      mainContent.classList.add("floating-btn-adjusted");
-      adjustOriginalLocation();
-    }
-  });
-  
-  observer.observe(document.body, { 
-    childList: true, 
-    subtree: true 
-  });
-  
-  // Prevent body scroll interference
-  pillContainer.addEventListener('click', function(e) {
-    e.stopPropagation();
-  });
 });
 </script>
