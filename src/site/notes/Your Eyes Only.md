@@ -9,7 +9,7 @@
 |                                                            Your Eyes Only                                                             |
 | :-----------------------------------------------------------------------------------------------------------------------------------: |
 |                                                  ![coverimg](/img/user/youreyesonlycover.png)                                                   |
-|                                  [Start Reading](https://www.wattpad.com/story/406054265) on Wattpad                                  |
+|                                  [Start Reading on Wattpad](https://www.wattpad.com/story/406054265)                                  |
 | <button id="library-toggle" class="squared-button" onclick="toggleLibrary()">Add to Reading List</button><br><small>PG \| 13+</small> |
 
 <div class="fake-button-container">  <span class="fake-button">enhypen</span> <span class="fake-button">romance</span></div>
