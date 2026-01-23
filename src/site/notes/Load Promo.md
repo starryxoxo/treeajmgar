@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"load-promo","permalink":"/load-promo/"}
+{"dg-publish":true,"dg-permalink":"load-promo","permalink":"/load-promonrirer/"}
 ---
 
 # Load Promo
