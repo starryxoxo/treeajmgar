@@ -57,4 +57,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 </script>
 
-![1ccb72d12a9042a171d481ee54dcf85e.jpg](/img/user/assets/a%20storage/1ccb72d12a9042a171d481ee54dcf85e.jpg)
+![[1ccb72d12a9042a171d481ee54dcf85e.jpg\|1ccb72d12a9042a171d481ee54dcf85e.jpg]]

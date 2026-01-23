@@ -5,8 +5,8 @@
 
 | Discover                           |                                                  |                                                  |                                   |
 | ---------------------------------- | ------------------------------------------------ | ------------------------------------------------ | --------------------------------- |
-| ![book\|160](/img/user/yeo/yeostorage/yeocover.webp)        | ![book\|160](/img/user/d/sitn/sitncover.webp)                     | ![book\|160](/img/user/d/sitn/sitncover.webp)                     | ![coverimg\|400](/img/user/d/sitn/sitnbanner.webp) |
-| [[yeo/Your Eyes Only\|Your Eyes Only]] | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]] | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]] | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]]         |
+| ![book\|160](yeocover.webp)        | ![book\|160](/img/user/d/sitn/sitncover.webp)                     | ![book\|160](/img/user/d/sitn/sitncover.webp)                     | ![coverimg\|400](/img/user/d/sitn/sitnbanner.webp) |
+| [[Your Eyes Only\|Your Eyes Only]] | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]] | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]] | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]]         |
 
 This is a testing page.
 
@@ -70,7 +70,7 @@ This is a testing page.
 
 | Discover                           |                                                  |                                                  |
 | ---------------------------------- | ------------------------------------------------ | ------------------------------------------------ |
-| ![book\|160](/img/user/yeo/yeostorage/yeocover.webp)        | ![book\|160](/img/user/d/sitn/sitncover.webp)                     | ![book\|160](/img/user/d/sitn/sitncover.webp)                     |
-| [[yeo/Your Eyes Only\|Your Eyes Only]] | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]] | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]] |
+| ![book\|160](yeocover.webp)        | ![book\|160](/img/user/d/sitn/sitncover.webp)                     | ![book\|160](/img/user/d/sitn/sitncover.webp)                     |
+| [[Your Eyes Only\|Your Eyes Only]] | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]] | [[d/sitn/Strangers by Midnight\|Strangers by Midnight]] |
 
 </div>

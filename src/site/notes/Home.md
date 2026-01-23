@@ -29,10 +29,10 @@
 
 ***
 
-| Discover                         |                               |                            |
-| :------------------------------- | :---------------------------- | :------------------------- |
-| ![coverimg\|165](/img/user/d/sitn/sitncover.webp) | ![coverimg\|165](/img/user/d/ldr/ldrbook.jpg) | ![coverimg\|165](/img/user/assets/swb.webp) |
-| [[d/sitn/Strangers by Midnight\|Strangers by Midnight]]        | [[d/ldr/ldrbook\|LDR]]              |                            |
+| Discover                         |                                         |                               |
+| :------------------------------- | :-------------------------------------- | :---------------------------- |
+| ![coverimg\|165](/img/user/d/sitn/sitncover.webp) | ![coverimg\|165](/img/user/youreyesonlycover.png) | ![coverimg\|165](/img/user/d/ldr/ldrbook.jpg) |
+| [[d/sitn/Strangers by Midnight\|Strangers by Midnight]]        | [[Your Eyes Only\|Your Eyes Only]]                      | [[d/ldr/ldrbook\|LDR]]              |
 
 | Timeless Archives                   |                                                 |
 | ----------------------------------- | ----------------------------------------------- |

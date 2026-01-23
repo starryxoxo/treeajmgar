@@ -55,7 +55,7 @@ Pagkauwi ko ng bahay nagpaalam ako kay Mama na lalabas lang kami ni Jay para mag
 
 |                              Listen to ENHYPEN                              |
 | :-------------------------------------------------------------------------: |
-|                                ![en1.jpg](/img/user/d/sitn/en1.jpg)                                 |
+|                                ![[en1.jpg\|en1.jpg]]                                 |
 | [YouTube Music](https://music.youtube.com/channel/UC5bxTdrcWXji987o_LlcNNA) |
 
 
