@@ -23,12 +23,6 @@ That's what they always say. But with you, there's certainly more than love that
 **Languages**: Tagalog, English
 **Date**: April 14, 2025
 
-| About ENHYPEN                                                                                                                 |
-| ----------------------------------------------------------------------------------------------------------------------------- |
-| ![[1ccb72d12a9042a171d481ee54dcf85e.jpg\|1ccb72d12a9042a171d481ee54dcf85e.jpg]]                                                                                     |
-| **ENHYPEN** is a **South Korean** boy band formed by Belift Lab. Formerly a joint venture between CJ ENM [[arc/enh/ENHYPEN\|more...]] |
-| <small>Source: Wikipedia CC-BY-SA 4.0</small>                                                                                 |
-
 ***
 
 [[Home\|Home]]
